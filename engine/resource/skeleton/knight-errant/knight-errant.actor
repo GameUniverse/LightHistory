@@ -1,0 +1,25 @@
+################################################
+#
+# LightEngine Actor File
+#
+################################################
+
+scale=0.1
+
+################# Skeleton #################
+skeleton=body.SKELETON
+
+
+################# Meshes #################
+mesh=body.MESH
+
+
+################# Animations #################
+animation=run.ANIMATION
+
+
+################# Materials #################
+material=material1.MATERIAL
+material=material2.MATERIAL
+material=material3.MATERIAL
+

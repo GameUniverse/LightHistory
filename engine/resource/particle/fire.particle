@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes" ?>
+<particle version="1.0">
+    <property>
+        <name value="粒子1" />
+        <type value="0" />
+        <track value="1" />
+        <vector value="0.000000,0.000000,1.000000" />
+        <billboard_mode value="0" />
+        <billboard_width value="1.000000" />
+        <billboard_height value="1.000000" />
+        <center value="0.000000,0.000000,0.000000" />
+        <numparticle value="16" />
+        <rise value="1.500000" />
+        <life value="0" />
+        <particle_life value="800" />
+        <emission_rate value="8.000000" />
+        <homeplace_box value="0.100000,0.100000,0.100000" />
+        <texture value="fire.bmp" />
+        <grid_width value="64" />
+        <grid_height value="64" />
+        <num_grid value="16" />
+        <min_frame value="0" />
+        <max_frame value="4" />
+        <flip_horizintal value="0" />
+        <flip_vertical value="0" />
+        <left_point value="0.330000" />
+        <right_point value="0.660000" />
+        <color1 value="255,255,255,0" />
+        <color2 value="255,255,255,255" />
+        <color3 value="255,255,255,255" />
+        <color4 value="255,255,255,0" />
+        <scale1 value="1.000000,1.000000,1.000000" />
+        <scale2 value="1.000000,1.000000,1.000000" />
+        <scale3 value="1.000000,1.000000,1.000000" />
+        <scale4 value="1.000000,1.000000,1.000000" />
+        <rotate1 value="0.000000,0.000000,1.000000,0.000000" />
+        <rotate2 value="0.000000,0.000000,1.000000,0.000000" />
+        <rotate3 value="0.000000,0.000000,1.000000,0.000000" />
+        <rotate4 value="0.000000,0.000000,1.000000,0.000000" />
+        <gyroidal1 value="1.000000,0.000000,0.000000" />
+        <gyroidal2 value="1.000000,120.000000,1.000000" />
+        <gyroidal3 value="1.000000,240.000000,2.000000" />
+        <gyroidal4 value="1.000000,360.000000,3.000000" />
+        <current_position1 value="-1.000000,0.000000,0.000000" />
+        <current_position2 value="1.000000,0.000000,0.000000" />
+        <current_radius value="0.500000" />
+    </property>
+</particle>
