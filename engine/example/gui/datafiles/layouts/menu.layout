@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="Vanilla/StaticImage" Name="root" >
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="InheritsAlpha" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="Vanilla/Button" Name="new" >
+            <Property Name="Font" Value="Commonwealth-10" />
+            <Property Name="Text" Value="new game" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.390625,0},{0.225,0},{0.643748,0},{0.314583,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="True" />
+        </Window>
+        <Window Type="Vanilla/Button" Name="load" >
+            <Property Name="Font" Value="Commonwealth-10" />
+            <Property Name="Text" Value="load game" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.390625,0},{0.35,0},{0.643749,0},{0.439583,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="True" />
+        </Window>
+        <Window Type="Vanilla/Button" Name="option" >
+            <Property Name="Font" Value="Commonwealth-10" />
+            <Property Name="Text" Value="option" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.39375,0},{0.4875,0},{0.646873,0},{0.577083,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="True" />
+        </Window>
+        <Window Type="Vanilla/Button" Name="exit" >
+            <Property Name="Font" Value="Commonwealth-10" />
+            <Property Name="Text" Value="exit" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.395312,0},{0.625001,0},{0.648436,0},{0.714584,0}}" />
+            <Property Name="WantsMultiClickEvents" Value="True" />
+        </Window>
+    </Window>
+</GUILayout>
