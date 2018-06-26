@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: E:/LightEngine/include/datastart.h文件参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li><a href="annotated.html"><span>类</span></a></li>
+    <li id="current"><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="files.html"><span>文件列表</span></a></li>
+    <li><a href="globals.html"><span>文件成员</span></a></li>
+  </ul></div>
+<h1>E:/LightEngine/include/datastart.h文件参考</h1>数据库引擎启动函数 此文件是数据库引擎启动函数头文件. <a href="#_details">更多...</a>
+<p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>函数</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_light_database.html">LightDatabase</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="datastart_8h.html#df67a8d8372e3957bab6a7bd350057f2">LightDatabaseCreate</a> (<a class="el" href="struct_light_database_desc.html">LightDatabaseDesc</a> &amp;databaseDesc)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个光线数据库引擎实例  <a href="#df67a8d8372e3957bab6a7bd350057f2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="datastart_8h.html#b170062902fcc2bcc1d80d5a131c7ae5">LightDatabaseRelease</a> (<a class="el" href="class_light_database.html">LightDatabase</a> *database)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放光线数据库引擎实例  <a href="#b170062902fcc2bcc1d80d5a131c7ae5"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+数据库引擎启动函数 此文件是数据库引擎启动函数头文件. 
+<p>
+<hr><h2>函数文档</h2>
+<a class="anchor" name="df67a8d8372e3957bab6a7bd350057f2"></a><!-- doxytag: member="datastart.h::LightDatabaseCreate" ref="df67a8d8372e3957bab6a7bd350057f2" args="(LightDatabaseDesc &amp;databaseDesc)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_light_database.html">LightDatabase</a>* LightDatabaseCreate           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_light_database_desc.html">LightDatabaseDesc</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>databaseDesc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个光线数据库引擎实例 
+<p>
+创建一个光线数据库引擎实例，并返回 <a class="el" href="class_light_database.html">LightDatabase</a> 指针。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有参数。</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>这是在使用数据库引擎前必须要调用的第一个函数，数据库引擎的大部分功能都需要通过调用 <a class="el" href="class_light_database.html">LightDatabase</a> 来完成。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回一个 <a class="el" href="class_light_database.html">LightDatabase</a> 指针，否则返回 NULL 。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b170062902fcc2bcc1d80d5a131c7ae5"></a><!-- doxytag: member="datastart.h::LightDatabaseRelease" ref="b170062902fcc2bcc1d80d5a131c7ae5" args="(LightDatabase *database)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightDatabaseRelease           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_database.html">LightDatabase</a> *&nbsp;</td>
+          <td class="paramname"> <em>database</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放光线数据库引擎实例 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>要释放的光线数据库引擎实例指针，目前在同一个程序中只能创建一个实例。</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>这是在引擎使用结束后，必须要调用的一个函数。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回一个 <a class="el" href="class_light_database.html">LightDatabase</a> 指针，否则返回 NULL 。 </dd></dl>
+
+</div>
+</div><p>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:31 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

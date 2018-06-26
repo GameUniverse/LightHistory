@@ -1,0 +1,228 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightLog类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightLog类参考</h1><!-- doxytag: class="LightLog" -->日志类  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;log.h&gt;</code>
+<p>
+<a href="class_light_log-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_log.html#1fae5f9a5781bbaa340217e79d13e3e1">open</a> (const char *device)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">打开日志输出设备  <a href="#1fae5f9a5781bbaa340217e79d13e3e1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_log.html#e2a18969932c3ed04a305c3ab48037b4">debug</a> (const char *string)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">输出调试信息  <a href="#e2a18969932c3ed04a305c3ab48037b4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_log.html#92bf2c7fcab9fe8cd92a289afab5efdd">message</a> (const char *string)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">输出一般信息  <a href="#92bf2c7fcab9fe8cd92a289afab5efdd"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_log.html#fd931dabb86482c90e1aefe1c4ea2e22">warning</a> (const char *string)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">输出警告信息  <a href="#fd931dabb86482c90e1aefe1c4ea2e22"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_log.html#bdb1be1f259d5d15066132da418cfe96">error</a> (const char *string)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">输出错误信息  <a href="#bdb1be1f259d5d15066132da418cfe96"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_log.html#cb4e241bb241ddc84d9b4069a43b8ba7">close</a> (const char *device)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">关闭日志输出设备  <a href="#cb4e241bb241ddc84d9b4069a43b8ba7"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+日志类 
+<p>
+本类负责日志的信息的输出、控制和管理，目前支持输出到文件。 每个 <a class="el" href="class_light_log.html">LightLog</a> 实例都必须通过 <a class="el" href="class_light_engine.html">LightEngine</a> 类的 createLog 方法分配， releaseLog 释放。 
+<p>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="1fae5f9a5781bbaa340217e79d13e3e1"></a><!-- doxytag: member="LightLog::open" ref="1fae5f9a5781bbaa340217e79d13e3e1" args="(const char *device)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightLog::open           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>device</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+打开日志输出设备 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>device[in]</em>&nbsp;</td><td>要打开的日志输出设备名称，目前只支持文件设备，应将此参数设为一个文件名（可以保含路径）。</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回 0；如果函数调用失败，返回错误代码。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e2a18969932c3ed04a305c3ab48037b4"></a><!-- doxytag: member="LightLog::debug" ref="e2a18969932c3ed04a305c3ab48037b4" args="(const char *string)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightLog::debug           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>string</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+输出调试信息 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>string[in]</em>&nbsp;</td><td>要输出调试的信息</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="92bf2c7fcab9fe8cd92a289afab5efdd"></a><!-- doxytag: member="LightLog::message" ref="92bf2c7fcab9fe8cd92a289afab5efdd" args="(const char *string)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightLog::message           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>string</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+输出一般信息 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>string[in]</em>&nbsp;</td><td>要输出的一般信息</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="fd931dabb86482c90e1aefe1c4ea2e22"></a><!-- doxytag: member="LightLog::warning" ref="fd931dabb86482c90e1aefe1c4ea2e22" args="(const char *string)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightLog::warning           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>string</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+输出警告信息 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>string[in]</em>&nbsp;</td><td>要输出的警告信息</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="bdb1be1f259d5d15066132da418cfe96"></a><!-- doxytag: member="LightLog::error" ref="bdb1be1f259d5d15066132da418cfe96" args="(const char *string)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightLog::error           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>string</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+输出错误信息 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>string[in]</em>&nbsp;</td><td>要输出的错误信息</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="cb4e241bb241ddc84d9b4069a43b8ba7"></a><!-- doxytag: member="LightLog::close" ref="cb4e241bb241ddc84d9b4069a43b8ba7" args="(const char *device)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightLog::close           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>device</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+关闭日志输出设备 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>device[in]</em>&nbsp;</td><td>要关闭的日志输出设备名称，目前只支持文件设备，应将此参数设为一个文件名（可以保含路径）。</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回 0；如果函数调用失败，返回错误代码。 </dd></dl>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/<a class="el" href="log_8h.html">log.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:34 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

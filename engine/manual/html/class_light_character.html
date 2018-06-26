@@ -1,0 +1,293 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightCharacter类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightCharacter类参考</h1><!-- doxytag: class="LightCharacter" -->角色控制类  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;character.h&gt;</code>
+<p>
+<a href="class_light_character-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_scene.html">LightScene</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_character.html#7b1504f760b6e9b5280b3d982da6dbd1">getScene</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询父场景  <a href="#7b1504f760b6e9b5280b3d982da6dbd1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_character.html#f2ba7cfb644a27f63809f346207fec1d">move</a> (const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> vector, float minDist, unsigned long *collisionFlags, float sharpness)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">移动角色控制器  <a href="#f2ba7cfb644a27f63809f346207fec1d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_character.html#568b6c426789d3290728aba94964a6cd">setPosition</a> (const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> position)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置角色控制器的位置  <a href="#568b6c426789d3290728aba94964a6cd"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_character.html#5c5a9f4fe5551ed75de3bef23065b776">getPosition</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询角色控制器的位置  <a href="#5c5a9f4fe5551ed75de3bef23065b776"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_character.html#67f82623c1d258b83849de2af48e2200">getFilteredPosition</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询角色控制器过滤后的位置  <a href="#67f82623c1d258b83849de2af48e2200"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_character.html#8a04b8fddf4f045e0c8f97c64d6e503b">setStepOffset</a> (const float offset)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置步幅高度  <a href="#8a04b8fddf4f045e0c8f97c64d6e503b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_character.html#6943876ce53d58e0f05f775611cce24a">setCollision</a> (bool enabled)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">允许/禁止这个角色控制器的碰撞检测  <a href="#6943876ce53d58e0f05f775611cce24a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_character.html#5e804f31491b9fac57eced862d2a8120">render</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">渲染角色控制器  <a href="#5e804f31491b9fac57eced862d2a8120"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+角色控制类 
+<p>
+本类负责一个角色在物理世界中的正确运算，包括行走、跳跃等绝大部分功能。 每个 <a class="el" href="class_light_character.html">LightCharacter</a> 实例都必须通过 <a class="el" href="class_light_engine.html">LightEngine</a> 类的 createCharacter 函数分配，通过 releaseCharacter 函数释放。 
+<p>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="7b1504f760b6e9b5280b3d982da6dbd1"></a><!-- doxytag: member="LightCharacter::getScene" ref="7b1504f760b6e9b5280b3d982da6dbd1" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_scene.html">LightScene</a>* LightCharacter::getScene           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询父场景 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回父场景指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f2ba7cfb644a27f63809f346207fec1d"></a><!-- doxytag: member="LightCharacter::move" ref="f2ba7cfb644a27f63809f346207fec1d" args="(const vec3_t vector, float minDist, unsigned long *collisionFlags, float sharpness)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightCharacter::move           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>minDist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long *&nbsp;</td>
+          <td class="paramname"> <em>collisionFlags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>sharpness</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+移动角色控制器 
+<p>
+移动角色控制器<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>const</em>&nbsp;</td><td>vec3_t vector 是当前帧的位移向量。在一般情况下，当你的角色正在移动时，它是垂直向下的重力和水平移动量（均由此参数指定）的组合。 注意这是一个位移向量（第一次序），它只对当前帧起作用，并且不会累加；它不是一个速度向量（第二次序）或力（第三次序）向量。</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>minDist 是提前停止位移递归算法的最小距离值，缺省值是 1。</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>unsigned</em>&nbsp;</td><td>long * collisionFlags 是一个位掩码指针，返回在角色移动期间用户要查询的碰撞事件。这是 LightCharacterFlag 标志的组合，它能用来引发各种不同的角色动画。 例如，当此标志为 0 时，就可以播放一个落下的动画，当 LIGHT_CHARACTER_COLLISION_DOWN 标志反回时，就可以播放站立的动画。</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>sharpness 此参数保留，供以后使用，必须设置为 1.0f。</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd></dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="568b6c426789d3290728aba94964a6cd"></a><!-- doxytag: member="LightCharacter::setPosition" ref="568b6c426789d3290728aba94964a6cd" args="(const vec3_t position)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LightCharacter::setPosition           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>position</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置角色控制器的位置 
+<p>
+设置角色控制器的位置<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>const</em>&nbsp;</td><td>vec3_t position 角色控制器新的位置</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd></dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>目前总是返回 TRUE。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="5c5a9f4fe5551ed75de3bef23065b776"></a><!-- doxytag: member="LightCharacter::getPosition" ref="5c5a9f4fe5551ed75de3bef23065b776" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>* LightCharacter::getPosition           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询角色控制器的位置 
+<p>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd></dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回角色控制器的全局世界坐标值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="67f82623c1d258b83849de2af48e2200"></a><!-- doxytag: member="LightCharacter::getFilteredPosition" ref="67f82623c1d258b83849de2af48e2200" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&amp; LightCharacter::getFilteredPosition           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询角色控制器过滤后的位置 
+<p>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd></dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>角色控制器过滤后的全局世界坐标值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="8a04b8fddf4f045e0c8f97c64d6e503b"></a><!-- doxytag: member="LightCharacter::setStepOffset" ref="8a04b8fddf4f045e0c8f97c64d6e503b" args="(const float offset)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightCharacter::setStepOffset           </td>
+          <td>(</td>
+          <td class="paramtype">const float&nbsp;</td>
+          <td class="paramname"> <em>offset</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置步幅高度 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>offset[in]</em>&nbsp;</td><td>角色控制器允许跨过的障碍物高度 </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="6943876ce53d58e0f05f775611cce24a"></a><!-- doxytag: member="LightCharacter::setCollision" ref="6943876ce53d58e0f05f775611cce24a" args="(bool enabled)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightCharacter::setCollision           </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>enabled</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+允许/禁止这个角色控制器的碰撞检测 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>enabled[in]</em>&nbsp;</td><td>TRUE 开启角色控制器的碰撞检测 </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="5e804f31491b9fac57eced862d2a8120"></a><!-- doxytag: member="LightCharacter::render" ref="5e804f31491b9fac57eced862d2a8120" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightCharacter::render           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+渲染角色控制器 
+<p>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/<a class="el" href="character_8h.html">character.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:32 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

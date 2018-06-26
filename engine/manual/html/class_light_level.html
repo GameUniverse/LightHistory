@@ -1,0 +1,306 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightLevel类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightLevel类参考</h1><!-- doxytag: class="LightLevel" -->场景类  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;level.h&gt;</code>
+<p>
+<a href="class_light_level-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_engine.html">LightEngine</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_level.html#5773ef11e85ffdd61be5bb05781be4ad">getEngine</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询父引擎  <a href="#5773ef11e85ffdd61be5bb05781be4ad"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_level.html#a2ef1a4f2665b63174cc0fb7a2598f19">load</a> (const char *filename)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">将场景文件读入内存  <a href="#a2ef1a4f2665b63174cc0fb7a2598f19"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d91cf3ba8c89840033f48d965632cfd0"></a><!-- doxytag: member="LightLevel::render" ref="d91cf3ba8c89840033f48d965632cfd0" args="(void)=0" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_level.html#d91cf3ba8c89840033f48d965632cfd0">render</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">渲染场景 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_level.html#3e51fde81a7df2c9db58165160ea0c20">getTrianglesCount</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询显示的三角形数  <a href="#3e51fde81a7df2c9db58165160ea0c20"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_level.html#efe55aad6c24ca04d2b94eb2940f2b8f">attachMesh</a> (<a class="el" href="class_light_mesh.html">LightMesh</a> *mesh)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询地形指针将指定的静态网格绑定到场景中  <a href="#efe55aad6c24ca04d2b94eb2940f2b8f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_level.html#6dd01f8a0f79f4cf3f1d2511331b689e">detachMesh</a> (<a class="el" href="class_light_mesh.html">LightMesh</a> *mesh)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">将指定的静态网格从场景中分离  <a href="#6dd01f8a0f79f4cf3f1d2511331b689e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_level.html#80643d701fc001e5fd1844a03e68417c">getMeshCount</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询场景中静态网格的数量  <a href="#80643d701fc001e5fd1844a03e68417c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_mesh.html">LightMesh</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_level.html#1fe58b024c06c070e55fceae8a3eae42">getMesh</a> (int mesh)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询静态网格指针  <a href="#1fe58b024c06c070e55fceae8a3eae42"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_level.html#c325185c02c2f50c19503f7b4ec70e98">save</a> (const char *filename)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">将场景保存到文件中  <a href="#c325185c02c2f50c19503f7b4ec70e98"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_level.html#39a75d7310703d83b23edee7bfcc244a">unload</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">将场景文件从内存中清除  <a href="#39a75d7310703d83b23edee7bfcc244a"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+场景类 
+<p>
+本类负责场景文件的读取，渲染、控制、保存，支持地形、网络、BSP格式的场景。 每个 <a class="el" href="class_light_level.html">LightLevel</a> 实例都必须通过 <a class="el" href="class_light_engine.html">LightEngine</a> 类的 createLevel 方法分配。 
+<p>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="5773ef11e85ffdd61be5bb05781be4ad"></a><!-- doxytag: member="LightLevel::getEngine" ref="5773ef11e85ffdd61be5bb05781be4ad" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_engine.html">LightEngine</a>* LightLevel::getEngine           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询父引擎 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回引擎指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a2ef1a4f2665b63174cc0fb7a2598f19"></a><!-- doxytag: member="LightLevel::load" ref="a2ef1a4f2665b63174cc0fb7a2598f19" args="(const char *filename)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightLevel::load           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>filename</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+将场景文件读入内存 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>filename</em>&nbsp;</td><td>场景文件名</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="3e51fde81a7df2c9db58165160ea0c20"></a><!-- doxytag: member="LightLevel::getTrianglesCount" ref="3e51fde81a7df2c9db58165160ea0c20" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightLevel::getTrianglesCount           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询显示的三角形数 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回场景类显示的三角形数。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="efe55aad6c24ca04d2b94eb2940f2b8f"></a><!-- doxytag: member="LightLevel::attachMesh" ref="efe55aad6c24ca04d2b94eb2940f2b8f" args="(LightMesh *mesh)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightLevel::attachMesh           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_mesh.html">LightMesh</a> *&nbsp;</td>
+          <td class="paramname"> <em>mesh</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询地形指针将指定的静态网格绑定到场景中 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>mesh[in]</em>&nbsp;</td><td>要绑定的静态网格</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="6dd01f8a0f79f4cf3f1d2511331b689e"></a><!-- doxytag: member="LightLevel::detachMesh" ref="6dd01f8a0f79f4cf3f1d2511331b689e" args="(LightMesh *mesh)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightLevel::detachMesh           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_mesh.html">LightMesh</a> *&nbsp;</td>
+          <td class="paramname"> <em>mesh</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+将指定的静态网格从场景中分离 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>mesh[in]</em>&nbsp;</td><td>要分离的静态网格</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="80643d701fc001e5fd1844a03e68417c"></a><!-- doxytag: member="LightLevel::getMeshCount" ref="80643d701fc001e5fd1844a03e68417c" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightLevel::getMeshCount           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询场景中静态网格的数量 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回场景中静态网格的数量 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="1fe58b024c06c070e55fceae8a3eae42"></a><!-- doxytag: member="LightLevel::getMesh" ref="1fe58b024c06c070e55fceae8a3eae42" args="(int mesh)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_mesh.html">LightMesh</a>* LightLevel::getMesh           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>mesh</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询静态网格指针 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>mesh</em>&nbsp;</td><td>要查询的静态网格索引</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回场景类的静态网格指针。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c325185c02c2f50c19503f7b4ec70e98"></a><!-- doxytag: member="LightLevel::save" ref="c325185c02c2f50c19503f7b4ec70e98" args="(const char *filename)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightLevel::save           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>filename</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+将场景保存到文件中 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>filename</em>&nbsp;</td><td>场景文件名</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="39a75d7310703d83b23edee7bfcc244a"></a><!-- doxytag: member="LightLevel::unload" ref="39a75d7310703d83b23edee7bfcc244a" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightLevel::unload           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+将场景文件从内存中清除 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/<a class="el" href="level_8h.html">level.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:34 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

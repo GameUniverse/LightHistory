@@ -1,0 +1,201 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightInput类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightInput类参考</h1><!-- doxytag: class="LightInput" -->输入类  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;input.h&gt;</code>
+<p>
+<a href="class_light_input-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_engine.html">LightEngine</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_input.html#8cf960664077ba5c0ed0b37fcd2adcb1">getEngine</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询父引擎  <a href="#8cf960664077ba5c0ed0b37fcd2adcb1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual unsigned long&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_input.html#1a1304fb6c7e51607fcf0464cdaf25cd">getKey</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">读取一个按键  <a href="#1a1304fb6c7e51607fcf0464cdaf25cd"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual long&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_input.html#4a0779ee4e0e70fcb48b7f7e4726a22a">getKeyState</a> (unsigned long key)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询按键状态  <a href="#4a0779ee4e0e70fcb48b7f7e4726a22a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_input.html#fb4010d171365235d680df19e77980a3">getCursorPos</a> (LPPOINT lpPoint)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询光标位置  <a href="#fb4010d171365235d680df19e77980a3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_input.html#f767d21a6563ce8bbcd4f20dd27eae64">setCursorPos</a> (int x, int y)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置光标位置  <a href="#f767d21a6563ce8bbcd4f20dd27eae64"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+输入类 
+<p>
+本类负责键盘、鼠标、游戏杆的输入和状态查询，所有输入设备采用统一界面，非常方便。 每个 <a class="el" href="class_light_input.html">LightInput</a> 实例都必须通过 <a class="el" href="class_light_engine.html">LightEngine</a> 类的 createInput 方法分配， releaseInput 释放。 
+<p>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="8cf960664077ba5c0ed0b37fcd2adcb1"></a><!-- doxytag: member="LightInput::getEngine" ref="8cf960664077ba5c0ed0b37fcd2adcb1" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_engine.html">LightEngine</a>* LightInput::getEngine           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询父引擎 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回父引擎引用</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="1a1304fb6c7e51607fcf0464cdaf25cd"></a><!-- doxytag: member="LightInput::getKey" ref="1a1304fb6c7e51607fcf0464cdaf25cd" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual unsigned long LightInput::getKey           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+读取一个按键 
+<p>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>按键的定义见头文件。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回最早的一个按键值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="4a0779ee4e0e70fcb48b7f7e4726a22a"></a><!-- doxytag: member="LightInput::getKeyState" ref="4a0779ee4e0e70fcb48b7f7e4726a22a" args="(unsigned long key)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual long LightInput::getKeyState           </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&nbsp;</td>
+          <td class="paramname"> <em>key</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询按键状态 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>key[in]</em>&nbsp;</td><td>要查询的按键</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>按键的定义见头文件。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果该键处于按下状态，返回非零值；如果该键处于弹起状态，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="fb4010d171365235d680df19e77980a3"></a><!-- doxytag: member="LightInput::getCursorPos" ref="fb4010d171365235d680df19e77980a3" args="(LPPOINT lpPoint)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool LightInput::getCursorPos           </td>
+          <td>(</td>
+          <td class="paramtype">LPPOINT&nbsp;</td>
+          <td class="paramname"> <em>lpPoint</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询光标位置 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>lpPoint[out]</em>&nbsp;</td><td>返回光标位置的指针</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f767d21a6563ce8bbcd4f20dd27eae64"></a><!-- doxytag: member="LightInput::setCursorPos" ref="f767d21a6563ce8bbcd4f20dd27eae64" args="(int x, int y)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool LightInput::setCursorPos           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置光标位置 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x[in]</em>&nbsp;</td><td>光标位置的 x 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y[in]</em>&nbsp;</td><td>光标位置的 y 坐标</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/<a class="el" href="input_8h.html">input.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:34 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: 成员列表</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightSkeleton 成员列表</h1>成员的完整列表，这些成员属于<a class="el" href="class_light_skeleton.html">LightSkeleton</a>，包括所有继承而来的成员<p><table>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#dd20ce0004bdf83690b266c158768cb1">animation</a>(int animation)=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#b8206994c2c452ba755cfd62764ec1b7">animationType</a>(int type)=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#5c66eb549de4934cd82c5ba0561d9513">attach</a>(LightSkeleton *skeleton, int bone)=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#b3c6df8c0b875c5b768b3e9affd86e7e">getAnimationDuration</a>(void)=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#0c11219dc3ae7555d1cf27ff5bfc984a">getAnimationTime</a>(void)=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#a40beb15e4bb87fe080c12ad49ebf3fe">getBoneId</a>(const char *name)=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#e19feb26606b07605f8d8496e4061538">getBoneOrientationQuat</a>(int bone, quat_t quat)=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#c8afd2a0d5fa131cbd8e28acfd13a2e7">getBonePosition</a>(int bone, vec3_t position)=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#7a3936dff437e0c4699139b4867ad261">getBoundingBox</a>()=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#3e09c955e028b85ec8c093f535a27ea8">getEngine</a>()=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#58dae8f1c5c203c57e06f27473348879">getGlobalOrientationAngleAxis</a>(float &amp;angle, vec3_t axis)=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#0011793f9a5e438fbe7e4bb9b6a9cbed">getGlobalOrientationQuat</a>(quat_t orientation)=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#aaef3d452ae0cecb7479083f6a72f6c0">getGlobalPosition</a>(vec3_t position)=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#6a793880066fe5075cc1c20a578268bf">getLodLevel</a>()=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#a239b0bcf860ac0d59dd39328939910d">getTimeFactor</a>(void)=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#01e12055875927892eb0257ce6ecce1f">load</a>(const char *filename)=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#ab8da86752b606a0e1c56b97a6422033">pause</a>()=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#51edcacf69b45c2a7ea2f5d7bc6c8077">play</a>()=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#f1b0523ce613ee68ffac89910759fa6f">render</a>()=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#e209a50da2bf5bd9141002e0befbab06">scale</a>(float factor)=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#e7921ffbff54f33bb8dbe397b084e441">setAnimationTime</a>(float time)=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#b079548a4e287fdb830ef6265ea63d10">setCenter</a>(float x, float y, float z)=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#6fa5ab17d7057fa9159075c1c1fa1669">setGlobalOrientationAngleAxis</a>(float angle, float x, float y, float z)=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#9b80008ae1e492061704c840d427c190">setGlobalOrientationQuat</a>(const quat_t quat)=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#f78e9838cdb94387c043ed07e7700988">setGlobalPose</a>(const mat44_t &amp;mat)=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#702f2fd32189e0f59d1c15f97911f944">setGlobalPosition</a>(float x, float y, float z)=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#4a76cddeb66131c9671f436606344533">setLocalOrientationAngleAxis</a>(float angle, float x, float y, float z)=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#a304f240131f67566d288be5fc634797">setLocalOrientationQuat</a>(const quat_t quat)=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#7552d5d05bd2c9b4f2fa203ff789034a">setLocalPosition</a>(float x, float y, float z)=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#bafa06836d76a9b451f2fdf1b12a4fcf">setLodLevel</a>(float lodLevel)=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#c342cbc8aac418fd53b84c8d50926953">setRotateMatrix</a>(const mat34_t &amp;rotate)=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#7a911673a61c4978d9930eb3afe7df7f">setTimeFactor</a>(float factor)=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_skeleton.html#9adc86a8c2081fc8e17f724fe11b04d4">stop</a>()=0</td><td><a class="el" href="class_light_skeleton.html">LightSkeleton</a></td><td><code> [pure virtual]</code></td></tr>
+</table><hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:35 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

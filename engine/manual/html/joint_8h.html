@@ -1,0 +1,250 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: E:/LightEngine/include/joint.h文件参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li><a href="annotated.html"><span>类</span></a></li>
+    <li id="current"><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="files.html"><span>文件列表</span></a></li>
+    <li><a href="globals.html"><span>文件成员</span></a></li>
+  </ul></div>
+<h1>E:/LightEngine/include/joint.h文件参考</h1><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>组合类型</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_spring_desc.html">LightSpringDesc</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">弹性描述符结构  <a href="struct_light_spring_desc.html#_details">更多...</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_joint_limit_desc.html">LightJointLimitDesc</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">描述一个关节限制  <a href="struct_light_joint_limit_desc.html#_details">更多...</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_joint_limit_pair_desc.html">LightJointLimitPairDesc</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">描述一双关节限制  <a href="struct_light_joint_limit_pair_desc.html#_details">更多...</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_spherical_joint_desc.html">LightSphericalJointDesc</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">球窝关节描述符  <a href="struct_light_spherical_joint_desc.html#_details">更多...</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_distance_joint_desc.html">LightDistanceJointDesc</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">距离关节描述符  <a href="struct_light_distance_joint_desc.html#_details">更多...</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_motor_desc.html">LightMotorDesc</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">描述一个关节发动机  <a href="struct_light_motor_desc.html#_details">更多...</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_pulley_joint_desc.html">LightPulleyJointDesc</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">滑轮关节描述符  <a href="struct_light_pulley_joint_desc.html#_details">更多...</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_joint_desc.html">LightJointDesc</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">关节描述符结构  <a href="struct_light_joint_desc.html#_details">更多...</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_joint.html">LightJoint</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">关节类  <a href="class_light_joint.html#_details">更多...</a><br></td></tr>
+<tr><td colspan="2"><br><h2>枚举</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="joint_8h.html#4bd677d96b3d9ebabcdd7760be5f5d30">LightJointType</a> { <br>
+&nbsp;&nbsp;<a class="el" href="joint_8h.html#4bd677d96b3d9ebabcdd7760be5f5d30f116e823ad286055835e9cd5370bcaf3">LIGHT_JOINT_PRISMATIC</a>, 
+<a class="el" href="joint_8h.html#4bd677d96b3d9ebabcdd7760be5f5d30af464c1bf3ea63c7ebaa3b106e745cad">LIGHT_JOINT_REVOLUTE</a>, 
+<a class="el" href="joint_8h.html#4bd677d96b3d9ebabcdd7760be5f5d30d80a41b5742ce40f9611685b834258b7">LIGHT_JOINT_CYLINDRICAL</a>, 
+<a class="el" href="joint_8h.html#4bd677d96b3d9ebabcdd7760be5f5d309840a25ba946d83abd2d8ae5c0340371">LIGHT_JOINT_SPHERICAL</a>, 
+<br>
+&nbsp;&nbsp;<a class="el" href="joint_8h.html#4bd677d96b3d9ebabcdd7760be5f5d30c041dca1ac959e0da36c8145ef5dce88">LIGHT_JOINT_POINT_ON_LINE</a>, 
+<a class="el" href="joint_8h.html#4bd677d96b3d9ebabcdd7760be5f5d3077909b66e4d652e404f1cc4be631b076">LIGHT_JOINT_POINT_IN_PLANE</a>, 
+<a class="el" href="joint_8h.html#4bd677d96b3d9ebabcdd7760be5f5d301660594749c56ab2e3034361906d16ee">LIGHT_JOINT_DISTANCE</a>, 
+<a class="el" href="joint_8h.html#4bd677d96b3d9ebabcdd7760be5f5d3015f95be65ebd36c06d035d104591d85c">LIGHT_JOINT_PULLEY</a>, 
+<br>
+&nbsp;&nbsp;<a class="el" href="joint_8h.html#4bd677d96b3d9ebabcdd7760be5f5d3094a8cffddc8c35e8d28985493256e017">LIGHT_JOINT_FIXED</a>
+<br>
+ }</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">关节类型  <a href="joint_8h.html#4bd677d96b3d9ebabcdd7760be5f5d30">更多...</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="joint_8h.html#59acdf9da7df51622f0188f682ea908d">LightJointFlag</a> { <a class="el" href="joint_8h.html#59acdf9da7df51622f0188f682ea908d2ec124cebb887282ffeeecf8cc1707c0">LIGHT_JF_COLLISION_ENABLED</a> =  (1&lt;&lt;0), 
+<a class="el" href="joint_8h.html#59acdf9da7df51622f0188f682ea908d74bd4beff2bfae0075946ef98a3cfe64">LIGHT_JF_VISUALIZATION</a> =  (1&lt;&lt;1)
+ }</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">关节标志位  <a href="joint_8h.html#59acdf9da7df51622f0188f682ea908d">更多...</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="joint_8h.html#067c6e0ce3d6e482ee54bb4a9d26c5c3">LightSphericalJointFlag</a> { <br>
+&nbsp;&nbsp;<a class="el" href="joint_8h.html#067c6e0ce3d6e482ee54bb4a9d26c5c326e084b8dca6f4f62a5314efddf007bf">LIGHT_SJF_TWIST_LIMIT_ENABLED</a> =  1 &lt;&lt; 0, 
+<a class="el" href="joint_8h.html#067c6e0ce3d6e482ee54bb4a9d26c5c33c71248b0603bfb32a562e1d82951cdb">LIGHT_SJF_SWING_LIMIT_ENABLED</a> =  1 &lt;&lt; 1, 
+<a class="el" href="joint_8h.html#067c6e0ce3d6e482ee54bb4a9d26c5c3e422fa63c1acad45447219f488a49d0f">LIGHT_SJF_TWIST_SPRING_ENABLED</a> =  1 &lt;&lt; 2, 
+<a class="el" href="joint_8h.html#067c6e0ce3d6e482ee54bb4a9d26c5c3f75d7acb668904fb6c32645312eb7d56">LIGHT_SJF_SWING_SPRING_ENABLED</a> =  1 &lt;&lt; 3, 
+<br>
+&nbsp;&nbsp;<a class="el" href="joint_8h.html#067c6e0ce3d6e482ee54bb4a9d26c5c32d593e0af514b9b704190ba0c693e3ec">LIGHT_SJF_JOINT_SPRING_ENABLED</a> =  1 &lt;&lt; 4, 
+<a class="el" href="joint_8h.html#067c6e0ce3d6e482ee54bb4a9d26c5c39ca984d5a066a79cc55fa107f7d56784">LIGHT_SJF_PERPENDICULAR_DIR_CONSTRAINTS</a> =  1 &lt;&lt; 5
+<br>
+ }</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">控制球窝关节行为的标志位  <a href="joint_8h.html#067c6e0ce3d6e482ee54bb4a9d26c5c3">更多...</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="joint_8h.html#d1614231fc54ecadb23aa3af42418740">LightDistanceJointFlag</a> { <a class="el" href="joint_8h.html#d1614231fc54ecadb23aa3af4241874004e9db91a81cad615e7eba5657175b8c">LIGHT_DJF_MAX_DISTANCE_ENABLED</a> =  1 &lt;&lt; 0, 
+<a class="el" href="joint_8h.html#d1614231fc54ecadb23aa3af42418740f2553be3c4c106d89e636cfaf7b8cc0f">LIGHT_DJF_MIN_DISTANCE_ENABLED</a> =  1 &lt;&lt; 1, 
+<a class="el" href="joint_8h.html#d1614231fc54ecadb23aa3af42418740d4e9be28ae0a3967c5ad14f09681268f">LIGHT_DJF_SPRING_ENABLED</a> =  1 &lt;&lt; 2
+ }</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">控制距离关节行为的标志  <a href="joint_8h.html#d1614231fc54ecadb23aa3af42418740">更多...</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="joint_8h.html#953203e70a0ff3e9e45ed98428b67604">LightPulleyJointFlag</a> { <a class="el" href="joint_8h.html#953203e70a0ff3e9e45ed98428b67604ab84454f7a969e26732579ae064ae258">LIGHT_PJF_IS_RIGID</a> =  1 &lt;&lt; 0, 
+<a class="el" href="joint_8h.html#953203e70a0ff3e9e45ed98428b676045784826010571e33713dcd400dcb95cd">LIGHT_PJF_MOTOR_ENABLED</a> =  1 &lt;&lt; 1
+ }</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">控制滑轮关节行为的标志位  <a href="joint_8h.html#953203e70a0ff3e9e45ed98428b67604">更多...</a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+关节函数. 此文件是关节函数头文件. <hr><h2>枚举类型文档</h2>
+<a class="anchor" name="d1614231fc54ecadb23aa3af42418740"></a><!-- doxytag: member="joint.h::LightDistanceJointFlag" ref="d1614231fc54ecadb23aa3af42418740" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="joint_8h.html#d1614231fc54ecadb23aa3af42418740">LightDistanceJointFlag</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+控制距离关节行为的标志 
+<p>
+<dl compact><dt><b>枚举值: </b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" name="d1614231fc54ecadb23aa3af4241874004e9db91a81cad615e7eba5657175b8c"></a><!-- doxytag: member="LIGHT_DJF_MAX_DISTANCE_ENABLED" ref="d1614231fc54ecadb23aa3af4241874004e9db91a81cad615e7eba5657175b8c" args="" -->LIGHT_DJF_MAX_DISTANCE_ENABLED</em>&nbsp;</td><td>
+如果该位为 1，关节执行最大分开距离 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="d1614231fc54ecadb23aa3af42418740f2553be3c4c106d89e636cfaf7b8cc0f"></a><!-- doxytag: member="LIGHT_DJF_MIN_DISTANCE_ENABLED" ref="d1614231fc54ecadb23aa3af42418740f2553be3c4c106d89e636cfaf7b8cc0f" args="" -->LIGHT_DJF_MIN_DISTANCE_ENABLED</em>&nbsp;</td><td>
+如果该位为 1，关节执行最小分开距离 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="d1614231fc54ecadb23aa3af42418740d4e9be28ae0a3967c5ad14f09681268f"></a><!-- doxytag: member="LIGHT_DJF_SPRING_ENABLED" ref="d1614231fc54ecadb23aa3af42418740d4e9be28ae0a3967c5ad14f09681268f" args="" -->LIGHT_DJF_SPRING_ENABLED</em>&nbsp;</td><td>
+如果该位为 1，弹性激活 </td></tr>
+</table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="59acdf9da7df51622f0188f682ea908d"></a><!-- doxytag: member="joint.h::LightJointFlag" ref="59acdf9da7df51622f0188f682ea908d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="joint_8h.html#59acdf9da7df51622f0188f682ea908d">LightJointFlag</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+关节标志位 
+<p>
+<dl compact><dt><b>枚举值: </b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" name="59acdf9da7df51622f0188f682ea908d2ec124cebb887282ffeeecf8cc1707c0"></a><!-- doxytag: member="LIGHT_JF_COLLISION_ENABLED" ref="59acdf9da7df51622f0188f682ea908d2ec124cebb887282ffeeecf8cc1707c0" args="" -->LIGHT_JF_COLLISION_ENABLED</em>&nbsp;</td><td>
+如果绑定到关节的刚体之间碰撞检测激活，此标志位为真。缺省情况下由关节联接的一对刚体不发生碰撞约束 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="59acdf9da7df51622f0188f682ea908d74bd4beff2bfae0075946ef98a3cfe64"></a><!-- doxytag: member="LIGHT_JF_VISUALIZATION" ref="59acdf9da7df51622f0188f682ea908d74bd4beff2bfae0075946ef98a3cfe64" args="" -->LIGHT_JF_VISUALIZATION</em>&nbsp;</td><td>
+为这个关节打开调试渲染器 </td></tr>
+</table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="4bd677d96b3d9ebabcdd7760be5f5d30"></a><!-- doxytag: member="joint.h::LightJointType" ref="4bd677d96b3d9ebabcdd7760be5f5d30" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="joint_8h.html#4bd677d96b3d9ebabcdd7760be5f5d30">LightJointType</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+关节类型 
+<p>
+<dl compact><dt><b>枚举值: </b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" name="4bd677d96b3d9ebabcdd7760be5f5d30f116e823ad286055835e9cd5370bcaf3"></a><!-- doxytag: member="LIGHT_JOINT_PRISMATIC" ref="4bd677d96b3d9ebabcdd7760be5f5d30f116e823ad286055835e9cd5370bcaf3" args="" -->LIGHT_JOINT_PRISMATIC</em>&nbsp;</td><td>
+长方体活塞关节，两个角色仅能做相对平移运动，不能旋转 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="4bd677d96b3d9ebabcdd7760be5f5d30af464c1bf3ea63c7ebaa3b106e745cad"></a><!-- doxytag: member="LIGHT_JOINT_REVOLUTE" ref="4bd677d96b3d9ebabcdd7760be5f5d30af464c1bf3ea63c7ebaa3b106e745cad" args="" -->LIGHT_JOINT_REVOLUTE</em>&nbsp;</td><td>
+合页（铰链）关节，两个角色仅能绕共同的轴做旋转运动 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="4bd677d96b3d9ebabcdd7760be5f5d30d80a41b5742ce40f9611685b834258b7"></a><!-- doxytag: member="LIGHT_JOINT_CYLINDRICAL" ref="4bd677d96b3d9ebabcdd7760be5f5d30d80a41b5742ce40f9611685b834258b7" args="" -->LIGHT_JOINT_CYLINDRICAL</em>&nbsp;</td><td>
+圆柱体活塞关节，两个角色不仅能绕轴做相对平移运动，也能绕轴做相对旋转运动 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="4bd677d96b3d9ebabcdd7760be5f5d309840a25ba946d83abd2d8ae5c0340371"></a><!-- doxytag: member="LIGHT_JOINT_SPHERICAL" ref="4bd677d96b3d9ebabcdd7760be5f5d309840a25ba946d83abd2d8ae5c0340371" args="" -->LIGHT_JOINT_SPHERICAL</em>&nbsp;</td><td>
+球窝关节，也称万向节 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="4bd677d96b3d9ebabcdd7760be5f5d30c041dca1ac959e0da36c8145ef5dce88"></a><!-- doxytag: member="LIGHT_JOINT_POINT_ON_LINE" ref="4bd677d96b3d9ebabcdd7760be5f5d30c041dca1ac959e0da36c8145ef5dce88" args="" -->LIGHT_JOINT_POINT_ON_LINE</em>&nbsp;</td><td>
+点在线关节 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="4bd677d96b3d9ebabcdd7760be5f5d3077909b66e4d652e404f1cc4be631b076"></a><!-- doxytag: member="LIGHT_JOINT_POINT_IN_PLANE" ref="4bd677d96b3d9ebabcdd7760be5f5d3077909b66e4d652e404f1cc4be631b076" args="" -->LIGHT_JOINT_POINT_IN_PLANE</em>&nbsp;</td><td>
+点在面关节 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="4bd677d96b3d9ebabcdd7760be5f5d301660594749c56ab2e3034361906d16ee"></a><!-- doxytag: member="LIGHT_JOINT_DISTANCE" ref="4bd677d96b3d9ebabcdd7760be5f5d301660594749c56ab2e3034361906d16ee" args="" -->LIGHT_JOINT_DISTANCE</em>&nbsp;</td><td>
+距离关节，一个角色上的一点和另一个角色上的一点始终保持一个不变的距离 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="4bd677d96b3d9ebabcdd7760be5f5d3015f95be65ebd36c06d035d104591d85c"></a><!-- doxytag: member="LIGHT_JOINT_PULLEY" ref="4bd677d96b3d9ebabcdd7760be5f5d3015f95be65ebd36c06d035d104591d85c" args="" -->LIGHT_JOINT_PULLEY</em>&nbsp;</td><td>
+一个滑轮关节 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="4bd677d96b3d9ebabcdd7760be5f5d3094a8cffddc8c35e8d28985493256e017"></a><!-- doxytag: member="LIGHT_JOINT_FIXED" ref="4bd677d96b3d9ebabcdd7760be5f5d3094a8cffddc8c35e8d28985493256e017" args="" -->LIGHT_JOINT_FIXED</em>&nbsp;</td><td>
+一个固定连接，两个角色之间没有相对运动，就好像用胶水粘住了一样 </td></tr>
+</table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="953203e70a0ff3e9e45ed98428b67604"></a><!-- doxytag: member="joint.h::LightPulleyJointFlag" ref="953203e70a0ff3e9e45ed98428b67604" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="joint_8h.html#953203e70a0ff3e9e45ed98428b67604">LightPulleyJointFlag</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+控制滑轮关节行为的标志位 
+<p>
+<dl compact><dt><b>枚举值: </b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" name="953203e70a0ff3e9e45ed98428b67604ab84454f7a969e26732579ae064ae258"></a><!-- doxytag: member="LIGHT_PJF_IS_RIGID" ref="953203e70a0ff3e9e45ed98428b67604ab84454f7a969e26732579ae064ae258" args="" -->LIGHT_PJF_IS_RIGID</em>&nbsp;</td><td>
+如果该标志位为 1，关节同时维护一个最小距离，否则仅仅一个最大距离 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="953203e70a0ff3e9e45ed98428b676045784826010571e33713dcd400dcb95cd"></a><!-- doxytag: member="LIGHT_PJF_MOTOR_ENABLED" ref="953203e70a0ff3e9e45ed98428b676045784826010571e33713dcd400dcb95cd" args="" -->LIGHT_PJF_MOTOR_ENABLED</em>&nbsp;</td><td>
+如果该标志位为 1，发动机激活 </td></tr>
+</table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="067c6e0ce3d6e482ee54bb4a9d26c5c3"></a><!-- doxytag: member="joint.h::LightSphericalJointFlag" ref="067c6e0ce3d6e482ee54bb4a9d26c5c3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="joint_8h.html#067c6e0ce3d6e482ee54bb4a9d26c5c3">LightSphericalJointFlag</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+控制球窝关节行为的标志位 
+<p>
+<dl compact><dt><b>枚举值: </b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" name="067c6e0ce3d6e482ee54bb4a9d26c5c326e084b8dca6f4f62a5314efddf007bf"></a><!-- doxytag: member="LIGHT_SJF_TWIST_LIMIT_ENABLED" ref="067c6e0ce3d6e482ee54bb4a9d26c5c326e084b8dca6f4f62a5314efddf007bf" args="" -->LIGHT_SJF_TWIST_LIMIT_ENABLED</em>&nbsp;</td><td>
+如果扭动限制有效，此标志位为真 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="067c6e0ce3d6e482ee54bb4a9d26c5c33c71248b0603bfb32a562e1d82951cdb"></a><!-- doxytag: member="LIGHT_SJF_SWING_LIMIT_ENABLED" ref="067c6e0ce3d6e482ee54bb4a9d26c5c33c71248b0603bfb32a562e1d82951cdb" args="" -->LIGHT_SJF_SWING_LIMIT_ENABLED</em>&nbsp;</td><td>
+如果摆动限制有效，此标志位为真 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="067c6e0ce3d6e482ee54bb4a9d26c5c3e422fa63c1acad45447219f488a49d0f"></a><!-- doxytag: member="LIGHT_SJF_TWIST_SPRING_ENABLED" ref="067c6e0ce3d6e482ee54bb4a9d26c5c3e422fa63c1acad45447219f488a49d0f" args="" -->LIGHT_SJF_TWIST_SPRING_ENABLED</em>&nbsp;</td><td>
+如果扭动弹性有效，此标志位为真 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="067c6e0ce3d6e482ee54bb4a9d26c5c3f75d7acb668904fb6c32645312eb7d56"></a><!-- doxytag: member="LIGHT_SJF_SWING_SPRING_ENABLED" ref="067c6e0ce3d6e482ee54bb4a9d26c5c3f75d7acb668904fb6c32645312eb7d56" args="" -->LIGHT_SJF_SWING_SPRING_ENABLED</em>&nbsp;</td><td>
+如果摆动弹性有效，此标志位为真 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="067c6e0ce3d6e482ee54bb4a9d26c5c32d593e0af514b9b704190ba0c693e3ec"></a><!-- doxytag: member="LIGHT_SJF_JOINT_SPRING_ENABLED" ref="067c6e0ce3d6e482ee54bb4a9d26c5c32d593e0af514b9b704190ba0c693e3ec" args="" -->LIGHT_SJF_JOINT_SPRING_ENABLED</em>&nbsp;</td><td>
+如果关节弹性有效，此标志位为真 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="067c6e0ce3d6e482ee54bb4a9d26c5c39ca984d5a066a79cc55fa107f7d56784"></a><!-- doxytag: member="LIGHT_SJF_PERPENDICULAR_DIR_CONSTRAINTS" ref="067c6e0ce3d6e482ee54bb4a9d26c5c39ca984d5a066a79cc55fa107f7d56784" args="" -->LIGHT_SJF_PERPENDICULAR_DIR_CONSTRAINTS</em>&nbsp;</td><td>
+给线性运动增加另外约束 </td></tr>
+</table>
+</dl>
+
+</div>
+</div><p>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:31 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

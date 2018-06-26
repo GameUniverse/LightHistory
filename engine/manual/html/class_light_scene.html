@@ -1,0 +1,615 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightScene类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightScene类参考</h1><!-- doxytag: class="LightScene" -->场景类  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;scene.h&gt;</code>
+<p>
+<a href="class_light_scene-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_engine.html">LightEngine</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_scene.html#4b16eefc27f65e1175478e0594074ecb">getEngine</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询父引擎  <a href="#4b16eefc27f65e1175478e0594074ecb"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_scene.html#9f2ac7ce6159b370dfb7d7e691222856">releaseActor</a> (<a class="el" href="class_light_actor.html">LightActor</a> *actor)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放一个角色  <a href="#9f2ac7ce6159b370dfb7d7e691222856"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_scene.html#a475da892da0ad52d6b6e6db6c007c4c">releasePhysicsMaterial</a> (<a class="el" href="class_light_physics_material.html">LightPhysicsMaterial</a> *physicsMaterial)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放一个物理材质  <a href="#a475da892da0ad52d6b6e6db6c007c4c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_scene.html#13c020ef87e046bd3e1c3729ead88210">releaseCharacter</a> (<a class="el" href="class_light_character.html">LightCharacter</a> *character)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放一个角色控制对象  <a href="#13c020ef87e046bd3e1c3729ead88210"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_scene.html#5ef75ad28fd51cb5ae7776399b80730a">render</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">渲染场景  <a href="#5ef75ad28fd51cb5ae7776399b80730a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_scene.html#f04368329951b95b7c406f78ec1797ec">setGroupCollisionFlag</a> (<a class="el" href="actor_8h.html#aab61f927f3e34af29ceab2d25589f80">LightCollisionGroup</a> group1, <a class="el" href="actor_8h.html#aab61f927f3e34af29ceab2d25589f80">LightCollisionGroup</a> group2, bool enable)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">指定一对形状组是否执行碰撞检测  <a href="#f04368329951b95b7c406f78ec1797ec"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_scene.html#01494e34d6616f5b40d584a74a65dfe8">getGroupCollisionFlag</a> (<a class="el" href="actor_8h.html#aab61f927f3e34af29ceab2d25589f80">LightCollisionGroup</a> group1, <a class="el" href="actor_8h.html#aab61f927f3e34af29ceab2d25589f80">LightCollisionGroup</a> group2)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询两个形状组之间是否执行碰撞检测  <a href="#01494e34d6616f5b40d584a74a65dfe8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_scene.html#ce219e3c22bcc3a76c4829819c73e9e6">setUserContactReport</a> (LightUserContactReport *callback)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置用户角色接触报告函数  <a href="#ce219e3c22bcc3a76c4829819c73e9e6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_scene.html#300b04d2e5b5ce64d0f3d14096cbad67">raycastAnyBounds</a> (const <a class="el" href="struct_light_ray.html">LightRay</a> &amp;worldRay, <a class="el" href="scene_8h.html#f3b8320fcdd99f02a04feaf3ac204c46">LightShapesType</a> shapesType, unsigned long groups=0xffffffff, float maxDist=LIGHT_MAX_F32, const LightGroupsMask *groupsMask=NULL)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">判断光线是否与角色 AABB（轴对齐包围盒）相交  <a href="#300b04d2e5b5ce64d0f3d14096cbad67"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_scene.html#dfa12a6f535f55e316bd35900e21b9fd">raycastAnyShape</a> (const <a class="el" href="struct_light_ray.html">LightRay</a> &amp;worldRay, <a class="el" href="scene_8h.html#f3b8320fcdd99f02a04feaf3ac204c46">LightShapesType</a> shapesType, unsigned long groups=0xffffffff, float maxDist=LIGHT_MAX_F32, const LightGroupsMask *groupsMask=NULL, LightActor **cache=NULL)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">判断光线是否与角色相交  <a href="#dfa12a6f535f55e316bd35900e21b9fd"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_actor.html">LightActor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_scene.html#ae5716cae75d13620d80cf88ab5e80f5">raycastClosestBounds</a> (const <a class="el" href="struct_light_ray.html">LightRay</a> &amp;worldRay, <a class="el" href="scene_8h.html#f3b8320fcdd99f02a04feaf3ac204c46">LightShapesType</a> shapesType, <a class="el" href="struct_light_raycast_hit.html">LightRaycastHit</a> &amp;hit, unsigned long groups=0xffffffff, float maxDist=LIGHT_MAX_F32, unsigned long hintFlags=0xffffffff, const LightGroupsMask *groupsMask=NULL)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">返回第一个与光线相交 AABB（轴对齐包围盒）包含的 shapeType 类型的形状  <a href="#ae5716cae75d13620d80cf88ab5e80f5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_actor.html">LightActor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_scene.html#2dbf63a59bfd317d5be24aaeea1d28a9">raycastClosestShape</a> (const <a class="el" href="struct_light_ray.html">LightRay</a> &amp;worldRay, <a class="el" href="scene_8h.html#f3b8320fcdd99f02a04feaf3ac204c46">LightShapesType</a> shapesType, <a class="el" href="struct_light_raycast_hit.html">LightRaycastHit</a> &amp;hit, unsigned long groups=0xffffffff, float maxDist=LIGHT_MAX_F32, unsigned long hintFlags=0xffffffff, const LightGroupsMask *groupsMask=NULL, LightActor **cache=NULL)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">返回第一个与光线相交 shapeType 类型的形状  <a href="#2dbf63a59bfd317d5be24aaeea1d28a9"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+场景类 
+<p>
+本类负责场景文件的读取、显示和管理，目前支持 3ds 格式的静态网格场景文件。 每个 <a class="el" href="class_light_scene.html">LightScene</a> 实例都必须通过 <a class="el" href="class_light_engine.html">LightEngine</a> 类的 createScene 方法分配。 
+<p>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="4b16eefc27f65e1175478e0594074ecb"></a><!-- doxytag: member="LightScene::getEngine" ref="4b16eefc27f65e1175478e0594074ecb" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_engine.html">LightEngine</a>* LightScene::getEngine           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询父引擎 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回引擎指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9f2ac7ce6159b370dfb7d7e691222856"></a><!-- doxytag: member="LightScene::releaseActor" ref="9f2ac7ce6159b370dfb7d7e691222856" args="(LightActor *actor)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightScene::releaseActor           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_actor.html">LightActor</a> *&nbsp;</td>
+          <td class="paramname"> <em>actor</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放一个角色 
+<p>
+释放一个角色<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="class_light_actor.html">LightActor</a></em>&nbsp;</td><td>* actor 要释放角色的指针</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a475da892da0ad52d6b6e6db6c007c4c"></a><!-- doxytag: member="LightScene::releasePhysicsMaterial" ref="a475da892da0ad52d6b6e6db6c007c4c" args="(LightPhysicsMaterial *physicsMaterial)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightScene::releasePhysicsMaterial           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_physics_material.html">LightPhysicsMaterial</a> *&nbsp;</td>
+          <td class="paramname"> <em>physicsMaterial</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放一个物理材质 
+<p>
+释放一个物理材质<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="class_light_physics_material.html">LightPhysicsMaterial</a></em>&nbsp;</td><td>* physicsMaterial 要释放物理材质的指针</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="13c020ef87e046bd3e1c3729ead88210"></a><!-- doxytag: member="LightScene::releaseCharacter" ref="13c020ef87e046bd3e1c3729ead88210" args="(LightCharacter *character)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightScene::releaseCharacter           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_character.html">LightCharacter</a> *&nbsp;</td>
+          <td class="paramname"> <em>character</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放一个角色控制对象 
+<p>
+释放一个角色控制对象<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="class_light_character.html">LightCharacter</a></em>&nbsp;</td><td>* character 要释放的角色控制对象</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="5ef75ad28fd51cb5ae7776399b80730a"></a><!-- doxytag: member="LightScene::render" ref="5ef75ad28fd51cb5ae7776399b80730a" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightScene::render           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+渲染场景 
+<p>
+将场景渲染到屏幕或窗口<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有参数。</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f04368329951b95b7c406f78ec1797ec"></a><!-- doxytag: member="LightScene::setGroupCollisionFlag" ref="f04368329951b95b7c406f78ec1797ec" args="(LightCollisionGroup group1, LightCollisionGroup group2, bool enable)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightScene::setGroupCollisionFlag           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="actor_8h.html#aab61f927f3e34af29ceab2d25589f80">LightCollisionGroup</a>&nbsp;</td>
+          <td class="paramname"> <em>group1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="actor_8h.html#aab61f927f3e34af29ceab2d25589f80">LightCollisionGroup</a>&nbsp;</td>
+          <td class="paramname"> <em>group2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>enable</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+指定一对形状组是否执行碰撞检测 
+<p>
+LightCollisionGroup 是一个 0~31 之间的整数。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>group1</em>&nbsp;</td><td>第一组</td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>group2</em>&nbsp;</td><td>第二组</td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>enable</em>&nbsp;</td><td>TRUE 开启（FALSE 关闭）两个组之间的碰撞检测。</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="01494e34d6616f5b40d584a74a65dfe8"></a><!-- doxytag: member="LightScene::getGroupCollisionFlag" ref="01494e34d6616f5b40d584a74a65dfe8" args="(LightCollisionGroup group1, LightCollisionGroup group2)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool LightScene::getGroupCollisionFlag           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="actor_8h.html#aab61f927f3e34af29ceab2d25589f80">LightCollisionGroup</a>&nbsp;</td>
+          <td class="paramname"> <em>group1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="actor_8h.html#aab61f927f3e34af29ceab2d25589f80">LightCollisionGroup</a>&nbsp;</td>
+          <td class="paramname"> <em>group2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询两个形状组之间是否执行碰撞检测 
+<p>
+LightCollisionGroup 是一个 0~31 之间的整数。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>group1</em>&nbsp;</td><td>第一组</td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>group2</em>&nbsp;</td><td>第二组</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>两个组之间的碰撞检测状态，TRUE 开启（FALSE 关闭）。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ce219e3c22bcc3a76c4829819c73e9e6"></a><!-- doxytag: member="LightScene::setUserContactReport" ref="ce219e3c22bcc3a76c4829819c73e9e6" args="(LightUserContactReport *callback)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightScene::setUserContactReport           </td>
+          <td>(</td>
+          <td class="paramtype">LightUserContactReport *&nbsp;</td>
+          <td class="paramname"> <em>callback</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置用户角色接触报告函数 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>callback</em>&nbsp;</td><td>用户角色接触报告监听函数指针</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="300b04d2e5b5ce64d0f3d14096cbad67"></a><!-- doxytag: member="LightScene::raycastAnyBounds" ref="300b04d2e5b5ce64d0f3d14096cbad67" args="(const LightRay &amp;worldRay, LightShapesType shapesType, unsigned long groups=0xffffffff, float maxDist=LIGHT_MAX_F32, const LightGroupsMask *groupsMask=NULL)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool LightScene::raycastAnyBounds           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_light_ray.html">LightRay</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>worldRay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="scene_8h.html#f3b8320fcdd99f02a04feaf3ac204c46">LightShapesType</a>&nbsp;</td>
+          <td class="paramname"> <em>shapesType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&nbsp;</td>
+          <td class="paramname"> <em>groups</em> = <code>0xffffffff</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>maxDist</em> = <code>LIGHT_MAX_F32</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_light_groups_mask.html">LightGroupsMask</a> *&nbsp;</td>
+          <td class="paramname"> <em>groupsMask</em> = <code>NULL</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+判断光线是否与角色 AABB（轴对齐包围盒）相交 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>worldRay</em>&nbsp;</td><td>在世界场景中投射的光线</td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>shapesType</em>&nbsp;</td><td>选择要投射的角色类型（静态、动态、静态和动态）</td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>groups</em>&nbsp;</td><td>角色过滤掩码</td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>maxDist</em>&nbsp;</td><td>沿光线向前检测相交的最大距离</td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>groupsMask</em>&nbsp;</td><td>可选的角色过滤掩码</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果光线与任何一个角色 AABB（轴对齐包围盒）相交，函数返回 TRUE，否则返回 FALSE。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="dfa12a6f535f55e316bd35900e21b9fd"></a><!-- doxytag: member="LightScene::raycastAnyShape" ref="dfa12a6f535f55e316bd35900e21b9fd" args="(const LightRay &amp;worldRay, LightShapesType shapesType, unsigned long groups=0xffffffff, float maxDist=LIGHT_MAX_F32, const LightGroupsMask *groupsMask=NULL, LightActor **cache=NULL)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool LightScene::raycastAnyShape           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_light_ray.html">LightRay</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>worldRay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="scene_8h.html#f3b8320fcdd99f02a04feaf3ac204c46">LightShapesType</a>&nbsp;</td>
+          <td class="paramname"> <em>shapesType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&nbsp;</td>
+          <td class="paramname"> <em>groups</em> = <code>0xffffffff</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>maxDist</em> = <code>LIGHT_MAX_F32</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_light_groups_mask.html">LightGroupsMask</a> *&nbsp;</td>
+          <td class="paramname"> <em>groupsMask</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_light_actor.html">LightActor</a> **&nbsp;</td>
+          <td class="paramname"> <em>cache</em> = <code>NULL</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+判断光线是否与角色相交 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>worldRay</em>&nbsp;</td><td>在世界场景中投射的光线</td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>shapesType</em>&nbsp;</td><td>选择要投射的角色类型（静态、动态、静态和动态）</td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>groups</em>&nbsp;</td><td>角色过滤掩码</td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>maxDist</em>&nbsp;</td><td>沿光线向前检测相交的最大距离</td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>groupsMask</em>&nbsp;</td><td>可选的角色过滤掩码</td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>cache</em>&nbsp;</td><td>持久稳固的光线投射可能使用的缓存，由引擎填写。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果光线与任何一个角色 AABB（轴对齐包围盒）相交，函数返回 TRUE，否则返回 FALSE。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ae5716cae75d13620d80cf88ab5e80f5"></a><!-- doxytag: member="LightScene::raycastClosestBounds" ref="ae5716cae75d13620d80cf88ab5e80f5" args="(const LightRay &amp;worldRay, LightShapesType shapesType, LightRaycastHit &amp;hit, unsigned long groups=0xffffffff, float maxDist=LIGHT_MAX_F32, unsigned long hintFlags=0xffffffff, const LightGroupsMask *groupsMask=NULL)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_actor.html">LightActor</a>* LightScene::raycastClosestBounds           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_light_ray.html">LightRay</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>worldRay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="scene_8h.html#f3b8320fcdd99f02a04feaf3ac204c46">LightShapesType</a>&nbsp;</td>
+          <td class="paramname"> <em>shapesType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_light_raycast_hit.html">LightRaycastHit</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>hit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&nbsp;</td>
+          <td class="paramname"> <em>groups</em> = <code>0xffffffff</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>maxDist</em> = <code>LIGHT_MAX_F32</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&nbsp;</td>
+          <td class="paramname"> <em>hintFlags</em> = <code>0xffffffff</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_light_groups_mask.html">LightGroupsMask</a> *&nbsp;</td>
+          <td class="paramname"> <em>groupsMask</em> = <code>NULL</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+返回第一个与光线相交 AABB（轴对齐包围盒）包含的 shapeType 类型的形状 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>worldRay</em>&nbsp;</td><td>在世界场景中投射的光线</td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>shapesType</em>&nbsp;</td><td>选择要投射的角色类型（静态、动态、静态和动态）</td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>hit</em>&nbsp;</td><td>相交点描述</td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>groups</em>&nbsp;</td><td>角色过滤掩码</td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>maxDist</em>&nbsp;</td><td>沿光线向前检测相交的最大距离</td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>hintFlags</em>&nbsp;</td><td>允许用户指定他们对 <a class="el" href="struct_light_raycast_hit.html">LightRaycastHit</a> 的哪个字段是感兴趣的</td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>groupsMask</em>&nbsp;</td><td>可选的角色过滤掩码</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回与光线相交的 AABB（轴对齐包围盒）包含的形状</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="2dbf63a59bfd317d5be24aaeea1d28a9"></a><!-- doxytag: member="LightScene::raycastClosestShape" ref="2dbf63a59bfd317d5be24aaeea1d28a9" args="(const LightRay &amp;worldRay, LightShapesType shapesType, LightRaycastHit &amp;hit, unsigned long groups=0xffffffff, float maxDist=LIGHT_MAX_F32, unsigned long hintFlags=0xffffffff, const LightGroupsMask *groupsMask=NULL, LightActor **cache=NULL)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_actor.html">LightActor</a>* LightScene::raycastClosestShape           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_light_ray.html">LightRay</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>worldRay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="scene_8h.html#f3b8320fcdd99f02a04feaf3ac204c46">LightShapesType</a>&nbsp;</td>
+          <td class="paramname"> <em>shapesType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_light_raycast_hit.html">LightRaycastHit</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>hit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&nbsp;</td>
+          <td class="paramname"> <em>groups</em> = <code>0xffffffff</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>maxDist</em> = <code>LIGHT_MAX_F32</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&nbsp;</td>
+          <td class="paramname"> <em>hintFlags</em> = <code>0xffffffff</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_light_groups_mask.html">LightGroupsMask</a> *&nbsp;</td>
+          <td class="paramname"> <em>groupsMask</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_light_actor.html">LightActor</a> **&nbsp;</td>
+          <td class="paramname"> <em>cache</em> = <code>NULL</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+返回第一个与光线相交 shapeType 类型的形状 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>worldRay</em>&nbsp;</td><td>在世界场景中投射的光线</td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>shapesType</em>&nbsp;</td><td>选择要投射的角色类型（静态、动态、静态和动态）</td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>hit</em>&nbsp;</td><td>相交点描述</td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>groups</em>&nbsp;</td><td>角色过滤掩码</td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>maxDist</em>&nbsp;</td><td>沿光线向前检测相交的最大距离</td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>hintFlags</em>&nbsp;</td><td>允许用户指定他们对 <a class="el" href="struct_light_raycast_hit.html">LightRaycastHit</a> 的哪个字段是感兴趣的</td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>groupsMask</em>&nbsp;</td><td>可选的角色过滤掩码</td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>cache</em>&nbsp;</td><td>持久稳固的光线投射可能使用的缓存，由引擎填写。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回与光线相交的形状</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/<a class="el" href="scene_8h.html">scene.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:35 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

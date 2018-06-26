@@ -1,0 +1,232 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightNetwork类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightNetwork类参考</h1><!-- doxytag: class="LightNetwork" -->网络引擎类  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;network.h&gt;</code>
+<p>
+<a href="class_light_network-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_network.html#f9aac3408995840da2b55ef001671789">receiveMessage</a> (HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">通知网络引擎收到一个窗口消息  <a href="#f9aac3408995840da2b55ef001671789"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_network.html#13317b1d59abbe225cc75bd8c0b4cca0">registerMessageProc</a> (WNDPROC lpfnWndProc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">注册窗口消息监听函数  <a href="#13317b1d59abbe225cc75bd8c0b4cca0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_network.html#e6e86453208fc1bedbf50acd1f13d96e">removeMessageProc</a> (WNDPROC lpfnWndProc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">移除窗口消息监听函数  <a href="#e6e86453208fc1bedbf50acd1f13d96e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_socket.html">LightSocket</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_network.html#9d5b47e045ded58529c2ceded49b33ec">createSocket</a> (const <a class="el" href="struct_light_socket_desc.html">LightSocketDesc</a> &amp;socketDesc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个网络套接字  <a href="#9d5b47e045ded58529c2ceded49b33ec"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_network.html#b32aa21a43b6a6e398df8e7776a653bf">releaseSocket</a> (<a class="el" href="class_light_socket.html">LightSocket</a> *socket)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放一个网络套接字  <a href="#b32aa21a43b6a6e398df8e7776a653bf"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+网络引擎类 
+<p>
+本类负责大部分网络系统功能的调用和其它所有网络类的实例分配，是网络引擎最重要的一个类。 此类的实例指针只能通过调用网络引擎创建函数 LightNetworkCreate 得到。举个例子： <br>
+ <br>
+ <br>
+ <a class="el" href="class_light_network.html">LightNetwork</a> * network; <br>
+ <a class="el" href="struct_light_network_desc.html">LightNetworkDesc</a> desc; <br>
+ <br>
+ // 创建光线网络引擎实例 <br>
+ memset( &amp;desc, 0, sizeof(desc) ); <br>
+ desc.hwnd = hwnd; <br>
+ network = LightNetworkCreate( desc ); <br>
+ <br>
+ // 做一些事情... <br>
+ <br>
+ // 释放光线网络引擎实例 <br>
+ LightNetworkRelease( network ); 
+<p>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="f9aac3408995840da2b55ef001671789"></a><!-- doxytag: member="LightNetwork::receiveMessage" ref="f9aac3408995840da2b55ef001671789" args="(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool LightNetwork::receiveMessage           </td>
+          <td>(</td>
+          <td class="paramtype">HWND&nbsp;</td>
+          <td class="paramname"> <em>hWnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT&nbsp;</td>
+          <td class="paramname"> <em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WPARAM&nbsp;</td>
+          <td class="paramname"> <em>wParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPARAM&nbsp;</td>
+          <td class="paramname"> <em>lParam</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+通知网络引擎收到一个窗口消息 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果消息已处理返回 TRUE, 否则返回 FALSE 值</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="13317b1d59abbe225cc75bd8c0b4cca0"></a><!-- doxytag: member="LightNetwork::registerMessageProc" ref="13317b1d59abbe225cc75bd8c0b4cca0" args="(WNDPROC lpfnWndProc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool LightNetwork::registerMessageProc           </td>
+          <td>(</td>
+          <td class="paramtype">WNDPROC&nbsp;</td>
+          <td class="paramname"> <em>lpfnWndProc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+注册窗口消息监听函数 
+<p>
+注册窗口消息监听函数，可以注册多个消息监听函数，这些函数都能收到窗口发来的所有消息。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>lpfnWndProc</em>&nbsp;</td><td>窗口消息监听函数</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果成功返回 TRUE, 否则返回 FALSE</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e6e86453208fc1bedbf50acd1f13d96e"></a><!-- doxytag: member="LightNetwork::removeMessageProc" ref="e6e86453208fc1bedbf50acd1f13d96e" args="(WNDPROC lpfnWndProc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool LightNetwork::removeMessageProc           </td>
+          <td>(</td>
+          <td class="paramtype">WNDPROC&nbsp;</td>
+          <td class="paramname"> <em>lpfnWndProc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+移除窗口消息监听函数 
+<p>
+移除窗口消息监听函数，只能移除前面已注册的窗口消息监听函数。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>lpfnWndProc</em>&nbsp;</td><td>窗口消息监听函数</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果成功返回 TRUE, 否则返回 FALSE</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9d5b47e045ded58529c2ceded49b33ec"></a><!-- doxytag: member="LightNetwork::createSocket" ref="9d5b47e045ded58529c2ceded49b33ec" args="(const LightSocketDesc &amp;socketDesc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_socket.html">LightSocket</a>* LightNetwork::createSocket           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_light_socket_desc.html">LightSocketDesc</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>socketDesc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个网络套接字 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>socketDesc</em>&nbsp;</td><td>网络套接字描述符指针，用于说明要创建套接字的特征。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回已创建的套接字指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b32aa21a43b6a6e398df8e7776a653bf"></a><!-- doxytag: member="LightNetwork::releaseSocket" ref="b32aa21a43b6a6e398df8e7776a653bf" args="(LightSocket *socket)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightNetwork::releaseSocket           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_socket.html">LightSocket</a> *&nbsp;</td>
+          <td class="paramname"> <em>socket</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放一个网络套接字 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>socket</em>&nbsp;</td><td>要释放网络套接字的指针</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/<a class="el" href="network_8h.html">network.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:34 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

@@ -1,0 +1,830 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightModelMD3类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightModelMD3类参考</h1><!-- doxytag: class="LightModelMD3" -->MD3 模型类  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;md3.h&gt;</code>
+<p>
+<a href="class_light_model_m_d3-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_model_m_d3.html#d72fec875e6bdde70bf892045fa377c1">LoadModel</a> (LPSTR strModel)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">将模型文件读入内存  <a href="#d72fec875e6bdde70bf892045fa377c1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_model_m_d3.html#022928a081d3825662bec31dd3337991">LoadWeapon</a> (LPSTR strModel)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">将武器模型读入内存  <a href="#022928a081d3825662bec31dd3337991"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_model_m_d3.html#6e73686c5476282768bce1a35202e0ff">SetBoundBox</a> (float x, float y, float z)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置模型包围盒大小  <a href="#6e73686c5476282768bce1a35202e0ff"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual const float *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_model_m_d3.html#a743fc53f617106269be8d8e50979c29">GetBoundBox</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询模型包围盒大小  <a href="#a743fc53f617106269be8d8e50979c29"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_model_m_d3.html#ffbb80bc24e8f0851a9535b6a5603e23">SetUpperState</a> (LPSTR UpperState)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置模型上部动作  <a href="#ffbb80bc24e8f0851a9535b6a5603e23"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_model_m_d3.html#32d0361e34046228f619a26b1dfa1ba9">SetLowerState</a> (LPSTR LowerState)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置模型下部动作  <a href="#32d0361e34046228f619a26b1dfa1ba9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual LPSTR&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_model_m_d3.html#2320789b87282052ebc31ee7f2440e66">GetUpperState</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询模型上部动作  <a href="#2320789b87282052ebc31ee7f2440e66"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual LPSTR&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_model_m_d3.html#f2c9a2e14895392148a6ba3788be5230">GetLowerState</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询模型下部动作  <a href="#f2c9a2e14895392148a6ba3788be5230"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_model_m_d3.html#f49f82081d7707a483156d90a3429958">Render</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">渲染模型  <a href="#f49f82081d7707a483156d90a3429958"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_model_m_d3.html#3e384b07f1e7948c681ba6be7d899fa2">RenderShadow</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">渲染模型阴影  <a href="#3e384b07f1e7948c681ba6be7d899fa2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_model_m_d3.html#9c30fc685a0cfda0a2c3ad908124211f">Adjust</a> (float x, float y, float z)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">校准模型位置  <a href="#9c30fc685a0cfda0a2c3ad908124211f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_model_m_d3.html#a66e27a6269a5528e4cd954358def258">SetPos</a> (float x, float y, float z)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置模型位置  <a href="#a66e27a6269a5528e4cd954358def258"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_model_m_d3.html#048f868d6a01a6ee88ef8c054f745af6">Goto</a> (float x, float y, float z)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">移动到指定位置  <a href="#048f868d6a01a6ee88ef8c054f745af6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_model_m_d3.html#31678314dfe052b20dc9b8fd73d28cb9">SetRotate</a> (float angle, float x, float y, float z)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置模型旋转角度  <a href="#31678314dfe052b20dc9b8fd73d28cb9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_model_m_d3.html#b9b96efc6662da66c2557e1f14e4920b">GetPos</a> (<a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> pos)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询模型位置  <a href="#b9b96efc6662da66c2557e1f14e4920b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_model_m_d3.html#c6c7efd5bf5dc786ffa424f3f372619f">IsOnGround</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询模型是否与地面接触  <a href="#c6c7efd5bf5dc786ffa424f3f372619f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_model_m_d3.html#00808d189f955ed243caed86c0687fca">CrossRay</a> (<a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> a, <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> b, <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> cross)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">检测指定线段与模型是否相交  <a href="#00808d189f955ed243caed86c0687fca"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_model_m_d3.html#a0713effae224eec7057728543d42a3e">CrossSphere</a> (<a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> start, <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> end, float radius, <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> cross)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">检测指定球体与模型是否发生碰撞  <a href="#a0713effae224eec7057728543d42a3e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_model_m_d3.html#d7e960b476e82e574ccbd7155e70f40e">CrossBox</a> (<a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> start, <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> end, <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> min, <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> max, <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> cross)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">检测指定包围盒与模型是否发生碰撞  <a href="#d7e960b476e82e574ccbd7155e70f40e"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+MD3 模型类 
+<p>
+本类负责 MD3 模型文件的读取和显示，支持身体上部和下部独立设置动作，支持武器绑定。 每个 <a class="el" href="class_light_model_m_d3.html">LightModelMD3</a> 实例都必须通过 <a class="el" href="class_light_engine.html">LightEngine</a> 类的 NewModelMD3 方法分配。 
+<p>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="d72fec875e6bdde70bf892045fa377c1"></a><!-- doxytag: member="LightModelMD3::LoadModel" ref="d72fec875e6bdde70bf892045fa377c1" args="(LPSTR strModel)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LightModelMD3::LoadModel           </td>
+          <td>(</td>
+          <td class="paramtype">LPSTR&nbsp;</td>
+          <td class="paramname"> <em>strModel</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+将模型文件读入内存 
+<p>
+文件名前缀将会被加到 _upper.md3, _lower.md3 or _head.md3 前面，然后再将其读入内存。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>LPSTR</em>&nbsp;</td><td>strModel 模型文件名前缀</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="022928a081d3825662bec31dd3337991"></a><!-- doxytag: member="LightModelMD3::LoadWeapon" ref="022928a081d3825662bec31dd3337991" args="(LPSTR strModel)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LightModelMD3::LoadWeapon           </td>
+          <td>(</td>
+          <td class="paramtype">LPSTR&nbsp;</td>
+          <td class="paramname"> <em>strModel</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+将武器模型读入内存 
+<p>
+文件名前缀将会被加到 .md3 前面，然后再将其读入内存。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>LPSTR</em>&nbsp;</td><td>strModel 模型文件名前缀</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>武器模型被读入内存后，会自动和人物的模型绑定，随人物模型正确运动。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="6e73686c5476282768bce1a35202e0ff"></a><!-- doxytag: member="LightModelMD3::SetBoundBox" ref="6e73686c5476282768bce1a35202e0ff" args="(float x, float y, float z)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightModelMD3::SetBoundBox           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置模型包围盒大小 
+<p>
+设置模型包围盒大小<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>x 包围盒 x 轴方向的大小</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>y 包围盒 y 轴方向的大小</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>z 包围盒 z 轴方向的大小</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a743fc53f617106269be8d8e50979c29"></a><!-- doxytag: member="LightModelMD3::GetBoundBox" ref="a743fc53f617106269be8d8e50979c29" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float * LightModelMD3::GetBoundBox           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询模型包围盒大小 
+<p>
+查询模型包围盒大小<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有参数。</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回指向包围盒大小的只读指针。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ffbb80bc24e8f0851a9535b6a5603e23"></a><!-- doxytag: member="LightModelMD3::SetUpperState" ref="ffbb80bc24e8f0851a9535b6a5603e23" args="(LPSTR UpperState)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightModelMD3::SetUpperState           </td>
+          <td>(</td>
+          <td class="paramtype">LPSTR&nbsp;</td>
+          <td class="paramname"> <em>UpperState</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置模型上部动作 
+<p>
+设置模型上部动作<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>LPSTR</em>&nbsp;</td><td>UpperState 模型上部动作</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>动作由一个字符串指定。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="32d0361e34046228f619a26b1dfa1ba9"></a><!-- doxytag: member="LightModelMD3::SetLowerState" ref="32d0361e34046228f619a26b1dfa1ba9" args="(LPSTR LowerState)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightModelMD3::SetLowerState           </td>
+          <td>(</td>
+          <td class="paramtype">LPSTR&nbsp;</td>
+          <td class="paramname"> <em>LowerState</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置模型下部动作 
+<p>
+设置模型下部动作<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>LPSTR</em>&nbsp;</td><td>UpperState 模型下部动作</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>动作由一个字符串指定。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="2320789b87282052ebc31ee7f2440e66"></a><!-- doxytag: member="LightModelMD3::GetUpperState" ref="2320789b87282052ebc31ee7f2440e66" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPSTR LightModelMD3::GetUpperState           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询模型上部动作 
+<p>
+查询模型上部动作<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有任何参数</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>动作由一个字符串指定。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回一个动作字符串指针；如果函数调用失败，返回空指针 NULL。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f2c9a2e14895392148a6ba3788be5230"></a><!-- doxytag: member="LightModelMD3::GetLowerState" ref="f2c9a2e14895392148a6ba3788be5230" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPSTR LightModelMD3::GetLowerState           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询模型下部动作 
+<p>
+查询模型下部动作<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有任何参数</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>动作由一个字符串指定。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回一个动作字符串指针；如果函数调用失败，返回空指针 NULL。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f49f82081d7707a483156d90a3429958"></a><!-- doxytag: member="LightModelMD3::Render" ref="f49f82081d7707a483156d90a3429958" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightModelMD3::Render           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+渲染模型 
+<p>
+将模型渲染到屏幕或窗口<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有参数。</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="3e384b07f1e7948c681ba6be7d899fa2"></a><!-- doxytag: member="LightModelMD3::RenderShadow" ref="3e384b07f1e7948c681ba6be7d899fa2" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightModelMD3::RenderShadow           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+渲染模型阴影 
+<p>
+将模型阴影渲染到屏幕或窗口<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有参数。</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9c30fc685a0cfda0a2c3ad908124211f"></a><!-- doxytag: member="LightModelMD3::Adjust" ref="9c30fc685a0cfda0a2c3ad908124211f" args="(float x, float y, float z)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightModelMD3::Adjust           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+校准模型位置 
+<p>
+移动模型位置，使其处于正确的中心位置。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>x 校准量的 x 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>y 校准量的 y 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>z 校准量的 z 分量</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>下一次调用该函数前一直有效。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a66e27a6269a5528e4cd954358def258"></a><!-- doxytag: member="LightModelMD3::SetPos" ref="a66e27a6269a5528e4cd954358def258" args="(float x, float y, float z)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightModelMD3::SetPos           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置模型位置 
+<p>
+设置模型在场景中的位置坐标。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>x 模型位置的 x 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>y 模型位置的 y 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>z 模型位置的 z 坐标</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>直接将模型的位置设置为 （x, y, z），不进行碰撞检测的计算。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="048f868d6a01a6ee88ef8c054f745af6"></a><!-- doxytag: member="LightModelMD3::Goto" ref="048f868d6a01a6ee88ef8c054f745af6" args="(float x, float y, float z)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightModelMD3::Goto           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+移动到指定位置 
+<p>
+将模型移动到指定位置<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>x 目标位置的 x 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>y 目标位置的 y 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>z 目标位置的 z 坐标</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>如果模型在新位置与场景没有发生碰撞，则位置设置成功，否则模型位置被设置为碰撞后位置。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="31678314dfe052b20dc9b8fd73d28cb9"></a><!-- doxytag: member="LightModelMD3::SetRotate" ref="31678314dfe052b20dc9b8fd73d28cb9" args="(float angle, float x, float y, float z)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightModelMD3::SetRotate           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置模型旋转角度 
+<p>
+设置模型在场景中的旋转角度。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>angle 模型的旋转角度</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>x 旋转轴向量 x 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>y 旋转轴向量 y 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>z 旋转轴向量 z 分量</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>旋转时以原点和该向量组成的线段为轴进行旋转。如果模型在新角度与场景没有发生碰撞，则旋转角度位置设置成功， 否则模型角度被设置为碰撞后旋转角度。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b9b96efc6662da66c2557e1f14e4920b"></a><!-- doxytag: member="LightModelMD3::GetPos" ref="b9b96efc6662da66c2557e1f14e4920b" args="(vec3_t pos)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightModelMD3::GetPos           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>pos</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询模型位置 
+<p>
+查询模型在场景中的位置坐标。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>vec3_t</em>&nbsp;</td><td>pos 模型位置结构指针</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值，模型位置已经通过参数指针返回。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c6c7efd5bf5dc786ffa424f3f372619f"></a><!-- doxytag: member="LightModelMD3::IsOnGround" ref="c6c7efd5bf5dc786ffa424f3f372619f" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LightModelMD3::IsOnGround           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询模型是否与地面接触 
+<p>
+查询模型是否与地面接触<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有参数。</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果模型与地面接触返回 TRUE，否则返回 FALSE。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="00808d189f955ed243caed86c0687fca"></a><!-- doxytag: member="LightModelMD3::CrossRay" ref="00808d189f955ed243caed86c0687fca" args="(vec3_t a, vec3_t b, vec3_t cross)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LightModelMD3::CrossRay           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>cross</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+检测指定线段与模型是否相交 
+<p>
+检测指定线段与模型是否相交（如果相交，返回交点）。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>vec3_t</em>&nbsp;</td><td>a 线段起始顶点坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>vec3_t</em>&nbsp;</td><td>b 线段结束顶点坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>vec3_t</em>&nbsp;</td><td>cross 线段与模型的交点坐标</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果线段与模型相交，返回 TRUE，同时在 cross 中返回交点坐标，否则返回 FALSE； </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a0713effae224eec7057728543d42a3e"></a><!-- doxytag: member="LightModelMD3::CrossSphere" ref="a0713effae224eec7057728543d42a3e" args="(vec3_t start, vec3_t end, float radius, vec3_t cross)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LightModelMD3::CrossSphere           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>cross</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+检测指定球体与模型是否发生碰撞 
+<p>
+检测指定球体与模型是否发生碰撞（如果发生碰撞，返回交点）。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>vec3_t</em>&nbsp;</td><td>start 球体运动起始点</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>vec3_t</em>&nbsp;</td><td>end 球体运动结束点</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>radius 球体半径</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>vec3_t</em>&nbsp;</td><td>cross 球体与模型的交点坐标</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果球体与模型相交，返回 TRUE，同时在 cross 中返回交点坐标，否则返回 FALSE； </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d7e960b476e82e574ccbd7155e70f40e"></a><!-- doxytag: member="LightModelMD3::CrossBox" ref="d7e960b476e82e574ccbd7155e70f40e" args="(vec3_t start, vec3_t end, vec3_t min, vec3_t max, vec3_t cross)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LightModelMD3::CrossBox           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>cross</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+检测指定包围盒与模型是否发生碰撞 
+<p>
+检测指定包围盒（AABB）与模型是否发生碰撞（如果发生碰撞，返回交点）。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>vec3_t</em>&nbsp;</td><td>start 包围盒运动起始点</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>vec3_t</em>&nbsp;</td><td>end 包围盒运动结束点</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>vec3_t</em>&nbsp;</td><td>min 包围盒对角线最小顶点</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>vec3_t</em>&nbsp;</td><td>max 包围盒对角线最大顶点</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>vec3_t</em>&nbsp;</td><td>cross 包围盒与模型的交点坐标</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果包围盒与模型相交，返回 TRUE，同时在 cross 中返回交点坐标，否则返回 FALSE； </dd></dl>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/<a class="el" href="md3_8h.html">md3.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:34 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

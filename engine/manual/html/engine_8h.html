@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: E:/LightEngine/include/engine.h文件参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li><a href="annotated.html"><span>类</span></a></li>
+    <li id="current"><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="files.html"><span>文件列表</span></a></li>
+    <li><a href="globals.html"><span>文件成员</span></a></li>
+  </ul></div>
+<h1>E:/LightEngine/include/engine.h文件参考</h1><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>组合类型</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_displaymode_desc.html">LightDisplaymodeDesc</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">显示模式描述符类  <a href="class_light_displaymode_desc.html#_details">更多...</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine_desc.html">LightEngineDesc</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">光线引擎描述符类  <a href="class_light_engine_desc.html#_details">更多...</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html">LightEngine</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">引擎类  <a href="class_light_engine.html#_details">更多...</a><br></td></tr>
+<tr><td colspan="2"><br><h2>枚举</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="engine_8h.html#3487b045358ceef8656448e4d1fa8e41">LightRenderFlag</a> { <br>
+&nbsp;&nbsp;<a class="el" href="engine_8h.html#3487b045358ceef8656448e4d1fa8e41a0bcb0ebea310bf522a4bd144bdebda7">LIGHT_RENDER_COLOR</a> =  0x00000001, 
+<a class="el" href="engine_8h.html#3487b045358ceef8656448e4d1fa8e416ec6eebe93a068d66451bd00fbfb2bcd">LIGHT_RENDER_TEXTURE</a> =  0x00000002, 
+<a class="el" href="engine_8h.html#3487b045358ceef8656448e4d1fa8e416d5f89a950115bf5290c5d4e30a16df2">LIGHT_RENDER_LIGHTMAP</a> =  0x00000004, 
+<a class="el" href="engine_8h.html#3487b045358ceef8656448e4d1fa8e410ecd2b50b9871d29aab2d1eff3167a6a">LIGHT_RENDER_LINE</a> =  0x00000008, 
+<br>
+&nbsp;&nbsp;<a class="el" href="engine_8h.html#3487b045358ceef8656448e4d1fa8e41c03b3bb49a16048b4ca5bcd656fe0d57">LIGHT_RENDER_SHADOW</a> =  0x00000010, 
+<a class="el" href="engine_8h.html#3487b045358ceef8656448e4d1fa8e413eec5d9de0d18856e72dad3c96a7eb1d">LIGHT_RENDER_SELECT</a> =  0x00000020
+<br>
+ }</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">渲染内容标志  <a href="engine_8h.html#3487b045358ceef8656448e4d1fa8e41">更多...</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="engine_8h.html#8ca9fdad650cb4bbfcf7b6474e9445cd">LightEnum</a> { <br>
+&nbsp;&nbsp;<a class="el" href="engine_8h.html#8ca9fdad650cb4bbfcf7b6474e9445cda08db17080d2e3e3f0beb7f0dd5ca853">LIGHT_OPENGL_RENDER</a>, 
+<a class="el" href="engine_8h.html#8ca9fdad650cb4bbfcf7b6474e9445cdfa61c4cb9f058acb676959e06afdfbeb">LIGHT_D3D9_RENDER</a>, 
+<a class="el" href="engine_8h.html#8ca9fdad650cb4bbfcf7b6474e9445cdb0073574aa25039d68a39a33cea31fb7">LIGHT_D3D10_RENDER</a>, 
+<a class="el" href="engine_8h.html#8ca9fdad650cb4bbfcf7b6474e9445cd2a3cba05ee567cef7eac164742a22bc1">LIGHT_SOFTWARE_RENDER</a>, 
+<br>
+&nbsp;&nbsp;<a class="el" href="engine_8h.html#8ca9fdad650cb4bbfcf7b6474e9445cda874138966b98d39676d99e423fd00bc">LIGHT_WINDOW_MODE</a>, 
+<a class="el" href="engine_8h.html#8ca9fdad650cb4bbfcf7b6474e9445cd6e589972a1646ba240b1b121d258ccbb">LIGHT_FULLSCREEN_MODE</a>, 
+<a class="el" href="engine_8h.html#8ca9fdad650cb4bbfcf7b6474e9445cdd91f667b0db3c1e4f63911fbbb79779e">LIGHT_HALFSCREEN_MODE</a>, 
+<a class="el" href="engine_8h.html#8ca9fdad650cb4bbfcf7b6474e9445cdcea8e1252bdde555df5735905c0d9a3d">LIGHT_ATTACH_MODE</a>
+<br>
+ }</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">光线引擎枚举类型  <a href="engine_8h.html#8ca9fdad650cb4bbfcf7b6474e9445cd">更多...</a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+引擎函数. 此文件是引擎函数头文件. <hr><h2>枚举类型文档</h2>
+<a class="anchor" name="8ca9fdad650cb4bbfcf7b6474e9445cd"></a><!-- doxytag: member="engine.h::LightEnum" ref="8ca9fdad650cb4bbfcf7b6474e9445cd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="engine_8h.html#8ca9fdad650cb4bbfcf7b6474e9445cd">LightEnum</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+光线引擎枚举类型 
+<p>
+<dl compact><dt><b>枚举值: </b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" name="8ca9fdad650cb4bbfcf7b6474e9445cda08db17080d2e3e3f0beb7f0dd5ca853"></a><!-- doxytag: member="LIGHT_OPENGL_RENDER" ref="8ca9fdad650cb4bbfcf7b6474e9445cda08db17080d2e3e3f0beb7f0dd5ca853" args="" -->LIGHT_OPENGL_RENDER</em>&nbsp;</td><td>
+OpenGL 图形渲染器 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="8ca9fdad650cb4bbfcf7b6474e9445cdfa61c4cb9f058acb676959e06afdfbeb"></a><!-- doxytag: member="LIGHT_D3D9_RENDER" ref="8ca9fdad650cb4bbfcf7b6474e9445cdfa61c4cb9f058acb676959e06afdfbeb" args="" -->LIGHT_D3D9_RENDER</em>&nbsp;</td><td>
+D3D9 图形渲染器 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="8ca9fdad650cb4bbfcf7b6474e9445cdb0073574aa25039d68a39a33cea31fb7"></a><!-- doxytag: member="LIGHT_D3D10_RENDER" ref="8ca9fdad650cb4bbfcf7b6474e9445cdb0073574aa25039d68a39a33cea31fb7" args="" -->LIGHT_D3D10_RENDER</em>&nbsp;</td><td>
+D3D10 图形渲染器 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="8ca9fdad650cb4bbfcf7b6474e9445cd2a3cba05ee567cef7eac164742a22bc1"></a><!-- doxytag: member="LIGHT_SOFTWARE_RENDER" ref="8ca9fdad650cb4bbfcf7b6474e9445cd2a3cba05ee567cef7eac164742a22bc1" args="" -->LIGHT_SOFTWARE_RENDER</em>&nbsp;</td><td>
+软件图形渲染器 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="8ca9fdad650cb4bbfcf7b6474e9445cda874138966b98d39676d99e423fd00bc"></a><!-- doxytag: member="LIGHT_WINDOW_MODE" ref="8ca9fdad650cb4bbfcf7b6474e9445cda874138966b98d39676d99e423fd00bc" args="" -->LIGHT_WINDOW_MODE</em>&nbsp;</td><td>
+窗口显示模式 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="8ca9fdad650cb4bbfcf7b6474e9445cd6e589972a1646ba240b1b121d258ccbb"></a><!-- doxytag: member="LIGHT_FULLSCREEN_MODE" ref="8ca9fdad650cb4bbfcf7b6474e9445cd6e589972a1646ba240b1b121d258ccbb" args="" -->LIGHT_FULLSCREEN_MODE</em>&nbsp;</td><td>
+全屏显示模式 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="8ca9fdad650cb4bbfcf7b6474e9445cdd91f667b0db3c1e4f63911fbbb79779e"></a><!-- doxytag: member="LIGHT_HALFSCREEN_MODE" ref="8ca9fdad650cb4bbfcf7b6474e9445cdd91f667b0db3c1e4f63911fbbb79779e" args="" -->LIGHT_HALFSCREEN_MODE</em>&nbsp;</td><td>
+假全屏显示模式 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="8ca9fdad650cb4bbfcf7b6474e9445cdcea8e1252bdde555df5735905c0d9a3d"></a><!-- doxytag: member="LIGHT_ATTACH_MODE" ref="8ca9fdad650cb4bbfcf7b6474e9445cdcea8e1252bdde555df5735905c0d9a3d" args="" -->LIGHT_ATTACH_MODE</em>&nbsp;</td><td>
+绑定窗口显示模式 </td></tr>
+</table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="3487b045358ceef8656448e4d1fa8e41"></a><!-- doxytag: member="engine.h::LightRenderFlag" ref="3487b045358ceef8656448e4d1fa8e41" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="engine_8h.html#3487b045358ceef8656448e4d1fa8e41">LightRenderFlag</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+渲染内容标志 
+<p>
+<dl compact><dt><b>枚举值: </b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" name="3487b045358ceef8656448e4d1fa8e41a0bcb0ebea310bf522a4bd144bdebda7"></a><!-- doxytag: member="LIGHT_RENDER_COLOR" ref="3487b045358ceef8656448e4d1fa8e41a0bcb0ebea310bf522a4bd144bdebda7" args="" -->LIGHT_RENDER_COLOR</em>&nbsp;</td><td>
+颜色渲染标志位（当 LIGHT_RENDER_TEXTURE 位为 1 时，该位被忽略） </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="3487b045358ceef8656448e4d1fa8e416ec6eebe93a068d66451bd00fbfb2bcd"></a><!-- doxytag: member="LIGHT_RENDER_TEXTURE" ref="3487b045358ceef8656448e4d1fa8e416ec6eebe93a068d66451bd00fbfb2bcd" args="" -->LIGHT_RENDER_TEXTURE</em>&nbsp;</td><td>
+渲染纹理标志位 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="3487b045358ceef8656448e4d1fa8e416d5f89a950115bf5290c5d4e30a16df2"></a><!-- doxytag: member="LIGHT_RENDER_LIGHTMAP" ref="3487b045358ceef8656448e4d1fa8e416d5f89a950115bf5290c5d4e30a16df2" args="" -->LIGHT_RENDER_LIGHTMAP</em>&nbsp;</td><td>
+渲染光照贴图标志位 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="3487b045358ceef8656448e4d1fa8e410ecd2b50b9871d29aab2d1eff3167a6a"></a><!-- doxytag: member="LIGHT_RENDER_LINE" ref="3487b045358ceef8656448e4d1fa8e410ecd2b50b9871d29aab2d1eff3167a6a" args="" -->LIGHT_RENDER_LINE</em>&nbsp;</td><td>
+渲染线框标志位 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="3487b045358ceef8656448e4d1fa8e41c03b3bb49a16048b4ca5bcd656fe0d57"></a><!-- doxytag: member="LIGHT_RENDER_SHADOW" ref="3487b045358ceef8656448e4d1fa8e41c03b3bb49a16048b4ca5bcd656fe0d57" args="" -->LIGHT_RENDER_SHADOW</em>&nbsp;</td><td>
+渲染阴影标志位 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="3487b045358ceef8656448e4d1fa8e413eec5d9de0d18856e72dad3c96a7eb1d"></a><!-- doxytag: member="LIGHT_RENDER_SELECT" ref="3487b045358ceef8656448e4d1fa8e413eec5d9de0d18856e72dad3c96a7eb1d" args="" -->LIGHT_RENDER_SELECT</em>&nbsp;</td><td>
+渲染选择框标志位 </td></tr>
+</table>
+</dl>
+
+</div>
+</div><p>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:31 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

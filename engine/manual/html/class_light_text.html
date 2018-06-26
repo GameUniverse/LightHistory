@@ -1,0 +1,435 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightText类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightText类参考</h1><!-- doxytag: class="LightText" -->文字类  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;text.h&gt;</code>
+<p>
+<a href="class_light_text-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_engine.html">LightEngine</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_text.html#6fbbeb92f83bfbbb702345b3dae0f31a">getEngine</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询父引擎  <a href="#6fbbeb92f83bfbbb702345b3dae0f31a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_text.html#fd8b5102c9c61e14fbeb22d734a7daad">drawText</a> (const char *string)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">显示指定的文字（支持中文）  <a href="#fd8b5102c9c61e14fbeb22d734a7daad"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_text.html#ea37ab8314bef14dd908730a08f490d8">getTextSize</a> (const char *string, SIZE *size)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询字符串的宽度和高度  <a href="#ea37ab8314bef14dd908730a08f490d8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_text.html#c3aa9755e60376bbefa8e1c40f5d3f7f">color</a> (int red, int green, int blue)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置当前文字颜色  <a href="#c3aa9755e60376bbefa8e1c40f5d3f7f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_text.html#90c1c41c0c6fc594c55ba028a4cd38c8">setBackMode</a> (int mode)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置文字背景混合模式  <a href="#90c1c41c0c6fc594c55ba028a4cd38c8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_text.html#e08110f60a0c76e2521340b5855ffe3a">backColor</a> (int red, int green, int blue)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置当前文字背景色  <a href="#e08110f60a0c76e2521340b5855ffe3a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_text.html#720d83933b89c136fb67bff5ef73c2d4">setTextPos</a> (int x, int y)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置文字显示位置  <a href="#720d83933b89c136fb67bff5ef73c2d4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_text.html#63eb855e8df44a984993f4c0d812fa1d">setCharSpace</a> (int space)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置字符间距  <a href="#63eb855e8df44a984993f4c0d812fa1d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_text.html#6e708ae5504f7393c9a57779e42312cd">setFont</a> (const char *FontName, int Height, int Width, int Weight, int Escapement, bool Italic, bool Underline, bool StrikeOut, int Quality)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置字体  <a href="#6e708ae5504f7393c9a57779e42312cd"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+文字类 
+<p>
+本类负责文字的高速显示，支持中文显示。同时支持各种字体、大小、间隔、旋转、斜体、下划线、各种质量的文字显示。 每个 <a class="el" href="class_light_text.html">LightText</a> 实例都必须通过 <a class="el" href="class_light_engine.html">LightEngine</a> 类的 createText 方法分配， releaseText 释放。 
+<p>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="6fbbeb92f83bfbbb702345b3dae0f31a"></a><!-- doxytag: member="LightText::getEngine" ref="6fbbeb92f83bfbbb702345b3dae0f31a" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_engine.html">LightEngine</a>* LightText::getEngine           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询父引擎 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回父引擎引用</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="fd8b5102c9c61e14fbeb22d734a7daad"></a><!-- doxytag: member="LightText::drawText" ref="fd8b5102c9c61e14fbeb22d734a7daad" args="(const char *string)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightText::drawText           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>string</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+显示指定的文字（支持中文） 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>string[in]</em>&nbsp;</td><td>要显示的字符串，以 0 结束，支持中文</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>这里是相关的备注信息。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ea37ab8314bef14dd908730a08f490d8"></a><!-- doxytag: member="LightText::getTextSize" ref="ea37ab8314bef14dd908730a08f490d8" args="(const char *string, SIZE *size)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightText::getTextSize           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SIZE *&nbsp;</td>
+          <td class="paramname"> <em>size</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询字符串的宽度和高度 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>string[in]</em>&nbsp;</td><td>要查询的字符串，以 0 结束，支持中文</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>size[out]</em>&nbsp;</td><td>返回字符串宽度和高度数据的指针</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>这里是相关的备注信息。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c3aa9755e60376bbefa8e1c40f5d3f7f"></a><!-- doxytag: member="LightText::color" ref="c3aa9755e60376bbefa8e1c40f5d3f7f" args="(int red, int green, int blue)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightText::color           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>red</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>green</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>blue</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置当前文字颜色 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>red[in]</em>&nbsp;</td><td>颜色的红色分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>green[in]</em>&nbsp;</td><td>颜色的绿色分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>blue[in]</em>&nbsp;</td><td>颜色的蓝色分量</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>红、绿、蓝三种颜色分量的有效范围均为 0~255 ， 0 为最暗， 255 为最亮。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="90c1c41c0c6fc594c55ba028a4cd38c8"></a><!-- doxytag: member="LightText::setBackMode" ref="90c1c41c0c6fc594c55ba028a4cd38c8" args="(int mode)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightText::setBackMode           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>mode</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置文字背景混合模式 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>mode[in]</em>&nbsp;</td><td>文字背景混合模式， LIGHT_TRANSPARENT 为透明的， LIGHT_OPAQUE 为不透明的。</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>缺省情况下为 LIGHT_TRANSPARENT，透明的。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回原来的文字背景混合模式。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e08110f60a0c76e2521340b5855ffe3a"></a><!-- doxytag: member="LightText::backColor" ref="e08110f60a0c76e2521340b5855ffe3a" args="(int red, int green, int blue)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightText::backColor           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>red</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>green</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>blue</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置当前文字背景色 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>red[in]</em>&nbsp;</td><td>颜色的红色分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>green[in]</em>&nbsp;</td><td>颜色的绿色分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>blue[in]</em>&nbsp;</td><td>颜色的蓝色分量</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>红、绿、蓝三种颜色分量的有效范围均为 0~255 ， 0 为最暗， 255 为最亮。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="720d83933b89c136fb67bff5ef73c2d4"></a><!-- doxytag: member="LightText::setTextPos" ref="720d83933b89c136fb67bff5ef73c2d4" args="(int x, int y)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightText::setTextPos           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置文字显示位置 
+<p>
+设置文字在屏幕上（全屏方式下）或窗口中（窗口方式下）的显示位置。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x[in]</em>&nbsp;</td><td>文字位置的 x 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y[in]</em>&nbsp;</td><td>文字位置的 y 坐标</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>文字应位于屏幕内（全屏方式下）或窗口中（窗口方式下），否则会无法显示。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="63eb855e8df44a984993f4c0d812fa1d"></a><!-- doxytag: member="LightText::setCharSpace" ref="63eb855e8df44a984993f4c0d812fa1d" args="(int space)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightText::setCharSpace           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>space</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置字符间距 
+<p>
+设置两个字符之间的距离<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>space[in]</em>&nbsp;</td><td>两个字符之间的距离，以像素为单位</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>一般不用设置此间距值，缺省的值即可满足大部分需要。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回原来的字符间距值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="6e708ae5504f7393c9a57779e42312cd"></a><!-- doxytag: member="LightText::setFont" ref="6e708ae5504f7393c9a57779e42312cd" args="(const char *FontName, int Height, int Width, int Weight, int Escapement, bool Italic, bool Underline, bool StrikeOut, int Quality)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightText::setFont           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>FontName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>Height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>Width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>Weight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>Escapement</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>Italic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>Underline</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>StrikeOut</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>Quality</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置字体 
+<p>
+注意：不可过于地频繁调用此函数，否则会由于内存碎片导致程序运行变慢。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>FontName[in]</em>&nbsp;</td><td>指定字体</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>Height[in]</em>&nbsp;</td><td>指定字体高度</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>Width[in]</em>&nbsp;</td><td>指定字体宽度</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>Weight[in]</em>&nbsp;</td><td>指定字体的重量(FW_BOLD=700)</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>Escapement[in]</em>&nbsp;</td><td>指定角度(1/10度)</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>Italic[in]</em>&nbsp;</td><td>指定是否斜体</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>Underline[in]</em>&nbsp;</td><td>指定是否有下划线</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>StrikeOut[in]</em>&nbsp;</td><td>指定是否是StrikeOut字体</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>Quality[in]</em>&nbsp;</td><td>指定输出质量</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>缺省字为宋体，12号字。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/<a class="el" href="text_8h.html">text.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:36 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

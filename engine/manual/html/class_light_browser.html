@@ -1,0 +1,325 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightBrowser类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightBrowser类参考</h1><!-- doxytag: class="LightBrowser" -->浏览器类  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;browser.h&gt;</code>
+<p>
+<a href="class_light_browser-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_browser.html#463eb9a5bf7fce665a7ba06f4b955484">open</a> (const char *address)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">打开交互式文件  <a href="#463eb9a5bf7fce665a7ba06f4b955484"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_browser.html#dd1367fac37ab8735cd0acc67c2546f1">setWindowPosition</a> (int x, int y, int width, int height)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置播放窗口位置和大小  <a href="#dd1367fac37ab8735cd0acc67c2546f1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_browser.html#5d046c793790bce64de29c97f73b2396">seek</a> (double position)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置播放位置  <a href="#5d046c793790bce64de29c97f73b2396"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_browser.html#8ad1aeedbe4c79aa05481d3b84544eb5">setRepeats</a> (int repeats)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置重复播放次数  <a href="#8ad1aeedbe4c79aa05481d3b84544eb5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_browser.html#87dcbf05ca2fa638a1196fbd0531a323">play</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">播放  <a href="#87dcbf05ca2fa638a1196fbd0531a323"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_browser.html#643bbb30cb0abb63566f917ac9ae20cd">pause</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">暂停  <a href="#643bbb30cb0abb63566f917ac9ae20cd"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_browser.html#ceb590083f4618f6dc68757e7ffca845">stop</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">停止  <a href="#ceb590083f4618f6dc68757e7ffca845"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_browser.html#f2a2ebcf9c185098f2c6cc2782985aa3">getState</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询播放状态  <a href="#f2a2ebcf9c185098f2c6cc2782985aa3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_browser.html#7e71529b3aca56f363597cc542cadfeb">close</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">关闭交互式文件  <a href="#7e71529b3aca56f363597cc542cadfeb"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+浏览器类 
+<p>
+本类负责交互式文件的播放，支持 GIF、SWF、网页文件，支持本地和网络两种播放方式。 每个 <a class="el" href="class_light_browser.html">LightBrowser</a> 实例都必须通过 <a class="el" href="class_light_engine.html">LightEngine</a> 类的 createBrowser 方法分配， releaseBrowser 释放。 
+<p>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="463eb9a5bf7fce665a7ba06f4b955484"></a><!-- doxytag: member="LightBrowser::open" ref="463eb9a5bf7fce665a7ba06f4b955484" args="(const char *address)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightBrowser::open           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>address</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+打开交互式文件 
+<p>
+支持 GIF、SWF、网页文件，支持本地和网络两种播放方式。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>filename</em>&nbsp;</td><td>交互式文件名</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd><a class="el" href="class_light_browser.html#7e71529b3aca56f363597cc542cadfeb">close</a>, <a class="el" href="class_light_browser.html#87dcbf05ca2fa638a1196fbd0531a323">play</a>, <a class="el" href="class_light_browser.html#ceb590083f4618f6dc68757e7ffca845">stop</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="dd1367fac37ab8735cd0acc67c2546f1"></a><!-- doxytag: member="LightBrowser::setWindowPosition" ref="dd1367fac37ab8735cd0acc67c2546f1" args="(int x, int y, int width, int height)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightBrowser::setWindowPosition           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>height</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置播放窗口位置和大小 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>窗口左上角 x 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>窗口左上角 y 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>width</em>&nbsp;</td><td>窗口宽度</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>height</em>&nbsp;</td><td>窗口高度</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="5d046c793790bce64de29c97f73b2396"></a><!-- doxytag: member="LightBrowser::seek" ref="5d046c793790bce64de29c97f73b2396" args="(double position)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightBrowser::seek           </td>
+          <td>(</td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>position</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置播放位置 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>position</em>&nbsp;</td><td>播放位置</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="8ad1aeedbe4c79aa05481d3b84544eb5"></a><!-- doxytag: member="LightBrowser::setRepeats" ref="8ad1aeedbe4c79aa05481d3b84544eb5" args="(int repeats)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightBrowser::setRepeats           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>repeats</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置重复播放次数 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>repeats</em>&nbsp;</td><td>重复播放的次数。如果要一直重复播放，直到明确停止，可以设为 LIGHT_REPEAT_INFINITE 。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="87dcbf05ca2fa638a1196fbd0531a323"></a><!-- doxytag: member="LightBrowser::play" ref="87dcbf05ca2fa638a1196fbd0531a323" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightBrowser::play           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+播放 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="643bbb30cb0abb63566f917ac9ae20cd"></a><!-- doxytag: member="LightBrowser::pause" ref="643bbb30cb0abb63566f917ac9ae20cd" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightBrowser::pause           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+暂停 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ceb590083f4618f6dc68757e7ffca845"></a><!-- doxytag: member="LightBrowser::stop" ref="ceb590083f4618f6dc68757e7ffca845" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightBrowser::stop           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+停止 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f2a2ebcf9c185098f2c6cc2782985aa3"></a><!-- doxytag: member="LightBrowser::getState" ref="f2a2ebcf9c185098f2c6cc2782985aa3" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightBrowser::getState           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询播放状态 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回当前播放状态。返回下面的其中一种播放状态： <ul>
+<li>LIGHT_STATE_STOPPED 停止状态 </li>
+<li>LIGHT_STATE_PAUSED 暂停状态 </li>
+<li>LIGHT_STATE_PLAYING 正在播放 </li>
+</ul>
+</dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="7e71529b3aca56f363597cc542cadfeb"></a><!-- doxytag: member="LightBrowser::close" ref="7e71529b3aca56f363597cc542cadfeb" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightBrowser::close           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+关闭交互式文件 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/<a class="el" href="browser_8h.html">browser.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:32 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

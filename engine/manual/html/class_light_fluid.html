@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightFluid类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightFluid类参考</h1><!-- doxytag: class="LightFluid" -->流体类  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;fluid.h&gt;</code>
+<p>
+<a href="class_light_fluid-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_scene.html">LightScene</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_fluid.html#5d1dd7e559e8abe276b883d2d9032c19">getScene</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询父场景  <a href="#5d1dd7e559e8abe276b883d2d9032c19"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_fluid_emitter.html">LightFluidEmitter</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_fluid.html#6a4cd8046fb19d4048ba5623546baee8">createEmitter</a> (const <a class="el" href="struct_light_fluid_emitter_desc.html">LightFluidEmitterDesc</a> *fluidEmitterDesc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个流体发射器  <a href="#6a4cd8046fb19d4048ba5623546baee8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_fluid.html#55b911287e0a3b45ad07af1740224498">releaseEmitter</a> (<a class="el" href="class_light_fluid_emitter.html">LightFluidEmitter</a> *fluidEmitter)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放一个流体发射器  <a href="#55b911287e0a3b45ad07af1740224498"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_fluid.html#9de9cdf8494d675df14dc6186c3ed382">render</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">渲染流体  <a href="#9de9cdf8494d675df14dc6186c3ed382"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+流体类 
+<p>
+本类负责一个流体的创建，管理和渲染等功能。 每个 <a class="el" href="class_light_fluid.html">LightFluid</a> 实例都必须通过 <a class="el" href="class_light_scene.html">LightScene</a> 类的 createFluid 函数分配，通过 releaseFluid 函数释放。 
+<p>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="5d1dd7e559e8abe276b883d2d9032c19"></a><!-- doxytag: member="LightFluid::getScene" ref="5d1dd7e559e8abe276b883d2d9032c19" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_light_scene.html">LightScene</a> * LightFluid::getScene           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询父场景 
+<p>
+查询父场景<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有参数</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回父场景引用</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="6a4cd8046fb19d4048ba5623546baee8"></a><!-- doxytag: member="LightFluid::createEmitter" ref="6a4cd8046fb19d4048ba5623546baee8" args="(const LightFluidEmitterDesc *fluidEmitterDesc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_light_fluid_emitter.html">LightFluidEmitter</a> * LightFluid::createEmitter           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_light_fluid_emitter_desc.html">LightFluidEmitterDesc</a> *&nbsp;</td>
+          <td class="paramname"> <em>fluidEmitterDesc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个流体发射器 
+<p>
+创建一个流体发射器<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>const</em>&nbsp;</td><td><a class="el" href="struct_light_fluid_emitter_desc.html">LightFluidEmitterDesc</a> * fluidEmitterDesc 流体发射器描述符指针，用于说明要创建流体发射器的特征。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回已创建的流体发射器指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="55b911287e0a3b45ad07af1740224498"></a><!-- doxytag: member="LightFluid::releaseEmitter" ref="55b911287e0a3b45ad07af1740224498" args="(LightFluidEmitter *fluidEmitter)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightFluid::releaseEmitter           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_fluid_emitter.html">LightFluidEmitter</a> *&nbsp;</td>
+          <td class="paramname"> <em>fluidEmitter</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放一个流体发射器 
+<p>
+释放一个流体发射器<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="class_light_fluid_emitter.html">LightFluidEmitter</a></em>&nbsp;</td><td>* fluidEmitter 要释放流体发射器的指针</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9de9cdf8494d675df14dc6186c3ed382"></a><!-- doxytag: member="LightFluid::render" ref="9de9cdf8494d675df14dc6186c3ed382" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightFluid::render           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+渲染流体 
+<p>
+渲染流体<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有参数。</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd></dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/<a class="el" href="fluid_8h.html">fluid.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:33 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

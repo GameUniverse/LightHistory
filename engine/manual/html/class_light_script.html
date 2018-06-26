@@ -1,0 +1,455 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightScript类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightScript类参考</h1><!-- doxytag: class="LightScript" -->脚本类  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;script.h&gt;</code>
+<p>
+<a href="class_light_script-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_engine.html">LightEngine</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_script.html#14b8c59219003d94691117655ba292dd">getEngine</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询父引擎  <a href="#14b8c59219003d94691117655ba292dd"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_script.html#726dcdc91f5ac879a100279e00fcd499">load</a> (const char *filename)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">读入脚本文件  <a href="#726dcdc91f5ac879a100279e00fcd499"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_script.html#7a30f23a46847c399e00f51aab57a084">build</a> (const char *module)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">编译脚本  <a href="#7a30f23a46847c399e00f51aab57a084"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_script.html#69a5512cd30ed6c63f526819580b129f">getFunctionIDByIndex</a> (const char *module, int index)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">根据函数索引查询函数句柄  <a href="#69a5512cd30ed6c63f526819580b129f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_script.html#8f49f128d38ff17ab357a6246f5ab52f">getFunctionIDByName</a> (const char *module, const char *name)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">根据函数名称查询函数句柄  <a href="#8f49f128d38ff17ab357a6246f5ab52f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_script.html#9e5dcf9b51f229aedee0cf2dbeb6e86c">getFunctionIDByDecl</a> (const char *module, const char *decl)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">根据函数说明查询函数句柄  <a href="#9e5dcf9b51f229aedee0cf2dbeb6e86c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_script.html#b31512d225dca5d508b21161e0a9141e">prepare</a> (int funcId)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">准备执行指定的函数  <a href="#b31512d225dca5d508b21161e0a9141e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_script.html#998b440ded2eed736a646874dab7e739">execute</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">执行脚本  <a href="#998b440ded2eed736a646874dab7e739"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_script.html#fa72d83b84e0f2e0bb7089b8ca8a1dc3">abort</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">中止脚本  <a href="#fa72d83b84e0f2e0bb7089b8ca8a1dc3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_script.html#4847f09ee7c2d3deb14c2418b37f8f96">suspend</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">暂停脚本  <a href="#4847f09ee7c2d3deb14c2418b37f8f96"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_script.html#3f9f00459bea549e4da20c0c13e97e16">executeString</a> (const char *module, const char *script)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">执行指定的脚本字符串  <a href="#3f9f00459bea549e4da20c0c13e97e16"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_script.html#744febc754d2f3a9fcaec956ded7090b">getState</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询脚本执行状态  <a href="#744febc754d2f3a9fcaec956ded7090b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_script.html#ff51a22679fa609b28abf72d9c70f7d2">unload</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放脚本文件所占内存  <a href="#ff51a22679fa609b28abf72d9c70f7d2"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+脚本类 
+<p>
+本类负责 c/c++ 脚本文件的读取，解释，执行，支持引擎绝大部分功能。 每个 <a class="el" href="class_light_script.html">LightScript</a> 实例都必须通过 <a class="el" href="class_light_engine.html">LightEngine</a> 类的 createScript 方法分配， releaseScript 释放。 
+<p>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="14b8c59219003d94691117655ba292dd"></a><!-- doxytag: member="LightScript::getEngine" ref="14b8c59219003d94691117655ba292dd" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_engine.html">LightEngine</a>* LightScript::getEngine           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询父引擎 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回父引擎引用</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="726dcdc91f5ac879a100279e00fcd499"></a><!-- doxytag: member="LightScript::load" ref="726dcdc91f5ac879a100279e00fcd499" args="(const char *filename)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightScript::load           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>filename</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+读入脚本文件 
+<p>
+将脚本文件读入内存中<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>filename[in]</em>&nbsp;</td><td>脚本文件名.</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>支持 lua 脚本文件。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回 0；如果函数调用失败，返回错误代码。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="7a30f23a46847c399e00f51aab57a084"></a><!-- doxytag: member="LightScript::build" ref="7a30f23a46847c399e00f51aab57a084" args="(const char *module)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightScript::build           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>module</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+编译脚本 
+<p>
+编译读入内存的脚本<p>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd></dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回 0；如果函数调用失败，返回错误代码。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="69a5512cd30ed6c63f526819580b129f"></a><!-- doxytag: member="LightScript::getFunctionIDByIndex" ref="69a5512cd30ed6c63f526819580b129f" args="(const char *module, int index)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightScript::getFunctionIDByIndex           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>index</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+根据函数索引查询函数句柄 
+<p>
+执行编译后的脚本<p>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>可以解释执行脚本。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="8f49f128d38ff17ab357a6246f5ab52f"></a><!-- doxytag: member="LightScript::getFunctionIDByName" ref="8f49f128d38ff17ab357a6246f5ab52f" args="(const char *module, const char *name)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightScript::getFunctionIDByName           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>name</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+根据函数名称查询函数句柄 
+<p>
+执行编译后的脚本<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有参数。</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>可以解释执行脚本。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9e5dcf9b51f229aedee0cf2dbeb6e86c"></a><!-- doxytag: member="LightScript::getFunctionIDByDecl" ref="9e5dcf9b51f229aedee0cf2dbeb6e86c" args="(const char *module, const char *decl)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightScript::getFunctionIDByDecl           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>decl</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+根据函数说明查询函数句柄 
+<p>
+执行编译后的脚本<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有参数。</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>可以解释执行脚本。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b31512d225dca5d508b21161e0a9141e"></a><!-- doxytag: member="LightScript::prepare" ref="b31512d225dca5d508b21161e0a9141e" args="(int funcId)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightScript::prepare           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>funcId</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+准备执行指定的函数 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有参数。</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>可以解释执行脚本。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="998b440ded2eed736a646874dab7e739"></a><!-- doxytag: member="LightScript::execute" ref="998b440ded2eed736a646874dab7e739" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightScript::execute           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+执行脚本 
+<p>
+执行编译后的脚本<p>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>可以解释执行脚本。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="fa72d83b84e0f2e0bb7089b8ca8a1dc3"></a><!-- doxytag: member="LightScript::abort" ref="fa72d83b84e0f2e0bb7089b8ca8a1dc3" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightScript::abort           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+中止脚本 
+<p>
+执行编译后的脚本<p>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>可以解释执行脚本。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="4847f09ee7c2d3deb14c2418b37f8f96"></a><!-- doxytag: member="LightScript::suspend" ref="4847f09ee7c2d3deb14c2418b37f8f96" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightScript::suspend           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+暂停脚本 
+<p>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>可以解释执行脚本。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="3f9f00459bea549e4da20c0c13e97e16"></a><!-- doxytag: member="LightScript::executeString" ref="3f9f00459bea549e4da20c0c13e97e16" args="(const char *module, const char *script)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightScript::executeString           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>script</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+执行指定的脚本字符串 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有参数。</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>可以解释执行脚本。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="744febc754d2f3a9fcaec956ded7090b"></a><!-- doxytag: member="LightScript::getState" ref="744febc754d2f3a9fcaec956ded7090b" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightScript::getState           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询脚本执行状态 
+<p>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回脚本的执行状态。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ff51a22679fa609b28abf72d9c70f7d2"></a><!-- doxytag: member="LightScript::unload" ref="ff51a22679fa609b28abf72d9c70f7d2" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightScript::unload           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放脚本文件所占内存 
+<p>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/<a class="el" href="script_8h.html">script.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:35 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

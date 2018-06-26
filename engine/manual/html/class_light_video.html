@@ -1,0 +1,355 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightVideo类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightVideo类参考</h1><!-- doxytag: class="LightVideo" -->视频/音频类  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;video.h&gt;</code>
+<p>
+<a href="class_light_video-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_engine.html">LightEngine</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_video.html#24880d5d43c6d8482c266ce8e9cd8cc8">getEngine</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询父引擎  <a href="#24880d5d43c6d8482c266ce8e9cd8cc8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_video.html#ea7128e9afd48fce57fca172a4d5ebb8">open</a> (const char *filename)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">打开视频文件  <a href="#ea7128e9afd48fce57fca172a4d5ebb8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_video.html#7ba2c7ebdbb126fa6e6cd3c6d65bd5f6">setWindow</a> (int left, int top, int right, int bottom)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置播放窗口(全局有效)  <a href="#7ba2c7ebdbb126fa6e6cd3c6d65bd5f6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_video.html#a5435364de6c573bc03a277f778a168a">seek</a> (double position)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置播放位置  <a href="#a5435364de6c573bc03a277f778a168a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_video.html#bc56ee81ac1f4d080fa3d333f39bf3bc">setRepeats</a> (int repeats)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置重复播放次数  <a href="#bc56ee81ac1f4d080fa3d333f39bf3bc"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_video.html#1114ed4b8f22b12750e0d6c797bc5869">play</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">播放  <a href="#1114ed4b8f22b12750e0d6c797bc5869"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_video.html#c34c29445b3b19a470aec50849957fb2">pause</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">暂停  <a href="#c34c29445b3b19a470aec50849957fb2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_video.html#dd6eccb2f57b8c97174e435aef1fed39">stop</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">停止  <a href="#dd6eccb2f57b8c97174e435aef1fed39"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_video.html#f0fcd817d5304d79259fc5d08747a1df">getState</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询播放状态  <a href="#f0fcd817d5304d79259fc5d08747a1df"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_video.html#710e8a67566dc140f5e62656c3b1e699">close</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">关闭视频(音频)文件  <a href="#710e8a67566dc140f5e62656c3b1e699"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+视频/音频类 
+<p>
+本类负责视频/音频文件的播放，支持 MPEG2、AVI、MP3、WAV、MIDI等大部分常见的 视频、音频文件。每个 <a class="el" href="class_light_video.html">LightVideo</a> 实例都必须通过 <a class="el" href="class_light_engine.html">LightEngine</a> 类的 NewVideo 方法分配。 
+<p>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="24880d5d43c6d8482c266ce8e9cd8cc8"></a><!-- doxytag: member="LightVideo::getEngine" ref="24880d5d43c6d8482c266ce8e9cd8cc8" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_engine.html">LightEngine</a>* LightVideo::getEngine           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询父引擎 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回父引擎引用</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ea7128e9afd48fce57fca172a4d5ebb8"></a><!-- doxytag: member="LightVideo::open" ref="ea7128e9afd48fce57fca172a4d5ebb8" args="(const char *filename)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightVideo::open           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>filename</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+打开视频文件 
+<p>
+支持 MPEG2、AVI、MP3、WAV、MIDI等大部分常见的视频、音频文件。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>filename[in]</em>&nbsp;</td><td>视频文件名</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd><a class="el" href="class_light_video.html#710e8a67566dc140f5e62656c3b1e699">close</a>, <a class="el" href="class_light_video.html#1114ed4b8f22b12750e0d6c797bc5869">play</a>, <a class="el" href="class_light_video.html#dd6eccb2f57b8c97174e435aef1fed39">stop</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="7ba2c7ebdbb126fa6e6cd3c6d65bd5f6"></a><!-- doxytag: member="LightVideo::setWindow" ref="7ba2c7ebdbb126fa6e6cd3c6d65bd5f6" args="(int left, int top, int right, int bottom)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightVideo::setWindow           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>top</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>right</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>bottom</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置播放窗口(全局有效) 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>left[in]</em>&nbsp;</td><td>窗口左边框坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>top[in]</em>&nbsp;</td><td>窗口上边框坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>right[in]</em>&nbsp;</td><td>窗口右边框坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>bottom[in]</em>&nbsp;</td><td>窗口下边框坐标</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a5435364de6c573bc03a277f778a168a"></a><!-- doxytag: member="LightVideo::seek" ref="a5435364de6c573bc03a277f778a168a" args="(double position)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightVideo::seek           </td>
+          <td>(</td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>position</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置播放位置 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>position[in]</em>&nbsp;</td><td>播放位置</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="bc56ee81ac1f4d080fa3d333f39bf3bc"></a><!-- doxytag: member="LightVideo::setRepeats" ref="bc56ee81ac1f4d080fa3d333f39bf3bc" args="(int repeats)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightVideo::setRepeats           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>repeats</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置重复播放次数 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>repeats[in]</em>&nbsp;</td><td>重复播放的次数。如果要一直重复播放，直到明确停止，可以设为 LIGHT_REPEAT_INFINITE 。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="1114ed4b8f22b12750e0d6c797bc5869"></a><!-- doxytag: member="LightVideo::play" ref="1114ed4b8f22b12750e0d6c797bc5869" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightVideo::play           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+播放 
+<p>
+播放视频文件。<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c34c29445b3b19a470aec50849957fb2"></a><!-- doxytag: member="LightVideo::pause" ref="c34c29445b3b19a470aec50849957fb2" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightVideo::pause           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+暂停 
+<p>
+暂停播放视频文件。<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="dd6eccb2f57b8c97174e435aef1fed39"></a><!-- doxytag: member="LightVideo::stop" ref="dd6eccb2f57b8c97174e435aef1fed39" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightVideo::stop           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+停止 
+<p>
+停止播放视频文件。<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f0fcd817d5304d79259fc5d08747a1df"></a><!-- doxytag: member="LightVideo::getState" ref="f0fcd817d5304d79259fc5d08747a1df" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightVideo::getState           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询播放状态 
+<p>
+查询视频文件播放状态。<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回当前播放状态。返回下面的其中一种播放状态： <ul>
+<li>LIGHT_STATE_STOPPED 停止状态 </li>
+<li>LIGHT_STATE_PAUSED 暂停状态 </li>
+<li>LIGHT_STATE_PLAYING 正在播放 </li>
+</ul>
+</dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="710e8a67566dc140f5e62656c3b1e699"></a><!-- doxytag: member="LightVideo::close" ref="710e8a67566dc140f5e62656c3b1e699" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightVideo::close           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+关闭视频(音频)文件 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/<a class="el" href="video_8h.html">video.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:36 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

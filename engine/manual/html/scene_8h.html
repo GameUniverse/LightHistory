@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: E:/LightEngine/include/scene.h文件参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li><a href="annotated.html"><span>类</span></a></li>
+    <li id="current"><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="files.html"><span>文件列表</span></a></li>
+    <li><a href="globals.html"><span>文件成员</span></a></li>
+  </ul></div>
+<h1>E:/LightEngine/include/scene.h文件参考</h1><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>组合类型</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_ray.html">LightRay</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">光线结构  <a href="struct_light_ray.html#_details">更多...</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_raycast_hit.html">LightRaycastHit</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">这个结构获取单次光线投射结果  <a href="struct_light_raycast_hit.html#_details">更多...</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_scene_desc.html">LightSceneDesc</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">场景描述符结构  <a href="struct_light_scene_desc.html#_details">更多...</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_scene.html">LightScene</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">场景类  <a href="class_light_scene.html#_details">更多...</a><br></td></tr>
+<tr><td colspan="2"><br><h2>枚举</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="scene_8h.html#f3b8320fcdd99f02a04feaf3ac204c46">LightShapesType</a> { <a class="el" href="scene_8h.html#f3b8320fcdd99f02a04feaf3ac204c46de4fd8949ad99f78f610a3d0c0775ed7">LIGHT_STATIC_SHAPES</a> =  (1&lt;&lt;0), 
+<a class="el" href="scene_8h.html#f3b8320fcdd99f02a04feaf3ac204c46a45abc4f20a0bcc09fc15726c7fe38ce">LIGHT_DYNAMIC_SHAPES</a> =  (1&lt;&lt;1), 
+<a class="el" href="scene_8h.html#f3b8320fcdd99f02a04feaf3ac204c4697eafa241cd881823b17d884a698a0c0">LIGHT_ALL_SHAPES</a> =  LIGHT_STATIC_SHAPES|LIGHT_DYNAMIC_SHAPES
+ }</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">角色类型（静态或动态的）  <a href="scene_8h.html#f3b8320fcdd99f02a04feaf3ac204c46">更多...</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="scene_8h.html#e513c117c7918c3259aba40267bf0590">LightRaycastBit</a> </td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">指定 <a class="el" href="struct_light_raycast_hit.html">LightRaycastHit</a> 哪些成员应该产生（当作为 raycasting 方法提示标志使用时），或者判别哪些成员已经产生，当检查 <a class="el" href="struct_light_raycast_hit.html">LightRaycastHit</a> 的 flags 成员时。 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="scene_8h.html#5318a87f375b46f31976a0ad65ef8f69">LightContactPairFlag</a> { <a class="el" href="scene_8h.html#5318a87f375b46f31976a0ad65ef8f69bebc557c7fc3d7508c9c931df9c1baae">LIGHT_NOTIFY_ON_START_TOUCH</a> =  (1&lt;&lt;1), 
+<a class="el" href="scene_8h.html#5318a87f375b46f31976a0ad65ef8f69bb640b1c854acb8c10bcf24cefa6f85b">LIGHT_NOTIFY_ON_END_TOUCH</a> =  (1&lt;&lt;2), 
+<a class="el" href="scene_8h.html#5318a87f375b46f31976a0ad65ef8f6967160cc1f9d08998a169ff6f48abd3c7">LIGHT_NOTIFY_ON_TOUCH</a> =  (1&lt;&lt;3)
+ }</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">接触通报消息  <a href="scene_8h.html#5318a87f375b46f31976a0ad65ef8f69">更多...</a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+场景函数 此文件是场景函数头文件. <hr><h2>枚举类型文档</h2>
+<a class="anchor" name="5318a87f375b46f31976a0ad65ef8f69"></a><!-- doxytag: member="scene.h::LightContactPairFlag" ref="5318a87f375b46f31976a0ad65ef8f69" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="scene_8h.html#5318a87f375b46f31976a0ad65ef8f69">LightContactPairFlag</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+接触通报消息 
+<p>
+<dl compact><dt><b>枚举值: </b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" name="5318a87f375b46f31976a0ad65ef8f69bebc557c7fc3d7508c9c931df9c1baae"></a><!-- doxytag: member="LIGHT_NOTIFY_ON_START_TOUCH" ref="5318a87f375b46f31976a0ad65ef8f69bebc557c7fc3d7508c9c931df9c1baae" args="" -->LIGHT_NOTIFY_ON_START_TOUCH</em>&nbsp;</td><td>
+两个角色开始接触时发送此报告 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="5318a87f375b46f31976a0ad65ef8f69bb640b1c854acb8c10bcf24cefa6f85b"></a><!-- doxytag: member="LIGHT_NOTIFY_ON_END_TOUCH" ref="5318a87f375b46f31976a0ad65ef8f69bb640b1c854acb8c10bcf24cefa6f85b" args="" -->LIGHT_NOTIFY_ON_END_TOUCH</em>&nbsp;</td><td>
+两个角色停止接触时发送此报告 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="5318a87f375b46f31976a0ad65ef8f6967160cc1f9d08998a169ff6f48abd3c7"></a><!-- doxytag: member="LIGHT_NOTIFY_ON_TOUCH" ref="5318a87f375b46f31976a0ad65ef8f6967160cc1f9d08998a169ff6f48abd3c7" args="" -->LIGHT_NOTIFY_ON_TOUCH</em>&nbsp;</td><td>
+两个角色持续接触时发送此报告 </td></tr>
+</table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f3b8320fcdd99f02a04feaf3ac204c46"></a><!-- doxytag: member="scene.h::LightShapesType" ref="f3b8320fcdd99f02a04feaf3ac204c46" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="scene_8h.html#f3b8320fcdd99f02a04feaf3ac204c46">LightShapesType</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+角色类型（静态或动态的） 
+<p>
+<dl compact><dt><b>枚举值: </b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" name="f3b8320fcdd99f02a04feaf3ac204c46de4fd8949ad99f78f610a3d0c0775ed7"></a><!-- doxytag: member="LIGHT_STATIC_SHAPES" ref="f3b8320fcdd99f02a04feaf3ac204c46de4fd8949ad99f78f610a3d0c0775ed7" args="" -->LIGHT_STATIC_SHAPES</em>&nbsp;</td><td>
+投射静态角色 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="f3b8320fcdd99f02a04feaf3ac204c46a45abc4f20a0bcc09fc15726c7fe38ce"></a><!-- doxytag: member="LIGHT_DYNAMIC_SHAPES" ref="f3b8320fcdd99f02a04feaf3ac204c46a45abc4f20a0bcc09fc15726c7fe38ce" args="" -->LIGHT_DYNAMIC_SHAPES</em>&nbsp;</td><td>
+投射动态角色 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="f3b8320fcdd99f02a04feaf3ac204c4697eafa241cd881823b17d884a698a0c0"></a><!-- doxytag: member="LIGHT_ALL_SHAPES" ref="f3b8320fcdd99f02a04feaf3ac204c4697eafa241cd881823b17d884a698a0c0" args="" -->LIGHT_ALL_SHAPES</em>&nbsp;</td><td>
+同时投射静态和动态角色 </td></tr>
+</table>
+</dl>
+
+</div>
+</div><p>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:31 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

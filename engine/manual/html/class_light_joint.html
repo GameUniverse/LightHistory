@@ -1,0 +1,466 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightJoint类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightJoint类参考</h1><!-- doxytag: class="LightJoint" -->关节类  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;joint.h&gt;</code>
+<p>
+<a href="class_light_joint-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_scene.html">LightScene</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_joint.html#e61d78af849843491dba0b02ecf925c2">getScene</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询父场景  <a href="#e61d78af849843491dba0b02ecf925c2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_joint.html#633102e7fc8a008fac1da2ae1703f9f2">getActors</a> (<a class="el" href="class_light_actor.html">LightActor</a> **actor1, <a class="el" href="class_light_actor.html">LightActor</a> **actor2)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询关节绑定的角色  <a href="#633102e7fc8a008fac1da2ae1703f9f2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_joint.html#e4d90535e17cf43566bed2c470c375d9">setGlobalAnchor</a> (const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;vec)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置两个角色绑定点的位置（使用全局坐标）  <a href="#e4d90535e17cf43566bed2c470c375d9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_joint.html#9ebeb2297b4c1f1c07100e0380467f4e">setGlobalAxis</a> (const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;vec)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置关节主坐标轴方向（使用全局坐标）  <a href="#9ebeb2297b4c1f1c07100e0380467f4e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_joint.html#be5cab4c541ac63591cba7d7de2eee98">getGlobalAnchor</a> (<a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;vec)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询关节绑定点位置  <a href="#be5cab4c541ac63591cba7d7de2eee98"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_joint.html#9b9e2a21a16e1aa7d7525ad7773a7899">getGlobalAxis</a> (<a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;vec)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询关节主坐标轴方向  <a href="#9b9e2a21a16e1aa7d7525ad7773a7899"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="joint_8h.html#4bd677d96b3d9ebabcdd7760be5f5d30">LightJointType</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_joint.html#d796f510a1d716181a2202ef120be303">getType</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询这个关节的类型  <a href="#d796f510a1d716181a2202ef120be303"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_joint.html#c57ea4f8c70e790e07fa573b354b5591">setName</a> (const char *name)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置一个名称字符串，仅仅为了用 <a class="el" href="class_light_joint.html#135c6d166649063244ede87570092fe2">getName()</a> 查询  <a href="#c57ea4f8c70e790e07fa573b354b5591"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_joint.html#135c6d166649063244ede87570092fe2">getName</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询 <a class="el" href="class_light_joint.html#c57ea4f8c70e790e07fa573b354b5591">setName()</a> 设置的名称字符串  <a href="#135c6d166649063244ede87570092fe2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_joint.html#28772d9755583aba17e985b1304a8ec3">setLimitPoint</a> (const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;point, bool pointIsOnActor2=true)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置限制点  <a href="#28772d9755583aba17e985b1304a8ec3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_joint.html#5ea9b2387a9b6d48cf7a7976629633e2">getLimitPoint</a> (<a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;worldLimitPoint)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询全局空间限制点  <a href="#5ea9b2387a9b6d48cf7a7976629633e2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_joint.html#f04ff0cda88b19b234da2d2e8fcb6151">addLimitPlane</a> (const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;normal, const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;pointInPlane, float restitution=0.0f)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">增加一个限制平面  <a href="#f04ff0cda88b19b234da2d2e8fcb6151"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_joint.html#f1637420b6150cc757a423ffe1b0deb6">purgeLimitPlanes</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">删除所有增加到关节的限制平面  <a href="#f1637420b6150cc757a423ffe1b0deb6"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>公有属性</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="8d433267f1f45a631f97e61fbbfc1078"></a><!-- doxytag: member="LightJoint::userData" ref="8d433267f1f45a631f97e61fbbfc1078" args="" -->
+void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_joint.html#8d433267f1f45a631f97e61fbbfc1078">userData</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">你能将它用于任何用途，通常用来和一个对象创建 1:1 对应的关系。 <br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+关节类 
+<p>
+本类是物理引擎的一部分，负责各类关节的创建、绑定和设置。 每个 <a class="el" href="class_light_joint.html">LightJoint</a> 实例都必须通过 <a class="el" href="class_light_scene.html">LightScene</a> 类的 createJoint 方法创建。 
+<p>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="e61d78af849843491dba0b02ecf925c2"></a><!-- doxytag: member="LightJoint::getScene" ref="e61d78af849843491dba0b02ecf925c2" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_scene.html">LightScene</a>* LightJoint::getScene           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询父场景 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回父场景指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="633102e7fc8a008fac1da2ae1703f9f2"></a><!-- doxytag: member="LightJoint::getActors" ref="633102e7fc8a008fac1da2ae1703f9f2" args="(LightActor **actor1, LightActor **actor2)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightJoint::getActors           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_actor.html">LightActor</a> **&nbsp;</td>
+          <td class="paramname"> <em>actor1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_light_actor.html">LightActor</a> **&nbsp;</td>
+          <td class="paramname"> <em>actor2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询关节绑定的角色 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>actor1[out]</em>&nbsp;</td><td>关节绑定的第一个角色</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>actor2[out]</em>&nbsp;</td><td>关节绑定的第二个角色</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e4d90535e17cf43566bed2c470c375d9"></a><!-- doxytag: member="LightJoint::setGlobalAnchor" ref="e4d90535e17cf43566bed2c470c375d9" args="(const vec3_t &amp;vec)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightJoint::setGlobalAnchor           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>vec</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置两个角色绑定点的位置（使用全局坐标） 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>vec[in]</em>&nbsp;</td><td>角色绑定点的位置（使用全局坐标）</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9ebeb2297b4c1f1c07100e0380467f4e"></a><!-- doxytag: member="LightJoint::setGlobalAxis" ref="9ebeb2297b4c1f1c07100e0380467f4e" args="(const vec3_t &amp;vec)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightJoint::setGlobalAxis           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>vec</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置关节主坐标轴方向（使用全局坐标） 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>vec[in]</em>&nbsp;</td><td>关节主坐标轴方向（使用全局坐标）</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="be5cab4c541ac63591cba7d7de2eee98"></a><!-- doxytag: member="LightJoint::getGlobalAnchor" ref="be5cab4c541ac63591cba7d7de2eee98" args="(vec3_t &amp;vec)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightJoint::getGlobalAnchor           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>vec</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询关节绑定点位置 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>vec[out]</em>&nbsp;</td><td>返回关节绑定点位置（使用全局坐标）</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9b9e2a21a16e1aa7d7525ad7773a7899"></a><!-- doxytag: member="LightJoint::getGlobalAxis" ref="9b9e2a21a16e1aa7d7525ad7773a7899" args="(vec3_t &amp;vec)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightJoint::getGlobalAxis           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>vec</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询关节主坐标轴方向 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>vec[out]</em>&nbsp;</td><td>返回关节主坐标轴方向（使用全局坐标）</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d796f510a1d716181a2202ef120be303"></a><!-- doxytag: member="LightJoint::getType" ref="d796f510a1d716181a2202ef120be303" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="joint_8h.html#4bd677d96b3d9ebabcdd7760be5f5d30">LightJointType</a> LightJoint::getType           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询这个关节的类型 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>关节类型</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c57ea4f8c70e790e07fa573b354b5591"></a><!-- doxytag: member="LightJoint::setName" ref="c57ea4f8c70e790e07fa573b354b5591" args="(const char *name)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightJoint::setName           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>name</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置一个名称字符串，仅仅为了用 <a class="el" href="class_light_joint.html#135c6d166649063244ede87570092fe2">getName()</a> 查询 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name[in]</em>&nbsp;</td><td>设置对象名称的字符串</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="135c6d166649063244ede87570092fe2"></a><!-- doxytag: member="LightJoint::getName" ref="135c6d166649063244ede87570092fe2" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const char* LightJoint::getName           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询 <a class="el" href="class_light_joint.html#c57ea4f8c70e790e07fa573b354b5591">setName()</a> 设置的名称字符串 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>这个对象的名称字符串</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="28772d9755583aba17e985b1304a8ec3"></a><!-- doxytag: member="LightJoint::setLimitPoint" ref="28772d9755583aba17e985b1304a8ec3" args="(const vec3_t &amp;point, bool pointIsOnActor2=true)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightJoint::setLimitPoint           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>pointIsOnActor2</em> = <code>true</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置限制点 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>point[in]</em>&nbsp;</td><td>限制控制点（使用全局坐标）</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pointIsOnActor2[in]</em>&nbsp;</td><td>如果为真，point 绑定到第二个角色，否则绑定到第一个角色</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="5ea9b2387a9b6d48cf7a7976629633e2"></a><!-- doxytag: member="LightJoint::getLimitPoint" ref="5ea9b2387a9b6d48cf7a7976629633e2" args="(vec3_t &amp;worldLimitPoint)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool LightJoint::getLimitPoint           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>worldLimitPoint</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询全局空间限制点 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>worldLimitPoint[out]</em>&nbsp;</td><td>用来存储全局空间限制点</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果为真，限制点绑定到角色 2，否则绑定到角色 1。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f04ff0cda88b19b234da2d2e8fcb6151"></a><!-- doxytag: member="LightJoint::addLimitPlane" ref="f04ff0cda88b19b234da2d2e8fcb6151" args="(const vec3_t &amp;normal, const vec3_t &amp;pointInPlane, float restitution=0.0f)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool LightJoint::addLimitPlane           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>normal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>pointInPlane</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>restitution</em> = <code>0.0f</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+增加一个限制平面 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>normal[in]</em>&nbsp;</td><td>限制平面法线（使用全局坐标）</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pointInPlane[in]</em>&nbsp;</td><td>限制平面上的一点（使用全局坐标）</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>restitution[in]</em>&nbsp;</td><td>限制平面弹性</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>总是返回 TRUE。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f1637420b6150cc757a423ffe1b0deb6"></a><!-- doxytag: member="LightJoint::purgeLimitPlanes" ref="f1637420b6150cc757a423ffe1b0deb6" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightJoint::purgeLimitPlanes           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+删除所有增加到关节的限制平面 
+<p>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/<a class="el" href="joint_8h.html">joint.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:34 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

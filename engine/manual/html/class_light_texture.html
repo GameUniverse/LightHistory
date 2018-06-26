@@ -1,0 +1,754 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightTexture类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightTexture类参考</h1><!-- doxytag: class="LightTexture" -->纹理类  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;texture.h&gt;</code>
+<p>
+<a href="class_light_texture-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_engine.html">LightEngine</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_texture.html#3d48ed66483424428093fd575c2614ed">getEngine</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询父引擎  <a href="#3d48ed66483424428093fd575c2614ed"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_texture.html#ffa6b867276837949cd4204b80be367d">setOrigin</a> (int mode)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置纹理原点  <a href="#ffa6b867276837949cd4204b80be367d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_texture.html#7da6ecbdd473728135be6bb2f515c3be">getOrigin</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询纹理原点  <a href="#7da6ecbdd473728135be6bb2f515c3be"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_texture.html#2525468da15b6ece13753e049847bbc8">power2</a> (bool power2)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">纹理 2 次幂大小设置  <a href="#2525468da15b6ece13753e049847bbc8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_texture.html#6a6e6a8d9c78dc0bfcacb27c0572e9b7">channel</a> (int channel)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置当前纹理通道，当读取纹理时使用  <a href="#6a6e6a8d9c78dc0bfcacb27c0572e9b7"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_texture.html#bf29ab107ae452fda990cb847ca70fd5">layer</a> (int layer)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置当前纹理层，当激活纹理时使用  <a href="#bf29ab107ae452fda990cb847ca70fd5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_texture.html#f2c3d3a2c63fb56c0aceddef38d19c88">setName</a> (const char *name)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置纹理名称  <a href="#f2c3d3a2c63fb56c0aceddef38d19c88"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_texture.html#b83e695646e8dd7ddb27b549b5348b24">getName</a> (char *name)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询纹理名称  <a href="#b83e695646e8dd7ddb27b549b5348b24"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_texture.html#dbec203efc66d291aae7f7c7e33feb26">load</a> (const char *filename)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">将纹理文件读入内存  <a href="#dbec203efc66d291aae7f7c7e33feb26"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_texture.html#ffea99fb9c2615480180a4fbdb97ba8c">build</a> (int width, int height, unsigned char *rgba)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">从内存中创建纹理  <a href="#ffea99fb9c2615480180a4fbdb97ba8c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_texture.html#42e3f936ec139ea19cb95975b8a21c3d">create</a> (int width, int height, int type)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建新纹理  <a href="#42e3f936ec139ea19cb95975b8a21c3d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_texture.html#f2eb6dd3ab8d2a3e8e18c2ef58f4508f">grid</a> (int width, int height, int numframe)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置栅格动画  <a href="#f2eb6dd3ab8d2a3e8e18c2ef58f4508f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_texture.html#94b13df3d0938b69d9e4b69cb80884b7">getSize</a> (SIZE &amp;size)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询纹理原始的宽度和高度  <a href="#94b13df3d0938b69d9e4b69cb80884b7"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_texture.html#ab4396a9c49e80631fd0f884d1e943aa">getSizePower2</a> (SIZE &amp;size)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询纹理实际（二次幂）的宽度和高度  <a href="#ab4396a9c49e80631fd0f884d1e943aa"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_texture.html#29a2626c8ab6e1ab5e1d446ad3ed8597">isValid</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询纹理是否有效  <a href="#29a2626c8ab6e1ab5e1d446ad3ed8597"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_texture.html#41e6f8b4426388972d8f292519ef1667">speed</a> (int speed)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置动画播放速度  <a href="#41e6f8b4426388972d8f292519ef1667"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_texture.html#9900201a8eee51adc2c4ba1cd7dae4da">active</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">将纹理激活为当前纹理  <a href="#9900201a8eee51adc2c4ba1cd7dae4da"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_texture.html#262b749ae59ebb1b6e87dc793ae4e570">insertFrame</a> (int position, int order=0)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">插入纹理帧  <a href="#262b749ae59ebb1b6e87dc793ae4e570"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_texture.html#38766549642a3b2e81845ce39938febc">deleteFrame</a> (int frame)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">删除纹理帧  <a href="#38766549642a3b2e81845ce39938febc"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_texture.html#d50810b215e656295eabb21ccd3947ee">selectFrame</a> (int frame)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">选择当前纹理帧  <a href="#d50810b215e656295eabb21ccd3947ee"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_texture.html#e1c1744b38c528ef9f4b55ede5310ff4">unload</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">从内存中释放纹理  <a href="#e1c1744b38c528ef9f4b55ede5310ff4"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+纹理类 
+<p>
+本类负责纹理的读取、创建和管理。支持 25 种图像文件 .bmp, .cut, .dds, .doom, .gif, .ico, .jpg, .lbm, .mdl, .mng, .pal, .pbm, .pcd, .pcx, .pgm, .pic, .png, .ppm, .psd, .psp, .raw, .sgi, .tga, .tif 和 .hdr 的读取，支持 15 种图像文件 .bmp, .dds, .h, .jpg, .pal, .pbm, .pcx, .hdr, .pgm,.png, .ppm, .raw, .sgi, .tga 和 .tif 的保存。每个 <a class="el" href="class_light_texture.html">LightTexture</a> 实例都必 须通过 <a class="el" href="class_light_engine.html">LightEngine</a> 类的 createTexture 方法分配， releaseTexture 释放。 
+<p>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="3d48ed66483424428093fd575c2614ed"></a><!-- doxytag: member="LightTexture::getEngine" ref="3d48ed66483424428093fd575c2614ed" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_engine.html">LightEngine</a>* LightTexture::getEngine           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询父引擎 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回父引擎引用</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ffa6b867276837949cd4204b80be367d"></a><!-- doxytag: member="LightTexture::setOrigin" ref="ffa6b867276837949cd4204b80be367d" args="(int mode)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightTexture::setOrigin           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>mode</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置纹理原点 
+<p>
+当读取纹理时使用。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>mode[in]</em>&nbsp;</td><td>原点位置</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="7da6ecbdd473728135be6bb2f515c3be"></a><!-- doxytag: member="LightTexture::getOrigin" ref="7da6ecbdd473728135be6bb2f515c3be" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightTexture::getOrigin           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询纹理原点 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回纹理原点</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="2525468da15b6ece13753e049847bbc8"></a><!-- doxytag: member="LightTexture::power2" ref="2525468da15b6ece13753e049847bbc8" args="(bool power2)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightTexture::power2           </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>power2</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+纹理 2 次幂大小设置 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>power2[in]</em>&nbsp;</td><td>TRUE = 2 次幂大小，FALSE = 非 2 次幂大小</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="6a6e6a8d9c78dc0bfcacb27c0572e9b7"></a><!-- doxytag: member="LightTexture::channel" ref="6a6e6a8d9c78dc0bfcacb27c0572e9b7" args="(int channel)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightTexture::channel           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>channel</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置当前纹理通道，当读取纹理时使用 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>channel[in]</em>&nbsp;</td><td>当前纹理通道</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="bf29ab107ae452fda990cb847ca70fd5"></a><!-- doxytag: member="LightTexture::layer" ref="bf29ab107ae452fda990cb847ca70fd5" args="(int layer)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightTexture::layer           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>layer</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置当前纹理层，当激活纹理时使用 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>layer[in]</em>&nbsp;</td><td>当前纹理层</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f2c3d3a2c63fb56c0aceddef38d19c88"></a><!-- doxytag: member="LightTexture::setName" ref="f2c3d3a2c63fb56c0aceddef38d19c88" args="(const char *name)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightTexture::setName           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>name</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置纹理名称 
+<p>
+缺省纹理名称为空。当纹理名称为空时，调用 load 函数后，纹理名称会改变为纹理文件名，否则，纹理名称不会改变。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name[in]</em>&nbsp;</td><td>纹理名称，当超出长度时，只取前 16 个字符（字节）。</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b83e695646e8dd7ddb27b549b5348b24"></a><!-- doxytag: member="LightTexture::getName" ref="b83e695646e8dd7ddb27b549b5348b24" args="(char *name)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightTexture::getName           </td>
+          <td>(</td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>name</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询纹理名称 
+<p>
+纹理名称一般为纹理文件名，缺省纹理名称为空。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name[out]</em>&nbsp;</td><td>返回纹理名称，缓冲区不得小于 17 字节（16 个字符（字节）＋''）。</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="dbec203efc66d291aae7f7c7e33feb26"></a><!-- doxytag: member="LightTexture::load" ref="dbec203efc66d291aae7f7c7e33feb26" args="(const char *filename)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightTexture::load           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>filename</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+将纹理文件读入内存 
+<p>
+将纹理文件读入内存，现在能读取 25 种 .bmp, .cut, .dds, .doom, .gif, .ico, .jpg, .lbm, .mdl, .mng, .pal, .pbm, .pcd, .pcx, .pgm, .pic, .png, .ppm, .psd, .psp, .raw, .sgi, .tga 和 .tif .hdr 文件。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>filename[in]</em>&nbsp;</td><td>文件纹理名</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ffea99fb9c2615480180a4fbdb97ba8c"></a><!-- doxytag: member="LightTexture::build" ref="ffea99fb9c2615480180a4fbdb97ba8c" args="(int width, int height, unsigned char *rgba)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightTexture::build           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&nbsp;</td>
+          <td class="paramname"> <em>rgba</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+从内存中创建纹理 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>width[in]</em>&nbsp;</td><td>纹理宽度</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>height[in]</em>&nbsp;</td><td>纹理高度</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>rgba[in]</em>&nbsp;</td><td>纹理数据（RGBA）</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="42e3f936ec139ea19cb95975b8a21c3d"></a><!-- doxytag: member="LightTexture::create" ref="42e3f936ec139ea19cb95975b8a21c3d" args="(int width, int height, int type)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightTexture::create           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>type</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建新纹理 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>width[in]</em>&nbsp;</td><td>纹理宽度</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>height[in]</em>&nbsp;</td><td>纹理高度</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>type[in]</em>&nbsp;</td><td>纹理类型， 0 = 普通纹理， 1 = 可渲染纹理</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f2eb6dd3ab8d2a3e8e18c2ef58f4508f"></a><!-- doxytag: member="LightTexture::grid" ref="f2eb6dd3ab8d2a3e8e18c2ef58f4508f" args="(int width, int height, int numframe)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightTexture::grid           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>numframe</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置栅格动画 
+<p>
+在现有纹理的基础上设置栅格动画。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>width[in]</em>&nbsp;</td><td>栅格动画的宽度</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>height[in]</em>&nbsp;</td><td>栅格动画的高度</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>numframe[in]</em>&nbsp;</td><td>动画帧数</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="94b13df3d0938b69d9e4b69cb80884b7"></a><!-- doxytag: member="LightTexture::getSize" ref="94b13df3d0938b69d9e4b69cb80884b7" args="(SIZE &amp;size)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightTexture::getSize           </td>
+          <td>(</td>
+          <td class="paramtype">SIZE &amp;&nbsp;</td>
+          <td class="paramname"> <em>size</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询纹理原始的宽度和高度 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>size[in]</em>&nbsp;</td><td>返回纹理大小</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ab4396a9c49e80631fd0f884d1e943aa"></a><!-- doxytag: member="LightTexture::getSizePower2" ref="ab4396a9c49e80631fd0f884d1e943aa" args="(SIZE &amp;size)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightTexture::getSizePower2           </td>
+          <td>(</td>
+          <td class="paramtype">SIZE &amp;&nbsp;</td>
+          <td class="paramname"> <em>size</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询纹理实际（二次幂）的宽度和高度 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>size</em>&nbsp;</td><td>返回纹理实际（二次幂）的大小</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="29a2626c8ab6e1ab5e1d446ad3ed8597"></a><!-- doxytag: member="LightTexture::isValid" ref="29a2626c8ab6e1ab5e1d446ad3ed8597" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool LightTexture::isValid           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询纹理是否有效 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果纹理有效，返回 TRUE，否则返回 FALSE 。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="41e6f8b4426388972d8f292519ef1667"></a><!-- doxytag: member="LightTexture::speed" ref="41e6f8b4426388972d8f292519ef1667" args="(int speed)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightTexture::speed           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>speed</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置动画播放速度 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>speed[in]</em>&nbsp;</td><td>动画播放的速度，用每帧持续的时间表示，以千分之一秒为单位。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9900201a8eee51adc2c4ba1cd7dae4da"></a><!-- doxytag: member="LightTexture::active" ref="9900201a8eee51adc2c4ba1cd7dae4da" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightTexture::active           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+将纹理激活为当前纹理 
+<p>
+将纹理激活为当前纹理，如果是动画纹理，则自动播放动画。<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="262b749ae59ebb1b6e87dc793ae4e570"></a><!-- doxytag: member="LightTexture::insertFrame" ref="262b749ae59ebb1b6e87dc793ae4e570" args="(int position, int order=0)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightTexture::insertFrame           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>order</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+插入纹理帧 
+<p>
+新插入的纹理帧将会设为当前纹理帧。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>position[in]</em>&nbsp;</td><td>插入位置。</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>order[in]</em>&nbsp;</td><td>插入次序，0 = 前面，1 = 后面。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回新纹理帧位置，否则，返回 -1。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="38766549642a3b2e81845ce39938febc"></a><!-- doxytag: member="LightTexture::deleteFrame" ref="38766549642a3b2e81845ce39938febc" args="(int frame)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightTexture::deleteFrame           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>frame</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+删除纹理帧 
+<p>
+如果删除后当前帧无效，则当前帧将被设为 0。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>frame[in]</em>&nbsp;</td><td>当前纹理帧。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回零；如果函数调用失败，返回非零值。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d50810b215e656295eabb21ccd3947ee"></a><!-- doxytag: member="LightTexture::selectFrame" ref="d50810b215e656295eabb21ccd3947ee" args="(int frame)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightTexture::selectFrame           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>frame</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+选择当前纹理帧 
+<p>
+指定当前要渲染和操作的帧，在调用 load 和 save 前必须指定要读取和保存的目标帧（只对帧动画纹理有效）。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>frame[in]</em>&nbsp;</td><td>当前纹理帧。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回零；如果函数调用失败，返回非零值。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e1c1744b38c528ef9f4b55ede5310ff4"></a><!-- doxytag: member="LightTexture::unload" ref="e1c1744b38c528ef9f4b55ede5310ff4" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightTexture::unload           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+从内存中释放纹理 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/<a class="el" href="texture_8h.html">texture.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:36 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

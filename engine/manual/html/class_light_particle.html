@@ -1,0 +1,897 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightParticle类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightParticle类参考</h1><!-- doxytag: class="LightParticle" -->粒子类  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;particle.h&gt;</code>
+<p>
+<a href="class_light_particle-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_engine.html">LightEngine</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_particle.html#672be4ce47610d19f50860deba1bf6a3">getEngine</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询父引擎  <a href="#672be4ce47610d19f50860deba1bf6a3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_particle.html#a33d7452bedfcca09842f35208e58f27">load</a> (const char *filename)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">从文件中读取粒子数据  <a href="#a33d7452bedfcca09842f35208e58f27"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_particle.html#3ba7d6cdafc24eeb255d53aed2773959">save</a> (const char *filename)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">保存粒子数据到文件中  <a href="#3ba7d6cdafc24eeb255d53aed2773959"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_particle.html#74db506e8d4e1055a658510a7f556b49">loadFromDesc</a> (<a class="el" href="class_light_particle_desc.html">LightParticleDesc</a> &amp;particleDesc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">从描述符中读取粒子数据  <a href="#74db506e8d4e1055a658510a7f556b49"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_particle.html#948eac7d7cf2be5390c5e261b2f10212">saveToDesc</a> (<a class="el" href="class_light_particle_desc.html">LightParticleDesc</a> &amp;particleDesc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">保存粒子数据到描述符中  <a href="#948eac7d7cf2be5390c5e261b2f10212"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_particle.html#473b3b5ca06b57aa6aab38a282ae3cca">unload</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放内存中的粒子数据  <a href="#473b3b5ca06b57aa6aab38a282ae3cca"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_particle.html#cd542b9ebb31a831007acbb36624e502">setCenter</a> (float x, float y, float z)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置粒子发射源中心位置  <a href="#cd542b9ebb31a831007acbb36624e502"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_particle.html#59b4ba7936b39cfa9623604a66429a80">attach</a> (<a class="el" href="class_light_skeleton.html">LightSkeleton</a> *skeleton, int bone)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">把粒子绑定到骨骼动画骨头上  <a href="#59b4ba7936b39cfa9623604a66429a80"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_particle.html#9d11128aa23c7f462b629e2e46b9fa81">setGlobalPosition</a> (float x, float y, float z)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置粒子发射源世界位置  <a href="#9d11128aa23c7f462b629e2e46b9fa81"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_particle.html#672a55125b0c80c62d3c55319887de42">setGlobalOrientationQuat</a> (const <a class="el" href="type_8h.html#e42e6ff3aa78dae73930a489e8dd5490">quat_t</a> quat)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置粒子发射源世界方向（使用四元数）  <a href="#672a55125b0c80c62d3c55319887de42"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_particle.html#fd5503d85e7d4958070015f1bee834c2">setGlobalOrientationAngleAxis</a> (float angle, float x, float y, float z)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置粒子发射源世界方向（使用绕轴旋转）  <a href="#fd5503d85e7d4958070015f1bee834c2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_particle.html#39d1ea5e6e47e3dc0137eb8fe7f6615d">setLocalPosition</a> (float x, float y, float z)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置粒子发射源局部位置  <a href="#39d1ea5e6e47e3dc0137eb8fe7f6615d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_particle.html#85c0c4cc3707eb67cca2be610f876ea9">setLocalOrientationQuat</a> (const <a class="el" href="type_8h.html#e42e6ff3aa78dae73930a489e8dd5490">quat_t</a> quat)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置粒子发射源局部方向（使用四元数）  <a href="#85c0c4cc3707eb67cca2be610f876ea9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_particle.html#a67eb950c3d5ec9c495600a750263a69">setLocalOrientationAngleAxis</a> (float angle, float x, float y, float z)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置粒子发射源局部方向（使用绕轴旋转）  <a href="#a67eb950c3d5ec9c495600a750263a69"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_particle.html#290e15b84b32508f50d8f7352c2c0bf5">setVector</a> (float x, float y, float z)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置粒子发射方向  <a href="#290e15b84b32508f50d8f7352c2c0bf5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_particle.html#e3c90dd71b446656ee7b1d978161a3ab">setAngle</a> (float angle)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置粒子发射源开口角度  <a href="#e3c90dd71b446656ee7b1d978161a3ab"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_particle.html#3d6b5e85450f6b0d16b331c73a27ae70">speed</a> (float speed)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置粒子初始速度  <a href="#3d6b5e85450f6b0d16b331c73a27ae70"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_particle.html#c305dd3f28b13af7bda6e3a054e5e808">life</a> (int life)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置粒子寿命  <a href="#c305dd3f28b13af7bda6e3a054e5e808"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_particle.html#3bc9fa0a57cb9284e9e602a1ab211f52">follow</a> (float factor)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置粒子追随因子  <a href="#3bc9fa0a57cb9284e9e602a1ab211f52"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_particle.html#a0e3a04566ca4e03193fdacc5d13a807">sum</a> (int sum)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置存活粒子数  <a href="#a0e3a04566ca4e03193fdacc5d13a807"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_particle.html#c2b69a68835d30f8b33a772d70ec7e04">size</a> (float width, float height)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置单个粒子大小  <a href="#c2b69a68835d30f8b33a772d70ec7e04"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_particle.html#e53e8879540c82d9f65b655ed11f94d2">render</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">渲染粒子  <a href="#e53e8879540c82d9f65b655ed11f94d2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_particle.html#741ae2f1b2ff23e4a19804b24f260ea3">active</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">重新激活粒子发射源  <a href="#741ae2f1b2ff23e4a19804b24f260ea3"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+粒子类 
+<p>
+本类负责粒子的创建、管理和显示。每个 <a class="el" href="class_light_particle.html">LightParticle</a> 实例都必须通过 <a class="el" href="class_light_engine.html">LightEngine</a> 类的 NewParticle 方法分配。 
+<p>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="672be4ce47610d19f50860deba1bf6a3"></a><!-- doxytag: member="LightParticle::getEngine" ref="672be4ce47610d19f50860deba1bf6a3" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_engine.html">LightEngine</a>* LightParticle::getEngine           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询父引擎 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回父引擎引用</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a33d7452bedfcca09842f35208e58f27"></a><!-- doxytag: member="LightParticle::load" ref="a33d7452bedfcca09842f35208e58f27" args="(const char *filename)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightParticle::load           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>filename</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+从文件中读取粒子数据 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>filename</em>&nbsp;</td><td>要读取的粒子数据文件名称</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回零；如果函数调用失败，返回错误代码。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="3ba7d6cdafc24eeb255d53aed2773959"></a><!-- doxytag: member="LightParticle::save" ref="3ba7d6cdafc24eeb255d53aed2773959" args="(const char *filename)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightParticle::save           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>filename</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+保存粒子数据到文件中 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>filename</em>&nbsp;</td><td>要保存的的粒子数据文件名称</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回零；如果函数调用失败，返回错误代码。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="74db506e8d4e1055a658510a7f556b49"></a><!-- doxytag: member="LightParticle::loadFromDesc" ref="74db506e8d4e1055a658510a7f556b49" args="(LightParticleDesc &amp;particleDesc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightParticle::loadFromDesc           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_particle_desc.html">LightParticleDesc</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>particleDesc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+从描述符中读取粒子数据 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>particleDesc</em>&nbsp;</td><td>要读取的粒子数据描述符</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回零；如果函数调用失败，返回错误代码。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="948eac7d7cf2be5390c5e261b2f10212"></a><!-- doxytag: member="LightParticle::saveToDesc" ref="948eac7d7cf2be5390c5e261b2f10212" args="(LightParticleDesc &amp;particleDesc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightParticle::saveToDesc           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_particle_desc.html">LightParticleDesc</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>particleDesc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+保存粒子数据到描述符中 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>particleDesc</em>&nbsp;</td><td>要保存的粒子数据描述符</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回零；如果函数调用失败，返回错误代码。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="473b3b5ca06b57aa6aab38a282ae3cca"></a><!-- doxytag: member="LightParticle::unload" ref="473b3b5ca06b57aa6aab38a282ae3cca" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightParticle::unload           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放内存中的粒子数据 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回零；如果函数调用失败，返回错误代码。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="cd542b9ebb31a831007acbb36624e502"></a><!-- doxytag: member="LightParticle::setCenter" ref="cd542b9ebb31a831007acbb36624e502" args="(float x, float y, float z)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightParticle::setCenter           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置粒子发射源中心位置 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>中心位置的 x 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>中心位置的 y 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>z</em>&nbsp;</td><td>中心位置的 z 坐标</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="59b4ba7936b39cfa9623604a66429a80"></a><!-- doxytag: member="LightParticle::attach" ref="59b4ba7936b39cfa9623604a66429a80" args="(LightSkeleton *skeleton, int bone)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightParticle::attach           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_skeleton.html">LightSkeleton</a> *&nbsp;</td>
+          <td class="paramname"> <em>skeleton</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>bone</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+把粒子绑定到骨骼动画骨头上 
+<p>
+绑定后，粒子将跟随绑定的骨头进行运动（包括位置和方向），同一时刻，只有最后绑定的骨头有效。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>skeleton[in]</em>&nbsp;</td><td>要绑定的骨骼动画，当该参数为 NULL 时解除绑定</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>bone[in]</em>&nbsp;</td><td>要绑定的骨头</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回 0；否则，返回错误代码。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9d11128aa23c7f462b629e2e46b9fa81"></a><!-- doxytag: member="LightParticle::setGlobalPosition" ref="9d11128aa23c7f462b629e2e46b9fa81" args="(float x, float y, float z)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightParticle::setGlobalPosition           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置粒子发射源世界位置 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>发射源世界位置的 x 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>发射源世界位置的 y 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>z</em>&nbsp;</td><td>发射源世界位置的 z 坐标</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="672a55125b0c80c62d3c55319887de42"></a><!-- doxytag: member="LightParticle::setGlobalOrientationQuat" ref="672a55125b0c80c62d3c55319887de42" args="(const quat_t quat)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightParticle::setGlobalOrientationQuat           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="type_8h.html#e42e6ff3aa78dae73930a489e8dd5490">quat_t</a>&nbsp;</td>
+          <td class="paramname"> <em>quat</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置粒子发射源世界方向（使用四元数） 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>quat[in]</em>&nbsp;</td><td>要设置的粒子发射源世界方向四元数 </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="fd5503d85e7d4958070015f1bee834c2"></a><!-- doxytag: member="LightParticle::setGlobalOrientationAngleAxis" ref="fd5503d85e7d4958070015f1bee834c2" args="(float angle, float x, float y, float z)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightParticle::setGlobalOrientationAngleAxis           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置粒子发射源世界方向（使用绕轴旋转） 
+<p>
+设置粒子发射源世界方向（使用绕轴旋转指定角度的表示方式）<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>angle[in]</em>&nbsp;</td><td>粒子发射源绕轴旋转角度</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x[in]</em>&nbsp;</td><td>旋转轴向量 x 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y[in]</em>&nbsp;</td><td>旋转轴向量 y 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>z[in]</em>&nbsp;</td><td>旋转轴向量 z 分量</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>旋转时以原点和该向量组成的线段为轴进行旋转。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="39d1ea5e6e47e3dc0137eb8fe7f6615d"></a><!-- doxytag: member="LightParticle::setLocalPosition" ref="39d1ea5e6e47e3dc0137eb8fe7f6615d" args="(float x, float y, float z)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightParticle::setLocalPosition           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置粒子发射源局部位置 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>发射源局部位置的 x 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>发射源局部位置的 y 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>z</em>&nbsp;</td><td>发射源局部位置的 z 坐标</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="85c0c4cc3707eb67cca2be610f876ea9"></a><!-- doxytag: member="LightParticle::setLocalOrientationQuat" ref="85c0c4cc3707eb67cca2be610f876ea9" args="(const quat_t quat)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightParticle::setLocalOrientationQuat           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="type_8h.html#e42e6ff3aa78dae73930a489e8dd5490">quat_t</a>&nbsp;</td>
+          <td class="paramname"> <em>quat</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置粒子发射源局部方向（使用四元数） 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>quat[in]</em>&nbsp;</td><td>要设置的粒子发射源局部方向四元数 </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a67eb950c3d5ec9c495600a750263a69"></a><!-- doxytag: member="LightParticle::setLocalOrientationAngleAxis" ref="a67eb950c3d5ec9c495600a750263a69" args="(float angle, float x, float y, float z)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightParticle::setLocalOrientationAngleAxis           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置粒子发射源局部方向（使用绕轴旋转） 
+<p>
+设置粒子发射源局部方向（使用绕轴旋转指定角度的表示方式）<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>angle[in]</em>&nbsp;</td><td>粒子发射源绕轴旋转角度</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x[in]</em>&nbsp;</td><td>旋转轴向量 x 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y[in]</em>&nbsp;</td><td>旋转轴向量 y 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>z[in]</em>&nbsp;</td><td>旋转轴向量 z 分量</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>旋转时以原点和该向量组成的线段为轴进行旋转。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="290e15b84b32508f50d8f7352c2c0bf5"></a><!-- doxytag: member="LightParticle::setVector" ref="290e15b84b32508f50d8f7352c2c0bf5" args="(float x, float y, float z)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightParticle::setVector           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置粒子发射方向 
+<p>
+设置粒子发射方向。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>x 发射方向的 x 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>y 发射方向的 y 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>z 发射方向的 z 分量</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数无返回值。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e3c90dd71b446656ee7b1d978161a3ab"></a><!-- doxytag: member="LightParticle::setAngle" ref="e3c90dd71b446656ee7b1d978161a3ab" args="(float angle)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightParticle::setAngle           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>angle</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置粒子发射源开口角度 
+<p>
+设置粒子发射源开口角度。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>angle 发射源开口角度</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数无返回值。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="3d6b5e85450f6b0d16b331c73a27ae70"></a><!-- doxytag: member="LightParticle::speed" ref="3d6b5e85450f6b0d16b331c73a27ae70" args="(float speed)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightParticle::speed           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>speed</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置粒子初始速度 
+<p>
+设置粒子初始速度<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>speed 粒子初始速度</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数无返回值。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c305dd3f28b13af7bda6e3a054e5e808"></a><!-- doxytag: member="LightParticle::life" ref="c305dd3f28b13af7bda6e3a054e5e808" args="(int life)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightParticle::life           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>life</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置粒子寿命 
+<p>
+设置粒子寿命<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>int</em>&nbsp;</td><td>life 每个粒子的存活时间（以千分之一秒为单位）</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数无返回值。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="3bc9fa0a57cb9284e9e602a1ab211f52"></a><!-- doxytag: member="LightParticle::follow" ref="3bc9fa0a57cb9284e9e602a1ab211f52" args="(float factor)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightParticle::follow           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>factor</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置粒子追随因子 
+<p>
+设置粒子追随因子。通常情况下，粒子离开发射源后，就不再受发射源位置的影响；但总的粒子数是有限的，有时为了更逼真地模拟快速移动的物体， 我们需要让粒子跟着发射源的位置移动，通过设置追随因子，我们就能模拟这种现象。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>factor 要设置的追随因子，取值范围（0~1），0 表示粒子离开发射源后就不再受发射源位置的影响，1 表示粒子的位置完全由发射源的位置确定。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数无返回值。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a0e3a04566ca4e03193fdacc5d13a807"></a><!-- doxytag: member="LightParticle::sum" ref="a0e3a04566ca4e03193fdacc5d13a807" args="(int sum)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightParticle::sum           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>sum</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置存活粒子数 
+<p>
+设置存活粒子数<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>int</em>&nbsp;</td><td>sum 所有存活粒子的总数</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数无返回值。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c2b69a68835d30f8b33a772d70ec7e04"></a><!-- doxytag: member="LightParticle::size" ref="c2b69a68835d30f8b33a772d70ec7e04" args="(float width, float height)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightParticle::size           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>height</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置单个粒子大小 
+<p>
+设置单个粒子大小<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>width 单个粒子的宽度</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>height 单个粒子的高度</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数无返回值。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e53e8879540c82d9f65b655ed11f94d2"></a><!-- doxytag: member="LightParticle::render" ref="e53e8879540c82d9f65b655ed11f94d2" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightParticle::render           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+渲染粒子 
+<p>
+渲染粒子。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数无参数。</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数无返回值。如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="741ae2f1b2ff23e4a19804b24f260ea3"></a><!-- doxytag: member="LightParticle::active" ref="741ae2f1b2ff23e4a19804b24f260ea3" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightParticle::active           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+重新激活粒子发射源 
+<p>
+此函数用于重新激活生命周期结束的粒子发射源<p>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/<a class="el" href="particle_8h.html">particle.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:35 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

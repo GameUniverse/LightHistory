@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightFluidEmitterDesc结构参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightFluidEmitterDesc结构参考</h1><!-- doxytag: class="LightFluidEmitterDesc" -->流体发射器描述符结构  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;fluidEmitter.h&gt;</code>
+<p>
+LightFluidEmitterDesc合作图：<center><font size="2">[<a href="graph_legend.html">图例</a>]</font></center><a href="struct_light_fluid_emitter_desc-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有属性</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="ea3c6e9d6043d263f4ed88d3de5365fa"></a><!-- doxytag: member="LightFluidEmitterDesc::relPose" ref="ea3c6e9d6043d263f4ed88d3de5365fa" args="" -->
+mat34_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_emitter_desc.html#ea3c6e9d6043d263f4ed88d3de5365fa">relPose</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">相对于 frameShape（发射器形体）的发射器位置和方向 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="7a189c3020717b461796bcb475e808c3"></a><!-- doxytag: member="LightFluidEmitterDesc::relPosition" ref="7a189c3020717b461796bcb475e808c3" args="" -->
+<a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_emitter_desc.html#7a189c3020717b461796bcb475e808c3">relPosition</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">相对于 frameShape（发射器形体）的发射器位置 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="b07bfb96107ca9db77001e47be255e30"></a><!-- doxytag: member="LightFluidEmitterDesc::relOrientationQuat" ref="b07bfb96107ca9db77001e47be255e30" args="" -->
+<a class="el" href="type_8h.html#e42e6ff3aa78dae73930a489e8dd5490">quat_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_emitter_desc.html#b07bfb96107ca9db77001e47be255e30">relOrientationQuat</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">相对于 frameShape（发射器形体）的发射器方向四元数 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="5316728e38b1f42a661795a35fafc5a5"></a><!-- doxytag: member="LightFluidEmitterDesc::frameShape" ref="5316728e38b1f42a661795a35fafc5a5" args="" -->
+<a class="el" href="class_light_actor.html">LightActor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_emitter_desc.html#5316728e38b1f42a661795a35fafc5a5">frameShape</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">角色指针指向发射器要绑定的角色 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="3936c977e7054869834ddf39abe381a6"></a><!-- doxytag: member="LightFluidEmitterDesc::type" ref="3936c977e7054869834ddf39abe381a6" args="" -->
+int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_emitter_desc.html#3936c977e7054869834ddf39abe381a6">type</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">发射器运转模式 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="c14a7273c4cd7e42315e0344bd339ee3"></a><!-- doxytag: member="LightFluidEmitterDesc::maxParticles" ref="c14a7273c4cd7e42315e0344bd339ee3" args="" -->
+int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_emitter_desc.html#c14a7273c4cd7e42315e0344bd339ee3">maxParticles</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">从这个发射器发射出的最大粒子数 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d5721d801ab3307b37c22811a1f2e24c"></a><!-- doxytag: member="LightFluidEmitterDesc::shape" ref="d5721d801ab3307b37c22811a1f2e24c" args="" -->
+int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_emitter_desc.html#d5721d801ab3307b37c22811a1f2e24c">shape</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">发射器的形状可以指定为矩形或椭圆 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="080f6d06ed5acc1ea5d16cd69bc3e8a7"></a><!-- doxytag: member="LightFluidEmitterDesc::dimensionX" ref="080f6d06ed5acc1ea5d16cd69bc3e8a7" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_emitter_desc.html#080f6d06ed5acc1ea5d16cd69bc3e8a7">dimensionX</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">发射器在第一、二轴方向的大小，此轴由它的方向（relPose 或 relOrientationQuat ）决定 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="3d6d2a949591060c50ec75423d961581"></a><!-- doxytag: member="LightFluidEmitterDesc::dimensionY" ref="3d6d2a949591060c50ec75423d961581" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_emitter_desc.html#3d6d2a949591060c50ec75423d961581">dimensionY</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">含义同上 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="5e08bc179daf7fc67e8e7f1c7118a322"></a><!-- doxytag: member="LightFluidEmitterDesc::randomPos" ref="5e08bc179daf7fc67e8e7f1c7118a322" args="" -->
+<a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_emitter_desc.html#5e08bc179daf7fc67e8e7f1c7118a322">randomPos</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">发射器方向的每一个轴方向的随机向量值（肯定是一个正值） <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="114cd5aedcc93047e4c2de40cc80ac4f"></a><!-- doxytag: member="LightFluidEmitterDesc::randomAngle" ref="114cd5aedcc93047e4c2de40cc80ac4f" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_emitter_desc.html#114cd5aedcc93047e4c2de40cc80ac4f">randomAngle</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">发射方向的随机角度偏差 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="02c673fcb221071b3703933b1e930173"></a><!-- doxytag: member="LightFluidEmitterDesc::fluidVelocityMagnitude" ref="02c673fcb221071b3703933b1e930173" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_emitter_desc.html#02c673fcb221071b3703933b1e930173">fluidVelocityMagnitude</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">发射出去的流体粒子的速度大小 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="3e848d6293b888a086698eb5862413e7"></a><!-- doxytag: member="LightFluidEmitterDesc::rate" ref="3e848d6293b888a086698eb5862413e7" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_emitter_desc.html#3e848d6293b888a086698eb5862413e7">rate</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">这个速度指定每秒钟发射多少个粒子 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="bcc5ed0d9d49851c373466a9a0c6d7df"></a><!-- doxytag: member="LightFluidEmitterDesc::particleLifetime" ref="bcc5ed0d9d49851c373466a9a0c6d7df" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_emitter_desc.html#bcc5ed0d9d49851c373466a9a0c6d7df">particleLifetime</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">指定以秒为单位的发射粒子的生命周期 <br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+流体发射器描述符结构 
+<p>
+<hr>该结构的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/<a class="el" href="fluid_emitter_8h.html">fluidEmitter.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:33 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

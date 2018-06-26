@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightJointDesc结构参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightJointDesc结构参考</h1><!-- doxytag: class="LightJointDesc" -->关节描述符结构  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;joint.h&gt;</code>
+<p>
+LightJointDesc合作图：<center><font size="2">[<a href="graph_legend.html">图例</a>]</font></center><a href="struct_light_joint_desc-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有属性</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a0025a6b6321ddc98c37f2a52d5332c1"></a><!-- doxytag: member="LightJointDesc::type" ref="a0025a6b6321ddc98c37f2a52d5332c1" args="" -->
+<a class="el" href="joint_8h.html#4bd677d96b3d9ebabcdd7760be5f5d30">LightJointType</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_joint_desc.html#a0025a6b6321ddc98c37f2a52d5332c1">type</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">关节类型 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="1a6e727d495c3fc12909c7a82790a3b2"></a><!-- doxytag: member="LightJointDesc::actor" ref="1a6e727d495c3fc12909c7a82790a3b2" args="[2]" -->
+<a class="el" href="class_light_actor.html">LightActor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_joint_desc.html#1a6e727d495c3fc12909c7a82790a3b2">actor</a> [2]</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">关节连接的两个角色 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="f45583b71ee74a5854a16740f8a55c9d"></a><!-- doxytag: member="LightJointDesc::localNormal" ref="f45583b71ee74a5854a16740f8a55c9d" args="[2]" -->
+<a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_joint_desc.html#f45583b71ee74a5854a16740f8a55c9d">localNormal</a> [2]</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">关节空间的 X 轴，在 actor[i] 的空间， 与 localAxis[i] 成直角 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="cd2b28c2b7ee49a467ec7a256e7ca617"></a><!-- doxytag: member="LightJointDesc::localAxis" ref="cd2b28c2b7ee49a467ec7a256e7ca617" args="[2]" -->
+<a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_joint_desc.html#cd2b28c2b7ee49a467ec7a256e7ca617">localAxis</a> [2]</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">关节空间的 Z 轴，在 actor[i] 的空间。这是关节的主坐标轴。 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a9c61558dd232f6b4f889294c32c0cd4"></a><!-- doxytag: member="LightJointDesc::localAnchor" ref="a9c61558dd232f6b4f889294c32c0cd4" args="[2]" -->
+<a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_joint_desc.html#a9c61558dd232f6b4f889294c32c0cd4">localAnchor</a> [2]</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">在 actor[i] 空间的关节绑定点 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="425245544079e7b4008f591cd0180a64"></a><!-- doxytag: member="LightJointDesc::maxForce" ref="425245544079e7b4008f591cd0180a64" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_joint_desc.html#425245544079e7b4008f591cd0180a64">maxForce</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">关节破坏之前能承受的最大角向力（扭矩），必须是正值 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="eaaf9486b89ce3fe79de83fa0764c7f2"></a><!-- doxytag: member="LightJointDesc::maxTorque" ref="eaaf9486b89ce3fe79de83fa0764c7f2" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_joint_desc.html#eaaf9486b89ce3fe79de83fa0764c7f2">maxTorque</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">含义同上 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="2a91e3bc9add49fe13172aec2b3e2f1a"></a><!-- doxytag: member="LightJointDesc::solverExtrapolationFactor" ref="2a91e3bc9add49fe13172aec2b3e2f1a" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_joint_desc.html#2a91e3bc9add49fe13172aec2b3e2f1a">solverExtrapolationFactor</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">解决关节约束的推断因子 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="404c6e6e422b3cd27539fb3dbc53d8c0"></a><!-- doxytag: member="LightJointDesc::useAccelerationSpring" ref="404c6e6e422b3cd27539fb3dbc53d8c0" args="" -->
+int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_joint_desc.html#404c6e6e422b3cd27539fb3dbc53d8c0">useAccelerationSpring</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">切换到基于加速度的效果 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d337e0e5712ef3e2606e547a3851d78e"></a><!-- doxytag: member="LightJointDesc::userData" ref="d337e0e5712ef3e2606e547a3851d78e" args="" -->
+void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_joint_desc.html#d337e0e5712ef3e2606e547a3851d78e">userData</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">将要复制到 <a class="el" href="class_light_joint.html#8d433267f1f45a631f97e61fbbfc1078">LightJoint::userData</a> <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="09de7de550b55d4579bf4eb3246af093"></a><!-- doxytag: member="LightJointDesc::distanceJoint" ref="09de7de550b55d4579bf4eb3246af093" args="" -->
+<a class="el" href="struct_light_distance_joint_desc.html">LightDistanceJointDesc</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_joint_desc.html#09de7de550b55d4579bf4eb3246af093">distanceJoint</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">距离关节参数 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a7a267540a2f125ab14de5ba99c86da0"></a><!-- doxytag: member="LightJointDesc::sphericalJoint" ref="a7a267540a2f125ab14de5ba99c86da0" args="" -->
+<a class="el" href="struct_light_spherical_joint_desc.html">LightSphericalJointDesc</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_joint_desc.html#a7a267540a2f125ab14de5ba99c86da0">sphericalJoint</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">球窝关节参数 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="420f540c9e728510934824642cd44a58"></a><!-- doxytag: member="LightJointDesc::pulleyJointDesc" ref="420f540c9e728510934824642cd44a58" args="" -->
+<a class="el" href="struct_light_pulley_joint_desc.html">LightPulleyJointDesc</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_joint_desc.html#420f540c9e728510934824642cd44a58">pulleyJointDesc</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">滑轮关节参数 <br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+关节描述符结构 
+<p>
+<hr>该结构的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/<a class="el" href="joint_8h.html">joint.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:34 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

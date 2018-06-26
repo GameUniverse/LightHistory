@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: E:/LightEngine/include/netstart.h文件参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li><a href="annotated.html"><span>类</span></a></li>
+    <li id="current"><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="files.html"><span>文件列表</span></a></li>
+    <li><a href="globals.html"><span>文件成员</span></a></li>
+  </ul></div>
+<h1>E:/LightEngine/include/netstart.h文件参考</h1>网络引擎启动函数 此文件是网络引擎启动函数头文件. <a href="#_details">更多...</a>
+<p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>函数</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_light_network.html">LightNetwork</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="netstart_8h.html#5297025c6475102b07b52eb58232f05d">LightNetworkCreate</a> (<a class="el" href="struct_light_network_desc.html">LightNetworkDesc</a> &amp;desc)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个光线网络引擎实例  <a href="#5297025c6475102b07b52eb58232f05d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="netstart_8h.html#7bff91cccc53b664133db0da3d5d3d5e">LightNetworkRelease</a> (<a class="el" href="class_light_network.html">LightNetwork</a> *network)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放光线网络引擎实例  <a href="#7bff91cccc53b664133db0da3d5d3d5e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_light_network.html">LightNetwork</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="netstart_8h.html#43198aadd3fb17cc69a5d4e2e355d85b">LightNetworkGet</a> (void)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询光线网络引擎全局指针  <a href="#43198aadd3fb17cc69a5d4e2e355d85b"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+网络引擎启动函数 此文件是网络引擎启动函数头文件. 
+<p>
+<hr><h2>函数文档</h2>
+<a class="anchor" name="5297025c6475102b07b52eb58232f05d"></a><!-- doxytag: member="netstart.h::LightNetworkCreate" ref="5297025c6475102b07b52eb58232f05d" args="(LightNetworkDesc &amp;desc)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_light_network.html">LightNetwork</a>* LightNetworkCreate           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_light_network_desc.html">LightNetworkDesc</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>desc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个光线网络引擎实例 
+<p>
+创建一个光线网络引擎实例，并返回 <a class="el" href="class_light_network.html">LightNetwork</a> 指针。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有参数。</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>这是在使用网络引擎前必须要调用的第一个函数，网络引擎的大部分功能都需要通过调用 <a class="el" href="class_light_network.html">LightNetwork</a> 来完成。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回一个 <a class="el" href="class_light_network.html">LightNetwork</a> 指针，否则返回 NULL 。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="43198aadd3fb17cc69a5d4e2e355d85b"></a><!-- doxytag: member="netstart.h::LightNetworkGet" ref="43198aadd3fb17cc69a5d4e2e355d85b" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_light_network.html">LightNetwork</a>* LightNetworkGet           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询光线网络引擎全局指针 
+<p>
+查询光线网络引擎全局指针，该函数必须在 LightNetworkCreate 函数之后调用，在整个程序运行期间，只存在引擎的一个维一实例。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有参数。</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>引擎的大部分功能都需要通过调用 <a class="el" href="class_light_network.html">LightNetwork</a> 来完成，当第一次创建引擎实例后，以后随时可以通过调用该函数来获取引擎的全局指针。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回一个 <a class="el" href="class_light_network.html">LightNetwork</a> 指针，否则返回 NULL 。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="7bff91cccc53b664133db0da3d5d3d5e"></a><!-- doxytag: member="netstart.h::LightNetworkRelease" ref="7bff91cccc53b664133db0da3d5d3d5e" args="(LightNetwork *network)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightNetworkRelease           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_network.html">LightNetwork</a> *&nbsp;</td>
+          <td class="paramname"> <em>network</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放光线网络引擎实例 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>要释放的光线网络引擎实例指针，目前在同一个程序中只能创建一个实例。</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>这是在引擎使用结束后，必须要调用的一个函数。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回一个 <a class="el" href="class_light_network.html">LightNetwork</a> 指针，否则返回 NULL 。 </dd></dl>
+
+</div>
+</div><p>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:31 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

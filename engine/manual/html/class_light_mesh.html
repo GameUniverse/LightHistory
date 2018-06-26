@@ -1,0 +1,779 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightMesh类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightMesh类参考</h1><!-- doxytag: class="LightMesh" -->静态网格类  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;mesh.h&gt;</code>
+<p>
+<a href="class_light_mesh-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_engine.html">LightEngine</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_mesh.html#312e3306f7d0aebb9e065babf5909e42">getEngine</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询父引擎  <a href="#312e3306f7d0aebb9e065babf5909e42"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_mesh.html#142f743b3d19ded95858fb5bac02a17c">setName</a> (const char *name)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置静态网格名称  <a href="#142f743b3d19ded95858fb5bac02a17c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_mesh.html#fabd615e3e0b2e93153758e39fef71bb">getName</a> (char *name)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询静态网格名称  <a href="#fabd615e3e0b2e93153758e39fef71bb"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_mesh.html#13623c5a66ff4b1fa82bf3e2d007e504">load</a> (const char *mesh)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">将静态网格文件读入内存  <a href="#13623c5a66ff4b1fa82bf3e2d007e504"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_mesh.html#2884b87ac21ae694eb87aeda58832af6">setCenter</a> (float x, float y, float z)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置静态网格中心位置  <a href="#2884b87ac21ae694eb87aeda58832af6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_mesh.html#58d8002efe3295be0c9559d3dff8500f">attach</a> (<a class="el" href="class_light_skeleton.html">LightSkeleton</a> *skeleton, int bone)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">把静态网格绑定到骨骼动画骨头上  <a href="#58d8002efe3295be0c9559d3dff8500f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_mesh.html#e395a6490430daab42a1fecde77c195f">setGlobalPosition</a> (float x, float y, float z)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置静态网格世界位置  <a href="#e395a6490430daab42a1fecde77c195f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_mesh.html#ee5375dfbb4f0a1993e395e5c7572401">setGlobalOrientationQuat</a> (const <a class="el" href="type_8h.html#e42e6ff3aa78dae73930a489e8dd5490">quat_t</a> quat)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置静态网格世界方向（使用四元数）  <a href="#ee5375dfbb4f0a1993e395e5c7572401"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_mesh.html#0b26c2b2255d1a53c4d1958ba888d8e6">setGlobalOrientationAngleAxis</a> (float angle, float x, float y, float z)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置静态网格世界方向（使用绕轴旋转）  <a href="#0b26c2b2255d1a53c4d1958ba888d8e6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_mesh.html#b1dfd1c40f5f14f3161570a78cb11cc9">setLocalPosition</a> (float x, float y, float z)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置静态网格局部位置  <a href="#b1dfd1c40f5f14f3161570a78cb11cc9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_mesh.html#e2fc4d7713d75cb4f4780ee4a6571980">setLocalOrientationQuat</a> (const <a class="el" href="type_8h.html#e42e6ff3aa78dae73930a489e8dd5490">quat_t</a> quat)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置静态网格局部方向（使用四元数）  <a href="#e2fc4d7713d75cb4f4780ee4a6571980"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_mesh.html#baa998f11e4114e8531b2e61a90c9ce8">setLocalOrientationAngleAxis</a> (float angle, float x, float y, float z)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置静态网格局部方向（使用绕轴旋转）  <a href="#baa998f11e4114e8531b2e61a90c9ce8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_mesh.html#95ef6cdf4657107428d1eb0f40915f86">render</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">渲染静态网格  <a href="#95ef6cdf4657107428d1eb0f40915f86"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_mesh.html#c0cceb96252baaf7323848e49b07025a">setGlobalPose</a> (const mat44_t &amp;mat)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置静态网格世界矩阵（矩阵包含位置和方向信息）  <a href="#c0cceb96252baaf7323848e49b07025a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_mesh.html#f12f4935562e79b8b4a22b3b67e5f58a">setRotateMatrix</a> (const mat34_t &amp;rotate)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置静态网格旋转矩阵  <a href="#f12f4935562e79b8b4a22b3b67e5f58a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_mesh.html#96d6dd55127e488e82325279512a31ef">scale</a> (float x, float y, float z)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置静态网格缩放比例  <a href="#96d6dd55127e488e82325279512a31ef"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_mesh.html#8952bf881c21394a63f31dfa93964e28">getGlobalPosition</a> (<a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> position)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询静态网格位置  <a href="#8952bf881c21394a63f31dfa93964e28"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual LightTriangleMesh *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_mesh.html#a94b80f4a78f61c6d16d473479f32f7a">createTriangleMesh</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建三角形网格对象  <a href="#a94b80f4a78f61c6d16d473479f32f7a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_mesh.html#2b366c5dbf2cebcbd4116819485eff8b">releaseTriangleMesh</a> (LightTriangleMesh *mesh)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放三角形网格对象  <a href="#2b366c5dbf2cebcbd4116819485eff8b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_mesh.html#e3c3a8cbe720c836a91bffe5c834d263">unload</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放静态网格文件所占内存  <a href="#e3c3a8cbe720c836a91bffe5c834d263"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+静态网格类 
+<p>
+本类负责静态网格文件的读取和显示，目前支持 3ds 格式的静态网格文件。 每个 <a class="el" href="class_light_mesh.html">LightMesh</a> 实例都必须通过 <a class="el" href="class_light_engine.html">LightEngine</a> 类的 NewMesh 方法分配。 
+<p>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="312e3306f7d0aebb9e065babf5909e42"></a><!-- doxytag: member="LightMesh::getEngine" ref="312e3306f7d0aebb9e065babf5909e42" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_engine.html">LightEngine</a>* LightMesh::getEngine           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询父引擎 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回父引擎引用</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="142f743b3d19ded95858fb5bac02a17c"></a><!-- doxytag: member="LightMesh::setName" ref="142f743b3d19ded95858fb5bac02a17c" args="(const char *name)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightMesh::setName           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>name</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置静态网格名称 
+<p>
+缺省静态网格名称为空。当静态网格名称为空时，调用 load 函数后，静态网格名称会改变为静态网格文件名，否则，静态网格名称不会改变。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name[in]</em>&nbsp;</td><td>静态网格名称，当超出长度时，只取前 16 个字符（字节）。</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="fabd615e3e0b2e93153758e39fef71bb"></a><!-- doxytag: member="LightMesh::getName" ref="fabd615e3e0b2e93153758e39fef71bb" args="(char *name)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightMesh::getName           </td>
+          <td>(</td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>name</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询静态网格名称 
+<p>
+静态网格名称一般为静态网格文件名，缺省静态网格名称为空。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name[out]</em>&nbsp;</td><td>返回静态网格名称，缓冲区不得小于 17 字节（16 个字符（字节）＋''）。</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="13623c5a66ff4b1fa82bf3e2d007e504"></a><!-- doxytag: member="LightMesh::load" ref="13623c5a66ff4b1fa82bf3e2d007e504" args="(const char *mesh)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool LightMesh::load           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>mesh</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+将静态网格文件读入内存 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>mesh[in]</em>&nbsp;</td><td>静态网格文件名，必须指定扩展名</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="2884b87ac21ae694eb87aeda58832af6"></a><!-- doxytag: member="LightMesh::setCenter" ref="2884b87ac21ae694eb87aeda58832af6" args="(float x, float y, float z)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightMesh::setCenter           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置静态网格中心位置 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>中心位置的 x 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>中心位置的 y 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>z</em>&nbsp;</td><td>中心位置的 z 坐标</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="58d8002efe3295be0c9559d3dff8500f"></a><!-- doxytag: member="LightMesh::attach" ref="58d8002efe3295be0c9559d3dff8500f" args="(LightSkeleton *skeleton, int bone)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightMesh::attach           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_skeleton.html">LightSkeleton</a> *&nbsp;</td>
+          <td class="paramname"> <em>skeleton</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>bone</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+把静态网格绑定到骨骼动画骨头上 
+<p>
+绑定后，静态网格将跟随绑定的骨头进行运动（包括位置和方向），同一时刻，只有最后绑定的骨头有效。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>skeleton[in]</em>&nbsp;</td><td>要绑定的骨骼动画，当该参数为 NULL 时解除绑定</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>bone[in]</em>&nbsp;</td><td>要绑定的骨头</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回 0；否则，返回错误代码。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e395a6490430daab42a1fecde77c195f"></a><!-- doxytag: member="LightMesh::setGlobalPosition" ref="e395a6490430daab42a1fecde77c195f" args="(float x, float y, float z)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightMesh::setGlobalPosition           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置静态网格世界位置 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>静态网格世界位置的 x 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>静态网格世界位置的 y 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>z</em>&nbsp;</td><td>静态网格世界位置的 z 坐标</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ee5375dfbb4f0a1993e395e5c7572401"></a><!-- doxytag: member="LightMesh::setGlobalOrientationQuat" ref="ee5375dfbb4f0a1993e395e5c7572401" args="(const quat_t quat)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightMesh::setGlobalOrientationQuat           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="type_8h.html#e42e6ff3aa78dae73930a489e8dd5490">quat_t</a>&nbsp;</td>
+          <td class="paramname"> <em>quat</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置静态网格世界方向（使用四元数） 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>quat[in]</em>&nbsp;</td><td>要设置的静态网格世界方向四元数 </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="0b26c2b2255d1a53c4d1958ba888d8e6"></a><!-- doxytag: member="LightMesh::setGlobalOrientationAngleAxis" ref="0b26c2b2255d1a53c4d1958ba888d8e6" args="(float angle, float x, float y, float z)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightMesh::setGlobalOrientationAngleAxis           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置静态网格世界方向（使用绕轴旋转） 
+<p>
+设置静态网格世界方向（使用绕轴旋转指定角度的表示方式）<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>angle[in]</em>&nbsp;</td><td>静态网格绕轴旋转角度</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x[in]</em>&nbsp;</td><td>旋转轴向量 x 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y[in]</em>&nbsp;</td><td>旋转轴向量 y 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>z[in]</em>&nbsp;</td><td>旋转轴向量 z 分量</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>旋转时以原点和该向量组成的线段为轴进行旋转。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b1dfd1c40f5f14f3161570a78cb11cc9"></a><!-- doxytag: member="LightMesh::setLocalPosition" ref="b1dfd1c40f5f14f3161570a78cb11cc9" args="(float x, float y, float z)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightMesh::setLocalPosition           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置静态网格局部位置 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>静态网格局部位置的 x 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>静态网格局部位置的 y 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>z</em>&nbsp;</td><td>静态网格局部位置的 z 坐标</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e2fc4d7713d75cb4f4780ee4a6571980"></a><!-- doxytag: member="LightMesh::setLocalOrientationQuat" ref="e2fc4d7713d75cb4f4780ee4a6571980" args="(const quat_t quat)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightMesh::setLocalOrientationQuat           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="type_8h.html#e42e6ff3aa78dae73930a489e8dd5490">quat_t</a>&nbsp;</td>
+          <td class="paramname"> <em>quat</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置静态网格局部方向（使用四元数） 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>quat[in]</em>&nbsp;</td><td>要设置的静态网格局部方向四元数 </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="baa998f11e4114e8531b2e61a90c9ce8"></a><!-- doxytag: member="LightMesh::setLocalOrientationAngleAxis" ref="baa998f11e4114e8531b2e61a90c9ce8" args="(float angle, float x, float y, float z)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightMesh::setLocalOrientationAngleAxis           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置静态网格局部方向（使用绕轴旋转） 
+<p>
+设置静态网格局部方向（使用绕轴旋转指定角度的表示方式）<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>angle[in]</em>&nbsp;</td><td>静态网格绕轴旋转角度</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x[in]</em>&nbsp;</td><td>旋转轴向量 x 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y[in]</em>&nbsp;</td><td>旋转轴向量 y 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>z[in]</em>&nbsp;</td><td>旋转轴向量 z 分量</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>旋转时以原点和该向量组成的线段为轴进行旋转。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="95ef6cdf4657107428d1eb0f40915f86"></a><!-- doxytag: member="LightMesh::render" ref="95ef6cdf4657107428d1eb0f40915f86" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightMesh::render           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+渲染静态网格 
+<p>
+将静态网格渲染到屏幕或窗口<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有参数。</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c0cceb96252baaf7323848e49b07025a"></a><!-- doxytag: member="LightMesh::setGlobalPose" ref="c0cceb96252baaf7323848e49b07025a" args="(const mat44_t &amp;mat)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightMesh::setGlobalPose           </td>
+          <td>(</td>
+          <td class="paramtype">const mat44_t &amp;&nbsp;</td>
+          <td class="paramname"> <em>mat</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置静态网格世界矩阵（矩阵包含位置和方向信息） 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>mat[in]</em>&nbsp;</td><td>要设置的静态网格矩阵（4x4矩阵） </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f12f4935562e79b8b4a22b3b67e5f58a"></a><!-- doxytag: member="LightMesh::setRotateMatrix" ref="f12f4935562e79b8b4a22b3b67e5f58a" args="(const mat34_t &amp;rotate)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightMesh::setRotateMatrix           </td>
+          <td>(</td>
+          <td class="paramtype">const mat34_t &amp;&nbsp;</td>
+          <td class="paramname"> <em>rotate</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置静态网格旋转矩阵 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>rotate[in]</em>&nbsp;</td><td>该指针指向一个 4x3 的旋转矩阵 </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="96d6dd55127e488e82325279512a31ef"></a><!-- doxytag: member="LightMesh::scale" ref="96d6dd55127e488e82325279512a31ef" args="(float x, float y, float z)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightMesh::scale           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置静态网格缩放比例 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x[in]</em>&nbsp;</td><td>网格沿 x 轴的缩放比例</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y[in]</em>&nbsp;</td><td>网格沿 y 轴的缩放比例</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>z[in]</em>&nbsp;</td><td>网格沿 z 轴的缩放比例</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>当 （x，y，z）都等于 1.0f 时，网格大小不变，这是网格的缺省比例。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>此函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="8952bf881c21394a63f31dfa93964e28"></a><!-- doxytag: member="LightMesh::getGlobalPosition" ref="8952bf881c21394a63f31dfa93964e28" args="(vec3_t position)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightMesh::getGlobalPosition           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>position</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询静态网格位置 
+<p>
+查询静态网格在场景中的位置坐标。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>position[out]</em>&nbsp;</td><td>返回静态网格位置</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a94b80f4a78f61c6d16d473479f32f7a"></a><!-- doxytag: member="LightMesh::createTriangleMesh" ref="a94b80f4a78f61c6d16d473479f32f7a" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual LightTriangleMesh* LightMesh::createTriangleMesh           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建三角形网格对象 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>新的三角形网格</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="2b366c5dbf2cebcbd4116819485eff8b"></a><!-- doxytag: member="LightMesh::releaseTriangleMesh" ref="2b366c5dbf2cebcbd4116819485eff8b" args="(LightTriangleMesh *mesh)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightMesh::releaseTriangleMesh           </td>
+          <td>(</td>
+          <td class="paramtype">LightTriangleMesh *&nbsp;</td>
+          <td class="paramname"> <em>mesh</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放三角形网格对象 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>mesh[in]</em>&nbsp;</td><td>要释放的三角形网格</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e3c3a8cbe720c836a91bffe5c834d263"></a><!-- doxytag: member="LightMesh::unload" ref="e3c3a8cbe720c836a91bffe5c834d263" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool LightMesh::unload           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放静态网格文件所占内存 
+<p>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/<a class="el" href="mesh_8h.html">mesh.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:34 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

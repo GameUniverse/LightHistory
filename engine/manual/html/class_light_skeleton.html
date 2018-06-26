@@ -1,0 +1,1156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightSkeleton类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightSkeleton类参考</h1><!-- doxytag: class="LightSkeleton" -->骨骼动画类  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;skeleton.h&gt;</code>
+<p>
+<a href="class_light_skeleton-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_engine.html">LightEngine</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#3e09c955e028b85ec8c093f535a27ea8">getEngine</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询父引擎  <a href="#3e09c955e028b85ec8c093f535a27ea8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#01e12055875927892eb0257ce6ecce1f">load</a> (const char *filename)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">读取骨骼动画文件  <a href="#01e12055875927892eb0257ce6ecce1f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#b079548a4e287fdb830ef6265ea63d10">setCenter</a> (float x, float y, float z)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置骨骼动画中心位置  <a href="#b079548a4e287fdb830ef6265ea63d10"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#5c66eb549de4934cd82c5ba0561d9513">attach</a> (<a class="el" href="class_light_skeleton.html">LightSkeleton</a> *skeleton, int bone)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">把骨骼动画绑定到骨骼动画骨头上  <a href="#5c66eb549de4934cd82c5ba0561d9513"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#702f2fd32189e0f59d1c15f97911f944">setGlobalPosition</a> (float x, float y, float z)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置骨骼动画世界位置  <a href="#702f2fd32189e0f59d1c15f97911f944"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#9b80008ae1e492061704c840d427c190">setGlobalOrientationQuat</a> (const <a class="el" href="type_8h.html#e42e6ff3aa78dae73930a489e8dd5490">quat_t</a> quat)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置骨骼动画世界方向（使用四元数）  <a href="#9b80008ae1e492061704c840d427c190"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#6fa5ab17d7057fa9159075c1c1fa1669">setGlobalOrientationAngleAxis</a> (float angle, float x, float y, float z)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置骨骼动画世界方向（使用绕轴旋转）  <a href="#6fa5ab17d7057fa9159075c1c1fa1669"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#7552d5d05bd2c9b4f2fa203ff789034a">setLocalPosition</a> (float x, float y, float z)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置骨骼动画局部位置  <a href="#7552d5d05bd2c9b4f2fa203ff789034a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#a304f240131f67566d288be5fc634797">setLocalOrientationQuat</a> (const <a class="el" href="type_8h.html#e42e6ff3aa78dae73930a489e8dd5490">quat_t</a> quat)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置骨骼动画局部方向（使用四元数）  <a href="#a304f240131f67566d288be5fc634797"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#4a76cddeb66131c9671f436606344533">setLocalOrientationAngleAxis</a> (float angle, float x, float y, float z)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置骨骼动画局部方向（使用绕轴旋转）  <a href="#4a76cddeb66131c9671f436606344533"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#aaef3d452ae0cecb7479083f6a72f6c0">getGlobalPosition</a> (<a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> position)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询骨骼动画世界位置  <a href="#aaef3d452ae0cecb7479083f6a72f6c0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#0011793f9a5e438fbe7e4bb9b6a9cbed">getGlobalOrientationQuat</a> (<a class="el" href="type_8h.html#e42e6ff3aa78dae73930a489e8dd5490">quat_t</a> orientation)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询骨骼动画世界方向（使用四元数）  <a href="#0011793f9a5e438fbe7e4bb9b6a9cbed"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#58dae8f1c5c203c57e06f27473348879">getGlobalOrientationAngleAxis</a> (float &amp;angle, <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> axis)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询骨骼动画世界方向（使用绕轴旋转）  <a href="#58dae8f1c5c203c57e06f27473348879"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#a40beb15e4bb87fe080c12ad49ebf3fe">getBoneId</a> (const char *name)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询骨头标识符（ID）  <a href="#a40beb15e4bb87fe080c12ad49ebf3fe"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#c8afd2a0d5fa131cbd8e28acfd13a2e7">getBonePosition</a> (int bone, <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> position)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询骨头位置  <a href="#c8afd2a0d5fa131cbd8e28acfd13a2e7"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#e19feb26606b07605f8d8496e4061538">getBoneOrientationQuat</a> (int bone, <a class="el" href="type_8h.html#e42e6ff3aa78dae73930a489e8dd5490">quat_t</a> quat)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询骨头方向（使用四元数）  <a href="#e19feb26606b07605f8d8496e4061538"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#6a793880066fe5075cc1c20a578268bf">getLodLevel</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询骨骼动画细节等级  <a href="#6a793880066fe5075cc1c20a578268bf"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#bafa06836d76a9b451f2fdf1b12a4fcf">setLodLevel</a> (float lodLevel)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置骨骼动画细节等级  <a href="#bafa06836d76a9b451f2fdf1b12a4fcf"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#b8206994c2c452ba755cfd62764ec1b7">animationType</a> (int type)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置当前动画类型  <a href="#b8206994c2c452ba755cfd62764ec1b7"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#b3c6df8c0b875c5b768b3e9affd86e7e">getAnimationDuration</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询当前动画长度  <a href="#b3c6df8c0b875c5b768b3e9affd86e7e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#0c11219dc3ae7555d1cf27ff5bfc984a">getAnimationTime</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询当前动画已播放时间  <a href="#0c11219dc3ae7555d1cf27ff5bfc984a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#e7921ffbff54f33bb8dbe397b084e441">setAnimationTime</a> (float time)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置当前动画已播放时间  <a href="#e7921ffbff54f33bb8dbe397b084e441"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#7a911673a61c4978d9930eb3afe7df7f">setTimeFactor</a> (float factor)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置动画播放时间因子  <a href="#7a911673a61c4978d9930eb3afe7df7f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#a239b0bcf860ac0d59dd39328939910d">getTimeFactor</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询动画播放时间因子  <a href="#a239b0bcf860ac0d59dd39328939910d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#dd20ce0004bdf83690b266c158768cb1">animation</a> (int animation)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">指定当前动画  <a href="#dd20ce0004bdf83690b266c158768cb1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#f78e9838cdb94387c043ed07e7700988">setGlobalPose</a> (const mat44_t &amp;mat)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置骨骼动画世界矩阵（矩阵包含位置和方向信息）  <a href="#f78e9838cdb94387c043ed07e7700988"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#c342cbc8aac418fd53b84c8d50926953">setRotateMatrix</a> (const mat34_t &amp;rotate)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置骨骼动画旋转矩阵  <a href="#c342cbc8aac418fd53b84c8d50926953"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#e209a50da2bf5bd9141002e0befbab06">scale</a> (float factor)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">对骨骼动画进行缩放  <a href="#e209a50da2bf5bd9141002e0befbab06"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#7a3936dff437e0c4699139b4867ad261">getBoundingBox</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询骨骼动画的包围盒  <a href="#7a3936dff437e0c4699139b4867ad261"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#f1b0523ce613ee68ffac89910759fa6f">render</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">渲染骨骼动画  <a href="#f1b0523ce613ee68ffac89910759fa6f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#51edcacf69b45c2a7ea2f5d7bc6c8077">play</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">播放骨骼动画  <a href="#51edcacf69b45c2a7ea2f5d7bc6c8077"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#ab8da86752b606a0e1c56b97a6422033">pause</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">暂停骨骼动画  <a href="#ab8da86752b606a0e1c56b97a6422033"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_skeleton.html#9adc86a8c2081fc8e17f724fe11b04d4">stop</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">停止骨骼动画  <a href="#9adc86a8c2081fc8e17f724fe11b04d4"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+骨骼动画类 
+<p>
+本类负责骨骼动画文件的读取、控制和渲染，支持真实的骨骼动画，支持多动画混合，支持任意动画任意帧的混合。 每个 <a class="el" href="class_light_skeleton.html">LightSkeleton</a> 实例都必须通过 <a class="el" href="class_light_engine.html">LightEngine</a> 类的 createSkeleton 方法分配， releaseSkeleton 释放。 
+<p>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="3e09c955e028b85ec8c093f535a27ea8"></a><!-- doxytag: member="LightSkeleton::getEngine" ref="3e09c955e028b85ec8c093f535a27ea8" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_engine.html">LightEngine</a>* LightSkeleton::getEngine           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询父引擎 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回父引擎引用</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="01e12055875927892eb0257ce6ecce1f"></a><!-- doxytag: member="LightSkeleton::load" ref="01e12055875927892eb0257ce6ecce1f" args="(const char *filename)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightSkeleton::load           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>filename</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+读取骨骼动画文件 
+<p>
+读取骨骼动画文件，支持真实的骨骼动画文件。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>filename[in]</em>&nbsp;</td><td>骨骼动画文件名，内容是文本格式，需要手工编写，通常以 cfg 为文件名后缀，具体格式见示例程序。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b079548a4e287fdb830ef6265ea63d10"></a><!-- doxytag: member="LightSkeleton::setCenter" ref="b079548a4e287fdb830ef6265ea63d10" args="(float x, float y, float z)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightSkeleton::setCenter           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置骨骼动画中心位置 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>中心位置的 x 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>中心位置的 y 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>z</em>&nbsp;</td><td>中心位置的 z 坐标</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="5c66eb549de4934cd82c5ba0561d9513"></a><!-- doxytag: member="LightSkeleton::attach" ref="5c66eb549de4934cd82c5ba0561d9513" args="(LightSkeleton *skeleton, int bone)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightSkeleton::attach           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_skeleton.html">LightSkeleton</a> *&nbsp;</td>
+          <td class="paramname"> <em>skeleton</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>bone</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+把骨骼动画绑定到骨骼动画骨头上 
+<p>
+绑定后，骨骼动画将跟随绑定的骨头进行运动（包括位置和方向），同一时刻，只有最后绑定的骨头有效。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>skeleton[in]</em>&nbsp;</td><td>要绑定的骨骼动画，当该参数为 NULL 时解除绑定</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>bone[in]</em>&nbsp;</td><td>要绑定的骨头</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回 0；否则，返回错误代码。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="702f2fd32189e0f59d1c15f97911f944"></a><!-- doxytag: member="LightSkeleton::setGlobalPosition" ref="702f2fd32189e0f59d1c15f97911f944" args="(float x, float y, float z)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightSkeleton::setGlobalPosition           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置骨骼动画世界位置 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>世界位置的 x 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>世界位置的 y 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>z</em>&nbsp;</td><td>世界位置的 z 坐标</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9b80008ae1e492061704c840d427c190"></a><!-- doxytag: member="LightSkeleton::setGlobalOrientationQuat" ref="9b80008ae1e492061704c840d427c190" args="(const quat_t quat)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightSkeleton::setGlobalOrientationQuat           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="type_8h.html#e42e6ff3aa78dae73930a489e8dd5490">quat_t</a>&nbsp;</td>
+          <td class="paramname"> <em>quat</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置骨骼动画世界方向（使用四元数） 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>quat[in]</em>&nbsp;</td><td>要设置的骨骼动画世界方向四元数 </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="6fa5ab17d7057fa9159075c1c1fa1669"></a><!-- doxytag: member="LightSkeleton::setGlobalOrientationAngleAxis" ref="6fa5ab17d7057fa9159075c1c1fa1669" args="(float angle, float x, float y, float z)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightSkeleton::setGlobalOrientationAngleAxis           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置骨骼动画世界方向（使用绕轴旋转） 
+<p>
+设置骨骼动画世界方向（使用绕轴旋转指定角度的表示方式）<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>angle[in]</em>&nbsp;</td><td>骨骼动画绕轴旋转角度</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x[in]</em>&nbsp;</td><td>旋转轴向量 x 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y[in]</em>&nbsp;</td><td>旋转轴向量 y 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>z[in]</em>&nbsp;</td><td>旋转轴向量 z 分量</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>旋转时以原点和该向量组成的线段为轴进行旋转。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="7552d5d05bd2c9b4f2fa203ff789034a"></a><!-- doxytag: member="LightSkeleton::setLocalPosition" ref="7552d5d05bd2c9b4f2fa203ff789034a" args="(float x, float y, float z)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightSkeleton::setLocalPosition           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置骨骼动画局部位置 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>局部位置的 x 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>局部位置的 y 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>z</em>&nbsp;</td><td>局部位置的 z 坐标</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a304f240131f67566d288be5fc634797"></a><!-- doxytag: member="LightSkeleton::setLocalOrientationQuat" ref="a304f240131f67566d288be5fc634797" args="(const quat_t quat)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightSkeleton::setLocalOrientationQuat           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="type_8h.html#e42e6ff3aa78dae73930a489e8dd5490">quat_t</a>&nbsp;</td>
+          <td class="paramname"> <em>quat</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置骨骼动画局部方向（使用四元数） 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>quat[in]</em>&nbsp;</td><td>要设置的骨骼动画局部方向四元数 </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="4a76cddeb66131c9671f436606344533"></a><!-- doxytag: member="LightSkeleton::setLocalOrientationAngleAxis" ref="4a76cddeb66131c9671f436606344533" args="(float angle, float x, float y, float z)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightSkeleton::setLocalOrientationAngleAxis           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置骨骼动画局部方向（使用绕轴旋转） 
+<p>
+设置骨骼动画局部方向（使用绕轴旋转指定角度的表示方式）<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>angle[in]</em>&nbsp;</td><td>骨骼动画绕轴旋转角度</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x[in]</em>&nbsp;</td><td>旋转轴向量 x 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y[in]</em>&nbsp;</td><td>旋转轴向量 y 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>z[in]</em>&nbsp;</td><td>旋转轴向量 z 分量</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>旋转时以原点和该向量组成的线段为轴进行旋转。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="aaef3d452ae0cecb7479083f6a72f6c0"></a><!-- doxytag: member="LightSkeleton::getGlobalPosition" ref="aaef3d452ae0cecb7479083f6a72f6c0" args="(vec3_t position)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightSkeleton::getGlobalPosition           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>position</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询骨骼动画世界位置 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>position[out]</em>&nbsp;</td><td>返回骨骼动画世界位置</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="0011793f9a5e438fbe7e4bb9b6a9cbed"></a><!-- doxytag: member="LightSkeleton::getGlobalOrientationQuat" ref="0011793f9a5e438fbe7e4bb9b6a9cbed" args="(quat_t orientation)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightSkeleton::getGlobalOrientationQuat           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="type_8h.html#e42e6ff3aa78dae73930a489e8dd5490">quat_t</a>&nbsp;</td>
+          <td class="paramname"> <em>orientation</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询骨骼动画世界方向（使用四元数） 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>orientation[out]</em>&nbsp;</td><td>返回骨骼动画世界方向四元数 </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="58dae8f1c5c203c57e06f27473348879"></a><!-- doxytag: member="LightSkeleton::getGlobalOrientationAngleAxis" ref="58dae8f1c5c203c57e06f27473348879" args="(float &amp;angle, vec3_t axis)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightSkeleton::getGlobalOrientationAngleAxis           </td>
+          <td>(</td>
+          <td class="paramtype">float &amp;&nbsp;</td>
+          <td class="paramname"> <em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>axis</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询骨骼动画世界方向（使用绕轴旋转） 
+<p>
+查询骨骼动画世界方向（使用绕轴旋转指定角度的表示方式）<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>angle[out]</em>&nbsp;</td><td>返回绕轴旋转角度</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>axis[out]</em>&nbsp;</td><td>返回旋转轴向量</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>旋转时以原点和该向量组成的线段为轴进行旋转。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a40beb15e4bb87fe080c12ad49ebf3fe"></a><!-- doxytag: member="LightSkeleton::getBoneId" ref="a40beb15e4bb87fe080c12ad49ebf3fe" args="(const char *name)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightSkeleton::getBoneId           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>name</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询骨头标识符（ID） 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name[in]</em>&nbsp;</td><td>要查询骨头的名称</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果要查询的骨头存在，返回骨头标识符（ID，是一个正整数）；否则，返回 -1 。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c8afd2a0d5fa131cbd8e28acfd13a2e7"></a><!-- doxytag: member="LightSkeleton::getBonePosition" ref="c8afd2a0d5fa131cbd8e28acfd13a2e7" args="(int bone, vec3_t position)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightSkeleton::getBonePosition           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>bone</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>position</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询骨头位置 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>bone[in]</em>&nbsp;</td><td>骨头标识符（ID）</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>position[out]</em>&nbsp;</td><td>返回骨头位置</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e19feb26606b07605f8d8496e4061538"></a><!-- doxytag: member="LightSkeleton::getBoneOrientationQuat" ref="e19feb26606b07605f8d8496e4061538" args="(int bone, quat_t quat)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightSkeleton::getBoneOrientationQuat           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>bone</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#e42e6ff3aa78dae73930a489e8dd5490">quat_t</a>&nbsp;</td>
+          <td class="paramname"> <em>quat</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询骨头方向（使用四元数） 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>bone[in]</em>&nbsp;</td><td>骨头标识符（ID）</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>quat[out]</em>&nbsp;</td><td>返回骨头方向（使用四元数） </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="6a793880066fe5075cc1c20a578268bf"></a><!-- doxytag: member="LightSkeleton::getLodLevel" ref="6a793880066fe5075cc1c20a578268bf" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float LightSkeleton::getLodLevel           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询骨骼动画细节等级 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="bafa06836d76a9b451f2fdf1b12a4fcf"></a><!-- doxytag: member="LightSkeleton::setLodLevel" ref="bafa06836d76a9b451f2fdf1b12a4fcf" args="(float lodLevel)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightSkeleton::setLodLevel           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>lodLevel</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置骨骼动画细节等级 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>lodLevel[in]</em>&nbsp;</td><td>骨骼动画细节等级</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b8206994c2c452ba755cfd62764ec1b7"></a><!-- doxytag: member="LightSkeleton::animationType" ref="b8206994c2c452ba755cfd62764ec1b7" args="(int type)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightSkeleton::animationType           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>type</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置当前动画类型 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>type[in]</em>&nbsp;</td><td>要设置的动画类型</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b3c6df8c0b875c5b768b3e9affd86e7e"></a><!-- doxytag: member="LightSkeleton::getAnimationDuration" ref="b3c6df8c0b875c5b768b3e9affd86e7e" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float LightSkeleton::getAnimationDuration           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询当前动画长度 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回当前动画长度，以秒为单位。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="0c11219dc3ae7555d1cf27ff5bfc984a"></a><!-- doxytag: member="LightSkeleton::getAnimationTime" ref="0c11219dc3ae7555d1cf27ff5bfc984a" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float LightSkeleton::getAnimationTime           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询当前动画已播放时间 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回当前动画已播放时间，以秒为单位。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e7921ffbff54f33bb8dbe397b084e441"></a><!-- doxytag: member="LightSkeleton::setAnimationTime" ref="e7921ffbff54f33bb8dbe397b084e441" args="(float time)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightSkeleton::setAnimationTime           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>time</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置当前动画已播放时间 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>time[in]</em>&nbsp;</td><td>要设置的当前动画已播放时间，以秒为单位</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="7a911673a61c4978d9930eb3afe7df7f"></a><!-- doxytag: member="LightSkeleton::setTimeFactor" ref="7a911673a61c4978d9930eb3afe7df7f" args="(float factor)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightSkeleton::setTimeFactor           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>factor</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置动画播放时间因子 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>factor[in]</em>&nbsp;</td><td>要设置的时间因子，1.0 = 正常速度播放，2.0 = 两倍的速度播放，0.5 = 二分之一的速度播放，以此类推。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a239b0bcf860ac0d59dd39328939910d"></a><!-- doxytag: member="LightSkeleton::getTimeFactor" ref="a239b0bcf860ac0d59dd39328939910d" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float LightSkeleton::getTimeFactor           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询动画播放时间因子 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>factor[in]</em>&nbsp;</td><td>本函数没有参数。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回要查询的时间因子，返回值的具体含义见 SetTimeFactor 函数。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="dd20ce0004bdf83690b266c158768cb1"></a><!-- doxytag: member="LightSkeleton::animation" ref="dd20ce0004bdf83690b266c158768cb1" args="(int animation)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightSkeleton::animation           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>animation</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+指定当前动画 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>animation[in]</em>&nbsp;</td><td>指定的动画</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f78e9838cdb94387c043ed07e7700988"></a><!-- doxytag: member="LightSkeleton::setGlobalPose" ref="f78e9838cdb94387c043ed07e7700988" args="(const mat44_t &amp;mat)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightSkeleton::setGlobalPose           </td>
+          <td>(</td>
+          <td class="paramtype">const mat44_t &amp;&nbsp;</td>
+          <td class="paramname"> <em>mat</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置骨骼动画世界矩阵（矩阵包含位置和方向信息） 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>mat[in]</em>&nbsp;</td><td>要设置的骨骼动画矩阵（4x4矩阵） </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c342cbc8aac418fd53b84c8d50926953"></a><!-- doxytag: member="LightSkeleton::setRotateMatrix" ref="c342cbc8aac418fd53b84c8d50926953" args="(const mat34_t &amp;rotate)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightSkeleton::setRotateMatrix           </td>
+          <td>(</td>
+          <td class="paramtype">const mat34_t &amp;&nbsp;</td>
+          <td class="paramname"> <em>rotate</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置骨骼动画旋转矩阵 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>rotate[in]</em>&nbsp;</td><td>该指针指向一个 4x3 的旋转矩阵 </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e209a50da2bf5bd9141002e0befbab06"></a><!-- doxytag: member="LightSkeleton::scale" ref="e209a50da2bf5bd9141002e0befbab06" args="(float factor)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightSkeleton::scale           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>factor</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+对骨骼动画进行缩放 
+<p>
+对骨骼动画进行缩放，缩放效果会累积，每次缩放都是在前次缩放的结果上进行的。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>factor[in]</em>&nbsp;</td><td>骨骼动画缩放因子（1.0 为正常大小）</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="7a3936dff437e0c4699139b4867ad261"></a><!-- doxytag: member="LightSkeleton::getBoundingBox" ref="7a3936dff437e0c4699139b4867ad261" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>* LightSkeleton::getBoundingBox           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询骨骼动画的包围盒 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数返回一个 vec3_t 类型的指针，有两个向量，分别表示 AABB 盒的两个顶点 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f1b0523ce613ee68ffac89910759fa6f"></a><!-- doxytag: member="LightSkeleton::render" ref="f1b0523ce613ee68ffac89910759fa6f" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightSkeleton::render           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+渲染骨骼动画 
+<p>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="51edcacf69b45c2a7ea2f5d7bc6c8077"></a><!-- doxytag: member="LightSkeleton::play" ref="51edcacf69b45c2a7ea2f5d7bc6c8077" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightSkeleton::play           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+播放骨骼动画 
+<p>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ab8da86752b606a0e1c56b97a6422033"></a><!-- doxytag: member="LightSkeleton::pause" ref="ab8da86752b606a0e1c56b97a6422033" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightSkeleton::pause           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+暂停骨骼动画 
+<p>
+使骨骼动画停留在当前帧上不动<p>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9adc86a8c2081fc8e17f724fe11b04d4"></a><!-- doxytag: member="LightSkeleton::stop" ref="9adc86a8c2081fc8e17f724fe11b04d4" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightSkeleton::stop           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+停止骨骼动画 
+<p>
+骨骼动画停止播放，并回到第一帧的位置<p>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。 </dd></dl>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/<a class="el" href="skeleton_8h.html">skeleton.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:35 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

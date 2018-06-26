@@ -1,0 +1,229 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightCollide类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightCollide类参考</h1><!-- doxytag: class="LightCollide" -->碰撞检测类  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;_collide.h&gt;</code>
+<p>
+<a href="class_light_collide-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_collide.html#0ab2c875fd0fdae6f2dd548db66e5fef">Build</a> (int target, int type, build_t *build)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">构建碰撞检测数据  <a href="#0ab2c875fd0fdae6f2dd548db66e5fef"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_collide.html#eefa9c14f7b1b4a9cbfc0885d9afc48b">Collide</a> (matrix_t world0, matrix_t world1)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">对两个目标进行碰撞检测  <a href="#eefa9c14f7b1b4a9cbfc0885d9afc48b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_collide.html#654e63446a9717faf5ee1aecbf60572d">GetContactStatus</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询两个目标是否发生碰撞  <a href="#654e63446a9717faf5ee1aecbf60572d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_collide.html#0295df6ea59d279dbbdd6be73ada6f3c">GetNumPairs</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询发生碰撞的三角形数  <a href="#0295df6ea59d279dbbdd6be73ada6f3c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_collide.html#6f5b608d5ef8b31045cf1e3b0aaa3d08">GetPairs</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询发生碰撞的三角形  <a href="#6f5b608d5ef8b31045cf1e3b0aaa3d08"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+碰撞检测类 
+<p>
+本类负责模型和场景的碰撞检测。 每个 <a class="el" href="class_light_collide.html">LightCollide</a> 实例都必须通过 <a class="el" href="class_light_engine.html">LightEngine</a> 类的 NewCollide 方法分配。 
+<p>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="0ab2c875fd0fdae6f2dd548db66e5fef"></a><!-- doxytag: member="LightCollide::Build" ref="0ab2c875fd0fdae6f2dd548db66e5fef" args="(int target, int type, build_t *build)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LightCollide::Build           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">build_t *&nbsp;</td>
+          <td class="paramname"> <em>build</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+构建碰撞检测数据 
+<p>
+构建碰撞检测数据<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>int</em>&nbsp;</td><td>target 要构建的目标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>int</em>&nbsp;</td><td>type 要构建目标的类型</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>build_t</em>&nbsp;</td><td>*build 构建碰撞检测的数据</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="eefa9c14f7b1b4a9cbfc0885d9afc48b"></a><!-- doxytag: member="LightCollide::Collide" ref="eefa9c14f7b1b4a9cbfc0885d9afc48b" args="(matrix_t world0, matrix_t world1)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LightCollide::Collide           </td>
+          <td>(</td>
+          <td class="paramtype">matrix_t&nbsp;</td>
+          <td class="paramname"> <em>world0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">matrix_t&nbsp;</td>
+          <td class="paramname"> <em>world1</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+对两个目标进行碰撞检测 
+<p>
+对两个目标进行碰撞检测<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>matrix_t</em>&nbsp;</td><td>world0 第一个目标的矩阵，如果为 NULL，则使用单位矩阵</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>matrix_t</em>&nbsp;</td><td>world1 第二个目标的矩阵，如果为 NULL，则使用单位矩阵</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="654e63446a9717faf5ee1aecbf60572d"></a><!-- doxytag: member="LightCollide::GetContactStatus" ref="654e63446a9717faf5ee1aecbf60572d" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LightCollide::GetContactStatus           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询两个目标是否发生碰撞 
+<p>
+查询两个目标是否发生碰撞<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>无</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="0295df6ea59d279dbbdd6be73ada6f3c"></a><!-- doxytag: member="LightCollide::GetNumPairs" ref="0295df6ea59d279dbbdd6be73ada6f3c" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LightCollide::GetNumPairs           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询发生碰撞的三角形数 
+<p>
+查询发生碰撞的三角形数<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>无</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="6f5b608d5ef8b31045cf1e3b0aaa3d08"></a><!-- doxytag: member="LightCollide::GetPairs" ref="6f5b608d5ef8b31045cf1e3b0aaa3d08" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LightCollide::GetPairs           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询发生碰撞的三角形 
+<p>
+查询发生碰撞的三角形<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>无</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/_collide.h</ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:32 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

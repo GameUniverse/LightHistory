@@ -1,0 +1,247 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightLensFlare类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightLensFlare类参考</h1><!-- doxytag: class="LightLensFlare" -->透镜光晕类  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;lensflare.h&gt;</code>
+<p>
+<a href="class_light_lens_flare-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_lens_flare.html#5c8fadf642b08149eb454a5a70023e7c">Release</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">清除透镜光晕  <a href="#5c8fadf642b08149eb454a5a70023e7c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_lens_flare.html#53c9817c9ead829610d70f7eb690b592">SetPosition</a> (float x, float y, float z)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置透镜光晕位置  <a href="#53c9817c9ead829610d70f7eb690b592"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_lens_flare.html#3db78b46e81c55ea1288f4ee2eb2e07f">AddSubNode</a> (float size, float pos, <a class="el" href="class_light_texture.html">LightTexture</a> *texture)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">增加一个透镜光晕子节点  <a href="#3db78b46e81c55ea1288f4ee2eb2e07f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_lens_flare.html#3819bb40af26d78b0dd0880edb1deca8">AddMainNode</a> (float size, <a class="el" href="class_light_texture.html">LightTexture</a> *texture)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">增加一个透镜光晕主节点  <a href="#3819bb40af26d78b0dd0880edb1deca8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_lens_flare.html#5ba474fe80a160e438cb07257520ef3d">Draw</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">显示透镜光晕  <a href="#5ba474fe80a160e438cb07257520ef3d"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+透镜光晕类 
+<p>
+本类负责透镜光晕的创建和显示。 每个 <a class="el" href="class_light_lens_flare.html">LightLensFlare</a> 实例都必须通过 <a class="el" href="class_light_engine.html">LightEngine</a> 类的 NewLensFlare 方法分配。 
+<p>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="5c8fadf642b08149eb454a5a70023e7c"></a><!-- doxytag: member="LightLensFlare::Release" ref="5c8fadf642b08149eb454a5a70023e7c" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightLensFlare::Release           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+清除透镜光晕 
+<p>
+清除透镜光晕。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>无</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="53c9817c9ead829610d70f7eb690b592"></a><!-- doxytag: member="LightLensFlare::SetPosition" ref="53c9817c9ead829610d70f7eb690b592" args="(float x, float y, float z)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightLensFlare::SetPosition           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置透镜光晕位置 
+<p>
+设置透镜光晕位置<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>x 透镜光晕位置的 x 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>y 透镜光晕位置的 y 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>z 透镜光晕位置的 z 坐标</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="3db78b46e81c55ea1288f4ee2eb2e07f"></a><!-- doxytag: member="LightLensFlare::AddSubNode" ref="3db78b46e81c55ea1288f4ee2eb2e07f" args="(float size, float pos, LightTexture *texture)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightLensFlare::AddSubNode           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_light_texture.html">LightTexture</a> *&nbsp;</td>
+          <td class="paramname"> <em>texture</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+增加一个透镜光晕子节点 
+<p>
+增加一个透镜光晕子节点<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>size 节点大小</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>pos 节点位置</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="class_light_texture.html">LightTexture</a></em>&nbsp;</td><td>*texture 节点纹理</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="3819bb40af26d78b0dd0880edb1deca8"></a><!-- doxytag: member="LightLensFlare::AddMainNode" ref="3819bb40af26d78b0dd0880edb1deca8" args="(float size, LightTexture *texture)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightLensFlare::AddMainNode           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_light_texture.html">LightTexture</a> *&nbsp;</td>
+          <td class="paramname"> <em>texture</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+增加一个透镜光晕主节点 
+<p>
+增加一个透镜光晕主节点<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>size 节点大小</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="class_light_texture.html">LightTexture</a></em>&nbsp;</td><td>*texture 节点纹理</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="5ba474fe80a160e438cb07257520ef3d"></a><!-- doxytag: member="LightLensFlare::Draw" ref="5ba474fe80a160e438cb07257520ef3d" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightLensFlare::Draw           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+显示透镜光晕 
+<p>
+显示透镜光晕<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>无</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/<a class="el" href="lensflare_8h.html">lensflare.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:34 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: 光线游戏引擎（LightEngine）3.0 版使用说明</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li id="current"><a href="index.html"><span>首页</span></a></li>
+    <li><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<h1>光线游戏引擎（LightEngine）3.0 版使用说明</h1>
+<p>
+<div align="center">
+<img src="light.gif" alt="light.gif">
+</div>
+ <h2><a class="anchor" name="intro_sec">
+概述</a></h2>
+光线引擎( Light Engine )是一款非常优秀的著名免费 3D 游戏引擎。用于各种单机、网络游戏 和虚拟现实系统的开发，是一款通用的 3D 游戏引擎，3D 图形接口采用 OpenGL ，游戏开发语言 是 C++，不久将同时支持 VB 。引擎具有功能强大、画质逼真、快速高效、简单易用四大特点， 更为可贵的是该引擎完全免费（包括个人和商业用途），是您开发游戏的明智选择。<p>
+最低硬件配置：CPU赛扬433、内存32MB、硬盘500MB、显卡TNT2 推荐硬件配置：CPU赛扬1.0、内存64MB、硬盘1000MB、显卡GeForce4 MX440 操作系统：Windows98/2000/XP 开发语言：C++ 开发环境：VC6.0，VC2003，VC2005 均可，但编译示例程序则需要VC2003。 使用方法：1. 首先将本软件开发包用 WinRAR 解压缩到硬盘根目录下, 这里假设本软件包解压缩在 C 盘根目录下。 2. 包含头文件和库文件。 在程序中适当位置加入下面的语句： include "c:\\light\\include\\light.h" pragma comment( lib, "c:\\light\\lib\\light.lib" ) 4. 将动态链接文件 "c:\\light\\bin\\light.dll" 复制到程序运行时的目录。<p>
+经过上面4个步骤，就可以在程序中使用库函数了。<p>
+《光线游戏引擎 2.2 Beta》支持哪些功能？<p>
+主要功能如下：<p>
+1．支持功能强大的 Quake III 地图编辑器，并提供地图编辑器、MD3 模型导出插件、 引擎和编辑器的简体中文版用户手册、使用教程。 2．成熟的“BSP + 视锥裁剪”室内场景管理。 3．基于 BSP树的高速碰撞检测。 4．支持逼真的骨骼动画技术，支持动作混合。 5．快速逼真的动态阴影。 6．支持快速的动态光照。 7．支持渲染到纹理技术。 8．支持纹理投影技术。 9．支持绝大部分图像文件的读取和保存。 支持bmp、cut、dds、doom、gif、ico、jpg、lbm、mdl、mng、pal、pbm、pcd、pcx、pgm、pic、 png、ppm、psd、psp、raw、sgi、tga、tif、hdr 25种图像文件的读取，支持bmp、dds、h、jpg、 pal、pbm、pcx、hdr、pgm、png、ppm、raw、sgi、tga、tif 15 种图像文件的保存。 10．支持图片以区域、缩放、旋转、亮度、混合、关键色等方式显示。 11．完美支持各种字体和字型的高速显示。 12．支持天空盒、天空顶、天空面三种天空模式。 13．支持镜头光晕效果。 14．支持布告板技术。 15．支持水波特效。 16．支持真正的3D声场，各种3D效果，多音源混合播放。 17．支持键盘、鼠标、游戏杆的输入，统一的程序接口，输入更方便。 18．支持 MPEG、AVI、WMF、MP3、WAV、MIDI等众多视频、音频文件的播放。 19. 支持立方体贴图和环境映射。 20. 支持逼真的粒子系统，包括火焰、烟雾等特效。 21. 支持动画纹理和栅格动画纹理技术。 22. 支持 OpenGL 着色语言（shader） GLSL 的加载、编译和运行。<p>
+以下为 2.2 Beta 新增功能：<p>
+23. 支持基于高度图的大规模、超大、无缝 LOD 地形。 24. 支持真正的骨骼动画，支持任意动作、任意帧的混合。 25. 支持简单、灵活的人物换装系统。 26. 支持 3ds 格式的静态网格和游戏场景。 27. 支持 md2 格式的顶点动画。 28. 支持灵活、高效的 CEGUI 用户界面（GUI）系统。 29. 支持场景和模型逼真的物理运算。 30. 支持高负载服务器端和客户端网络系统，数据库语言采用SQL。<p>
+使用《光线游戏引擎》开发的项目（按时间的先后顺序排列）：<p>
+1. 开源游戏 《保卫家园》，游戏和源代码下载地址： <a href="http://bbs.gameres.com/showforum.asp?forumid=54">http://bbs.gameres.com/showforum.asp?forumid=54</a><p>
+2. 开源游戏 《光线引擎演示程序》执行程序+源代码下载地址： <a href="http://bbs.gameres.com/showthread.asp?threadid=88868">http://bbs.gameres.com/showthread.asp?threadid=88868</a><p>
+3. “上海盟动信息科技有限公司”正在开发的大型历史题材策略角色扮演网络游戏《文明ONLINE》： <a href="http://bbs.gameres.com/showthread.asp?threadid=94234">http://bbs.gameres.com/showthread.asp?threadid=94234</a><p>
+4. “济南天普科技有限公司”开发的挖掘机虚拟现实系统： <a href="http://bbs.gameres.com/showthread.asp?threadid=102224">http://bbs.gameres.com/showthread.asp?threadid=102224</a><p>
+《光线游戏引擎》功能强大，经过上面几个项目的使用，已经变得非常成熟。 欢迎您使用，并提出保贵的意见和建议，您的支持和关注，将是我不断前进的动力。<p>
+联系方式： Email: <a href="mailto:lightengine@163.com">lightengine@163.com</a><p>
+《光线游戏引擎》官方网站: <a href="http://www.lightengine.cn">http://www.lightengine.cn</a><p>
+《光线游戏引擎》论坛： <a href="http://bbs.gameres.com/showforum.asp?forumid=54">http://bbs.gameres.com/showforum.asp?forumid=54</a> <hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:31 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

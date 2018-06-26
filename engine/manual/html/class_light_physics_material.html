@@ -1,0 +1,273 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightPhysicsMaterial类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightPhysicsMaterial类参考</h1><!-- doxytag: class="LightPhysicsMaterial" -->物理材质类  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;physicsMaterial.h&gt;</code>
+<p>
+<a href="class_light_physics_material-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_scene.html">LightScene</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_physics_material.html#fa65d4b6266ae9d10fde7cf51a729434">getScene</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询父场景  <a href="#fa65d4b6266ae9d10fde7cf51a729434"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_physics_material.html#8fca3d663bf2d998d3cc670f345d7f05">getMaterialIndex</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询材质索引  <a href="#8fca3d663bf2d998d3cc670f345d7f05"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_physics_material.html#6817c12ab57d0b556ad4f6b84e7e12a2">setToDefault</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">将材质设置为缺省属性  <a href="#6817c12ab57d0b556ad4f6b84e7e12a2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_physics_material.html#4ce63e441aed5929881be4ab868263e3">loadFromDesc</a> (const LightPhysicsMaterialDesc &amp;desc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">从材质描述符读取材质属性  <a href="#4ce63e441aed5929881be4ab868263e3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_physics_material.html#aa712c40ec75febe9be02b56de921d42">setDynamicFriction</a> (float factor)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置动态摩擦力系数  <a href="#aa712c40ec75febe9be02b56de921d42"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_physics_material.html#779ad1e931dc6a2b9c3b72c2d84291c8">setStaticFriction</a> (float factor)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置静态摩擦力系数  <a href="#779ad1e931dc6a2b9c3b72c2d84291c8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_physics_material.html#0e0dcbd0ba8bb6a9cca16126ffcff3e8">setRestitution</a> (float factor)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置弹力系数  <a href="#0e0dcbd0ba8bb6a9cca16126ffcff3e8"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>公有属性</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a6b517eeceebd4d681ed63ed0bd49632"></a><!-- doxytag: member="LightPhysicsMaterial::userData" ref="a6b517eeceebd4d681ed63ed0bd49632" args="" -->
+void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_physics_material.html#a6b517eeceebd4d681ed63ed0bd49632">userData</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">你能将它用于任何用途，通常用来和一个对象创建 1:1 对应的关系。 <br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+物理材质类 
+<p>
+本类负责场景文件的读取、显示和管理，目前支持 3ds 格式的静态网格场景文件。 每个 <a class="el" href="class_light_scene.html">LightScene</a> 实例都必须通过 <a class="el" href="class_light_engine.html">LightEngine</a> 类的 NewMesh 方法分配。 
+<p>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="fa65d4b6266ae9d10fde7cf51a729434"></a><!-- doxytag: member="LightPhysicsMaterial::getScene" ref="fa65d4b6266ae9d10fde7cf51a729434" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_light_scene.html">LightScene</a> * LightPhysicsMaterial::getScene           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询父场景 
+<p>
+查询父场景<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有参数</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回父场景引用</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="8fca3d663bf2d998d3cc670f345d7f05"></a><!-- doxytag: member="LightPhysicsMaterial::getMaterialIndex" ref="8fca3d663bf2d998d3cc670f345d7f05" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LightPhysicsMaterial::getMaterialIndex           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询材质索引 
+<p>
+查询材质索引<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有参数</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回材质的索引值</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="6817c12ab57d0b556ad4f6b84e7e12a2"></a><!-- doxytag: member="LightPhysicsMaterial::setToDefault" ref="6817c12ab57d0b556ad4f6b84e7e12a2" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightPhysicsMaterial::setToDefault           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+将材质设置为缺省属性 
+<p>
+将材质设置为缺省属性<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有参数</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="4ce63e441aed5929881be4ab868263e3"></a><!-- doxytag: member="LightPhysicsMaterial::loadFromDesc" ref="4ce63e441aed5929881be4ab868263e3" args="(const LightPhysicsMaterialDesc &amp;desc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightPhysicsMaterial::loadFromDesc           </td>
+          <td>(</td>
+          <td class="paramtype">const LightPhysicsMaterialDesc &amp;&nbsp;</td>
+          <td class="paramname"> <em>desc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+从材质描述符读取材质属性 
+<p>
+从材质描述符读取材质属性<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有参数</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回材质的索引值</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="aa712c40ec75febe9be02b56de921d42"></a><!-- doxytag: member="LightPhysicsMaterial::setDynamicFriction" ref="aa712c40ec75febe9be02b56de921d42" args="(float factor)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightPhysicsMaterial::setDynamicFriction           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>factor</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置动态摩擦力系数 
+<p>
+设置动态摩擦力系数<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>factor 动态磨擦力系数，取值范围为（0，+无穷大）</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="779ad1e931dc6a2b9c3b72c2d84291c8"></a><!-- doxytag: member="LightPhysicsMaterial::setStaticFriction" ref="779ad1e931dc6a2b9c3b72c2d84291c8" args="(float factor)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightPhysicsMaterial::setStaticFriction           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>factor</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置静态摩擦力系数 
+<p>
+设置静态摩擦力系数<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>factor 静态磨擦力系数，取值范围为（0，+无穷大）</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="0e0dcbd0ba8bb6a9cca16126ffcff3e8"></a><!-- doxytag: member="LightPhysicsMaterial::setRestitution" ref="0e0dcbd0ba8bb6a9cca16126ffcff3e8" args="(float factor)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightPhysicsMaterial::setRestitution           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>factor</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置弹力系数 
+<p>
+设置弹力系数<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>factor 弹力系数，取值范围为（0，1）</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/<a class="el" href="physics_material_8h.html">physicsMaterial.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:35 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

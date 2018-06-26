@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: 成员列表</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightScene 成员列表</h1>成员的完整列表，这些成员属于<a class="el" href="class_light_scene.html">LightScene</a>，包括所有继承而来的成员<p><table>
+  <tr class="memlist"><td><a class="el" href="class_light_scene.html#4b16eefc27f65e1175478e0594074ecb">getEngine</a>()=0</td><td><a class="el" href="class_light_scene.html">LightScene</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_scene.html#01494e34d6616f5b40d584a74a65dfe8">getGroupCollisionFlag</a>(LightCollisionGroup group1, LightCollisionGroup group2)=0</td><td><a class="el" href="class_light_scene.html">LightScene</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_scene.html#300b04d2e5b5ce64d0f3d14096cbad67">raycastAnyBounds</a>(const LightRay &amp;worldRay, LightShapesType shapesType, unsigned long groups=0xffffffff, float maxDist=LIGHT_MAX_F32, const LightGroupsMask *groupsMask=NULL)=0</td><td><a class="el" href="class_light_scene.html">LightScene</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_scene.html#dfa12a6f535f55e316bd35900e21b9fd">raycastAnyShape</a>(const LightRay &amp;worldRay, LightShapesType shapesType, unsigned long groups=0xffffffff, float maxDist=LIGHT_MAX_F32, const LightGroupsMask *groupsMask=NULL, LightActor **cache=NULL)=0</td><td><a class="el" href="class_light_scene.html">LightScene</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_scene.html#ae5716cae75d13620d80cf88ab5e80f5">raycastClosestBounds</a>(const LightRay &amp;worldRay, LightShapesType shapesType, LightRaycastHit &amp;hit, unsigned long groups=0xffffffff, float maxDist=LIGHT_MAX_F32, unsigned long hintFlags=0xffffffff, const LightGroupsMask *groupsMask=NULL)=0</td><td><a class="el" href="class_light_scene.html">LightScene</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_scene.html#2dbf63a59bfd317d5be24aaeea1d28a9">raycastClosestShape</a>(const LightRay &amp;worldRay, LightShapesType shapesType, LightRaycastHit &amp;hit, unsigned long groups=0xffffffff, float maxDist=LIGHT_MAX_F32, unsigned long hintFlags=0xffffffff, const LightGroupsMask *groupsMask=NULL, LightActor **cache=NULL)=0</td><td><a class="el" href="class_light_scene.html">LightScene</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_scene.html#9f2ac7ce6159b370dfb7d7e691222856">releaseActor</a>(LightActor *actor)=0</td><td><a class="el" href="class_light_scene.html">LightScene</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_scene.html#13c020ef87e046bd3e1c3729ead88210">releaseCharacter</a>(LightCharacter *character)=0</td><td><a class="el" href="class_light_scene.html">LightScene</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_scene.html#a475da892da0ad52d6b6e6db6c007c4c">releasePhysicsMaterial</a>(LightPhysicsMaterial *physicsMaterial)=0</td><td><a class="el" href="class_light_scene.html">LightScene</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_scene.html#5ef75ad28fd51cb5ae7776399b80730a">render</a>(void)=0</td><td><a class="el" href="class_light_scene.html">LightScene</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_scene.html#f04368329951b95b7c406f78ec1797ec">setGroupCollisionFlag</a>(LightCollisionGroup group1, LightCollisionGroup group2, bool enable)=0</td><td><a class="el" href="class_light_scene.html">LightScene</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_light_scene.html#ce219e3c22bcc3a76c4829819c73e9e6">setUserContactReport</a>(LightUserContactReport *callback)=0</td><td><a class="el" href="class_light_scene.html">LightScene</a></td><td><code> [pure virtual]</code></td></tr>
+</table><hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:35 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

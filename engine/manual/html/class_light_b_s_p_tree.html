@@ -1,0 +1,716 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightBSPTree类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightBSPTree类参考</h1><!-- doxytag: class="LightBSPTree" -->二叉树类  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;bsp.h&gt;</code>
+<p>
+<a href="class_light_b_s_p_tree-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_engine.html">LightEngine</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_b_s_p_tree.html#e39c230956b23cf3f7d147b73bf92bdb">getEngine</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询父引擎  <a href="#e39c230956b23cf3f7d147b73bf92bdb"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_b_s_p_tree.html#bbd5c3a21f86b3af6f0d7063ba37c206">Lighteness</a> (float lighteness)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置地图亮度值（必须在读取地图之前设置才有效，缺省值为 10 ）  <a href="#bbd5c3a21f86b3af6f0d7063ba37c206"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_b_s_p_tree.html#f948ddae5cfc0b88172286b6085e623c">Load</a> (const char *strFileName)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">将指定的 .bsp 室内场景文件读入内存  <a href="#f948ddae5cfc0b88172286b6085e623c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual LightTriangleMesh *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_b_s_p_tree.html#eb376e7b017a6de8f2b77864f2b42d6b">createTriangleMesh</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个三角形网格对象  <a href="#eb376e7b017a6de8f2b77864f2b42d6b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_b_s_p_tree.html#f8f8360f3f01f7f8c4b2481167778060">FindLeaf</a> (float x, float y, float z)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询指定点所在的叶节点（返回索引）  <a href="#f8f8360f3f01f7f8c4b2481167778060"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_b_s_p_tree.html#d0c3f6c566ec361cf60ad4912a22def5">AttachModel</a> (<a class="el" href="class_light_model_m_d3.html">LightModelMD3</a> *model)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">将指定模型与地图绑定  <a href="#d0c3f6c566ec361cf60ad4912a22def5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_b_s_p_tree.html#ee254229c48f555cc651de5be3c13206">Gravity</a> (float gravity)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置地图重力  <a href="#ee254229c48f555cc651de5be3c13206"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_b_s_p_tree.html#9a2df63fae8d3465adb9f7e9503c5b38">GetData</a> (bsp_data_t *bsp_data)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询室内场景数据  <a href="#9a2df63fae8d3465adb9f7e9503c5b38"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_b_s_p_tree.html#590c2a3edc84a7c9b486ebf5afe06b4a">Update</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">更新场景状态  <a href="#590c2a3edc84a7c9b486ebf5afe06b4a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_b_s_p_tree.html#6f8c102ec07fb80e86c7a6701cbe346a">Render</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">渲染场景  <a href="#6f8c102ec07fb80e86c7a6701cbe346a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_b_s_p_tree.html#771c10b669a5014c8d7f695121305601">RenderSingle</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">仅仅渲染场景（不渲染模型和阴影）  <a href="#771c10b669a5014c8d7f695121305601"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_b_s_p_tree.html#a0d11246a5c466e521eb78f893b241e0">RenderProjection</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">以投影纹理模式渲染场景  <a href="#a0d11246a5c466e521eb78f893b241e0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_b_s_p_tree.html#b2589801ba774b30ac4e894bb640fdc8">RenderBlendFace</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">渲染场景中的透明面  <a href="#b2589801ba774b30ac4e894bb640fdc8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual CVector3&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_b_s_p_tree.html#b862e561c4640593e1103c5243fbd6cb">TraceRay</a> (CVector3 vStart, CVector3 vEnd)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">测试指定的线段与场景中的凸体是否发生碰撞  <a href="#b862e561c4640593e1103c5243fbd6cb"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual CVector3&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_b_s_p_tree.html#2d4cf63b29f010cbdbb5ca1bcf695ad7">TraceSphere</a> (CVector3 vStart, CVector3 vEnd, float radius)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">测试指定的球体与场景中的凸体是否发生碰撞  <a href="#2d4cf63b29f010cbdbb5ca1bcf695ad7"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual CVector3&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_b_s_p_tree.html#ce46c8576ca27553312a54a8b353f06d">TraceBox</a> (CVector3 vStart, CVector3 vEnd, CVector3 vMin, CVector3 vMax)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">测试指定的包围盒（AABB）与场景中的凸体是否发生碰撞  <a href="#ce46c8576ca27553312a54a8b353f06d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_b_s_p_tree.html#f66f4c684843a4f529063c7c56c48e0f">IsOnGround</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询最后一次碰撞检测是否与地面发生碰撞  <a href="#f66f4c684843a4f529063c7c56c48e0f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_b_s_p_tree.html#46d0532d3be4f40a9a3a01fc2256e5a8">Collided</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询最后一次碰撞检测是否发生碰撞  <a href="#46d0532d3be4f40a9a3a01fc2256e5a8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_b_s_p_tree.html#4396b56ac4a21ecf5ce18d3f4fde3ea5">Destroy</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放地图所占内存  <a href="#4396b56ac4a21ecf5ce18d3f4fde3ea5"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+二叉树类 
+<p>
+本类负责地图文件的读取和显示，二叉树场景管理，是引擎的核心部分。 每个 <a class="el" href="class_light_b_s_p_tree.html">LightBSPTree</a> 实例都必须通过 <a class="el" href="class_light_engine.html">LightEngine</a> 类的 createBSPTree 方法分配， releaseBSPTree 释放。 
+<p>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="e39c230956b23cf3f7d147b73bf92bdb"></a><!-- doxytag: member="LightBSPTree::getEngine" ref="e39c230956b23cf3f7d147b73bf92bdb" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_engine.html">LightEngine</a>* LightBSPTree::getEngine           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询父引擎 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回父引擎引用</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="bbd5c3a21f86b3af6f0d7063ba37c206"></a><!-- doxytag: member="LightBSPTree::Lighteness" ref="bbd5c3a21f86b3af6f0d7063ba37c206" args="(float lighteness)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightBSPTree::Lighteness           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>lighteness</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置地图亮度值（必须在读取地图之前设置才有效，缺省值为 10 ） 
+<p>
+设置地图亮度值（必须在读取地图之前设置才有效，缺省值为 10 ）<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>lighteness 地图亮度值</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f948ddae5cfc0b88172286b6085e623c"></a><!-- doxytag: member="LightBSPTree::Load" ref="f948ddae5cfc0b88172286b6085e623c" args="(const char *strFileName)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LightBSPTree::Load           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>strFileName</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+将指定的 .bsp 室内场景文件读入内存 
+<p>
+将指定的 .bsp 室内场景文件读入内存<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>lighteness 地图文件名</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="eb376e7b017a6de8f2b77864f2b42d6b"></a><!-- doxytag: member="LightBSPTree::createTriangleMesh" ref="eb376e7b017a6de8f2b77864f2b42d6b" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual LightTriangleMesh* LightBSPTree::createTriangleMesh           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个三角形网格对象 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>新的三角形网格</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f8f8360f3f01f7f8c4b2481167778060"></a><!-- doxytag: member="LightBSPTree::FindLeaf" ref="f8f8360f3f01f7f8c4b2481167778060" args="(float x, float y, float z)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LightBSPTree::FindLeaf           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询指定点所在的叶节点（返回索引） 
+<p>
+查询指定点所在的叶节点（返回索引）<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>x 该点的 x 坐标值</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>y 该点的 y 坐标值</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>z 该点的 z 坐标值</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>该点所在叶节点的索引值</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d0c3f6c566ec361cf60ad4912a22def5"></a><!-- doxytag: member="LightBSPTree::AttachModel" ref="d0c3f6c566ec361cf60ad4912a22def5" args="(LightModelMD3 *model)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LightBSPTree::AttachModel           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_model_m_d3.html">LightModelMD3</a> *&nbsp;</td>
+          <td class="paramname"> <em>model</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+将指定模型与地图绑定 
+<p>
+将指定模型与地图绑定<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="class_light_model_m_d3.html">LightModelMD3</a></em>&nbsp;</td><td>*model 要绑定的模型</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ee254229c48f555cc651de5be3c13206"></a><!-- doxytag: member="LightBSPTree::Gravity" ref="ee254229c48f555cc651de5be3c13206" args="(float gravity)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightBSPTree::Gravity           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>gravity</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置地图重力 
+<p>
+设置地图重力<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>gravity 重力值</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9a2df63fae8d3465adb9f7e9503c5b38"></a><!-- doxytag: member="LightBSPTree::GetData" ref="9a2df63fae8d3465adb9f7e9503c5b38" args="(bsp_data_t *bsp_data)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LightBSPTree::GetData           </td>
+          <td>(</td>
+          <td class="paramtype">bsp_data_t *&nbsp;</td>
+          <td class="paramname"> <em>bsp_data</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询室内场景数据 
+<p>
+查询室内场景数据，包括玩家出生点等数据<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>bsp_data_t</em>&nbsp;</td><td>* bsp_data 要返回数据的结构指针</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="590c2a3edc84a7c9b486ebf5afe06b4a"></a><!-- doxytag: member="LightBSPTree::Update" ref="590c2a3edc84a7c9b486ebf5afe06b4a" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightBSPTree::Update           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+更新场景状态 
+<p>
+更新场景状态<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有参数</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="6f8c102ec07fb80e86c7a6701cbe346a"></a><!-- doxytag: member="LightBSPTree::Render" ref="6f8c102ec07fb80e86c7a6701cbe346a" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightBSPTree::Render           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+渲染场景 
+<p>
+渲染场景<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有参数</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="771c10b669a5014c8d7f695121305601"></a><!-- doxytag: member="LightBSPTree::RenderSingle" ref="771c10b669a5014c8d7f695121305601" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightBSPTree::RenderSingle           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+仅仅渲染场景（不渲染模型和阴影） 
+<p>
+仅仅渲染场景（不渲染模型和阴影）<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有参数</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a0d11246a5c466e521eb78f893b241e0"></a><!-- doxytag: member="LightBSPTree::RenderProjection" ref="a0d11246a5c466e521eb78f893b241e0" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightBSPTree::RenderProjection           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+以投影纹理模式渲染场景 
+<p>
+以投影纹理模式渲染场景<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>无</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b2589801ba774b30ac4e894bb640fdc8"></a><!-- doxytag: member="LightBSPTree::RenderBlendFace" ref="b2589801ba774b30ac4e894bb640fdc8" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightBSPTree::RenderBlendFace           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+渲染场景中的透明面 
+<p>
+渲染场景中的透明面<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>无</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b862e561c4640593e1103c5243fbd6cb"></a><!-- doxytag: member="LightBSPTree::TraceRay" ref="b862e561c4640593e1103c5243fbd6cb" args="(CVector3 vStart, CVector3 vEnd)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CVector3 LightBSPTree::TraceRay           </td>
+          <td>(</td>
+          <td class="paramtype">CVector3&nbsp;</td>
+          <td class="paramname"> <em>vStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CVector3&nbsp;</td>
+          <td class="paramname"> <em>vEnd</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+测试指定的线段与场景中的凸体是否发生碰撞 
+<p>
+测试指定的线段与场景中的凸体是否发生碰撞<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>CVector3</em>&nbsp;</td><td>vStart 线段起始点</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>CVector3</em>&nbsp;</td><td>vEnd 线段结束点</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>CVector3 发生碰撞的点</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="2d4cf63b29f010cbdbb5ca1bcf695ad7"></a><!-- doxytag: member="LightBSPTree::TraceSphere" ref="2d4cf63b29f010cbdbb5ca1bcf695ad7" args="(CVector3 vStart, CVector3 vEnd, float radius)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CVector3 LightBSPTree::TraceSphere           </td>
+          <td>(</td>
+          <td class="paramtype">CVector3&nbsp;</td>
+          <td class="paramname"> <em>vStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CVector3&nbsp;</td>
+          <td class="paramname"> <em>vEnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>radius</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+测试指定的球体与场景中的凸体是否发生碰撞 
+<p>
+测试指定的球体与场景中的凸体是否发生碰撞<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>CVector3</em>&nbsp;</td><td>vStart 线段起始点</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>CVector3</em>&nbsp;</td><td>vEnd 线段结束点</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>radius 球体的半径</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>CVector3 发生碰撞的点</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ce46c8576ca27553312a54a8b353f06d"></a><!-- doxytag: member="LightBSPTree::TraceBox" ref="ce46c8576ca27553312a54a8b353f06d" args="(CVector3 vStart, CVector3 vEnd, CVector3 vMin, CVector3 vMax)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CVector3 LightBSPTree::TraceBox           </td>
+          <td>(</td>
+          <td class="paramtype">CVector3&nbsp;</td>
+          <td class="paramname"> <em>vStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CVector3&nbsp;</td>
+          <td class="paramname"> <em>vEnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CVector3&nbsp;</td>
+          <td class="paramname"> <em>vMin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CVector3&nbsp;</td>
+          <td class="paramname"> <em>vMax</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+测试指定的包围盒（AABB）与场景中的凸体是否发生碰撞 
+<p>
+测试指定的包围盒（AABB）与场景中的凸体是否发生碰撞<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>CVector3</em>&nbsp;</td><td>vStart 线段起始点</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>CVector3</em>&nbsp;</td><td>vEnd 线段结束点</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>CVector3</em>&nbsp;</td><td>vMin 包围盒（AABB）对角线顶点</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>CVector3</em>&nbsp;</td><td>vMax 包围盒（AABB）对角线另一个顶点</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>CVector3 发生碰撞的点</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f66f4c684843a4f529063c7c56c48e0f"></a><!-- doxytag: member="LightBSPTree::IsOnGround" ref="f66f4c684843a4f529063c7c56c48e0f" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LightBSPTree::IsOnGround           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询最后一次碰撞检测是否与地面发生碰撞 
+<p>
+查询最后一次碰撞检测是否与地面发生碰撞<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>无</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果与地面发生碰撞，返回 TRUE ，否则返回 FALSE ；</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="46d0532d3be4f40a9a3a01fc2256e5a8"></a><!-- doxytag: member="LightBSPTree::Collided" ref="46d0532d3be4f40a9a3a01fc2256e5a8" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LightBSPTree::Collided           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询最后一次碰撞检测是否发生碰撞 
+<p>
+查询最后一次碰撞检测是否发生碰撞<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>无</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果发生碰撞，返回 TRUE ，否则返回 FALSE ；</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="4396b56ac4a21ecf5ce18d3f4fde3ea5"></a><!-- doxytag: member="LightBSPTree::Destroy" ref="4396b56ac4a21ecf5ce18d3f4fde3ea5" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightBSPTree::Destroy           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放地图所占内存 
+<p>
+释放地图所占内存<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>无</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/<a class="el" href="bsp_8h.html">bsp.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:32 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

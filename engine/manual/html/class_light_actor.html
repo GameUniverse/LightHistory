@@ -1,0 +1,1446 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightActor类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightActor类参考</h1><!-- doxytag: class="LightActor" -->角色类  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;actor.h&gt;</code>
+<p>
+<a href="class_light_actor-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_scene.html">LightScene</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#f2d95cd627245587ddda24388aeadaeb">getScene</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询父场景  <a href="#f2d95cd627245587ddda24388aeadaeb"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#f366f2b7363bc79aae56f56f3ddf844b">setGlobalPose</a> (const mat34_t mat)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询角色矩阵（矩阵包含位置和方向信息）  <a href="#f366f2b7363bc79aae56f56f3ddf844b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#b890ee21c6d7dad5d76763290d9eb730">setGlobalPosition</a> (const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> vec)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询角色位置  <a href="#b890ee21c6d7dad5d76763290d9eb730"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#25d1fb91016c8ffd3cdba9720c72bf9b">setGlobalPosition</a> (float x, float y, float z)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置角色位置  <a href="#25d1fb91016c8ffd3cdba9720c72bf9b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#072e9dada44c365c3fb7cb44519b9e99">setGlobalOrientation</a> (const mat33_t mat)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询角色方向（使用矩阵）  <a href="#072e9dada44c365c3fb7cb44519b9e99"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#1e3123db1c928cdfad2fef63ec16bb2c">setGlobalOrientationQuat</a> (const <a class="el" href="type_8h.html#e42e6ff3aa78dae73930a489e8dd5490">quat_t</a> quat)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询角色方向（使用四元数）  <a href="#1e3123db1c928cdfad2fef63ec16bb2c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#0b3262d7e6221fd32af42a42089f838a">setGlobalOrientationAngleAxis</a> (float angle, float x, float y, float z)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置角色方向（使用绕轴旋转）  <a href="#0b3262d7e6221fd32af42a42089f838a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#838825b810627a159e9a45a5076b9244">getGlobalPosition</a> (float *x, float *y, float *z)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询角色位置  <a href="#838825b810627a159e9a45a5076b9244"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#17dd636077759997fed5e58b89405047">setLocalPose</a> (const mat34_t mat)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">setLocal*() 方法设置子角色在父角色空间中的状态，也就是相对于父角色自已的坐标  <a href="#17dd636077759997fed5e58b89405047"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#540fe6d5862f5bfd31f61813b288290b">setLocalPosition</a> (const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> vec)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">setLocal*() 方法设置子角色在父角色空间中的状态，也就是相对于父角色自已的坐标  <a href="#540fe6d5862f5bfd31f61813b288290b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#3f534e26d31ccd921c547ccc6f36f4e0">setLocalOrientation</a> (const mat33_t mat)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">setLocal*() 方法设置子角色在父角色空间中的状态，也就是相对于父角色自已的坐标  <a href="#3f534e26d31ccd921c547ccc6f36f4e0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual mat34_t &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#138ea67a03505e143c0efc9d34784c45">getLocalPose</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">getLocal*() 方法返回子角色在父角色空间中的状态，也就是相对于父角色自已的坐标  <a href="#138ea67a03505e143c0efc9d34784c45"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#b024ea4e8f6de34ac9b3c2335fffff4a">getLocalPosition</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">getLocal*() 方法返回子角色在父角色空间中的状态，也就是相对于父角色自已的坐标  <a href="#b024ea4e8f6de34ac9b3c2335fffff4a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual mat33_t &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#a04c399534e13e340f4ac7a145b6592f">getLocalOrientation</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">getLocal*() 方法返回子角色在父角色空间中的状态，也就是相对于父角色自已的坐标  <a href="#a04c399534e13e340f4ac7a145b6592f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#a0ac56b4807a7bce3c670089032b8e8b">setMass</a> (float mass)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">moveGlobal*() 方法调用服务，去移动活动角色穿过游戏世界（此角色是运动受限制的）。设置动态角色质量  <a href="#a0ac56b4807a7bce3c670089032b8e8b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#d909785a53cc12ffbf5ee3c8ef62a4ce">getMass</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询角色质量  <a href="#d909785a53cc12ffbf5ee3c8ef62a4ce"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#dd37f7b259b8efc4bc29c2eb3c7d5294">setLinearDamping</a> (float linDamp)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置线性阻尼系数  <a href="#dd37f7b259b8efc4bc29c2eb3c7d5294"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#4465f02ab75f2ab55275cb4e1cca0e8f">getLinearDamping</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询线性阻尼系数  <a href="#4465f02ab75f2ab55275cb4e1cca0e8f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#4c644a76bf525a3979177547a37bb4cf">setAngularDamping</a> (float angDamp)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置角度阻尼系数  <a href="#4c644a76bf525a3979177547a37bb4cf"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#5ca059d7601bb5475d92c8f287483381">getAngularDamping</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询角度阻尼系数  <a href="#5ca059d7601bb5475d92c8f287483381"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#248b91de2a46548d055df1cad40f4e88">setLinearVelocity</a> (const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;linVel)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置角色线速度  <a href="#248b91de2a46548d055df1cad40f4e88"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#490b61c40bea6ca9d6e061e84ec439a1">setAngularVelocity</a> (const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;angVel)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置角色角速度  <a href="#490b61c40bea6ca9d6e061e84ec439a1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#d3dbf78e6cd283d5cf4ef08d53b00964">getLinearVelocity</a> (<a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;linVel)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询角色线速度  <a href="#d3dbf78e6cd283d5cf4ef08d53b00964"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#4abb9d7daac3dce5d8a541908764823d">getAngularVelocity</a> (<a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;angVel)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询角色角速度  <a href="#4abb9d7daac3dce5d8a541908764823d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#505a1896272418de792f6c1093afdc2e">setMaxAngularVelocity</a> (float maxAngVel)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置这个角色允许的最大角速度  <a href="#505a1896272418de792f6c1093afdc2e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#0a4506ab5b158d3cfad46b4d01d65092">getMaxAngularVelocity</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询这个角色允许的最大角速度  <a href="#0a4506ab5b158d3cfad46b4d01d65092"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#11da7b3a10b8a89e74c63a35315e8f8f">setLinearMomentum</a> (const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;linMoment)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置角色线动量  <a href="#11da7b3a10b8a89e74c63a35315e8f8f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#fea72f5e49a2565dcd460ed90df9c14f">setAngularMomentum</a> (const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;angMoment)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置角色角动量  <a href="#fea72f5e49a2565dcd460ed90df9c14f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#0f35e3cfeb1831c47c361b8ea2b446cb">getLinearMomentum</a> (<a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;linMoment)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询角色线动量  <a href="#0f35e3cfeb1831c47c361b8ea2b446cb"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#c32f4dfe4315c4f80404c59322e80354">getAngularMomentum</a> (<a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;angMoment)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询角色角动量  <a href="#c32f4dfe4315c4f80404c59322e80354"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#4c1f77e641fceea0e9ed9e08fff10465">addForce</a> (float x, float y, float z, int mode=0)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">对角色施加一个用世界坐标表示的力  <a href="#4c1f77e641fceea0e9ed9e08fff10465"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#3a6fc66b83f0c8007af5ca0119a91097">addLocalForce</a> (float x, float y, float z, int mode=0)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">对角色施加一个用局部坐标表示的力  <a href="#3a6fc66b83f0c8007af5ca0119a91097"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#ca7308913b748d7276039845fb5f9445">render</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">渲染角色  <a href="#ca7308913b748d7276039845fb5f9445"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#dfb985b063a2785c9bfb82950c03dde7">setGroup</a> (<a class="el" href="actor_8h.html#aab61f927f3e34af29ceab2d25589f80">LightCollisionGroup</a> collisionGroup)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置这个形状是哪个碰撞检测组的一部分  <a href="#dfb985b063a2785c9bfb82950c03dde7"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="actor_8h.html#aab61f927f3e34af29ceab2d25589f80">LightCollisionGroup</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#225c5cbaec07716aa541b058ae9104a5">getGroup</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询 <a class="el" href="class_light_actor.html#dfb985b063a2785c9bfb82950c03dde7">setGroup()</a> 设置的值  <a href="#225c5cbaec07716aa541b058ae9104a5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#1f190309235251572baeb325a8587307">setGroupsMask</a> (const <a class="el" href="struct_light_groups_mask.html">LightGroupsMask</a> &amp;mask)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置碰撞检测过滤使用的 128-bit 掩码（见 <a class="el" href="struct_light_groups_mask.html">LightGroupsMask</a> 的注释）  <a href="#1f190309235251572baeb325a8587307"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual const <a class="el" href="struct_light_groups_mask.html">LightGroupsMask</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#bb5de430afe787aab22af80aab5b4d84">getGroupsMask</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询碰撞检测过滤使用的 128-bit 掩码（见 <a class="el" href="struct_light_groups_mask.html">LightGroupsMask</a> 的注释）  <a href="#bb5de430afe787aab22af80aab5b4d84"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#f4360cc0d4b413e537a4aa07f263d2f3">wakeUp</a> (float wakeCounterValue=LIGHT_SLEEP_INTERVAL)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">如果角色处于睡眠状态，唤醒角色  <a href="#f4360cc0d4b413e537a4aa07f263d2f3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#18ca73d099925bb06d76a3e6bf95fc16">hide</a> (bool hide)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">隐藏/显示角色  <a href="#18ca73d099925bb06d76a3e6bf95fc16"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual mat44_t &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#2d731401e0c2cfd9007501d70aa67730">getGlobalPoseMatrix44</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询角色矩阵（矩阵包含位置和方向信息）  <a href="#2d731401e0c2cfd9007501d70aa67730"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual mat34_t &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#28304d23e6715bed3aa597382342bd62">getGlobalOrientationMatrix34</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询角色方向（使用矩阵） 注：临时函数，提供一个 3x4 的矩阵  <a href="#28304d23e6715bed3aa597382342bd62"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#dcd1635ed19e6964501fb57c03f99905">AddForceAtPos</a> (float fx, float fy, float fz, float px, float py, float pz)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">在指位置施加力  <a href="#dcd1635ed19e6964501fb57c03f99905"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>公有属性</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="ded390751ea45dfaf0c7db839a8eddcb"></a><!-- doxytag: member="LightActor::userData" ref="ded390751ea45dfaf0c7db839a8eddcb" args="" -->
+void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html#ded390751ea45dfaf0c7db839a8eddcb">userData</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">你能将它用于任何用途，通常用来和一个对象创建 1:1 对应的关系。 <br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+角色类 
+<p>
+本类负责角色的创建、显示和控制，目前支持盒子、球体、胶囊、平面、静态网格和骨骼动画 6 种角色类型。 每个 <a class="el" href="class_light_actor.html">LightActor</a> 实例都必须通过 <a class="el" href="class_light_scene.html">LightScene</a> 类的 createActor 方法分配， releaseActor 释放。 
+<p>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="f2d95cd627245587ddda24388aeadaeb"></a><!-- doxytag: member="LightActor::getScene" ref="f2d95cd627245587ddda24388aeadaeb" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_light_scene.html">LightScene</a> * LightActor::getScene           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询父场景 
+<p>
+查询父场景<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有参数</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回父场景引用</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f366f2b7363bc79aae56f56f3ddf844b"></a><!-- doxytag: member="LightActor::setGlobalPose" ref="f366f2b7363bc79aae56f56f3ddf844b" args="(const mat34_t mat)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightActor::setGlobalPose           </td>
+          <td>(</td>
+          <td class="paramtype">const mat34_t&nbsp;</td>
+          <td class="paramname"> <em>mat</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询角色矩阵（矩阵包含位置和方向信息） 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>mat</em>&nbsp;</td><td>要设置的角色矩阵 </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b890ee21c6d7dad5d76763290d9eb730"></a><!-- doxytag: member="LightActor::setGlobalPosition" ref="b890ee21c6d7dad5d76763290d9eb730" args="(const vec3_t vec)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightActor::setGlobalPosition           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>vec</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询角色位置 
+<p>
+设置角色位置<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>const</em>&nbsp;</td><td>vec3_t vec 要设置的角色位置</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="25d1fb91016c8ffd3cdba9720c72bf9b"></a><!-- doxytag: member="LightActor::setGlobalPosition" ref="25d1fb91016c8ffd3cdba9720c72bf9b" args="(float x, float y, float z)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightActor::setGlobalPosition           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置角色位置 
+<p>
+设置角色位置<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>x 要设置角色位置的 x 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>y 要设置角色位置的 y 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>z 要设置角色位置的 z 坐标</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="072e9dada44c365c3fb7cb44519b9e99"></a><!-- doxytag: member="LightActor::setGlobalOrientation" ref="072e9dada44c365c3fb7cb44519b9e99" args="(const mat33_t mat)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightActor::setGlobalOrientation           </td>
+          <td>(</td>
+          <td class="paramtype">const mat33_t&nbsp;</td>
+          <td class="paramname"> <em>mat</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询角色方向（使用矩阵） 
+<p>
+设置角色方向（使用矩阵）<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>const</em>&nbsp;</td><td>mat33_t mat 要设置的角色方向矩阵</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="1e3123db1c928cdfad2fef63ec16bb2c"></a><!-- doxytag: member="LightActor::setGlobalOrientationQuat" ref="1e3123db1c928cdfad2fef63ec16bb2c" args="(const quat_t quat)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightActor::setGlobalOrientationQuat           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="type_8h.html#e42e6ff3aa78dae73930a489e8dd5490">quat_t</a>&nbsp;</td>
+          <td class="paramname"> <em>mat</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询角色方向（使用四元数） 
+<p>
+设置角色方向（使用四元数）<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>const</em>&nbsp;</td><td>mat33_t mat 要设置的角色方向四元数</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="0b3262d7e6221fd32af42a42089f838a"></a><!-- doxytag: member="LightActor::setGlobalOrientationAngleAxis" ref="0b3262d7e6221fd32af42a42089f838a" args="(float angle, float x, float y, float z)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightActor::setGlobalOrientationAngleAxis           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置角色方向（使用绕轴旋转） 
+<p>
+设置角色方向（使用绕轴旋转指定角度的表示方式）<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>angle 角色绕轴旋转角度</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>x 旋转轴向量 x 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>y 旋转轴向量 y 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>z 旋转轴向量 z 分量</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>旋转时以原点和该向量组成的线段为轴进行旋转。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="838825b810627a159e9a45a5076b9244"></a><!-- doxytag: member="LightActor::getGlobalPosition" ref="838825b810627a159e9a45a5076b9244" args="(float *x, float *y, float *z)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightActor::getGlobalPosition           </td>
+          <td>(</td>
+          <td class="paramtype">float *&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询角色位置 
+<p>
+查询角色位置<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>* x 角色位置的 x 坐标指针</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>* y 角色位置的 y 坐标指针</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>* z 角色位置的 z 坐标指针</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值，角色位置已经通过参数的指针返回了。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="17dd636077759997fed5e58b89405047"></a><!-- doxytag: member="LightActor::setLocalPose" ref="17dd636077759997fed5e58b89405047" args="(const mat34_t mat)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightActor::setLocalPose           </td>
+          <td>(</td>
+          <td class="paramtype">const mat34_t&nbsp;</td>
+          <td class="paramname"> <em>mat</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+setLocal*() 方法设置子角色在父角色空间中的状态，也就是相对于父角色自已的坐标 
+<p>
+这个变换缺省为单位矩阵<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>mat[in]</em>&nbsp;</td><td>子角色相对于父角色的新变换。<b>取值范围:</b> [刚体变换] </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="540fe6d5862f5bfd31f61813b288290b"></a><!-- doxytag: member="LightActor::setLocalPosition" ref="540fe6d5862f5bfd31f61813b288290b" args="(const vec3_t vec)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightActor::setLocalPosition           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>vec</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+setLocal*() 方法设置子角色在父角色空间中的状态，也就是相对于父角色自已的坐标 
+<p>
+这个变换缺省为单位矩阵<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>vec[in]</em>&nbsp;</td><td>子角色相对于父角色的新位置。<b>取值范围:</b> [位置矢量] </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="3f534e26d31ccd921c547ccc6f36f4e0"></a><!-- doxytag: member="LightActor::setLocalOrientation" ref="3f534e26d31ccd921c547ccc6f36f4e0" args="(const mat33_t mat)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightActor::setLocalOrientation           </td>
+          <td>(</td>
+          <td class="paramtype">const mat33_t&nbsp;</td>
+          <td class="paramname"> <em>mat</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+setLocal*() 方法设置子角色在父角色空间中的状态，也就是相对于父角色自已的坐标 
+<p>
+这个变换缺省为单位矩阵<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>mat[in]</em>&nbsp;</td><td>子角色相对于父角色的新方向。<b>取值范围:</b> [旋转矩阵] </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="138ea67a03505e143c0efc9d34784c45"></a><!-- doxytag: member="LightActor::getLocalPose" ref="138ea67a03505e143c0efc9d34784c45" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual mat34_t&amp; LightActor::getLocalPose           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+getLocal*() 方法返回子角色在父角色空间中的状态，也就是相对于父角色自已的坐标 
+<p>
+这个变换缺省为单位矩阵<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>子角色相对于父角色的状态 float mat[3][4]。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b024ea4e8f6de34ac9b3c2335fffff4a"></a><!-- doxytag: member="LightActor::getLocalPosition" ref="b024ea4e8f6de34ac9b3c2335fffff4a" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&amp; LightActor::getLocalPosition           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+getLocal*() 方法返回子角色在父角色空间中的状态，也就是相对于父角色自已的坐标 
+<p>
+这个变换缺省为单位矩阵<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>子角色相对于父角色的位置。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a04c399534e13e340f4ac7a145b6592f"></a><!-- doxytag: member="LightActor::getLocalOrientation" ref="a04c399534e13e340f4ac7a145b6592f" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual mat33_t&amp; LightActor::getLocalOrientation           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+getLocal*() 方法返回子角色在父角色空间中的状态，也就是相对于父角色自已的坐标 
+<p>
+这个变换缺省为单位矩阵<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>子角色相对于父角色的方向。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a0ac56b4807a7bce3c670089032b8e8b"></a><!-- doxytag: member="LightActor::setMass" ref="a0ac56b4807a7bce3c670089032b8e8b" args="(float mass)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightActor::setMass           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>mass</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+moveGlobal*() 方法调用服务，去移动活动角色穿过游戏世界（此角色是运动受限制的）。设置动态角色质量 
+<p>
+质量必须是正数，角色必须是动态的。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>mass[in]</em>&nbsp;</td><td>角色新质量值。<b>取值范围:</b> [0，正无穷] </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d909785a53cc12ffbf5ee3c8ef62a4ce"></a><!-- doxytag: member="LightActor::getMass" ref="d909785a53cc12ffbf5ee3c8ef62a4ce" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float LightActor::getMass           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询角色质量 
+<p>
+静态角色将总是返回 0。<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>这个角色的质量。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="dd37f7b259b8efc4bc29c2eb3c7d5294"></a><!-- doxytag: member="LightActor::setLinearDamping" ref="dd37f7b259b8efc4bc29c2eb3c7d5294" args="(float linDamp)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightActor::setLinearDamping           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>linDamp</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置线性阻尼系数 
+<p>
+零表示没有阻尼，阻尼系数必须是正数。角色必须是动态的。<p>
+<b>缺省值:</b> 0<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>linDamp[in]</em>&nbsp;</td><td>线性阻尼系数。<b>取值范围:</b> [0，正无穷] </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="4465f02ab75f2ab55275cb4e1cca0e8f"></a><!-- doxytag: member="LightActor::getLinearDamping" ref="4465f02ab75f2ab55275cb4e1cca0e8f" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float LightActor::getLinearDamping           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询线性阻尼系数 
+<p>
+角色必须是动态的，静态角色将总是返回 0。<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>这个角色的线性阻尼系数。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="4c644a76bf525a3979177547a37bb4cf"></a><!-- doxytag: member="LightActor::setAngularDamping" ref="4c644a76bf525a3979177547a37bb4cf" args="(float angDamp)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightActor::setAngularDamping           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>angDamp</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置角度阻尼系数 
+<p>
+零表示没有阻尼，阻尼系数必须是正数。角色必须是动态的。<p>
+<b>缺省值:</b> 0.05<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>linDamp[in]</em>&nbsp;</td><td>角度阻尼系数。<b>取值范围:</b> [0，正无穷] </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="5ca059d7601bb5475d92c8f287483381"></a><!-- doxytag: member="LightActor::getAngularDamping" ref="5ca059d7601bb5475d92c8f287483381" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float LightActor::getAngularDamping           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询角度阻尼系数 
+<p>
+角色必须是动态的，静态角色将总是返回 0。<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>这个角色的角度阻尼系数。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="248b91de2a46548d055df1cad40f4e88"></a><!-- doxytag: member="LightActor::setLinearVelocity" ref="248b91de2a46548d055df1cad40f4e88" args="(const vec3_t &amp;linVel)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightActor::setLinearVelocity           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>linVel</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置角色线速度 
+<p>
+角色必须是动态的。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>linVel[in]</em>&nbsp;</td><td>新的线速度。<b>取值范围:</b> [速度矢量] </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="490b61c40bea6ca9d6e061e84ec439a1"></a><!-- doxytag: member="LightActor::setAngularVelocity" ref="490b61c40bea6ca9d6e061e84ec439a1" args="(const vec3_t &amp;angVel)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightActor::setAngularVelocity           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>angVel</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置角色角速度 
+<p>
+角色必须是动态的。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>angVel[in]</em>&nbsp;</td><td>新的角速度。<b>取值范围:</b> [角速度矢量] </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d3dbf78e6cd283d5cf4ef08d53b00964"></a><!-- doxytag: member="LightActor::getLinearVelocity" ref="d3dbf78e6cd283d5cf4ef08d53b00964" args="(vec3_t &amp;linVel)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightActor::getLinearVelocity           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>linVel</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询角色线速度 
+<p>
+角色必须是动态的。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>linVel[out]</em>&nbsp;</td><td>返回角色线速度。 </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="4abb9d7daac3dce5d8a541908764823d"></a><!-- doxytag: member="LightActor::getAngularVelocity" ref="4abb9d7daac3dce5d8a541908764823d" args="(vec3_t &amp;angVel)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightActor::getAngularVelocity           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>angVel</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询角色角速度 
+<p>
+角色必须是动态的。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>angVel[out]</em>&nbsp;</td><td>返回角色角速度。 </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="505a1896272418de792f6c1093afdc2e"></a><!-- doxytag: member="LightActor::setMaxAngularVelocity" ref="505a1896272418de792f6c1093afdc2e" args="(float maxAngVel)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightActor::setMaxAngularVelocity           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>maxAngVel</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置这个角色允许的最大角速度 
+<p>
+角色必须是动态的。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>maxAngVel[in]</em>&nbsp;</td><td>这个角色允许的最大角速度。<b>取值范围:</b> [0，正无穷] </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="0a4506ab5b158d3cfad46b4d01d65092"></a><!-- doxytag: member="LightActor::getMaxAngularVelocity" ref="0a4506ab5b158d3cfad46b4d01d65092" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float LightActor::getMaxAngularVelocity           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询这个角色允许的最大角速度 
+<p>
+角色必须是动态的。<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>这个角色允许的最大角速度。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="11da7b3a10b8a89e74c63a35315e8f8f"></a><!-- doxytag: member="LightActor::setLinearMomentum" ref="11da7b3a10b8a89e74c63a35315e8f8f" args="(const vec3_t &amp;linMoment)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightActor::setLinearMomentum           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>linMoment</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置角色线动量 
+<p>
+角色必须是动态的。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>linMoment[in]</em>&nbsp;</td><td>新的线动量。<b>取值范围:</b> [动量矢量] </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="fea72f5e49a2565dcd460ed90df9c14f"></a><!-- doxytag: member="LightActor::setAngularMomentum" ref="fea72f5e49a2565dcd460ed90df9c14f" args="(const vec3_t &amp;angMoment)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightActor::setAngularMomentum           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>angMoment</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置角色角动量 
+<p>
+角色必须是动态的。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>angMoment[in]</em>&nbsp;</td><td>新的角动量。<b>取值范围:</b> [角动量矢量] </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="0f35e3cfeb1831c47c361b8ea2b446cb"></a><!-- doxytag: member="LightActor::getLinearMomentum" ref="0f35e3cfeb1831c47c361b8ea2b446cb" args="(vec3_t &amp;linMoment)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightActor::getLinearMomentum           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>linMoment</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询角色线动量 
+<p>
+角色必须是动态的。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>linMoment[out]</em>&nbsp;</td><td>返回角色线动量。 </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c32f4dfe4315c4f80404c59322e80354"></a><!-- doxytag: member="LightActor::getAngularMomentum" ref="c32f4dfe4315c4f80404c59322e80354" args="(vec3_t &amp;angMoment)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightActor::getAngularMomentum           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>angMoment</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询角色角动量 
+<p>
+角色必须是动态的。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>angMoment[out]</em>&nbsp;</td><td>返回角色角动量。 </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="4c1f77e641fceea0e9ed9e08fff10465"></a><!-- doxytag: member="LightActor::addForce" ref="4c1f77e641fceea0e9ed9e08fff10465" args="(float x, float y, float z, int mode=0)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightActor::addForce           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>mode</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+对角色施加一个用世界坐标表示的力 
+<p>
+对角色施加一个用世界坐标表示的力<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>x 力向量的 x 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>y 力向量的 y 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>z 力向量的 z 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>int</em>&nbsp;</td><td>mode 施加力的模式，0 = 帧内有效，1 = 持续累加</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="3a6fc66b83f0c8007af5ca0119a91097"></a><!-- doxytag: member="LightActor::addLocalForce" ref="3a6fc66b83f0c8007af5ca0119a91097" args="(float x, float y, float z, int mode=0)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightActor::addLocalForce           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>mode</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+对角色施加一个用局部坐标表示的力 
+<p>
+对角色施加一个用局部坐标表示的力<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>x 力向量的 x 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>y 力向量的 y 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>z 力向量的 z 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>int</em>&nbsp;</td><td>mode 施加力的模式，0 = 帧内有效，1 = 持续累加</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ca7308913b748d7276039845fb5f9445"></a><!-- doxytag: member="LightActor::render" ref="ca7308913b748d7276039845fb5f9445" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightActor::render           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+渲染角色 
+<p>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="dfb985b063a2785c9bfb82950c03dde7"></a><!-- doxytag: member="LightActor::setGroup" ref="dfb985b063a2785c9bfb82950c03dde7" args="(LightCollisionGroup collisionGroup)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightActor::setGroup           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="actor_8h.html#aab61f927f3e34af29ceab2d25589f80">LightCollisionGroup</a>&nbsp;</td>
+          <td class="paramname"> <em>collisionGroup</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置这个形状是哪个碰撞检测组的一部分 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>collisionGroup[in]</em>&nbsp;</td><td>这个形状的碰撞检测组，<b>取值范围:</b> [0,31] </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="225c5cbaec07716aa541b058ae9104a5"></a><!-- doxytag: member="LightActor::getGroup" ref="225c5cbaec07716aa541b058ae9104a5" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="actor_8h.html#aab61f927f3e34af29ceab2d25589f80">LightCollisionGroup</a> LightActor::getGroup           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询 <a class="el" href="class_light_actor.html#dfb985b063a2785c9bfb82950c03dde7">setGroup()</a> 设置的值 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>这个形状所属的碰撞检测组 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="1f190309235251572baeb325a8587307"></a><!-- doxytag: member="LightActor::setGroupsMask" ref="1f190309235251572baeb325a8587307" args="(const LightGroupsMask &amp;mask)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightActor::setGroupsMask           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_light_groups_mask.html">LightGroupsMask</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>mask</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置碰撞检测过滤使用的 128-bit 掩码（见 <a class="el" href="struct_light_groups_mask.html">LightGroupsMask</a> 的注释） 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>mask[in]</em>&nbsp;</td><td>这个形状的碰撞检测组掩码 </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="bb5de430afe787aab22af80aab5b4d84"></a><!-- doxytag: member="LightActor::getGroupsMask" ref="bb5de430afe787aab22af80aab5b4d84" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="struct_light_groups_mask.html">LightGroupsMask</a>&amp; LightActor::getGroupsMask           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询碰撞检测过滤使用的 128-bit 掩码（见 <a class="el" href="struct_light_groups_mask.html">LightGroupsMask</a> 的注释） 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>这个形状的碰撞检测组掩码 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f4360cc0d4b413e537a4aa07f263d2f3"></a><!-- doxytag: member="LightActor::wakeUp" ref="f4360cc0d4b413e537a4aa07f263d2f3" args="(float wakeCounterValue=LIGHT_SLEEP_INTERVAL)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightActor::wakeUp           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>wakeCounterValue</em> = <code>LIGHT_SLEEP_INTERVAL</code>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+如果角色处于睡眠状态，唤醒角色 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>wakeCounterValue[in]</em>&nbsp;</td><td>新的睡眠计数器值。<b>取值范围:</b> [0,正无穷]</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="18ca73d099925bb06d76a3e6bf95fc16"></a><!-- doxytag: member="LightActor::hide" ref="18ca73d099925bb06d76a3e6bf95fc16" args="(bool hide)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightActor::hide           </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>hide</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+隐藏/显示角色 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>hide</em>&nbsp;</td><td>隐藏/显示命令（TRUE = 隐藏，FALSE = 显示），角色隐藏时，角色的物理模型仍旧正常存在。</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>此函数通常在调试程序时使用，缺省情况下角色是隐藏的，当调试程序时可能需要显示角色。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="2d731401e0c2cfd9007501d70aa67730"></a><!-- doxytag: member="LightActor::getGlobalPoseMatrix44" ref="2d731401e0c2cfd9007501d70aa67730" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual mat44_t&amp; LightActor::getGlobalPoseMatrix44           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询角色矩阵（矩阵包含位置和方向信息） 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回要查询的角色矩阵引用 float matrix[4][4]。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="28304d23e6715bed3aa597382342bd62"></a><!-- doxytag: member="LightActor::getGlobalOrientationMatrix34" ref="28304d23e6715bed3aa597382342bd62" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual mat34_t&amp; LightActor::getGlobalOrientationMatrix34           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询角色方向（使用矩阵） 注：临时函数，提供一个 3x4 的矩阵 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回要查询的角色方向矩阵指针 float matrix[4][3]。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="dcd1635ed19e6964501fb57c03f99905"></a><!-- doxytag: member="LightActor::AddForceAtPos" ref="dcd1635ed19e6964501fb57c03f99905" args="(float fx, float fy, float fz, float px, float py, float pz)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightActor::AddForceAtPos           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>fx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>fy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>fz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>px</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>py</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>pz</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+在指位置施加力 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>fx 力矢量的 x 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>fy 力矢量的 y 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>fz 力矢量的 z 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>px 位置的 x 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>py 位置的 y 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>pz 位置的 z 坐标</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>本函数没有相关信息。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/<a class="el" href="actor_8h.html">actor.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:32 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

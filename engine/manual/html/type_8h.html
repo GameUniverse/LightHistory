@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: E:/LightEngine/include/type.h文件参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li><a href="annotated.html"><span>类</span></a></li>
+    <li id="current"><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="files.html"><span>文件列表</span></a></li>
+    <li><a href="globals.html"><span>文件成员</span></a></li>
+  </ul></div>
+<h1>E:/LightEngine/include/type.h文件参考</h1><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>宏定义</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="e483a785e4756de08ee1640a1297732d"></a><!-- doxytag: member="type.h::VEC2" ref="e483a785e4756de08ee1640a1297732d" args="(vec2, x, y)" -->
+#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="type_8h.html#e483a785e4756de08ee1640a1297732d">VEC2</a>(vec2, x, y)&nbsp;&nbsp;&nbsp;{ vec2[0] = x; vec2[1] = y; }</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">2 维矢量赋值宏 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="dfe0e9fbac9cecd32deb4203fbc2c823"></a><!-- doxytag: member="type.h::VEC3" ref="dfe0e9fbac9cecd32deb4203fbc2c823" args="(vec3, x, y, z)" -->
+#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="type_8h.html#dfe0e9fbac9cecd32deb4203fbc2c823">VEC3</a>(vec3, x, y, z)&nbsp;&nbsp;&nbsp;{ vec3[0] = x; vec3[1] = y; vec3[2] = z; }</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">3 维矢量赋值宏 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="480fcddfebed5017b77afdafdf51cd72"></a><!-- doxytag: member="type.h::VEC4" ref="480fcddfebed5017b77afdafdf51cd72" args="(vec4, x, y, z, w)" -->
+#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="type_8h.html#480fcddfebed5017b77afdafdf51cd72">VEC4</a>(vec4, x, y, z, w)&nbsp;&nbsp;&nbsp;{ vec4[0] = x; vec4[1] = y; vec4[2] = z; vec4[3] = w; }</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">4 维矢量赋值宏 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="b9b155ea72b0816756b5019482c78fec"></a><!-- doxytag: member="type.h::RANDOM_FLOAT" ref="b9b155ea72b0816756b5019482c78fec" args="(min, max)" -->
+#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="type_8h.html#b9b155ea72b0816756b5019482c78fec">RANDOM_FLOAT</a>(min, max)&nbsp;&nbsp;&nbsp;min + ( max - min ) * ( (float) rand () / RAND_MAX )</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">随机浮点数宏，生成一个 min ~ max 范围内的随机浮点数 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d7a597a6fca9f24654f6874e2510d18f"></a><!-- doxytag: member="type.h::ANGLE_TO_RADIAN" ref="d7a597a6fca9f24654f6874e2510d18f" args="(angle)" -->
+#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="type_8h.html#d7a597a6fca9f24654f6874e2510d18f">ANGLE_TO_RADIAN</a>(angle)&nbsp;&nbsp;&nbsp;angle / ( 180 / LIGHT_PI )</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">把角度转换成弧度 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="d528c30d9f6a23b170f4f449405a40d8"></a><!-- doxytag: member="type.h::RADIAN_TO_ANGLE" ref="d528c30d9f6a23b170f4f449405a40d8" args="(radian)" -->
+#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="type_8h.html#d528c30d9f6a23b170f4f449405a40d8">RADIAN_TO_ANGLE</a>(radian)&nbsp;&nbsp;&nbsp;radian * ( 180 / LIGHT_PI )</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">把弧度转换成角度 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="8d350bdde6f8715b7758b8dbc1acb499"></a><!-- doxytag: member="type.h::LIGHT_MAX_F32" ref="8d350bdde6f8715b7758b8dbc1acb499" args="" -->
+#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="type_8h.html#8d350bdde6f8715b7758b8dbc1acb499">LIGHT_MAX_F32</a>&nbsp;&nbsp;&nbsp;3.402823466e+38F</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">32 位浮点数最大值 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="9b81718960f4ceb0b340e33f4dc215a9"></a><!-- doxytag: member="type.h::LIGHT_INLINE" ref="9b81718960f4ceb0b340e33f4dc215a9" args="" -->
+#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="type_8h.html#9b81718960f4ceb0b340e33f4dc215a9">LIGHT_INLINE</a>&nbsp;&nbsp;&nbsp;inline</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">内嵌函数 <br></td></tr>
+<tr><td colspan="2"><br><h2>类型定义</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="b45ab1cfd75b1a54950ce5c31fcb3cbb"></a><!-- doxytag: member="type.h::vec2_t" ref="b45ab1cfd75b1a54950ce5c31fcb3cbb" args="[2]" -->
+typedef float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="type_8h.html#b45ab1cfd75b1a54950ce5c31fcb3cbb">vec2_t</a> [2]</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">二维矢量坐标(x,y) <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="54109d17b44e074abb1d39f7aa02584b"></a><!-- doxytag: member="type.h::vec3_t" ref="54109d17b44e074abb1d39f7aa02584b" args="[3]" -->
+typedef float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> [3]</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">三维矢量坐标(x,y,z) <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="fc6d3c0cf1cf7a2d9eab8a73060c6c2c"></a><!-- doxytag: member="type.h::vec4_t" ref="fc6d3c0cf1cf7a2d9eab8a73060c6c2c" args="[4]" -->
+typedef float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="type_8h.html#fc6d3c0cf1cf7a2d9eab8a73060c6c2c">vec4_t</a> [4]</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">四维矢量坐标(x,y,z,w) <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="e42e6ff3aa78dae73930a489e8dd5490"></a><!-- doxytag: member="type.h::quat_t" ref="e42e6ff3aa78dae73930a489e8dd5490" args="[4]" -->
+typedef float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="type_8h.html#e42e6ff3aa78dae73930a489e8dd5490">quat_t</a> [4]</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">四元数(x,y,z,w) <br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+常量结构定义. 此文件是常量结构定义头文件. <hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:31 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

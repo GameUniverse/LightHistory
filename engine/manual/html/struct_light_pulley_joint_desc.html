@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightPulleyJointDesc结构参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightPulleyJointDesc结构参考</h1><!-- doxytag: class="LightPulleyJointDesc" -->滑轮关节描述符  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;joint.h&gt;</code>
+<p>
+LightPulleyJointDesc合作图：<center><font size="2">[<a href="graph_legend.html">图例</a>]</font></center><a href="struct_light_pulley_joint_desc-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有属性</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="62faed22c4a3a7ca4fb9b6cfccd72f6f"></a><!-- doxytag: member="LightPulleyJointDesc::pulley" ref="62faed22c4a3a7ca4fb9b6cfccd72f6f" args="[2]" -->
+<a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_pulley_joint_desc.html#62faed22c4a3a7ca4fb9b6cfccd72f6f">pulley</a> [2]</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">在世界空间中悬挂两个刚体的两个滑轮的位置 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="9fad3c8a64ce4d8be9cb4e5153e5af7f"></a><!-- doxytag: member="LightPulleyJointDesc::distance" ref="9fad3c8a64ce4d8be9cb4e5153e5af7f" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_pulley_joint_desc.html#9fad3c8a64ce4d8be9cb4e5153e5af7f">distance</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">连接两个物体绳索的其余长度，此距离计算方法为 ||(pulley0 - anchor0)|| + ||(pulley1 - anchor1)|| * ratio <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="1cc69a7a8ffdb57f3c51abcc59456ca6"></a><!-- doxytag: member="LightPulleyJointDesc::stiffness" ref="1cc69a7a8ffdb57f3c51abcc59456ca6" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_pulley_joint_desc.html#1cc69a7a8ffdb57f3c51abcc59456ca6">stiffness</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">约束有多硬，在 0 和 1（最硬） 之间 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="b69afdb2e0d223a5c4fef8b7d8df7614"></a><!-- doxytag: member="LightPulleyJointDesc::ratio" ref="b69afdb2e0d223a5c4fef8b7d8df7614" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_pulley_joint_desc.html#b69afdb2e0d223a5c4fef8b7d8df7614">ratio</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">传动比 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="8c22c1ed0b66c2770849eb3cd0d6f5d9"></a><!-- doxytag: member="LightPulleyJointDesc::flags" ref="8c22c1ed0b66c2770849eb3cd0d6f5d9" args="" -->
+unsigned long&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_pulley_joint_desc.html#8c22c1ed0b66c2770849eb3cd0d6f5d9">flags</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">这是一个由 LightPulleyJointFlag 定义的联合标志位 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="248e4463139d01f974772b8bdd7ad674"></a><!-- doxytag: member="LightPulleyJointDesc::motor" ref="248e4463139d01f974772b8bdd7ad674" args="" -->
+<a class="el" href="struct_light_motor_desc.html">LightMotorDesc</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_pulley_joint_desc.html#248e4463139d01f974772b8bdd7ad674">motor</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">可选择的关节发动机 <br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+滑轮关节描述符 
+<p>
+<hr>该结构的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/<a class="el" href="joint_8h.html">joint.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:35 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

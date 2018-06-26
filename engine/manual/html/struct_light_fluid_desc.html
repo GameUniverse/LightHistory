@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightFluidDesc结构参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightFluidDesc结构参考</h1><!-- doxytag: class="LightFluidDesc" -->流体描述符结构  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;fluid.h&gt;</code>
+<p>
+<a href="struct_light_fluid_desc-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有属性</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a433ef53d2fef94480b9dc936f069d27"></a><!-- doxytag: member="LightFluidDesc::maxParticles" ref="a433ef53d2fef94480b9dc936f069d27" args="" -->
+int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_desc.html#a433ef53d2fef94480b9dc936f069d27">maxParticles</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">流体使用的最大粒子数 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="20094e6ac894d5010cd2e979bd46c654"></a><!-- doxytag: member="LightFluidDesc::numReserveParticles" ref="20094e6ac894d5010cd2e979bd46c654" args="" -->
+int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_desc.html#20094e6ac894d5010cd2e979bd46c654">numReserveParticles</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建时的备用粒子数 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="040e4da4498d2b6f0dc6f273db96afbe"></a><!-- doxytag: member="LightFluidDesc::particleBillboardWidth" ref="040e4da4498d2b6f0dc6f273db96afbe" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_desc.html#040e4da4498d2b6f0dc6f273db96afbe">particleBillboardWidth</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">粒子布告板大小（仅用于显示，与物理属性无关） <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="4ab0cf7967a61db9963deab8fcacc249"></a><!-- doxytag: member="LightFluidDesc::particleBillboardHeight" ref="4ab0cf7967a61db9963deab8fcacc249" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_desc.html#4ab0cf7967a61db9963deab8fcacc249">particleBillboardHeight</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">含义同上 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="45c89585861cb55f87982682005c4543"></a><!-- doxytag: member="LightFluidDesc::restParticlesPerMeter" ref="45c89585861cb55f87982682005c4543" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_desc.html#45c89585861cb55f87982682005c4543">restParticlesPerMeter</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The particle resolution given as particles per linear meter measured when the fluid is in its rest state (relaxed). <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="74f29543ffea49f7a510162436796285"></a><!-- doxytag: member="LightFluidDesc::restDensity" ref="74f29543ffea49f7a510162436796285" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_desc.html#74f29543ffea49f7a510162436796285">restDensity</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">流体密度（水大约是 1000） <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="36c637477a2af3d90a8b90e735bf279a"></a><!-- doxytag: member="LightFluidDesc::kernelRadiusMultiplier" ref="36c637477a2af3d90a8b90e735bf279a" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_desc.html#36c637477a2af3d90a8b90e735bf279a">kernelRadiusMultiplier</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">粒子相互作用范围半径 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="a57b02113534deb2e3fc0e1109059155"></a><!-- doxytag: member="LightFluidDesc::motionLimitMultiplier" ref="a57b02113534deb2e3fc0e1109059155" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_desc.html#a57b02113534deb2e3fc0e1109059155">motionLimitMultiplier</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">单个粒子在一个时间步内允许前进的最大距离 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="b99e61c8d1c2adc073eafd17697c03c5"></a><!-- doxytag: member="LightFluidDesc::collisionDistanceMultiplier" ref="b99e61c8d1c2adc073eafd17697c03c5" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_desc.html#b99e61c8d1c2adc073eafd17697c03c5">collisionDistanceMultiplier</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">定义粒子和碰撞几何体之间的距离，该值在引擎运行期间一直有效 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="4d87c0aaadc97c83b58baa26f3916c3b"></a><!-- doxytag: member="LightFluidDesc::packetSizeMultiplier" ref="4d87c0aaadc97c83b58baa26f3916c3b" args="" -->
+int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_desc.html#4d87c0aaadc97c83b58baa26f3916c3b">packetSizeMultiplier</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">这个参数控制流体的平放 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="3b13fcf51a5e6fa59b0c02a0579ff408"></a><!-- doxytag: member="LightFluidDesc::stiffness" ref="3b13fcf51a5e6fa59b0c02a0579ff408" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_desc.html#3b13fcf51a5e6fa59b0c02a0579ff408">stiffness</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">粒子的硬度，相互作用涉及到压力 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="429d292071977f38f4bbebf8e64c7697"></a><!-- doxytag: member="LightFluidDesc::viscosity" ref="429d292071977f38f4bbebf8e64c7697" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_desc.html#429d292071977f38f4bbebf8e64c7697">viscosity</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">流体的粘性定义它有粘性的行为 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="5057e401f6a20df389e89b9d5ad28212"></a><!-- doxytag: member="LightFluidDesc::surfaceTension" ref="5057e401f6a20df389e89b9d5ad28212" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_desc.html#5057e401f6a20df389e89b9d5ad28212">surfaceTension</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">流体的表面张力定义一个粒子间的吸引力 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="75d0d87830ea914f8985406429ca20e0"></a><!-- doxytag: member="LightFluidDesc::damping" ref="75d0d87830ea914f8985406429ca20e0" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_desc.html#75d0d87830ea914f8985406429ca20e0">damping</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">速度衰减速常量，这是全局常量将应用到每一个粒子 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="09d62cb98efe2fa94ed952173177d4c0"></a><!-- doxytag: member="LightFluidDesc::fadeInTime" ref="09d62cb98efe2fa94ed952173177d4c0" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_desc.html#09d62cb98efe2fa94ed952173177d4c0">fadeInTime</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">定义一个粒子“淡入”时间长度 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="ece5ed4856e1be0de436b2cf362a9971"></a><!-- doxytag: member="LightFluidDesc::externalAcceleration" ref="ece5ed4856e1be0de436b2cf362a9971" args="" -->
+<a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_desc.html#ece5ed4856e1be0de436b2cf362a9971">externalAcceleration</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">加速度（m/s^2）在所有的时间步应用到所有的粒子 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="2d9b46418d4b6504be7eb11954aad7aa"></a><!-- doxytag: member="LightFluidDesc::restitutionForStaticShapes" ref="2d9b46418d4b6504be7eb11954aad7aa" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_desc.html#2d9b46418d4b6504be7eb11954aad7aa">restitutionForStaticShapes</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">定义流体粒子和静态几何体碰撞的弹力系数 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="25fcf3b9bfbaea6ef211bff6123d337b"></a><!-- doxytag: member="LightFluidDesc::dynamicFrictionForStaticShapes" ref="25fcf3b9bfbaea6ef211bff6123d337b" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_desc.html#25fcf3b9bfbaea6ef211bff6123d337b">dynamicFrictionForStaticShapes</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">定义流体关于静态几何体表面的动态磨擦力系数 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="1aeb621ff94d36b591e780ea40e6cb86"></a><!-- doxytag: member="LightFluidDesc::staticFrictionForStaticShapes" ref="1aeb621ff94d36b591e780ea40e6cb86" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_desc.html#1aeb621ff94d36b591e780ea40e6cb86">staticFrictionForStaticShapes</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">定义流体关于静态几何体表面的静态磨擦力系数 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="ce63b71aa1e67aaf58c62f01083c061e"></a><!-- doxytag: member="LightFluidDesc::attractionForStaticShapes" ref="ce63b71aa1e67aaf58c62f01083c061e" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_desc.html#ce63b71aa1e67aaf58c62f01083c061e">attractionForStaticShapes</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">定义粒子和静态刚体之间碰撞时的吸引力 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="1caa694f68e1eda08d9e052efc26ffa7"></a><!-- doxytag: member="LightFluidDesc::restitutionForDynamicShapes" ref="1caa694f68e1eda08d9e052efc26ffa7" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_desc.html#1caa694f68e1eda08d9e052efc26ffa7">restitutionForDynamicShapes</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">定义流体粒子和动态几何体碰撞的弹力系数 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="c2fe4f47e23b3c4aa452a8eb0749b3fa"></a><!-- doxytag: member="LightFluidDesc::dynamicFrictionForDynamicShapes" ref="c2fe4f47e23b3c4aa452a8eb0749b3fa" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_desc.html#c2fe4f47e23b3c4aa452a8eb0749b3fa">dynamicFrictionForDynamicShapes</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">定义流体关于动态几何体表面的动态磨擦力系数 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="f29ce7a6d0d287449d0327998de25b83"></a><!-- doxytag: member="LightFluidDesc::staticFrictionForDynamicShapes" ref="f29ce7a6d0d287449d0327998de25b83" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_desc.html#f29ce7a6d0d287449d0327998de25b83">staticFrictionForDynamicShapes</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">定义流体关于动态几何体表面的静态磨擦力系数 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="c361995c03b53e6ba8f0303378de9384"></a><!-- doxytag: member="LightFluidDesc::attractionForDynamicShapes" ref="c361995c03b53e6ba8f0303378de9384" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_desc.html#c361995c03b53e6ba8f0303378de9384">attractionForDynamicShapes</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">定义粒子和动态刚体之间碰撞时的吸引力 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="251299f9c8f7e6c712e58e726695b371"></a><!-- doxytag: member="LightFluidDesc::collisionResponseCoefficient" ref="251299f9c8f7e6c712e58e726695b371" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_fluid_desc.html#251299f9c8f7e6c712e58e726695b371">collisionResponseCoefficient</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">定义一个推动力系数，从流体到碰撞的刚体 <br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+流体描述符结构 
+<p>
+<hr>该结构的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/<a class="el" href="fluid_8h.html">fluid.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:33 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

@@ -1,0 +1,3256 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightEngine类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightEngine类参考</h1><!-- doxytag: class="LightEngine" -->引擎类  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;engine.h&gt;</code>
+<p>
+<a href="class_light_engine-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#335df5665c196e21b10c989650ea7fbe">updatePhysics</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">更新物理状态  <a href="#335df5665c196e21b10c989650ea7fbe"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#6f7ebc31ebd7cf287c2e1a26e2e88b93">updateLight</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">更新灯光设置  <a href="#6f7ebc31ebd7cf287c2e1a26e2e88b93"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#943d5a99dfa45f4aa697fe77d148c2cb">attachRender</a> (int render=0)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">绑定渲染目标  <a href="#943d5a99dfa45f4aa697fe77d148c2cb"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#92645232cf494bec4fd83581a37a879f">detachRender</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">分离渲染目标  <a href="#92645232cf494bec4fd83581a37a879f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#0b90963c8fa78778309745e5351206be">color</a> (float red, float green, float blue, float alpha)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置当前颜色值  <a href="#0b90963c8fa78778309745e5351206be"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#99537a54113aea2bf4f1ddb4873cb128">colorMask</a> (bool red, bool green, bool blue, bool alpha)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">允许（或禁止）写入"帧缓存器"的指定颜色成分  <a href="#99537a54113aea2bf4f1ddb4873cb128"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#9fe93b89fb85c3f2993ffc944d52a57f">clearColor</a> (int red, int green, int blue, int alpha)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置清除后的颜色值  <a href="#9fe93b89fb85c3f2993ffc944d52a57f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#2aedcaf9bd05932b875d9fc2bfed691c">clearDepth</a> (float depth)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置清除后的深度值  <a href="#2aedcaf9bd05932b875d9fc2bfed691c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#9025f4aaa1ea7a535faea443446ca193">clear</a> (int mask)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">清除指定缓存  <a href="#9025f4aaa1ea7a535faea443446ca193"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#3d6ec16cd6749166c5fac4a6f0c95a81">selectBuffer</a> (int size, unsigned int *buffer)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置选择模式缓冲区  <a href="#3d6ec16cd6749166c5fac4a6f0c95a81"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#1fca266eacb9693921423563e9f0f026">pickRectangle</a> (double x, double y, double width, double height)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置拾取矩形参数  <a href="#1fca266eacb9693921423563e9f0f026"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#caeda93cfe2034a51cc64ea8babcf0c4">renderMode</a> (int mode)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置引擎渲染模式  <a href="#caeda93cfe2034a51cc64ea8babcf0c4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#73d7a2128838998cb3e7c017cf8610e7">initNames</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">初始化名称堆栈  <a href="#73d7a2128838998cb3e7c017cf8610e7"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#e22432d6596f29801939aa53ef6cd8e1">pushName</a> (unsigned int name)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">压入名称堆栈  <a href="#e22432d6596f29801939aa53ef6cd8e1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#d650b3d44f3131d26399595b4824fb0b">popName</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">弹出名称堆栈  <a href="#d650b3d44f3131d26399595b4824fb0b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#163688ee1bb62d10d1f62a18e6e46683">loadName</a> (unsigned int name)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">将一个名称加载到名称堆栈  <a href="#163688ee1bb62d10d1f62a18e6e46683"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#eec8d1966a61a6a3c5c50a6b86ab3fb5">raiseRenderFlag</a> (<a class="el" href="engine_8h.html#3487b045358ceef8656448e4d1fa8e41">LightRenderFlag</a> renderFlag)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置指定的渲染内容标志  <a href="#eec8d1966a61a6a3c5c50a6b86ab3fb5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#8e873836916deb8f606e40843b5dbe76">clearRenderFlag</a> (<a class="el" href="engine_8h.html#3487b045358ceef8656448e4d1fa8e41">LightRenderFlag</a> renderFlag)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">清除指定的渲染内容标志  <a href="#8e873836916deb8f606e40843b5dbe76"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#a4a6dfb01899ea9a34a43bc6a366329b">readRenderFlag</a> (<a class="el" href="engine_8h.html#3487b045358ceef8656448e4d1fa8e41">LightRenderFlag</a> renderFlag)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询指定的渲染内容标志  <a href="#a4a6dfb01899ea9a34a43bc6a366329b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#44d60d27cfaa5ee57f44c8b6b20d1400">swapBuffers</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">更新游戏窗口显示内容  <a href="#44d60d27cfaa5ee57f44c8b6b20d1400"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#cfa5bee940f6e7348e87f2d1532674b0">getFramePerSecond</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询每秒钟显示的帧数  <a href="#cfa5bee940f6e7348e87f2d1532674b0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#983a3cacb34d672dfe27bbd1b3ce49c5">changeDisplaySettings</a> (<a class="el" href="class_light_displaymode_desc.html">LightDisplaymodeDesc</a> &amp;displaymodeDesc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">改变显示模式设置  <a href="#983a3cacb34d672dfe27bbd1b3ce49c5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#3c942472d8b84560e796646762e51039">coordinateSystem</a> (int system)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置引擎坐标系统  <a href="#3c942472d8b84560e796646762e51039"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#b559444fa3d914eaf6bbf9daf42f0324">ortho2D</a> (bool Ortho2D)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置当前作图模式（2D/3D）  <a href="#b559444fa3d914eaf6bbf9daf42f0324"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#00921cc035307b3827ba61ae486d3d03">updateWindowState</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">更新窗口状态  <a href="#00921cc035307b3827ba61ae486d3d03"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#99a5818b4c3e2b02471efe639aa35f19">setKeyColor</a> (int red, int green, int blue)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置关键色（透明色）  <a href="#99a5818b4c3e2b02471efe639aa35f19"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#04b0ec01d7ca305da803c5c48439e5b6">blendFunc</a> (int sfactor, int dfactor)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">指定混合的象素算法  <a href="#04b0ec01d7ca305da803c5c48439e5b6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#6be5ceba8130a83d675c92bb81886481">cullFace</a> (int mode)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">指定渲染时要剔除的面  <a href="#6be5ceba8130a83d675c92bb81886481"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual DWORD&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#51a5486514a57c88223d5fc897c42d84">getOutVolume</a> (int device)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询音频设备的音量  <a href="#51a5486514a57c88223d5fc897c42d84"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#57102babc664e63194e0d054560570dd">setOutVolume</a> (int device, int left, int right)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置音频设备的音量  <a href="#57102babc664e63194e0d054560570dd"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#c9de241f7a2888fd4ddbf89e071eebec">windowToWorld</a> (int x, int y, <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> point)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">转换窗口客户区坐标（2D）到场景世界坐标（3D）  <a href="#c9de241f7a2888fd4ddbf89e071eebec"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#f7913347baa728c68b89ad5df8384d1f">worldToWindow</a> (float x, float y, float z, <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> point)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">转换场景世界坐标（3D）到窗口客户区坐标（2D）  <a href="#f7913347baa728c68b89ad5df8384d1f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#0be924bf43061424d13ce862ddf1eeea">dispatchMessage</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">配送消息  <a href="#0be924bf43061424d13ce862ddf1eeea"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#88299c50c42249433d4727dba2854cce">registerMessageProc</a> (WNDPROC lpfnWndProc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">注册窗口消息监听函数  <a href="#88299c50c42249433d4727dba2854cce"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#3640678057df2e8eb74eff2aacec9072">removeMessageProc</a> (WNDPROC lpfnWndProc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">移除窗口消息监听函数  <a href="#3640678057df2e8eb74eff2aacec9072"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#13b03a455bf88005de959a360235539c">loadCursor</a> (const char *filename)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">读取光标文件  <a href="#13b03a455bf88005de959a360235539c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#0b093dc170fa5aa1bb8abc8194e51935">destroyCursor</a> (int cursor)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">销毁光标  <a href="#0b093dc170fa5aa1bb8abc8194e51935"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#5c58b971329df3e89d2fe307f53f3bee">setCursor</a> (int cursor)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置当前光标  <a href="#5c58b971329df3e89d2fe307f53f3bee"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#efbd66d31b07cbb44c19d957d3be2b83">showCursor</a> (bool show)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">显示（或隐藏）光标  <a href="#efbd66d31b07cbb44c19d957d3be2b83"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual unsigned long&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#4ade1e777d46f319e3d5861dc1dfa928">getTickCount</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询系统启动以来经过的千分之一秒数  <a href="#4ade1e777d46f319e3d5861dc1dfa928"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#b6cc758594a340b9d956ec8e3a958ddd">lightAmbient</a> (float red, float green, float blue, float alpha)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置全局环境光的颜色值  <a href="#b6cc758594a340b9d956ec8e3a958ddd"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual HWND&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#85b28b2893cebeed050a2b762df21d9d">getWindowHandle</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询窗口句柄  <a href="#85b28b2893cebeed050a2b762df21d9d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#42a71d51dd7f4569dee9bcc748db437e">setString</a> (int name, const char *string)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置指定字符串  <a href="#42a71d51dd7f4569dee9bcc748db437e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#4829d220cf0f060da7333fcd01580b81">getString</a> (int name)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询指定字符串  <a href="#4829d220cf0f060da7333fcd01580b81"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#7635fa198d2f3e0f926677266a8920e2">enable</a> (int name)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">充许指定功能  <a href="#7635fa198d2f3e0f926677266a8920e2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#9eeae92786c72d7651c145f32ef596fa">disable</a> (int name)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">禁止指定功能  <a href="#9eeae92786c72d7651c145f32ef596fa"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#d9045756672b94f31fb773cb0c806ed4">automatic</a> (int name)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">自动指定功能  <a href="#d9045756672b94f31fb773cb0c806ed4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#b4cb13cbf8a75ac683eb97db293e2672">getInteger</a> (int name)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询指定的整型数  <a href="#b4cb13cbf8a75ac683eb97db293e2672"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#82273fb21c961b50756b48c69f939462">debugging</a> (int num,...)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">引擎内部函数  <a href="#82273fb21c961b50756b48c69f939462"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_lens_flare.html">LightLensFlare</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#ecc4f59367c9bad00b791cf7345487f2">NewLensFlare</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个镜头光晕  <a href="#ecc4f59367c9bad00b791cf7345487f2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_model_m_d3.html">LightModelMD3</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#14ebaa6984aa783d1e31e56f9fdce289">NewModelMD3</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个 MD3 模型  <a href="#14ebaa6984aa783d1e31e56f9fdce289"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_frustum.html">LightFrustum</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#69d9fb90c7c77145d3dc521c8e2b9883">NewFrustum</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个视锥体  <a href="#69d9fb90c7c77145d3dc521c8e2b9883"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_scene.html">LightScene</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#74d513bb6ce400013dbb6dd736394235">createScene</a> (const <a class="el" href="struct_light_scene_desc.html">LightSceneDesc</a> &amp;sceneDesc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个场景  <a href="#74d513bb6ce400013dbb6dd736394235"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#e204b343f4bfca71460743875420ba51">releaseScene</a> (<a class="el" href="class_light_scene.html">LightScene</a> *scene)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放一个场景  <a href="#e204b343f4bfca71460743875420ba51"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_camera.html">LightCamera</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#a3ad6bc47b15512e15361ef4428fa8b4">createCamera</a> (const <a class="el" href="struct_light_camera_desc.html">LightCameraDesc</a> &amp;cameraDesc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个摄像机  <a href="#a3ad6bc47b15512e15361ef4428fa8b4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#ca95af83ed4b09a0feb5935a52532961">releaseCamera</a> (<a class="el" href="class_light_camera.html">LightCamera</a> *camera)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放一个摄像机  <a href="#ca95af83ed4b09a0feb5935a52532961"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_sky.html">LightSky</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#6817baa1c1f4a687ae045eb5e05ba9ea">createSky</a> (const <a class="el" href="class_light_sky_desc.html">LightSkyDesc</a> &amp;skyDesc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个天空  <a href="#6817baa1c1f4a687ae045eb5e05ba9ea"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#31548f6f0b03c6be00c6d3c25a0a1d00">releaseSky</a> (<a class="el" href="class_light_sky.html">LightSky</a> *sky)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放一个天空  <a href="#31548f6f0b03c6be00c6d3c25a0a1d00"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_fog.html">LightFog</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#a0a95942593af96c980f5a943fc24223">createFog</a> (const <a class="el" href="struct_light_fog_desc.html">LightFogDesc</a> &amp;fogDesc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个雾  <a href="#a0a95942593af96c980f5a943fc24223"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#6f89330692a6bb6d02825f558dfa4c67">releaseFog</a> (<a class="el" href="class_light_fog.html">LightFog</a> *fog)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放一个雾  <a href="#6f89330692a6bb6d02825f558dfa4c67"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#9b22a0c7849b1ad36ffe664c4239beec">releaseBillboardPool</a> (<a class="el" href="class_light_billboard_pool.html">LightBillboardPool</a> *billboardPool)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放一个布告板池  <a href="#9b22a0c7849b1ad36ffe664c4239beec"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#fc65a2eed065f6fca8a2f5dd7cf3053d">releaseParticle</a> (<a class="el" href="class_light_particle.html">LightParticle</a> *particle)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放一个粒子  <a href="#fc65a2eed065f6fca8a2f5dd7cf3053d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_level.html">LightLevel</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#627aac1de92f0d9ebe7e1ec6662f4719">createLevel</a> (const LightLevelDesc &amp;levelDesc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个场景  <a href="#627aac1de92f0d9ebe7e1ec6662f4719"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#c6ef9adda083ea29612e6c02b5da7c85">releaseLevel</a> (<a class="el" href="class_light_level.html">LightLevel</a> *level)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放一个场景  <a href="#c6ef9adda083ea29612e6c02b5da7c85"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_skeleton.html">LightSkeleton</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#48fd907d9c1098b4807d5234d08693ce">createSkeleton</a> (const <a class="el" href="class_light_skeleton_desc.html">LightSkeletonDesc</a> &amp;skeletonDesc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个骨骼动画  <a href="#48fd907d9c1098b4807d5234d08693ce"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#3c24cdca12633058a24aca04337cd7f3">releaseSkeleton</a> (<a class="el" href="class_light_skeleton.html">LightSkeleton</a> *skeleton)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放一个骨骼动画  <a href="#3c24cdca12633058a24aca04337cd7f3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_mesh.html">LightMesh</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#98ccb13226fbb25823fc5b04b69f31ab">createMesh</a> (const <a class="el" href="class_light_mesh_desc.html">LightMeshDesc</a> &amp;meshDesc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个静态网格  <a href="#98ccb13226fbb25823fc5b04b69f31ab"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#9003edda1ac439eaa61df4ac936d013b">releaseMesh</a> (<a class="el" href="class_light_mesh.html">LightMesh</a> *mesh)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放一个静态网格  <a href="#9003edda1ac439eaa61df4ac936d013b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_texture.html">LightTexture</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#f87def42a71579eb45538027adeb2941">createTexture</a> (const <a class="el" href="class_light_texture_desc.html">LightTextureDesc</a> &amp;textureDesc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个纹理  <a href="#f87def42a71579eb45538027adeb2941"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#cd3e8fea160e121110cb18c4fa063993">releaseTexture</a> (<a class="el" href="class_light_texture.html">LightTexture</a> *texture)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放一个纹理  <a href="#cd3e8fea160e121110cb18c4fa063993"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_image.html">LightImage</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#722fd4fc71cc833ef3c1f43b4a658205">createImage</a> (const <a class="el" href="class_light_image_desc.html">LightImageDesc</a> &amp;imageDesc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个图像  <a href="#722fd4fc71cc833ef3c1f43b4a658205"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#77316093a6f21d34d376c8be6921692b">releaseImage</a> (<a class="el" href="class_light_image.html">LightImage</a> *image)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放一个图像  <a href="#77316093a6f21d34d376c8be6921692b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_video.html">LightVideo</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#a4a030f1c0415fd3785a7e8c37431182">createVideo</a> (const <a class="el" href="class_light_video_desc.html">LightVideoDesc</a> &amp;videoDesc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个视频  <a href="#a4a030f1c0415fd3785a7e8c37431182"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#c65bf4ceee210d692fce4d234e08346d">releaseVideo</a> (<a class="el" href="class_light_video.html">LightVideo</a> *video)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放一个视频  <a href="#c65bf4ceee210d692fce4d234e08346d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_text.html">LightText</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#0f4f7f8100621b242ff313c8ad3da6a9">createText</a> (const <a class="el" href="class_light_text_desc.html">LightTextDesc</a> &amp;textDesc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个文字  <a href="#0f4f7f8100621b242ff313c8ad3da6a9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#67f04f827ae663a701bbcff62f401cb7">releaseText</a> (<a class="el" href="class_light_text.html">LightText</a> *text)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放一个文字  <a href="#67f04f827ae663a701bbcff62f401cb7"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_log.html">LightLog</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#dc22127a193fb90d4f5b8512bafc579e">createLog</a> (const <a class="el" href="class_light_log_desc.html">LightLogDesc</a> &amp;logDesc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个日志  <a href="#dc22127a193fb90d4f5b8512bafc579e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#a0ad7687d87844703017ed762e74ca69">releaseLog</a> (<a class="el" href="class_light_log.html">LightLog</a> *log)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放一个日志  <a href="#a0ad7687d87844703017ed762e74ca69"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_script.html">LightScript</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#1c685d532457a5ea68baea9fd8c655a9">createScript</a> (const <a class="el" href="class_light_script_desc.html">LightScriptDesc</a> &amp;scriptDesc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个脚本  <a href="#1c685d532457a5ea68baea9fd8c655a9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#162d5b707ccb0869fa8385344f9e3dcf">releaseScript</a> (<a class="el" href="class_light_script.html">LightScript</a> *script)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放一个脚本  <a href="#162d5b707ccb0869fa8385344f9e3dcf"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_brush.html">LightBrush</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#f2e6e982f55de93906a6a33e476bba73">createBrush</a> (const <a class="el" href="class_light_brush_desc.html">LightBrushDesc</a> &amp;brushDesc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个画笔  <a href="#f2e6e982f55de93906a6a33e476bba73"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#b03636925c6639be57faa392336ae160">releaseBrush</a> (<a class="el" href="class_light_brush.html">LightBrush</a> *brush)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放一个画笔  <a href="#b03636925c6639be57faa392336ae160"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_input.html">LightInput</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#99258304caf6056f48f5e9fadfb46e86">createInput</a> (const <a class="el" href="class_light_input_desc.html">LightInputDesc</a> &amp;inputDesc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个输入接口  <a href="#99258304caf6056f48f5e9fadfb46e86"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#57e09f09384c45c12dd0e17f9291e6f4">releaseInput</a> (<a class="el" href="class_light_input.html">LightInput</a> *input)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放一个输入接口  <a href="#57e09f09384c45c12dd0e17f9291e6f4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_sound.html">LightSound</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#878d071d40ff717b3d3927e072adf299">createSound</a> (const <a class="el" href="class_light_sound_desc.html">LightSoundDesc</a> &amp;soundDesc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个声音  <a href="#878d071d40ff717b3d3927e072adf299"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#0750a5f7df8be28e5b86b8e827de2f41">releaseSound</a> (<a class="el" href="class_light_sound.html">LightSound</a> *sound)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放一个声音  <a href="#0750a5f7df8be28e5b86b8e827de2f41"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_animation.html">LightAnimation</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#c36306b502ae11bac4946b912d04bb41">createAnimation</a> (const <a class="el" href="class_light_animation_desc.html">LightAnimationDesc</a> &amp;animationDesc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个顶点动画  <a href="#c36306b502ae11bac4946b912d04bb41"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#a321037af727f72a99003260807987a4">releaseAnimation</a> (<a class="el" href="class_light_animation.html">LightAnimation</a> *animation)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放一个顶点动画  <a href="#a321037af727f72a99003260807987a4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_b_s_p_tree.html">LightBSPTree</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#6388e2af177f5e5ba375ed4ba958f9dd">createBSPTree</a> (const <a class="el" href="class_light_b_s_p_tree_desc.html">LightBSPTreeDesc</a> &amp;bsptreeDesc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个二叉树  <a href="#6388e2af177f5e5ba375ed4ba958f9dd"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#ac12b8b778b0e384c40fe2d6bbfe066e">releaseBSPTree</a> (<a class="el" href="class_light_b_s_p_tree.html">LightBSPTree</a> *bsptree)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放一个二叉树  <a href="#ac12b8b778b0e384c40fe2d6bbfe066e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_light.html">LightLight</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#d9c916a6032d57c3c6f80a4c9e05724d">createLight</a> (const <a class="el" href="struct_light_light_desc.html">LightLightDesc</a> &amp;lightDesc)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个灯光  <a href="#d9c916a6032d57c3c6f80a4c9e05724d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#4464c9fe783192bc3df4ef18a5197c59">releaseLight</a> (<a class="el" href="class_light_light.html">LightLight</a> *light)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放一个灯光  <a href="#4464c9fe783192bc3df4ef18a5197c59"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#39db4ed37a961fb8cd8d43952a7cf50d">getTextureNumber</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询纹理数量  <a href="#39db4ed37a961fb8cd8d43952a7cf50d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#486bb7beab3317a354ae64ae95278b0e">getTextureID</a> (const char *name)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询纹理 ID（根据纹理名称）  <a href="#486bb7beab3317a354ae64ae95278b0e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual <a class="el" href="class_light_texture.html">LightTexture</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_engine.html#52649b0c26854ce34f04444806c79eb2">getTexture</a> (int id)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询纹理（根据纹理 ID）  <a href="#52649b0c26854ce34f04444806c79eb2"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+引擎类 
+<p>
+本类负责大部分系统功能的调用和其它所有类的实例分配，是引擎最重要的一个类。 此类的实例指针只能通过调用函数 LightEngineCreate 得到， 释放时调用函数 LightEngineRelease。中间可以随时调用 LightEngineGet 得到 引擎实例全局指针。 <br>
+ <br>
+ 用法示例： <br>
+ <br>
+ // 创建光线引擎实例 <br>
+ <a class="el" href="class_light_engine.html">LightEngine</a> *engine; <br>
+ <a class="el" href="class_light_engine_desc.html">LightEngineDesc</a> engineDesc; <br>
+ engineDesc.display_mode = LIGHT_WINDOW_MODE; // 窗口显示模式 <br>
+ engineDesc.window.x = 200; // 窗口左上角 x 坐标 <br>
+ engineDesc.window.y = 150; // 窗口左上角 y 坐标 <br>
+ engineDesc.window.width = 640; // 窗口宽度 <br>
+ engineDesc.window.height = 480; // 窗口高度 <br>
+ engine = LightEngineCreate( engineDesc ); <br>
+ <br>
+ // 使用引擎... <br>
+ <br>
+ // 释放光线引擎实例 <br>
+ LightEngineRelease( engine ); 
+<p>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="335df5665c196e21b10c989650ea7fbe"></a><!-- doxytag: member="LightEngine::updatePhysics" ref="335df5665c196e21b10c989650ea7fbe" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::updatePhysics           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+更新物理状态 
+<p>
+用于物理状态的更新<p>
+<dl class="see" compact><dt><b>参见:</b></dt><dd><a class="el" href="class_light_engine.html#6f7ebc31ebd7cf287c2e1a26e2e88b93">updateLight</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="6f7ebc31ebd7cf287c2e1a26e2e88b93"></a><!-- doxytag: member="LightEngine::updateLight" ref="6f7ebc31ebd7cf287c2e1a26e2e88b93" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::updateLight           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+更新灯光设置 
+<p>
+用于灯光的更新<p>
+<dl class="see" compact><dt><b>参见:</b></dt><dd><a class="el" href="class_light_engine.html#335df5665c196e21b10c989650ea7fbe">updatePhysics</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="943d5a99dfa45f4aa697fe77d148c2cb"></a><!-- doxytag: member="LightEngine::attachRender" ref="943d5a99dfa45f4aa697fe77d148c2cb" args="(int render=0)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::attachRender           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>render</em> = <code>0</code>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+绑定渲染目标 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>render</em>&nbsp;</td><td>渲染目标（此值保留，准备以后使用，现在必须设为 0）</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="92645232cf494bec4fd83581a37a879f"></a><!-- doxytag: member="LightEngine::detachRender" ref="92645232cf494bec4fd83581a37a879f" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::detachRender           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+分离渲染目标 
+<p>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="0b90963c8fa78778309745e5351206be"></a><!-- doxytag: member="LightEngine::color" ref="0b90963c8fa78778309745e5351206be" args="(float red, float green, float blue, float alpha)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::color           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>red</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>green</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>blue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>alpha</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置当前颜色值 
+<p>
+该颜色值影响所有渲染内容，任何渲染到窗口点的颜色值都将乘以该值。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>red</em>&nbsp;</td><td>颜色的红色成分（取值范围[0,1]，下同） </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>green</em>&nbsp;</td><td>颜色的绿色成分 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>blue</em>&nbsp;</td><td>颜色的蓝色成分 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>alpha</em>&nbsp;</td><td>颜色的 Alpha 成分</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd><a class="el" href="class_light_engine.html#99537a54113aea2bf4f1ddb4873cb128">colorMask</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="99537a54113aea2bf4f1ddb4873cb128"></a><!-- doxytag: member="LightEngine::colorMask" ref="99537a54113aea2bf4f1ddb4873cb128" args="(bool red, bool green, bool blue, bool alpha)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::colorMask           </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>red</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>green</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>blue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>alpha</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+允许（或禁止）写入"帧缓存器"的指定颜色成分 
+<p>
+任何渲染到窗口点的颜色值都将受该值影响。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>red</em>&nbsp;</td><td>颜色的红色成分（取值范围[TRUE,FALSE]，TURE 为允许，FALSE 为禁止，下同） </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>green</em>&nbsp;</td><td>颜色的绿色成分 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>blue</em>&nbsp;</td><td>颜色的蓝色成分 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>alpha</em>&nbsp;</td><td>颜色的 Alpha 成分</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd><a class="el" href="class_light_engine.html#0b90963c8fa78778309745e5351206be">color</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9fe93b89fb85c3f2993ffc944d52a57f"></a><!-- doxytag: member="LightEngine::clearColor" ref="9fe93b89fb85c3f2993ffc944d52a57f" args="(int red, int green, int blue, int alpha)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::clearColor           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>red</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>green</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>blue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>alpha</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置清除后的颜色值 
+<p>
+用于设置清除后的颜色值<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>int</em>&nbsp;</td><td>red 颜色的红色成分 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>int</em>&nbsp;</td><td>green 颜色的绿色成分 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>int</em>&nbsp;</td><td>blue 颜色的蓝色成分 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>int</em>&nbsp;</td><td>alpha 颜色的 Alpha 成分</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd><a class="el" href="class_light_engine.html#2aedcaf9bd05932b875d9fc2bfed691c">clearDepth</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="2aedcaf9bd05932b875d9fc2bfed691c"></a><!-- doxytag: member="LightEngine::clearDepth" ref="2aedcaf9bd05932b875d9fc2bfed691c" args="(float depth)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::clearDepth           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>depth</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置清除后的深度值 
+<p>
+用于设置清除后的深度值<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>depth 清除后的深度值</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd><a class="el" href="class_light_engine.html#9fe93b89fb85c3f2993ffc944d52a57f">clearColor</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9025f4aaa1ea7a535faea443446ca193"></a><!-- doxytag: member="LightEngine::clear" ref="9025f4aaa1ea7a535faea443446ca193" args="(int mask)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::clear           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>mask</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+清除指定缓存 
+<p>
+用于清除指定缓存<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>int</em>&nbsp;</td><td>mask 要清除的缓存</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd><a class="el" href="class_light_engine.html#9fe93b89fb85c3f2993ffc944d52a57f">clearColor</a>, <a class="el" href="class_light_engine.html#2aedcaf9bd05932b875d9fc2bfed691c">clearDepth</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="3d6ec16cd6749166c5fac4a6f0c95a81"></a><!-- doxytag: member="LightEngine::selectBuffer" ref="3d6ec16cd6749166c5fac4a6f0c95a81" args="(int size, unsigned int *buffer)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::selectBuffer           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int *&nbsp;</td>
+          <td class="paramname"> <em>buffer</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置选择模式缓冲区 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>size</em>&nbsp;</td><td>缓冲区大小</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>buffer</em>&nbsp;</td><td>返回选择数据</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="1fca266eacb9693921423563e9f0f026"></a><!-- doxytag: member="LightEngine::pickRectangle" ref="1fca266eacb9693921423563e9f0f026" args="(double x, double y, double width, double height)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::pickRectangle           </td>
+          <td>(</td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>height</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置拾取矩形参数 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>拾取矩形中心位置</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>含义同上</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>width</em>&nbsp;</td><td>拾取矩形大小</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>height</em>&nbsp;</td><td>含义同上</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="caeda93cfe2034a51cc64ea8babcf0c4"></a><!-- doxytag: member="LightEngine::renderMode" ref="caeda93cfe2034a51cc64ea8babcf0c4" args="(int mode)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightEngine::renderMode           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>mode</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置引擎渲染模式 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>mode</em>&nbsp;</td><td>引擎渲染模式，LIGHT_RENDER ＝ 正常渲染，LIGHT_SELECT ＝ 选择模式。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果当前渲染模式为 LIGHT_SELECT，使用参数 LIGHT_RENDER 调用时，返回选中的图元数；否则返回 0。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="73d7a2128838998cb3e7c017cf8610e7"></a><!-- doxytag: member="LightEngine::initNames" ref="73d7a2128838998cb3e7c017cf8610e7" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::initNames           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+初始化名称堆栈 
+<p>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e22432d6596f29801939aa53ef6cd8e1"></a><!-- doxytag: member="LightEngine::pushName" ref="e22432d6596f29801939aa53ef6cd8e1" args="(unsigned int name)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::pushName           </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&nbsp;</td>
+          <td class="paramname"> <em>name</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+压入名称堆栈 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>将要压入名称堆栈的名称</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d650b3d44f3131d26399595b4824fb0b"></a><!-- doxytag: member="LightEngine::popName" ref="d650b3d44f3131d26399595b4824fb0b" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::popName           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+弹出名称堆栈 
+<p>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="163688ee1bb62d10d1f62a18e6e46683"></a><!-- doxytag: member="LightEngine::loadName" ref="163688ee1bb62d10d1f62a18e6e46683" args="(unsigned int name)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::loadName           </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&nbsp;</td>
+          <td class="paramname"> <em>name</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+将一个名称加载到名称堆栈 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>将要替换名称堆栈顶部的一个名称</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="eec8d1966a61a6a3c5c50a6b86ab3fb5"></a><!-- doxytag: member="LightEngine::raiseRenderFlag" ref="eec8d1966a61a6a3c5c50a6b86ab3fb5" args="(LightRenderFlag renderFlag)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::raiseRenderFlag           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="engine_8h.html#3487b045358ceef8656448e4d1fa8e41">LightRenderFlag</a>&nbsp;</td>
+          <td class="paramname"> <em>renderFlag</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置指定的渲染内容标志 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>renderFlag[in]</em>&nbsp;</td><td>渲染内容标志</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="8e873836916deb8f606e40843b5dbe76"></a><!-- doxytag: member="LightEngine::clearRenderFlag" ref="8e873836916deb8f606e40843b5dbe76" args="(LightRenderFlag renderFlag)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::clearRenderFlag           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="engine_8h.html#3487b045358ceef8656448e4d1fa8e41">LightRenderFlag</a>&nbsp;</td>
+          <td class="paramname"> <em>renderFlag</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+清除指定的渲染内容标志 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>renderFlag[in]</em>&nbsp;</td><td>渲染内容标志</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a4a6dfb01899ea9a34a43bc6a366329b"></a><!-- doxytag: member="LightEngine::readRenderFlag" ref="a4a6dfb01899ea9a34a43bc6a366329b" args="(LightRenderFlag renderFlag)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool LightEngine::readRenderFlag           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="engine_8h.html#3487b045358ceef8656448e4d1fa8e41">LightRenderFlag</a>&nbsp;</td>
+          <td class="paramname"> <em>renderFlag</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询指定的渲染内容标志 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>renderFlag[in]</em>&nbsp;</td><td>渲染内容标志</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="44d60d27cfaa5ee57f44c8b6b20d1400"></a><!-- doxytag: member="LightEngine::swapBuffers" ref="44d60d27cfaa5ee57f44c8b6b20d1400" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool LightEngine::swapBuffers           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+更新游戏窗口显示内容 
+<p>
+更新游戏窗口显示内容<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>无</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果成功返回 0, 否则返回非 0 值</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd><a class="el" href="class_light_engine.html#9025f4aaa1ea7a535faea443446ca193">clear</a>, <a class="el" href="class_light_engine.html#9fe93b89fb85c3f2993ffc944d52a57f">clearColor</a>, <a class="el" href="class_light_engine.html#2aedcaf9bd05932b875d9fc2bfed691c">clearDepth</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="cfa5bee940f6e7348e87f2d1532674b0"></a><!-- doxytag: member="LightEngine::getFramePerSecond" ref="cfa5bee940f6e7348e87f2d1532674b0" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightEngine::getFramePerSecond           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询每秒钟显示的帧数 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回每秒钟显示的帧数</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd><a class="el" href="class_light_engine.html#44d60d27cfaa5ee57f44c8b6b20d1400">swapBuffers</a> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="983a3cacb34d672dfe27bbd1b3ce49c5"></a><!-- doxytag: member="LightEngine::changeDisplaySettings" ref="983a3cacb34d672dfe27bbd1b3ce49c5" args="(LightDisplaymodeDesc &amp;displaymodeDesc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightEngine::changeDisplaySettings           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_displaymode_desc.html">LightDisplaymodeDesc</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>displaymodeDesc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+改变显示模式设置 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>displaymodeDesc[in]</em>&nbsp;</td><td>显示模式描述符，用于说明要设置显示模式的特征。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果成功返回 0, 否则返回非 0 值</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="3c942472d8b84560e796646762e51039"></a><!-- doxytag: member="LightEngine::coordinateSystem" ref="3c942472d8b84560e796646762e51039" args="(int system)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightEngine::coordinateSystem           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>system</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置引擎坐标系统 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>int</em>&nbsp;</td><td>system 要设置的坐标系统</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>函数返回原来的坐标系统</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b559444fa3d914eaf6bbf9daf42f0324"></a><!-- doxytag: member="LightEngine::ortho2D" ref="b559444fa3d914eaf6bbf9daf42f0324" args="(bool Ortho2D)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::ortho2D           </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>Ortho2D</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置当前作图模式（2D/3D） 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>bool</em>&nbsp;</td><td>Ortho2D 作图模式，TRUE = 2D，FALSE = 3D </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="00921cc035307b3827ba61ae486d3d03"></a><!-- doxytag: member="LightEngine::updateWindowState" ref="00921cc035307b3827ba61ae486d3d03" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightEngine::updateWindowState           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+更新窗口状态 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果成功返回 0, 否则返回非 0 值</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="99a5818b4c3e2b02471efe639aa35f19"></a><!-- doxytag: member="LightEngine::setKeyColor" ref="99a5818b4c3e2b02471efe639aa35f19" args="(int red, int green, int blue)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightEngine::setKeyColor           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>red</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>green</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>blue</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置关键色（透明色） 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>int</em>&nbsp;</td><td>red 红色分量（0~255）</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>int</em>&nbsp;</td><td>green 绿色分量（0~255）</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>int</em>&nbsp;</td><td>blue 蓝色分量（0~255）</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果成功返回 0, 否则返回非 0 值</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="04b0ec01d7ca305da803c5c48439e5b6"></a><!-- doxytag: member="LightEngine::blendFunc" ref="04b0ec01d7ca305da803c5c48439e5b6" args="(int sfactor, int dfactor)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::blendFunc           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>sfactor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>dfactor</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+指定混合的象素算法 
+<p>
+指定混合的象素算法<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>sfactor</em>&nbsp;</td><td>源混合因子，可以取值 LIGHT_ZERO, LIGHT_ONE, LIGHT_DST_COLOR, LIGHT_ONE_MINUS_DST_COLOR, LIGHT_SRC_ALPHA, LIGHT_ONE_MINUS_SRC_ALPHA, LIGHT_DST_ALPHA, LIGHT_ONE_MINUS_DST_ALPHA, 和 LIGHT_SRC_ALPHA_SATURATE。</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>dfactor</em>&nbsp;</td><td>目标混合因子，可以取值 LIGHT_ZERO, LIGHT_ONE, LIGHT_SRC_COLOR, LIGHT_ONE_MINUS_SRC_COLOR, LIGHT_SRC_ALPHA, LIGHT_ONE_MINUS_SRC_ALPHA, LIGHT_DST_ALPHA, 和 LIGHT_ONE_MINUS_DST_ALPHA。</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="6be5ceba8130a83d675c92bb81886481"></a><!-- doxytag: member="LightEngine::cullFace" ref="6be5ceba8130a83d675c92bb81886481" args="(int mode)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::cullFace           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>mode</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+指定渲染时要剔除的面 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>mode</em>&nbsp;</td><td>指定要剔除正面还是背面，可以取值 LIGHT_FRONT，LIGHT_BACK，并且 LIGHT_FRONT_AND_BACK 也是认可的；缺省值是 LIGHT_BACK。</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="51a5486514a57c88223d5fc897c42d84"></a><!-- doxytag: member="LightEngine::getOutVolume" ref="51a5486514a57c88223d5fc897c42d84" args="(int device)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual DWORD LightEngine::getOutVolume           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>device</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询音频设备的音量 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>int</em>&nbsp;</td><td>device 要查询的音频设备，通常情况下系统只有一个音频设备，则此值设为 0</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回音频设备的音量值，低字（WORD）是左声道的音量，高字（WORD）是右声道 的音量，音量范围从 0x0000 到 0xFFFF，0x0000 = 静音，0xFFFF = 最大音量。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="57102babc664e63194e0d054560570dd"></a><!-- doxytag: member="LightEngine::setOutVolume" ref="57102babc664e63194e0d054560570dd" args="(int device, int left, int right)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightEngine::setOutVolume           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>right</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置音频设备的音量 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>int</em>&nbsp;</td><td>device 要设置的音频设备，通常情况下系统只有一个音频设备，则此值设为 0</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>int</em>&nbsp;</td><td>left 左声道的音量，音量范围从 0x0000 到 0xFFFF，0x0000 = 静音，0xFFFF = 最大音量。</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>int</em>&nbsp;</td><td>blue 左声道的音量，音量范围同上。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果成功返回 0, 否则返回非 0 值</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c9de241f7a2888fd4ddbf89e071eebec"></a><!-- doxytag: member="LightEngine::windowToWorld" ref="c9de241f7a2888fd4ddbf89e071eebec" args="(int x, int y, vec3_t point)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::windowToWorld           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>point</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+转换窗口客户区坐标（2D）到场景世界坐标（3D） 
+<p>
+需要注意的是此函数的执行结果取决于渲染图像，也就是说必须在要查询的目标对像渲染后立即调用此函数，才能得到正确的结果。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>窗口客户区坐标（2D）x 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>窗口客户区坐标（2D）y 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>point</em>&nbsp;</td><td>一个浮点数组指针，返回的是该窗口客户区坐标（2D）对应的场景世界坐标（3D）（x，y，z）</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f7913347baa728c68b89ad5df8384d1f"></a><!-- doxytag: member="LightEngine::worldToWindow" ref="f7913347baa728c68b89ad5df8384d1f" args="(float x, float y, float z, vec3_t point)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::worldToWindow           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>z</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>point</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+转换场景世界坐标（3D）到窗口客户区坐标（2D） 
+<p>
+需要注意的是此函数的执行结果取决于渲染图像，也就是说必须在要查询的目标对像渲染后立即调用此函数，才能得到正确的结果。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>场景世界坐标（3D）x 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>场景世界坐标（3D）y 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>z</em>&nbsp;</td><td>场景世界坐标（3D）z 分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>point</em>&nbsp;</td><td>一个浮点数组指针，返回的是该场景世界坐标（3D）对应的窗口客户区坐标（2D）（x，y，z）</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="0be924bf43061424d13ce862ddf1eeea"></a><!-- doxytag: member="LightEngine::dispatchMessage" ref="0be924bf43061424d13ce862ddf1eeea" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool LightEngine::dispatchMessage           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+配送消息 
+<p>
+配送消息<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>无</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果成功返回 0, 否则返回非 0 值</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="88299c50c42249433d4727dba2854cce"></a><!-- doxytag: member="LightEngine::registerMessageProc" ref="88299c50c42249433d4727dba2854cce" args="(WNDPROC lpfnWndProc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool LightEngine::registerMessageProc           </td>
+          <td>(</td>
+          <td class="paramtype">WNDPROC&nbsp;</td>
+          <td class="paramname"> <em>lpfnWndProc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+注册窗口消息监听函数 
+<p>
+注册窗口消息监听函数，可以注册多个消息监听函数，这些函数都能收到窗口发来的所有消息。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>WNDPROC</em>&nbsp;</td><td>lpfnWndProc 窗口消息监听函数</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果成功返回 TRUE, 否则返回 FALSE</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="3640678057df2e8eb74eff2aacec9072"></a><!-- doxytag: member="LightEngine::removeMessageProc" ref="3640678057df2e8eb74eff2aacec9072" args="(WNDPROC lpfnWndProc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool LightEngine::removeMessageProc           </td>
+          <td>(</td>
+          <td class="paramtype">WNDPROC&nbsp;</td>
+          <td class="paramname"> <em>lpfnWndProc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+移除窗口消息监听函数 
+<p>
+移除窗口消息监听函数，只能移除前面已注册的窗口消息监听函数。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>WNDPROC</em>&nbsp;</td><td>lpfnWndProc 窗口消息监听函数</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果成功返回 TRUE, 否则返回 FALSE</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="13b03a455bf88005de959a360235539c"></a><!-- doxytag: member="LightEngine::loadCursor" ref="13b03a455bf88005de959a360235539c" args="(const char *filename)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightEngine::loadCursor           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>filename</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+读取光标文件 
+<p>
+必须是以 .CUR 或 .ANI 结尾的 windows 光标文件。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>filename[in]</em>&nbsp;</td><td>光标文件名称</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果读取成功返回正值，表示光标的索引值，否则返回负值。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd>destroyCursor，setCursor，showCursor </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="0b093dc170fa5aa1bb8abc8194e51935"></a><!-- doxytag: member="LightEngine::destroyCursor" ref="0b093dc170fa5aa1bb8abc8194e51935" args="(int cursor)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool LightEngine::destroyCursor           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>cursor</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+销毁光标 
+<p>
+此函数释放指定光标占用的任何内存。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>cursor[in]</em>&nbsp;</td><td>光标索引，由 loadCursor 得到</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功返回 TRUE, 否则返回 FALSE</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd>loadCursor，setCursor，showCursor </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="5c58b971329df3e89d2fe307f53f3bee"></a><!-- doxytag: member="LightEngine::setCursor" ref="5c58b971329df3e89d2fe307f53f3bee" args="(int cursor)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool LightEngine::setCursor           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>cursor</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置当前光标 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>cursor[in]</em>&nbsp;</td><td>光标索引，由 loadCursor 得到</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果设置成功返回 TRUE, 否则返回 FALSE</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd>loadCursor，destroyCursor，showCursor </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="efbd66d31b07cbb44c19d957d3be2b83"></a><!-- doxytag: member="LightEngine::showCursor" ref="efbd66d31b07cbb44c19d957d3be2b83" args="(bool show)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::showCursor           </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>show</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+显示（或隐藏）光标 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>show[in]</em>&nbsp;</td><td>指定显示（或隐藏）光标，TRUE 显示光标，FALSE 隐藏光标。</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd>loadCursor，destroyCursor，setCursor </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="4ade1e777d46f319e3d5861dc1dfa928"></a><!-- doxytag: member="LightEngine::getTickCount" ref="4ade1e777d46f319e3d5861dc1dfa928" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual unsigned long LightEngine::getTickCount           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询系统启动以来经过的千分之一秒数 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回系统启动以来经过的千分之一秒数</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b6cc758594a340b9d956ec8e3a958ddd"></a><!-- doxytag: member="LightEngine::lightAmbient" ref="b6cc758594a340b9d956ec8e3a958ddd" args="(float red, float green, float blue, float alpha)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightEngine::lightAmbient           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>red</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>green</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>blue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>alpha</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置全局环境光的颜色值 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>red 红色分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>green 绿色分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>blue 蓝色分量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>alpha Alpha 分量</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果成功返回 0, 否则返回非 0 值</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="85b28b2893cebeed050a2b762df21d9d"></a><!-- doxytag: member="LightEngine::getWindowHandle" ref="85b28b2893cebeed050a2b762df21d9d" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual HWND LightEngine::getWindowHandle           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询窗口句柄 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回窗口句柄</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="42a71d51dd7f4569dee9bcc748db437e"></a><!-- doxytag: member="LightEngine::setString" ref="42a71d51dd7f4569dee9bcc748db437e" args="(int name, const char *string)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool LightEngine::setString           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>string</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置指定字符串 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>int</em>&nbsp;</td><td>name 要设置的字符串 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>const</em>&nbsp;</td><td>char *string 字符串指针</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果成功返回 0, 否则返回非 0 值</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="4829d220cf0f060da7333fcd01580b81"></a><!-- doxytag: member="LightEngine::getString" ref="4829d220cf0f060da7333fcd01580b81" args="(int name)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const char* LightEngine::getString           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>name</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询指定字符串 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>int</em>&nbsp;</td><td>name 要查询的字符串</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果成功返回一个字符串指针（该字符串以 0 结尾）， 否则返回 NULL 。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="7635fa198d2f3e0f926677266a8920e2"></a><!-- doxytag: member="LightEngine::enable" ref="7635fa198d2f3e0f926677266a8920e2" args="(int name)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::enable           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>name</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+充许指定功能 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>int</em>&nbsp;</td><td>name 要充许的功能</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9eeae92786c72d7651c145f32ef596fa"></a><!-- doxytag: member="LightEngine::disable" ref="9eeae92786c72d7651c145f32ef596fa" args="(int name)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::disable           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>name</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+禁止指定功能 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>int</em>&nbsp;</td><td>name 要禁止的功能</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d9045756672b94f31fb773cb0c806ed4"></a><!-- doxytag: member="LightEngine::automatic" ref="d9045756672b94f31fb773cb0c806ed4" args="(int name)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::automatic           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>name</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+自动指定功能 
+<p>
+调用该函数后，引擎将会根据需要自动开启或禁止指定的功能。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>int</em>&nbsp;</td><td>name 要自动的功能</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b4cb13cbf8a75ac683eb97db293e2672"></a><!-- doxytag: member="LightEngine::getInteger" ref="b4cb13cbf8a75ac683eb97db293e2672" args="(int name)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightEngine::getInteger           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>name</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询指定的整型数 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>int</em>&nbsp;</td><td>name 要查询的整型数</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回要查询的整型数</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="82273fb21c961b50756b48c69f939462"></a><!-- doxytag: member="LightEngine::debugging" ref="82273fb21c961b50756b48c69f939462" args="(int num,...)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightEngine::debugging           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&nbsp;</td>
+          <td class="paramname"> <em>...</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+引擎内部函数 
+<p>
+保留函数，请勿调用，否则可能会导致内存错误。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name[in]</em>&nbsp;</td><td>保留参数</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>...[in]</em>&nbsp;</td><td>保留参数</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>保留返回值</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ecc4f59367c9bad00b791cf7345487f2"></a><!-- doxytag: member="LightEngine::NewLensFlare" ref="ecc4f59367c9bad00b791cf7345487f2" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_light_lens_flare.html">LightLensFlare</a> * LightEngine::NewLensFlare           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个镜头光晕 
+<p>
+创建一个镜头光晕<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>无</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回要创建的镜头光晕类指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="14ebaa6984aa783d1e31e56f9fdce289"></a><!-- doxytag: member="LightEngine::NewModelMD3" ref="14ebaa6984aa783d1e31e56f9fdce289" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_light_model_m_d3.html">LightModelMD3</a> * LightEngine::NewModelMD3           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个 MD3 模型 
+<p>
+创建一个 MD3 模型<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>无</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回要创建的 MD3 模型类指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="69d9fb90c7c77145d3dc521c8e2b9883"></a><!-- doxytag: member="LightEngine::NewFrustum" ref="69d9fb90c7c77145d3dc521c8e2b9883" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_light_frustum.html">LightFrustum</a> * LightEngine::NewFrustum           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个视锥体 
+<p>
+创建一个视锥体<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>无</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回要创建的视锥体类指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="74d513bb6ce400013dbb6dd736394235"></a><!-- doxytag: member="LightEngine::createScene" ref="74d513bb6ce400013dbb6dd736394235" args="(const LightSceneDesc &amp;sceneDesc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_scene.html">LightScene</a>* LightEngine::createScene           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_light_scene_desc.html">LightSceneDesc</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>sceneDesc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个场景 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>sceneDesc</em>&nbsp;</td><td>场景描述符指针，用于说明要创建场景的特征。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回创建场景的指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e204b343f4bfca71460743875420ba51"></a><!-- doxytag: member="LightEngine::releaseScene" ref="e204b343f4bfca71460743875420ba51" args="(LightScene *scene)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::releaseScene           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_scene.html">LightScene</a> *&nbsp;</td>
+          <td class="paramname"> <em>scene</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放一个场景 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>scene</em>&nbsp;</td><td>要释放场景的指针</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a3ad6bc47b15512e15361ef4428fa8b4"></a><!-- doxytag: member="LightEngine::createCamera" ref="a3ad6bc47b15512e15361ef4428fa8b4" args="(const LightCameraDesc &amp;cameraDesc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_camera.html">LightCamera</a>* LightEngine::createCamera           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_light_camera_desc.html">LightCameraDesc</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>cameraDesc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个摄像机 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>cameraDesc</em>&nbsp;</td><td>摄像机描述符指针，用于说明要创建摄像机的特征。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回要创建摄像机的指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ca95af83ed4b09a0feb5935a52532961"></a><!-- doxytag: member="LightEngine::releaseCamera" ref="ca95af83ed4b09a0feb5935a52532961" args="(LightCamera *camera)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::releaseCamera           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_camera.html">LightCamera</a> *&nbsp;</td>
+          <td class="paramname"> <em>camera</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放一个摄像机 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>camera</em>&nbsp;</td><td>要释放摄像机的指针</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="6817baa1c1f4a687ae045eb5e05ba9ea"></a><!-- doxytag: member="LightEngine::createSky" ref="6817baa1c1f4a687ae045eb5e05ba9ea" args="(const LightSkyDesc &amp;skyDesc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_sky.html">LightSky</a>* LightEngine::createSky           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_light_sky_desc.html">LightSkyDesc</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>skyDesc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个天空 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>skyDesc</em>&nbsp;</td><td>天空描述符，用于说明要创建天空的特征。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回已创建的天空指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="31548f6f0b03c6be00c6d3c25a0a1d00"></a><!-- doxytag: member="LightEngine::releaseSky" ref="31548f6f0b03c6be00c6d3c25a0a1d00" args="(LightSky *sky)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::releaseSky           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_sky.html">LightSky</a> *&nbsp;</td>
+          <td class="paramname"> <em>sky</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放一个天空 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>sky</em>&nbsp;</td><td>要释放天空的指针</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a0a95942593af96c980f5a943fc24223"></a><!-- doxytag: member="LightEngine::createFog" ref="a0a95942593af96c980f5a943fc24223" args="(const LightFogDesc &amp;fogDesc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_fog.html">LightFog</a>* LightEngine::createFog           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_light_fog_desc.html">LightFogDesc</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>fogDesc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个雾 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>fogDesc[in]</em>&nbsp;</td><td>雾描述符，用于说明要创建雾的特征。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回已创建的雾指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="6f89330692a6bb6d02825f558dfa4c67"></a><!-- doxytag: member="LightEngine::releaseFog" ref="6f89330692a6bb6d02825f558dfa4c67" args="(LightFog *fog)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::releaseFog           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_fog.html">LightFog</a> *&nbsp;</td>
+          <td class="paramname"> <em>fog</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放一个雾 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>fog[in]</em>&nbsp;</td><td>要释放雾的指针</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9b22a0c7849b1ad36ffe664c4239beec"></a><!-- doxytag: member="LightEngine::releaseBillboardPool" ref="9b22a0c7849b1ad36ffe664c4239beec" args="(LightBillboardPool *billboardPool)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightEngine::releaseBillboardPool           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_billboard_pool.html">LightBillboardPool</a> *&nbsp;</td>
+          <td class="paramname"> <em>billboardPool</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放一个布告板池 
+<p>
+释放一个布告板池<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="class_light_billboard_pool.html">LightBillboardPool</a></em>&nbsp;</td><td>* billboardPool 要释放布告板池的指针</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="fc65a2eed065f6fca8a2f5dd7cf3053d"></a><!-- doxytag: member="LightEngine::releaseParticle" ref="fc65a2eed065f6fca8a2f5dd7cf3053d" args="(LightParticle *particle)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightEngine::releaseParticle           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_particle.html">LightParticle</a> *&nbsp;</td>
+          <td class="paramname"> <em>particle</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放一个粒子 
+<p>
+释放一个粒子<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="class_light_particle.html">LightParticle</a></em>&nbsp;</td><td>* particle 要释放粒子的指针</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="627aac1de92f0d9ebe7e1ec6662f4719"></a><!-- doxytag: member="LightEngine::createLevel" ref="627aac1de92f0d9ebe7e1ec6662f4719" args="(const LightLevelDesc &amp;levelDesc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_level.html">LightLevel</a>* LightEngine::createLevel           </td>
+          <td>(</td>
+          <td class="paramtype">const LightLevelDesc &amp;&nbsp;</td>
+          <td class="paramname"> <em>levelDesc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个场景 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>levelDesc[in]</em>&nbsp;</td><td>场景描述符，用于说明要创建场景的特征。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回已创建的场景指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c6ef9adda083ea29612e6c02b5da7c85"></a><!-- doxytag: member="LightEngine::releaseLevel" ref="c6ef9adda083ea29612e6c02b5da7c85" args="(LightLevel *level)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::releaseLevel           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_level.html">LightLevel</a> *&nbsp;</td>
+          <td class="paramname"> <em>level</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放一个场景 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>level[in]</em>&nbsp;</td><td>要释放场景的指针</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="48fd907d9c1098b4807d5234d08693ce"></a><!-- doxytag: member="LightEngine::createSkeleton" ref="48fd907d9c1098b4807d5234d08693ce" args="(const LightSkeletonDesc &amp;skeletonDesc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_skeleton.html">LightSkeleton</a>* LightEngine::createSkeleton           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_light_skeleton_desc.html">LightSkeletonDesc</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>skeletonDesc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个骨骼动画 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>skeletonDesc[in]</em>&nbsp;</td><td>骨骼动画描述符，用于说明要创建骨骼动画的特征。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回已创建的骨骼动画指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="3c24cdca12633058a24aca04337cd7f3"></a><!-- doxytag: member="LightEngine::releaseSkeleton" ref="3c24cdca12633058a24aca04337cd7f3" args="(LightSkeleton *skeleton)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::releaseSkeleton           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_skeleton.html">LightSkeleton</a> *&nbsp;</td>
+          <td class="paramname"> <em>skeleton</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放一个骨骼动画 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>skeleton[in]</em>&nbsp;</td><td>要释放骨骼动画的指针</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="98ccb13226fbb25823fc5b04b69f31ab"></a><!-- doxytag: member="LightEngine::createMesh" ref="98ccb13226fbb25823fc5b04b69f31ab" args="(const LightMeshDesc &amp;meshDesc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_mesh.html">LightMesh</a>* LightEngine::createMesh           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_light_mesh_desc.html">LightMeshDesc</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>meshDesc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个静态网格 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>meshDesc[in]</em>&nbsp;</td><td>静态网格描述符，用于说明要创建静态网格的特征。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回已创建的静态网格指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9003edda1ac439eaa61df4ac936d013b"></a><!-- doxytag: member="LightEngine::releaseMesh" ref="9003edda1ac439eaa61df4ac936d013b" args="(LightMesh *mesh)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::releaseMesh           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_mesh.html">LightMesh</a> *&nbsp;</td>
+          <td class="paramname"> <em>mesh</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放一个静态网格 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>mesh[in]</em>&nbsp;</td><td>要释放静态网格的指针</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f87def42a71579eb45538027adeb2941"></a><!-- doxytag: member="LightEngine::createTexture" ref="f87def42a71579eb45538027adeb2941" args="(const LightTextureDesc &amp;textureDesc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_texture.html">LightTexture</a>* LightEngine::createTexture           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_light_texture_desc.html">LightTextureDesc</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>textureDesc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个纹理 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>textureDesc[in]</em>&nbsp;</td><td>纹理描述符，用于说明要创建纹理的特征。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回已创建的纹理指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="cd3e8fea160e121110cb18c4fa063993"></a><!-- doxytag: member="LightEngine::releaseTexture" ref="cd3e8fea160e121110cb18c4fa063993" args="(LightTexture *texture)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::releaseTexture           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_texture.html">LightTexture</a> *&nbsp;</td>
+          <td class="paramname"> <em>texture</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放一个纹理 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>texture[in]</em>&nbsp;</td><td>要释放纹理的指针</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="722fd4fc71cc833ef3c1f43b4a658205"></a><!-- doxytag: member="LightEngine::createImage" ref="722fd4fc71cc833ef3c1f43b4a658205" args="(const LightImageDesc &amp;imageDesc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_image.html">LightImage</a>* LightEngine::createImage           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_light_image_desc.html">LightImageDesc</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>imageDesc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个图像 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>imageDesc[in]</em>&nbsp;</td><td>图像描述符，用于说明要创建图像的特征。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回已创建的图像指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="77316093a6f21d34d376c8be6921692b"></a><!-- doxytag: member="LightEngine::releaseImage" ref="77316093a6f21d34d376c8be6921692b" args="(LightImage *image)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::releaseImage           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_image.html">LightImage</a> *&nbsp;</td>
+          <td class="paramname"> <em>image</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放一个图像 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>image[in]</em>&nbsp;</td><td>要释放图像的指针</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a4a030f1c0415fd3785a7e8c37431182"></a><!-- doxytag: member="LightEngine::createVideo" ref="a4a030f1c0415fd3785a7e8c37431182" args="(const LightVideoDesc &amp;videoDesc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_video.html">LightVideo</a>* LightEngine::createVideo           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_light_video_desc.html">LightVideoDesc</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>videoDesc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个视频 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>videoDesc[in]</em>&nbsp;</td><td>视频描述符，用于说明要创建视频的特征。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回已创建的视频指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c65bf4ceee210d692fce4d234e08346d"></a><!-- doxytag: member="LightEngine::releaseVideo" ref="c65bf4ceee210d692fce4d234e08346d" args="(LightVideo *video)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::releaseVideo           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_video.html">LightVideo</a> *&nbsp;</td>
+          <td class="paramname"> <em>video</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放一个视频 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>video[in]</em>&nbsp;</td><td>要释放视频的指针</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="0f4f7f8100621b242ff313c8ad3da6a9"></a><!-- doxytag: member="LightEngine::createText" ref="0f4f7f8100621b242ff313c8ad3da6a9" args="(const LightTextDesc &amp;textDesc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_text.html">LightText</a>* LightEngine::createText           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_light_text_desc.html">LightTextDesc</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>textDesc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个文字 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>textDesc[in]</em>&nbsp;</td><td>文字描述符，用于说明要创建文字的特征。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回已创建的文字指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="67f04f827ae663a701bbcff62f401cb7"></a><!-- doxytag: member="LightEngine::releaseText" ref="67f04f827ae663a701bbcff62f401cb7" args="(LightText *text)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::releaseText           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_text.html">LightText</a> *&nbsp;</td>
+          <td class="paramname"> <em>text</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放一个文字 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>text[in]</em>&nbsp;</td><td>要释放文字的指针</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="dc22127a193fb90d4f5b8512bafc579e"></a><!-- doxytag: member="LightEngine::createLog" ref="dc22127a193fb90d4f5b8512bafc579e" args="(const LightLogDesc &amp;logDesc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_log.html">LightLog</a>* LightEngine::createLog           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_light_log_desc.html">LightLogDesc</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>logDesc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个日志 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>logDesc[in]</em>&nbsp;</td><td>日志描述符，用于说明要创建日志的特征。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回已创建的日志指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a0ad7687d87844703017ed762e74ca69"></a><!-- doxytag: member="LightEngine::releaseLog" ref="a0ad7687d87844703017ed762e74ca69" args="(LightLog *log)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::releaseLog           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_log.html">LightLog</a> *&nbsp;</td>
+          <td class="paramname"> <em>log</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放一个日志 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>log[in]</em>&nbsp;</td><td>要释放日志的指针</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="1c685d532457a5ea68baea9fd8c655a9"></a><!-- doxytag: member="LightEngine::createScript" ref="1c685d532457a5ea68baea9fd8c655a9" args="(const LightScriptDesc &amp;scriptDesc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_script.html">LightScript</a>* LightEngine::createScript           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_light_script_desc.html">LightScriptDesc</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>scriptDesc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个脚本 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>scriptDesc[in]</em>&nbsp;</td><td>脚本描述符，用于说明要创建脚本的特征。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回已创建的脚本指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="162d5b707ccb0869fa8385344f9e3dcf"></a><!-- doxytag: member="LightEngine::releaseScript" ref="162d5b707ccb0869fa8385344f9e3dcf" args="(LightScript *script)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::releaseScript           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_script.html">LightScript</a> *&nbsp;</td>
+          <td class="paramname"> <em>script</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放一个脚本 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>script[in]</em>&nbsp;</td><td>要释放脚本的指针</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f2e6e982f55de93906a6a33e476bba73"></a><!-- doxytag: member="LightEngine::createBrush" ref="f2e6e982f55de93906a6a33e476bba73" args="(const LightBrushDesc &amp;brushDesc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_brush.html">LightBrush</a>* LightEngine::createBrush           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_light_brush_desc.html">LightBrushDesc</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>brushDesc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个画笔 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>brushDesc[in]</em>&nbsp;</td><td>画笔描述符，用于说明要创建画笔的特征。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回已创建的画笔指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b03636925c6639be57faa392336ae160"></a><!-- doxytag: member="LightEngine::releaseBrush" ref="b03636925c6639be57faa392336ae160" args="(LightBrush *brush)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::releaseBrush           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_brush.html">LightBrush</a> *&nbsp;</td>
+          <td class="paramname"> <em>brush</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放一个画笔 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>brush[in]</em>&nbsp;</td><td>要释放画笔的指针</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="99258304caf6056f48f5e9fadfb46e86"></a><!-- doxytag: member="LightEngine::createInput" ref="99258304caf6056f48f5e9fadfb46e86" args="(const LightInputDesc &amp;inputDesc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_input.html">LightInput</a>* LightEngine::createInput           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_light_input_desc.html">LightInputDesc</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>inputDesc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个输入接口 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>inputDesc[in]</em>&nbsp;</td><td>输入接口描述符，用于说明要创建输入接口的特征。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回已创建的输入接口指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="57e09f09384c45c12dd0e17f9291e6f4"></a><!-- doxytag: member="LightEngine::releaseInput" ref="57e09f09384c45c12dd0e17f9291e6f4" args="(LightInput *input)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::releaseInput           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_input.html">LightInput</a> *&nbsp;</td>
+          <td class="paramname"> <em>input</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放一个输入接口 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>input[in]</em>&nbsp;</td><td>要释放输入接口的指针</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="878d071d40ff717b3d3927e072adf299"></a><!-- doxytag: member="LightEngine::createSound" ref="878d071d40ff717b3d3927e072adf299" args="(const LightSoundDesc &amp;soundDesc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_sound.html">LightSound</a>* LightEngine::createSound           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_light_sound_desc.html">LightSoundDesc</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>soundDesc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个声音 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>soundDesc[in]</em>&nbsp;</td><td>声音描述符，用于说明要创建声音的特征。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回已创建的声音指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="0750a5f7df8be28e5b86b8e827de2f41"></a><!-- doxytag: member="LightEngine::releaseSound" ref="0750a5f7df8be28e5b86b8e827de2f41" args="(LightSound *sound)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::releaseSound           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_sound.html">LightSound</a> *&nbsp;</td>
+          <td class="paramname"> <em>sound</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放一个声音 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>sound[in]</em>&nbsp;</td><td>要释放声音的指针</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c36306b502ae11bac4946b912d04bb41"></a><!-- doxytag: member="LightEngine::createAnimation" ref="c36306b502ae11bac4946b912d04bb41" args="(const LightAnimationDesc &amp;animationDesc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_animation.html">LightAnimation</a>* LightEngine::createAnimation           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_light_animation_desc.html">LightAnimationDesc</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>animationDesc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个顶点动画 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>animationDesc[in]</em>&nbsp;</td><td>顶点动画描述符，用于说明要创建顶点动画的特征。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回已创建的顶点动画指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a321037af727f72a99003260807987a4"></a><!-- doxytag: member="LightEngine::releaseAnimation" ref="a321037af727f72a99003260807987a4" args="(LightAnimation *animation)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::releaseAnimation           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_animation.html">LightAnimation</a> *&nbsp;</td>
+          <td class="paramname"> <em>animation</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放一个顶点动画 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>animation[in]</em>&nbsp;</td><td>要释放顶点动画的指针</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="6388e2af177f5e5ba375ed4ba958f9dd"></a><!-- doxytag: member="LightEngine::createBSPTree" ref="6388e2af177f5e5ba375ed4ba958f9dd" args="(const LightBSPTreeDesc &amp;bsptreeDesc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_b_s_p_tree.html">LightBSPTree</a>* LightEngine::createBSPTree           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_light_b_s_p_tree_desc.html">LightBSPTreeDesc</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>bsptreeDesc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个二叉树 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>bsptreeDesc[in]</em>&nbsp;</td><td>二叉树描述符，用于说明要创建二叉树的特征。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回已创建的二叉树指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ac12b8b778b0e384c40fe2d6bbfe066e"></a><!-- doxytag: member="LightEngine::releaseBSPTree" ref="ac12b8b778b0e384c40fe2d6bbfe066e" args="(LightBSPTree *bsptree)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::releaseBSPTree           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_b_s_p_tree.html">LightBSPTree</a> *&nbsp;</td>
+          <td class="paramname"> <em>bsptree</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放一个二叉树 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>bsptree[in]</em>&nbsp;</td><td>要释放二叉树的指针</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d9c916a6032d57c3c6f80a4c9e05724d"></a><!-- doxytag: member="LightEngine::createLight" ref="d9c916a6032d57c3c6f80a4c9e05724d" args="(const LightLightDesc &amp;lightDesc)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_light.html">LightLight</a>* LightEngine::createLight           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_light_light_desc.html">LightLightDesc</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>lightDesc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个灯光 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>lightDesc[in]</em>&nbsp;</td><td>灯光描述符，用于说明要创建灯光的特征。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回已创建的灯光指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="4464c9fe783192bc3df4ef18a5197c59"></a><!-- doxytag: member="LightEngine::releaseLight" ref="4464c9fe783192bc3df4ef18a5197c59" args="(LightLight *light)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LightEngine::releaseLight           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_light.html">LightLight</a> *&nbsp;</td>
+          <td class="paramname"> <em>light</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放一个灯光 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>light[in]</em>&nbsp;</td><td>要释放灯光的指针</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="39db4ed37a961fb8cd8d43952a7cf50d"></a><!-- doxytag: member="LightEngine::getTextureNumber" ref="39db4ed37a961fb8cd8d43952a7cf50d" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightEngine::getTextureNumber           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询纹理数量 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回纹理数量</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="486bb7beab3317a354ae64ae95278b0e"></a><!-- doxytag: member="LightEngine::getTextureID" ref="486bb7beab3317a354ae64ae95278b0e" args="(const char *name)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightEngine::getTextureID           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>name</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询纹理 ID（根据纹理名称） 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name[in]</em>&nbsp;</td><td>纹理名称。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回纹理 ID</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="52649b0c26854ce34f04444806c79eb2"></a><!-- doxytag: member="LightEngine::getTexture" ref="52649b0c26854ce34f04444806c79eb2" args="(int id)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_light_texture.html">LightTexture</a>* LightEngine::getTexture           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>id</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询纹理（根据纹理 ID） 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>id[in]</em>&nbsp;</td><td>纹理 ID。</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回纹理指针</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/<a class="el" href="engine_8h.html">engine.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:33 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

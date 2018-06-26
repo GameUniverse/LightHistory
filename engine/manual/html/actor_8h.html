@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: E:/LightEngine/include/actor.h文件参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li><a href="annotated.html"><span>类</span></a></li>
+    <li id="current"><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="files.html"><span>文件列表</span></a></li>
+    <li><a href="globals.html"><span>文件成员</span></a></li>
+  </ul></div>
+<h1>E:/LightEngine/include/actor.h文件参考</h1><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>组合类型</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_light_groups_mask.html">LightGroupsMask</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">碰撞检测过滤使用的 128-bit 掩码  <a href="struct_light_groups_mask.html#_details">更多...</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor_desc.html">LightActorDesc</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">角色描述符类  <a href="class_light_actor_desc.html#_details">更多...</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_actor.html">LightActor</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">角色类  <a href="class_light_actor.html#_details">更多...</a><br></td></tr>
+<tr><td colspan="2"><br><h2>宏定义</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="66814b2f32601b11c33e53517d80a711"></a><!-- doxytag: member="actor.h::LIGHT_SLEEP_INTERVAL" ref="66814b2f32601b11c33e53517d80a711" args="" -->
+#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="actor_8h.html#66814b2f32601b11c33e53517d80a711">LIGHT_SLEEP_INTERVAL</a>&nbsp;&nbsp;&nbsp;(1.0f/60.0f*20.0f)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">睡眠间隔 <br></td></tr>
+<tr><td colspan="2"><br><h2>类型定义</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="aab61f927f3e34af29ceab2d25589f80"></a><!-- doxytag: member="actor.h::LightCollisionGroup" ref="aab61f927f3e34af29ceab2d25589f80" args="" -->
+typedef unsigned short&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="actor_8h.html#aab61f927f3e34af29ceab2d25589f80">LightCollisionGroup</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">碰撞检测组（必须&lt; 32） <br></td></tr>
+<tr><td colspan="2"><br><h2>枚举</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="actor_8h.html#c3602c7bdebcd88147d819a1a01d2cfa">LightShapeType</a> { <br>
+&nbsp;&nbsp;<a class="el" href="actor_8h.html#c3602c7bdebcd88147d819a1a01d2cfadfea90585288a25f65da9939468b0144">LIGHT_SHAPE_PLANE</a>, 
+<a class="el" href="actor_8h.html#c3602c7bdebcd88147d819a1a01d2cfa44c26d24313eff88ac579e0cf0076935">LIGHT_SHAPE_SPHERE</a>, 
+<a class="el" href="actor_8h.html#c3602c7bdebcd88147d819a1a01d2cfacde3fb98490ade246066da7401ff1a65">LIGHT_SHAPE_BOX</a>, 
+<a class="el" href="actor_8h.html#c3602c7bdebcd88147d819a1a01d2cfa8ec7337e49bdf587dc0de490c35b79f1">LIGHT_SHAPE_CAPSULE</a>
+, <br>
+&nbsp;&nbsp;<a class="el" href="actor_8h.html#c3602c7bdebcd88147d819a1a01d2cfa5ba9ad6380a645a3b01f1e87b2365030">LIGHT_SHAPE_CONVEX</a>, 
+<a class="el" href="actor_8h.html#c3602c7bdebcd88147d819a1a01d2cfad878b8fa693ef8c1f71e3e46181c3314">LIGHT_SHAPE_MESH</a>, 
+<a class="el" href="actor_8h.html#c3602c7bdebcd88147d819a1a01d2cfa9c37f0dd37ee44a703c99ef3585d4006">LIGHT_SHAPE_HEIGHTFIELD</a>
+<br>
+ }</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">确定一个特定的形状类型  <a href="actor_8h.html#c3602c7bdebcd88147d819a1a01d2cfa">更多...</a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+角色函数 此文件是角色函数头文件. <hr><h2>枚举类型文档</h2>
+<a class="anchor" name="c3602c7bdebcd88147d819a1a01d2cfa"></a><!-- doxytag: member="actor.h::LightShapeType" ref="c3602c7bdebcd88147d819a1a01d2cfa" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="actor_8h.html#c3602c7bdebcd88147d819a1a01d2cfa">LightShapeType</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+确定一个特定的形状类型 
+<p>
+<dl compact><dt><b>枚举值: </b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" name="c3602c7bdebcd88147d819a1a01d2cfadfea90585288a25f65da9939468b0144"></a><!-- doxytag: member="LIGHT_SHAPE_PLANE" ref="c3602c7bdebcd88147d819a1a01d2cfadfea90585288a25f65da9939468b0144" args="" -->LIGHT_SHAPE_PLANE</em>&nbsp;</td><td>
+一个物理平面 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="c3602c7bdebcd88147d819a1a01d2cfa44c26d24313eff88ac579e0cf0076935"></a><!-- doxytag: member="LIGHT_SHAPE_SPHERE" ref="c3602c7bdebcd88147d819a1a01d2cfa44c26d24313eff88ac579e0cf0076935" args="" -->LIGHT_SHAPE_SPHERE</em>&nbsp;</td><td>
+一个物理球体 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="c3602c7bdebcd88147d819a1a01d2cfacde3fb98490ade246066da7401ff1a65"></a><!-- doxytag: member="LIGHT_SHAPE_BOX" ref="c3602c7bdebcd88147d819a1a01d2cfacde3fb98490ade246066da7401ff1a65" args="" -->LIGHT_SHAPE_BOX</em>&nbsp;</td><td>
+一个物理盒子 (OBB) </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="c3602c7bdebcd88147d819a1a01d2cfa8ec7337e49bdf587dc0de490c35b79f1"></a><!-- doxytag: member="LIGHT_SHAPE_CAPSULE" ref="c3602c7bdebcd88147d819a1a01d2cfa8ec7337e49bdf587dc0de490c35b79f1" args="" -->LIGHT_SHAPE_CAPSULE</em>&nbsp;</td><td>
+一个物理胶囊 (LSS) </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="c3602c7bdebcd88147d819a1a01d2cfa5ba9ad6380a645a3b01f1e87b2365030"></a><!-- doxytag: member="LIGHT_SHAPE_CONVEX" ref="c3602c7bdebcd88147d819a1a01d2cfa5ba9ad6380a645a3b01f1e87b2365030" args="" -->LIGHT_SHAPE_CONVEX</em>&nbsp;</td><td>
+一个物理凸体网格 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="c3602c7bdebcd88147d819a1a01d2cfad878b8fa693ef8c1f71e3e46181c3314"></a><!-- doxytag: member="LIGHT_SHAPE_MESH" ref="c3602c7bdebcd88147d819a1a01d2cfad878b8fa693ef8c1f71e3e46181c3314" args="" -->LIGHT_SHAPE_MESH</em>&nbsp;</td><td>
+一个物理网格 </td></tr>
+<tr><td valign="top"><em><a class="anchor" name="c3602c7bdebcd88147d819a1a01d2cfa9c37f0dd37ee44a703c99ef3585d4006"></a><!-- doxytag: member="LIGHT_SHAPE_HEIGHTFIELD" ref="c3602c7bdebcd88147d819a1a01d2cfa9c37f0dd37ee44a703c99ef3585d4006" args="" -->LIGHT_SHAPE_HEIGHTFIELD</em>&nbsp;</td><td>
+一个物理地形（高度场） </td></tr>
+</table>
+</dl>
+
+</div>
+</div><p>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:31 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

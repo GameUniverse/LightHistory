@@ -1,0 +1,709 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: E:/LightEngine/include/3dmath.h文件参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li><a href="annotated.html"><span>类</span></a></li>
+    <li id="current"><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="files.html"><span>文件列表</span></a></li>
+    <li><a href="globals.html"><span>文件成员</span></a></li>
+  </ul></div>
+<h1>E:/LightEngine/include/3dmath.h文件参考</h1><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>宏定义</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="1c4b9e2e243069601ab9caa6845a6608"></a><!-- doxytag: member="3dmath.h::LIGHT_PI" ref="1c4b9e2e243069601ab9caa6845a6608" args="" -->
+#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="3dmath_8h.html#1c4b9e2e243069601ab9caa6845a6608">LIGHT_PI</a>&nbsp;&nbsp;&nbsp;3.1415926535897932384626433832795028841971693993751f</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">常量圆周率∏ <br></td></tr>
+<tr><td colspan="2"><br><h2>函数</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="3dmath_8h.html#d8a78fa081f987562da0d9ccfaa5b97e">gCrossProduct</a> (<a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> v1, <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> v2, <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> cross)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">叉乘  <a href="#d8a78fa081f987562da0d9ccfaa5b97e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="3dmath_8h.html#1342694ed4fe680c4bd1315aa66913c0">gDotProduct</a> (const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> a, const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> b)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">点乘  <a href="#1342694ed4fe680c4bd1315aa66913c0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="3dmath_8h.html#a86ee0ec71010f4bc5c9fdfd87260da5">gVectorNormalize</a> (<a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> vector)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">归格化  <a href="#a86ee0ec71010f4bc5c9fdfd87260da5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="3dmath_8h.html#2a0b5572f9e6146e8c48fb6800aa8212">gVectorScale</a> (<a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> vector, float scale, <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> out)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">沿原点缩放顶点  <a href="#2a0b5572f9e6146e8c48fb6800aa8212"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="3dmath_8h.html#23824b816512891f77add373fbacf8bb">gVectorAdd</a> (<a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> v1, <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> v2, <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> out)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">计算两顶点的和  <a href="#23824b816512891f77add373fbacf8bb"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="3dmath_8h.html#6e70f85f44fb5882a595acf06a6b3ec3">gVectorSubtract</a> (const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> v1, const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> v2, <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> out)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">计算两顶点的差  <a href="#6e70f85f44fb5882a595acf06a6b3ec3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="3dmath_8h.html#839dab17fc50237c0ee02e94fc0c0bfc">gVectorCopy</a> (<a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> in, <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> out)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">复制顶点  <a href="#839dab17fc50237c0ee02e94fc0c0bfc"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="3dmath_8h.html#98c917afa7b629134f34542ad9a82fe3">gVectorDistance</a> (<a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> p1, <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> p2)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">计算两点之间的距离  <a href="#98c917afa7b629134f34542ad9a82fe3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="3dmath_8h.html#ed0209fc547e3822405cf22310a5ea7f">gTranslateMatrix</a> (const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> vec, float matrix[3][4])</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">计算平移矩阵  <a href="#ed0209fc547e3822405cf22310a5ea7f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="3dmath_8h.html#407ee49634d9d1093f24ddf6ee74acd1">gRotateXMatrix</a> (const float angle, float matrix[3][4])</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">计算 X 轴旋转矩阵  <a href="#407ee49634d9d1093f24ddf6ee74acd1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="3dmath_8h.html#e82fc50b5731b75434264769009e2054">gRotateYMatrix</a> (const float angle, float matrix[3][4])</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">计算 Y 轴旋转矩阵  <a href="#e82fc50b5731b75434264769009e2054"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="3dmath_8h.html#7234500e657d5e4752b530370e2dc3f3">gRotateZMatrix</a> (const float angle, float matrix[3][4])</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">计算 Z 轴旋转矩阵  <a href="#7234500e657d5e4752b530370e2dc3f3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="3dmath_8h.html#6e9069d23758c8fd161e24f20cd86607">gRotateMatrix</a> (const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> angles, float matrix[3][4])</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">计算旋转矩阵  <a href="#6e9069d23758c8fd161e24f20cd86607"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="3dmath_8h.html#83fc8b7958fe5304032718a45e7e32e1">gMultiplyMatrix</a> (const float a[3][4], const float b[3][4], float out[3][4])</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">将两个矩阵相乘  <a href="#83fc8b7958fe5304032718a45e7e32e1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="3dmath_8h.html#99728848e6aa9709ee22afeb7ccb658b">gQuaternionMultiply</a> (<a class="el" href="type_8h.html#e42e6ff3aa78dae73930a489e8dd5490">quat_t</a> a, <a class="el" href="type_8h.html#e42e6ff3aa78dae73930a489e8dd5490">quat_t</a> b, <a class="el" href="type_8h.html#e42e6ff3aa78dae73930a489e8dd5490">quat_t</a> out)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">四元数乘法  <a href="#99728848e6aa9709ee22afeb7ccb658b"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+3D 数学函数. 此文件是 3D 数学函数头文件. <hr><h2>函数文档</h2>
+<a class="anchor" name="d8a78fa081f987562da0d9ccfaa5b97e"></a><!-- doxytag: member="3dmath.h::gCrossProduct" ref="d8a78fa081f987562da0d9ccfaa5b97e" args="(vec3_t v1, vec3_t v2, vec3_t cross)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gCrossProduct           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>cross</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+叉乘 
+<p>
+叉乘<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>vec3_t</em>&nbsp;</td><td>v1 向量 a</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>vec3_t</em>&nbsp;</td><td>v2 向量 b</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>vec3_t</em>&nbsp;</td><td>cross 垂直于向量 a 和 b 的一个新向量</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="1342694ed4fe680c4bd1315aa66913c0"></a><!-- doxytag: member="3dmath.h::gDotProduct" ref="1342694ed4fe680c4bd1315aa66913c0" args="(const vec3_t a, const vec3_t b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float gDotProduct           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>b</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+点乘 
+<p>
+点乘<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>const</em>&nbsp;</td><td>vec3_t a 向量 a</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>const</em>&nbsp;</td><td>vec3_t b 向量 b</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回向量 a 和 b 的点乘值。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="83fc8b7958fe5304032718a45e7e32e1"></a><!-- doxytag: member="3dmath.h::gMultiplyMatrix" ref="83fc8b7958fe5304032718a45e7e32e1" args="(const float a[3][4], const float b[3][4], float out[3][4])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gMultiplyMatrix           </td>
+          <td>(</td>
+          <td class="paramtype">const float&nbsp;</td>
+          <td class="paramname"> <em>a</em>[3][4], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&nbsp;</td>
+          <td class="paramname"> <em>b</em>[3][4], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>out</em>[3][4]</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+将两个矩阵相乘 
+<p>
+将两个矩阵相乘<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>const</em>&nbsp;</td><td>float a[3][4] 矩阵 a</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>const</em>&nbsp;</td><td>float b[3][4] 矩阵 b</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>const</em>&nbsp;</td><td>float out[3][4] 矩阵 a 和 b 的乘积</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="99728848e6aa9709ee22afeb7ccb658b"></a><!-- doxytag: member="3dmath.h::gQuaternionMultiply" ref="99728848e6aa9709ee22afeb7ccb658b" args="(quat_t a, quat_t b, quat_t out)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gQuaternionMultiply           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="type_8h.html#e42e6ff3aa78dae73930a489e8dd5490">quat_t</a>&nbsp;</td>
+          <td class="paramname"> <em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#e42e6ff3aa78dae73930a489e8dd5490">quat_t</a>&nbsp;</td>
+          <td class="paramname"> <em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#e42e6ff3aa78dae73930a489e8dd5490">quat_t</a>&nbsp;</td>
+          <td class="paramname"> <em>out</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+四元数乘法 
+<p>
+四元数乘法（a * b = out）<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>a[in]</em>&nbsp;</td><td>表示旋转的因数</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>b[in]</em>&nbsp;</td><td>表示旋转的因数</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>out[out]</em>&nbsp;</td><td>两个旋转累加的结果，相当于先做 b 的旋转，再做 a 的旋转</td></tr>
+  </table>
+</dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="6e9069d23758c8fd161e24f20cd86607"></a><!-- doxytag: member="3dmath.h::gRotateMatrix" ref="6e9069d23758c8fd161e24f20cd86607" args="(const vec3_t angles, float matrix[3][4])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gRotateMatrix           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>angles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>matrix</em>[3][4]</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+计算旋转矩阵 
+<p>
+计算旋转矩阵<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>const</em>&nbsp;</td><td>float angle 绕 x、y 和 z 轴的旋转角度</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>matrix[3][4] 对应的旋转矩阵</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="407ee49634d9d1093f24ddf6ee74acd1"></a><!-- doxytag: member="3dmath.h::gRotateXMatrix" ref="407ee49634d9d1093f24ddf6ee74acd1" args="(const float angle, float matrix[3][4])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gRotateXMatrix           </td>
+          <td>(</td>
+          <td class="paramtype">const float&nbsp;</td>
+          <td class="paramname"> <em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>matrix</em>[3][4]</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+计算 X 轴旋转矩阵 
+<p>
+计算 X 轴旋转矩阵<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>const</em>&nbsp;</td><td>float angle 绕 x 轴的旋转角度</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>matrix[3][4] 对应的旋转矩阵</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e82fc50b5731b75434264769009e2054"></a><!-- doxytag: member="3dmath.h::gRotateYMatrix" ref="e82fc50b5731b75434264769009e2054" args="(const float angle, float matrix[3][4])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gRotateYMatrix           </td>
+          <td>(</td>
+          <td class="paramtype">const float&nbsp;</td>
+          <td class="paramname"> <em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>matrix</em>[3][4]</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+计算 Y 轴旋转矩阵 
+<p>
+计算 Y 轴旋转矩阵<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>const</em>&nbsp;</td><td>float angle 绕 y 轴的旋转角度</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>matrix[3][4] 对应的旋转矩阵</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="7234500e657d5e4752b530370e2dc3f3"></a><!-- doxytag: member="3dmath.h::gRotateZMatrix" ref="7234500e657d5e4752b530370e2dc3f3" args="(const float angle, float matrix[3][4])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gRotateZMatrix           </td>
+          <td>(</td>
+          <td class="paramtype">const float&nbsp;</td>
+          <td class="paramname"> <em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>matrix</em>[3][4]</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+计算 Z 轴旋转矩阵 
+<p>
+计算 Z 轴旋转矩阵<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>const</em>&nbsp;</td><td>float angle 绕 z 轴的旋转角度</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>matrix[3][4] 对应的旋转矩阵</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ed0209fc547e3822405cf22310a5ea7f"></a><!-- doxytag: member="3dmath.h::gTranslateMatrix" ref="ed0209fc547e3822405cf22310a5ea7f" args="(const vec3_t vec, float matrix[3][4])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gTranslateMatrix           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>vec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>matrix</em>[3][4]</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+计算平移矩阵 
+<p>
+计算平移矩阵<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>const</em>&nbsp;</td><td>vec3_t vec 平移矢量</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>matrix[3][4] 该矢量的平移矩阵</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="23824b816512891f77add373fbacf8bb"></a><!-- doxytag: member="3dmath.h::gVectorAdd" ref="23824b816512891f77add373fbacf8bb" args="(vec3_t v1, vec3_t v2, vec3_t out)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gVectorAdd           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>out</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+计算两顶点的和 
+<p>
+计算两顶点的和<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>vec3_t</em>&nbsp;</td><td>v1 顶点 a</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>vec3_t</em>&nbsp;</td><td>v2 顶点 b</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>vec3_t</em>&nbsp;</td><td>out 顶点 a 和 b 的和</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="839dab17fc50237c0ee02e94fc0c0bfc"></a><!-- doxytag: member="3dmath.h::gVectorCopy" ref="839dab17fc50237c0ee02e94fc0c0bfc" args="(vec3_t in, vec3_t out)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gVectorCopy           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>out</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+复制顶点 
+<p>
+复制顶点<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>vec3_t</em>&nbsp;</td><td>in 要复制的顶点</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>vec3_t</em>&nbsp;</td><td>out 复制后的顶点</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="98c917afa7b629134f34542ad9a82fe3"></a><!-- doxytag: member="3dmath.h::gVectorDistance" ref="98c917afa7b629134f34542ad9a82fe3" args="(vec3_t p1, vec3_t p2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float gVectorDistance           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>p2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+计算两点之间的距离 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>p1[in]</em>&nbsp;</td><td>第一个点的位置</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>p2[in]</em>&nbsp;</td><td>第二个点的位置</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回两点之间的距离。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a86ee0ec71010f4bc5c9fdfd87260da5"></a><!-- doxytag: member="3dmath.h::gVectorNormalize" ref="a86ee0ec71010f4bc5c9fdfd87260da5" args="(vec3_t vector)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float gVectorNormalize           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>vector</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+归格化 
+<p>
+归格化<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>vec3_t</em>&nbsp;</td><td>vector 要归格化的向量</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>归格化后的向量返回在 vector 中，此处返回向量的长度。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="2a0b5572f9e6146e8c48fb6800aa8212"></a><!-- doxytag: member="3dmath.h::gVectorScale" ref="2a0b5572f9e6146e8c48fb6800aa8212" args="(vec3_t vector, float scale, vec3_t out)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gVectorScale           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>scale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>out</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+沿原点缩放顶点 
+<p>
+沿原点缩放顶点<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>vec3_t</em>&nbsp;</td><td>vector 要缩放的顶点坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>scale 缩放比例</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>vec3_t</em>&nbsp;</td><td>out 缩放后的顶点坐标</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="6e70f85f44fb5882a595acf06a6b3ec3"></a><!-- doxytag: member="3dmath.h::gVectorSubtract" ref="6e70f85f44fb5882a595acf06a6b3ec3" args="(const vec3_t v1, const vec3_t v2, vec3_t out)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gVectorSubtract           </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>out</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+计算两顶点的差 
+<p>
+计算两顶点的差<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>const</em>&nbsp;</td><td>vec3_t v1 顶点 a</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>const</em>&nbsp;</td><td>vec3_t v2 顶点 b</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>vec3_t</em>&nbsp;</td><td>out 顶点 a 和 b 的差</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:31 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

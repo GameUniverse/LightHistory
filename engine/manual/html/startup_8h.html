@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: E:/LightEngine/include/startup.h文件参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li><a href="annotated.html"><span>类</span></a></li>
+    <li id="current"><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="files.html"><span>文件列表</span></a></li>
+    <li><a href="globals.html"><span>文件成员</span></a></li>
+  </ul></div>
+<h1>E:/LightEngine/include/startup.h文件参考</h1>引擎创建函数 此文件是引擎创建函数头文件. <a href="#_details">更多...</a>
+<p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>函数</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="class_light_engine.html">LightEngine</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="startup_8h.html#d2e9562c459d7f361eefadcc8af48b5c">LightEngineCreate</a> (<a class="el" href="class_light_engine_desc.html">LightEngineDesc</a> &amp;engineDesc)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建光线引擎实例  <a href="#d2e9562c459d7f361eefadcc8af48b5c"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+引擎创建函数 此文件是引擎创建函数头文件. 
+<p>
+<hr><h2>函数文档</h2>
+<a class="anchor" name="d2e9562c459d7f361eefadcc8af48b5c"></a><!-- doxytag: member="startup.h::LightEngineCreate" ref="d2e9562c459d7f361eefadcc8af48b5c" args="(LightEngineDesc &amp;engineDesc)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_light_engine.html">LightEngine</a> * LightEngineCreate           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light_engine_desc.html">LightEngineDesc</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>engineDesc</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建光线引擎实例 
+<p>
+创建光线引擎的一个实例，并返回一个 <a class="el" href="class_light_engine.html">LightEngine</a> 指针。目前在同一个应用程序中该函数只能调用一次（也就是说只能创建引擎的一个实例）， 不同程序同时使用光线引擎相互没有影响。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>engineDesc</em>&nbsp;</td><td>引擎描述符，用来指定引擎使用的特性。</td></tr>
+  </table>
+</dl>
+<dl class="remark" compact><dt><b>评论:</b></dt><dd>这是在使用引擎前必须要调用的第一个函数，引擎的大部分功能都需要通过调用 <a class="el" href="class_light_engine.html">LightEngine</a> 来完成。</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回一个 <a class="el" href="class_light_engine.html">LightEngine</a> 指针，否则返回 NULL 。 </dd></dl>
+
+</div>
+</div><p>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:31 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>

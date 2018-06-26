@@ -1,0 +1,598 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>LightEngine: LightTerrain类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.0 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>首页</span></a></li>
+    <li id="current"><a href="annotated.html"><span>类</span></a></li>
+    <li><a href="files.html"><span>文件</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+    <li><a href="functions.html"><span>组合类型成员</span></a></li>
+  </ul></div>
+<h1>LightTerrain类参考</h1><!-- doxytag: class="LightTerrain" -->地形类  
+<a href="#_details">更多...</a>
+<p>
+<code>#include &lt;terrain.h&gt;</code>
+<p>
+<a href="class_light_terrain-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_terrain.html#1a30062c2dff690e28253515d6a31c0c">load</a> (const char *filename, int format, int width, int height, int bits)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">将地形文件读入内存  <a href="#1a30062c2dff690e28253515d6a31c0c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_terrain.html#f0428964c4a871f052f23dcfc0c66b68">SetSize</a> (int width, int height)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置地形大小  <a href="#f0428964c4a871f052f23dcfc0c66b68"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_terrain.html#229cef12f07d90f283df8607b24b98ed">GetSize</a> (LPSIZE lpSize)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询地形大小  <a href="#229cef12f07d90f283df8607b24b98ed"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_terrain.html#146c960007a30ea16f9215af2735b577">SetTexture</a> (int name, <a class="el" href="class_light_texture.html">LightTexture</a> *texture)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置地形纹理  <a href="#146c960007a30ea16f9215af2735b577"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_terrain.html#841cc6ec918b4b393e8843bcfd42033a">setTile</a> (int width, int height)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置地形瓷砖大小  <a href="#841cc6ec918b4b393e8843bcfd42033a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_terrain.html#c13da2a42a75ff1cdc115d85953a537d">getTile</a> (LPSIZE lpSize)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询地形瓷砖大小  <a href="#c13da2a42a75ff1cdc115d85953a537d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_terrain.html#668e95e94db691cb5da0a02b1e55ed64">BuildLODData</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">生成 LOD 所需要的数据  <a href="#668e95e94db691cb5da0a02b1e55ed64"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_terrain.html#ce8f5e1b2ab2dfea5892682af8e62bd1">SetLODFactor</a> (float distance, float fluctuant)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置地形显示 LOD 因子  <a href="#ce8f5e1b2ab2dfea5892682af8e62bd1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_terrain.html#c56ace9ca2a09937266a0cb3620c0c2a">RenderMode</a> (int mode)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置地形渲染模式  <a href="#c56ace9ca2a09937266a0cb3620c0c2a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="cfe9afe5154c579c32f35f1990e673f6"></a><!-- doxytag: member="LightTerrain::render" ref="cfe9afe5154c579c32f35f1990e673f6" args="()=0" -->
+virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_terrain.html#cfe9afe5154c579c32f35f1990e673f6">render</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">渲染地形 <br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_terrain.html#d4e4e135aecdcaa017c5483fe090fbe5">GetHeight</a> (float x, float y)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询地形指定位置的高度值  <a href="#d4e4e135aecdcaa017c5483fe090fbe5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_terrain.html#643507984b2002babc3d828dcc73c084">SetHeight</a> (float x, float y, float height)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置地形指定位置的高度值  <a href="#643507984b2002babc3d828dcc73c084"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_terrain.html#5312a92162310287ef38781ed35c8caa">GetTrianglesCount</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">查询显示的三角形数  <a href="#5312a92162310287ef38781ed35c8caa"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual LightHeightField *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_terrain.html#84966a6965ad436dc3f80c099af75ec2">createHeightField</a> (<a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> position, <a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a> box)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建一个高度场对象  <a href="#84966a6965ad436dc3f80c099af75ec2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_light_terrain.html#61cabc4c5991a4c82a3a3108eb4aae77">Unload</a> (void)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">将地形文件从内存中清除  <a href="#61cabc4c5991a4c82a3a3108eb4aae77"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+地形类 
+<p>
+本类负责地形文件的读取，渲染，支持高度图格式的地形。 每个 <a class="el" href="class_light_terrain.html">LightTerrain</a> 实例都必须通过 <a class="el" href="class_light_engine.html">LightEngine</a> 类的 NewTerrain 方法分配。 
+<p>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="1a30062c2dff690e28253515d6a31c0c"></a><!-- doxytag: member="LightTerrain::load" ref="1a30062c2dff690e28253515d6a31c0c" args="(const char *filename, int format, int width, int height, int bits)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightTerrain::load           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>bits</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+将地形文件读入内存 
+<p>
+支持高度图格式的地图。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>filename</em>&nbsp;</td><td>地形文件名</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>format</em>&nbsp;</td><td>地形文件名格式</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>width</em>&nbsp;</td><td>地形文件宽度</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>height</em>&nbsp;</td><td>地形文件高度</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>bits</em>&nbsp;</td><td>地形文件通道位数</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f0428964c4a871f052f23dcfc0c66b68"></a><!-- doxytag: member="LightTerrain::SetSize" ref="f0428964c4a871f052f23dcfc0c66b68" args="(int width, int height)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightTerrain::SetSize           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>height</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置地形大小 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>width</em>&nbsp;</td><td>地形宽度，指 x 轴方向的大小，必须为 2 的 n 次幂 + 1</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>height</em>&nbsp;</td><td>地形高度，指 y 轴方向的大小，必须为 2 的 n 次幂 + 1</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="229cef12f07d90f283df8607b24b98ed"></a><!-- doxytag: member="LightTerrain::GetSize" ref="229cef12f07d90f283df8607b24b98ed" args="(LPSIZE lpSize)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightTerrain::GetSize           </td>
+          <td>(</td>
+          <td class="paramtype">LPSIZE&nbsp;</td>
+          <td class="paramname"> <em>lpSize</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询地形大小 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>LPSIZE</em>&nbsp;</td><td>lpSize 返回地形大小的数据结构指针，其中 LPSIZE 的成员 cx 和 cy 分别为地形的宽度和高度</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="146c960007a30ea16f9215af2735b577"></a><!-- doxytag: member="LightTerrain::SetTexture" ref="146c960007a30ea16f9215af2735b577" args="(int name, LightTexture *texture)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LightTerrain::SetTexture           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_light_texture.html">LightTexture</a> *&nbsp;</td>
+          <td class="paramname"> <em>texture</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置地形纹理 
+<p>
+设置地形纹理。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>int</em>&nbsp;</td><td>name 要设置的地形纹理层</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="class_light_texture.html">LightTexture</a></em>&nbsp;</td><td>* texture 要设置的地形纹理</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="841cc6ec918b4b393e8843bcfd42033a"></a><!-- doxytag: member="LightTerrain::setTile" ref="841cc6ec918b4b393e8843bcfd42033a" args="(int width, int height)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightTerrain::setTile           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>height</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置地形瓷砖大小 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>width</em>&nbsp;</td><td>地形瓷砖宽度，指 x 轴方向的大小，必须为 2 的 n 次幂，<b>取值范围:</b> [32,地形宽度-1]</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>height</em>&nbsp;</td><td>地形瓷砖高度，指 y 轴方向的大小，必须为 2 的 n 次幂，<b>取值范围:</b> [32,地形高度-1]</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c13da2a42a75ff1cdc115d85953a537d"></a><!-- doxytag: member="LightTerrain::getTile" ref="c13da2a42a75ff1cdc115d85953a537d" args="(LPSIZE lpSize)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int LightTerrain::getTile           </td>
+          <td>(</td>
+          <td class="paramtype">LPSIZE&nbsp;</td>
+          <td class="paramname"> <em>lpSize</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询地形瓷砖大小 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>LPSIZE</em>&nbsp;</td><td>lpSize 返回地形瓷砖大小的数据结构指针，其中 LPSIZE 的成员 cx 和 cy 分别为地形瓷砖的宽度和高度</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="668e95e94db691cb5da0a02b1e55ed64"></a><!-- doxytag: member="LightTerrain::BuildLODData" ref="668e95e94db691cb5da0a02b1e55ed64" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightTerrain::BuildLODData           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+生成 LOD 所需要的数据 
+<p>
+生成 LOD 所需要的数据，当地形<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有参数。</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="ce8f5e1b2ab2dfea5892682af8e62bd1"></a><!-- doxytag: member="LightTerrain::SetLODFactor" ref="ce8f5e1b2ab2dfea5892682af8e62bd1" args="(float distance, float fluctuant)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LightTerrain::SetLODFactor           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>distance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>fluctuant</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置地形显示 LOD 因子 
+<p>
+设置地形显示 LOD 因子，此函数用来调节地形显示品质和速度。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>distance LOD 的距离因子，取值范围为 2.5 ~ 5，此值越大，地形显示品质越高，但显示速度会下降</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>fluctuant LOD 的起伏程度因子，取值范围为 25 ~ 50，此值越大，地形显示品质越高，但显示速度会下降</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>本函数没有返回值。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c56ace9ca2a09937266a0cb3620c0c2a"></a><!-- doxytag: member="LightTerrain::RenderMode" ref="c56ace9ca2a09937266a0cb3620c0c2a" args="(int mode)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LightTerrain::RenderMode           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>mode</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置地形渲染模式 
+<p>
+设置地形渲染模式。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>int</em>&nbsp;</td><td>mode 地形渲染模式</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="d4e4e135aecdcaa017c5483fe090fbe5"></a><!-- doxytag: member="LightTerrain::GetHeight" ref="d4e4e135aecdcaa017c5483fe090fbe5" args="(float x, float y)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float LightTerrain::GetHeight           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询地形指定位置的高度值 
+<p>
+查询地形指定位置的高度值。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>x 位置的 x 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>y 位置的 y 坐标，实际上是 z 坐标</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回地形指定位置的高度值。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="643507984b2002babc3d828dcc73c084"></a><!-- doxytag: member="LightTerrain::SetHeight" ref="643507984b2002babc3d828dcc73c084" args="(float x, float y, float height)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LightTerrain::SetHeight           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>height</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置地形指定位置的高度值 
+<p>
+设置地形指定位置的高度值。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>x 位置的 x 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>y 位置的 y 坐标，实际上是 z 坐标</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>float</em>&nbsp;</td><td>height 指定位置 ( x, y ) 的高度值</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="5312a92162310287ef38781ed35c8caa"></a><!-- doxytag: member="LightTerrain::GetTrianglesCount" ref="5312a92162310287ef38781ed35c8caa" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LightTerrain::GetTrianglesCount           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+查询显示的三角形数 
+<p>
+查询显示的三角形数。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有参数。</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回地形类显示的三角形数。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="84966a6965ad436dc3f80c099af75ec2"></a><!-- doxytag: member="LightTerrain::createHeightField" ref="84966a6965ad436dc3f80c099af75ec2" args="(vec3_t position, vec3_t box)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual LightHeightField* LightTerrain::createHeightField           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="type_8h.html#54109d17b44e074abb1d39f7aa02584b">vec3_t</a>&nbsp;</td>
+          <td class="paramname"> <em>box</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建一个高度场对象 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>创建的高度场对象</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="61cabc4c5991a4c82a3a3108eb4aae77"></a><!-- doxytag: member="LightTerrain::Unload" ref="61cabc4c5991a4c82a3a3108eb4aae77" args="(void)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LightTerrain::Unload           </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+将地形文件从内存中清除 
+<p>
+将地形文件从内存中清除。<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>本函数没有参数</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>如果函数调用成功，返回非零值；如果函数调用失败，返回零。</dd></dl>
+<dl class="see" compact><dt><b>参见:</b></dt><dd></dd></dl>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/LightEngine/include/<a class="el" href="terrain_8h.html">terrain.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Generated at Sun Mar 15 20:53:36 2009 for LightEngine by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.0 </small></address>
+</body>
+</html>
